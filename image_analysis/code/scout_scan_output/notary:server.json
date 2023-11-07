@@ -1,0 +1,1207 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-45283",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-45283"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-45283",
+              "help": {
+                "text": "The filepath package does not recognize paths with a \\??\\ prefix as special.\n\nOn Windows, a path beginning with \\??\\ is a Root Local Device path equivalent to a path beginning with \\\\?\\. Paths with a \\??\\ prefix may be used to access arbitrary locations on the system. For example, the path \\??\\c:\\x is equivalent to the more common path c:\\x.\n\nBefore fix, Clean could convert a rooted path such as \\a\\..\\??\\b into the root local device path \\??\\b. Clean will now convert this to .\\??\\b.\n\nSimilarly, Join(\\, ??, b) could convert a seemingly innocent sequence of path elements into the root local device path \\??\\b. Join will now convert this to \\.\\??\\b.\n\nIn addition, with fix, IsAbs now correctly reports paths beginning with \\??\\ as absolute, and VolumeName correctly reports the \\??\\ prefix as a volume name.\n",
+                "markdown": "> The filepath package does not recognize paths with a \\??\\ prefix as special.\n\nOn Windows, a path beginning with \\??\\ is a Root Local Device path equivalent to a path beginning with \\\\?\\. Paths with a \\??\\ prefix may be used to access arbitrary locations on the system. For example, the path \\??\\c:\\x is equivalent to the more common path c:\\x.\n\nBefore fix, Clean could convert a rooted path such as \\a\\..\\??\\b into the root local device path \\??\\b. Clean will now convert this to .\\??\\b.\n\nSimilarly, Join(\\, ??, b) could convert a seemingly innocent sequence of path elements into the root local device path \\??\\b. Join will now convert this to \\.\\??\\b.\n\nIn addition, with fix, IsAbs now correctly reports paths beginning with \\??\\ as absolute, and VolumeName correctly reports the \\??\\ prefix as a volume name.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.19.9 |\n| Affected range | <1.20.11                 |\n| Fixed version  | 1.20.11                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.11",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "1.20.11",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.9"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-45284",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-45284"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-45284",
+              "help": {
+                "text": "On Windows, The IsLocal function does not correctly detect reserved device names in some cases.\n\nReserved names followed by spaces, such as \"COM1 \", and reserved names \"COM\" and \"LPT\" followed by superscript 1, 2, or 3, are incorrectly reported as local.\n\nWith fix, IsLocal now correctly reports these names as non-local.\n",
+                "markdown": "> On Windows, The IsLocal function does not correctly detect reserved device names in some cases.\n\nReserved names followed by spaces, such as \"COM1 \", and reserved names \"COM\" and \"LPT\" followed by superscript 1, 2, or 3, are incorrectly reported as local.\n\nWith fix, IsLocal now correctly reports these names as non-local.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.19.9 |\n| Affected range | <1.20.11                 |\n| Fixed version  | 1.20.11                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.11",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "1.20.11",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.9"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "GMS-2022-20",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GMS-2022-20: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/GMS-2022-20",
+              "help": {
+                "text": "### Impact\n\nSystems that rely on digest equivalence for image attestations may be vulnerable to type confusion.\n",
+                "markdown": "> ### Impact\n\nSystems that rely on digest equivalence for image attestations may be vulnerable to type confusion.\n\n|                |                                                              |\n|----------------|--------------------------------------------------------------|\n| Package        | pkg:golang/github.com/docker/distribution@2.7.1+incompatible |\n| Affected range | <v2.8.0                                                      |\n| Fixed version  | v2.8.0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<v2.8.0",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "v2.8.0",
+                "purls": [
+                  "pkg:golang/github.com/docker/distribution@2.7.1+incompatible"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-qq97-vm5h-rrhg",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-qq97-vm5h-rrhg: Access of Resource Using Incompatible Type ('Type Confusion')"
+              },
+              "helpUri": "https://scout.docker.com/v/GHSA-qq97-vm5h-rrhg",
+              "help": {
+                "text": "### Impact\n\nSystems that rely on digest equivalence for image attestations may be vulnerable to type confusion.\n\n### Patches\n\nUpgrade to at least `v2.8.0-beta.1`  if you are running `v2.x` release. If you use the code from the `main` branch, update at least to the commit after [b59a6f827947f9e0e67df0cfb571046de4733586](https://github.com/distribution/distribution/commit/b59a6f827947f9e0e67df0cfb571046de4733586).\n\n### Workarounds\n\nThere is no way to work around this issue without patching.\n\n### References\n\nDue to [an oversight in the OCI Image Specification](https://github.com/opencontainers/image-spec/pull/411) that removed the embedded `mediaType` field from manifests, a maliciously crafted OCI Container Image can cause registry clients to parse the same image in two different ways without modifying the image’s digest by modifying the `Content-Type` header returned by a registry. This can invalidate a common pattern of relying on container image digests for equivalence.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [distribution](https://github.com/distribution/distribution) \n* Open an issue in [distribution-spec](https://github.com/opencontainers/distribution-spec) \n* Email us at [cncf-distribution-security@lists.cncf.io](mailto:cncf-distribution-security@lists.cncf.io)\n\n",
+                "markdown": "> ### Impact\n\nSystems that rely on digest equivalence for image attestations may be vulnerable to type confusion.\n\n### Patches\n\nUpgrade to at least `v2.8.0-beta.1`  if you are running `v2.x` release. If you use the code from the `main` branch, update at least to the commit after [b59a6f827947f9e0e67df0cfb571046de4733586](https://github.com/distribution/distribution/commit/b59a6f827947f9e0e67df0cfb571046de4733586).\n\n### Workarounds\n\nThere is no way to work around this issue without patching.\n\n### References\n\nDue to [an oversight in the OCI Image Specification](https://github.com/opencontainers/image-spec/pull/411) that removed the embedded `mediaType` field from manifests, a maliciously crafted OCI Container Image can cause registry clients to parse the same image in two different ways without modifying the image’s digest by modifying the `Content-Type` header returned by a registry. This can invalidate a common pattern of relying on container image digests for equivalence.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [distribution](https://github.com/distribution/distribution) \n* Open an issue in [distribution-spec](https://github.com/opencontainers/distribution-spec) \n* Email us at [cncf-distribution-security@lists.cncf.io](mailto:cncf-distribution-security@lists.cncf.io)\n\n\n|                |                                                              |\n|----------------|--------------------------------------------------------------|\n| Package        | pkg:golang/github.com/docker/distribution@2.7.1+incompatible |\n| Affected range | <2.8.0                                                       |\n| Fixed version  | 2.8.0                                                        |\n| CVSS Score     |                                                          3.0 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:L/A:N                 |\n"
+              },
+              "properties": {
+                "affected_version": "<2.8.0",
+                "cvssV3": 3,
+                "cvssV3_severity": "LOW",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:L/A:N",
+                "fixed_version": "2.8.0",
+                "purls": [
+                  "pkg:golang/github.com/docker/distribution@2.7.1+incompatible"
+                ],
+                "security-severity": "3.0",
+                "tags": [
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-29526",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-29526: Improper Privilege Management"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-29526",
+              "help": {
+                "text": "Go before 1.17.10 and 1.18.x before 1.18.2 has Incorrect Privilege Reporting in syscall. When called with a non-zero flags parameter, the Faccessat function could incorrectly report that a file is accessible.\n\n### Specific Go Packages Affected\ngolang.org/x/sys/unix\n",
+                "markdown": "> Go before 1.17.10 and 1.18.x before 1.18.2 has Incorrect Privilege Reporting in syscall. When called with a non-zero flags parameter, the Faccessat function could incorrectly report that a file is accessible.\n\n### Specific Go Packages Affected\ngolang.org/x/sys/unix\n\n|                |                                                               |\n|----------------|---------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/sys@0.0.0-20191120155948-bd437916bb0e |\n| Affected range | <0.0.0-20220412211240-33da011f77ad                            |\n| Fixed version  | 0.0.0-20220412211240-33da011f77ad                             |\n| CVSS Score     |                                                           5.3 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N                  |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20220412211240-33da011f77ad",
+                "cvssV3": 5.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                "fixed_version": "0.0.0-20220412211240-33da011f77ad",
+                "purls": [
+                  "pkg:golang/golang.org/x/sys@0.0.0-20191120155948-bd437916bb0e"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29409",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29409"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29409",
+              "help": {
+                "text": "Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits.\n\nBased on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n",
+                "markdown": "> Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits.\n\nBased on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.19.9 |\n| Affected range | <1.19.12                 |\n| Fixed version  | 1.19.12                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.19.12",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.19.12",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.9"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-44487",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-44487"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-44487",
+              "help": {
+                "text": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n",
+                "markdown": "> A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.19.9 |\n| Affected range | <1.20.10                 |\n| Fixed version  | 1.20.10                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.56.3",
+                "cvssV3": 5.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "fixed_version": "1.56.3",
+                "purls": [
+                  "pkg:golang/google.golang.org/grpc@1.0.5",
+                  "pkg:golang/stdlib@1.19.9"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-31525",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-31525: Uncontrolled Recursion"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-31525",
+              "help": {
+                "text": "golang.org/x/net/http/httpguts in Go before 1.15.12 and 1.16.x before 1.16.4 allows remote attackers to cause a denial of service (panic) via a large header to ReadRequest or ReadResponse. Server, Transport, and Client can each be affected in some configurations.\n",
+                "markdown": "> golang.org/x/net/http/httpguts in Go before 1.15.12 and 1.16.x before 1.16.4 allows remote attackers to cause a denial of service (panic) via a large header to ReadRequest or ReadResponse. Server, Transport, and Client can each be affected in some configurations.\n\n|                |                                                               |\n|----------------|---------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3 |\n| Affected range | <0.0.0-20210428140749-89ef3d95e781                            |\n| Fixed version  | 0.0.0-20210428140749-89ef3d95e781                             |\n| CVSS Score     |                                                           5.9 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H                  |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20210428140749-89ef3d95e781",
+                "cvssV3": 5.9,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.0.0-20210428140749-89ef3d95e781",
+                "purls": [
+                  "pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3"
+                ],
+                "security-severity": "5.9",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39318",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39318"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39318",
+              "help": {
+                "text": "The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in <script> contexts. This may cause the template parser to improperly interpret the contents of <script> contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n",
+                "markdown": "> The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in <script> contexts. This may cause the template parser to improperly interpret the contents of <script> contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.19.9 |\n| Affected range | <1.20.8                  |\n| Fixed version  | 1.20.8                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.8",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.8",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.9"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39319",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39319"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39319",
+              "help": {
+                "text": "The html/template package does not apply the proper rules for handling occurrences of \"<script\", \"<!--\", and \"</script\" within JS literals in <script> contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.\n",
+                "markdown": "> The html/template package does not apply the proper rules for handling occurrences of \"<script\", \"<!--\", and \"</script\" within JS literals in <script> contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.19.9 |\n| Affected range | <1.20.8                  |\n| Fixed version  | 1.20.8                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.8",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.8",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.9"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29406",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29406"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29406",
+              "help": {
+                "text": "The HTTP/1 client does not fully validate the contents of the Host header. A maliciously crafted Host header can inject additional headers or entire requests.\n\nWith fix, the HTTP/1 client now refuses to send requests containing an invalid Request.Host or Request.URL.Host value.\n",
+                "markdown": "> The HTTP/1 client does not fully validate the contents of the Host header. A maliciously crafted Host header can inject additional headers or entire requests.\n\nWith fix, the HTTP/1 client now refuses to send requests containing an invalid Request.Host or Request.URL.Host value.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.19.9 |\n| Affected range | <1.19.11                 |\n| Fixed version  | 1.19.11                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.19.11",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.19.11",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.9"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-14040",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-14040: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-14040",
+              "help": {
+                "text": "Go version v0.3.3 of the x/text package fixes a vulnerability in encoding/unicode that could lead to the UTF-16 decoder entering an infinite loop, causing the program to crash or run out of memory. An attacker could provide a single byte to a UTF16 decoder instantiated with UseBOM or ExpectBOM to trigger an infinite loop if the String function on the Decoder is called, or the Decoder is passed to golang.org/x/text/transform.String.\n\n### Specific Go Packages Affected\ngolang.org/x/text/encoding/unicode\ngolang.org/x/text/transform\n",
+                "markdown": "> Go version v0.3.3 of the x/text package fixes a vulnerability in encoding/unicode that could lead to the UTF-16 decoder entering an infinite loop, causing the program to crash or run out of memory. An attacker could provide a single byte to a UTF16 decoder instantiated with UseBOM or ExpectBOM to trigger an infinite loop if the String function on the Decoder is called, or the Decoder is passed to golang.org/x/text/transform.String.\n\n### Specific Go Packages Affected\ngolang.org/x/text/encoding/unicode\ngolang.org/x/text/transform\n\n|                |                                                            |\n|----------------|------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/text@0.3.0                         |\n| Affected range | <0.3.3                                                     |\n| Fixed version  | 0.3.3                                                      |\n| CVSS Score     |                                                        7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C |\n"
+              },
+              "properties": {
+                "affected_version": "<0.3.3",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C",
+                "fixed_version": "0.3.3",
+                "purls": [
+                  "pkg:golang/golang.org/x/text@0.3.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9512",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9512: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9512",
+              "help": {
+                "text": "Some HTTP/2 implementations are vulnerable to ping floods, potentially leading to a denial of service. The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both.\n\n### Specific Go Packages Affected\ngolang.org/x/net/http2\n",
+                "markdown": "> Some HTTP/2 implementations are vulnerable to ping floods, potentially leading to a denial of service. The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both.\n\n### Specific Go Packages Affected\ngolang.org/x/net/http2\n\n|                |                                                               |\n|----------------|---------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3 |\n| Affected range | <0.0.0-20190813141303-74dc4d7220e7                            |\n| Fixed version  | 0.0.0-20190813141303-74dc4d7220e7                             |\n| CVSS Score     |                                                           7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                  |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20190813141303-74dc4d7220e7",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.0.0-20190813141303-74dc4d7220e7",
+                "purls": [
+                  "pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9514",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9514: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9514",
+              "help": {
+                "text": "Some HTTP/2 implementations are vulnerable to a reset flood, potentially leading to a denial of service. Servers that accept direct connections from untrusted clients could be remotely made to allocate an unlimited amount of memory, until the program crashes. The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both.\n\n### Specific Go Packages Affected\ngolang.org/x/net/http2\n",
+                "markdown": "> Some HTTP/2 implementations are vulnerable to a reset flood, potentially leading to a denial of service. Servers that accept direct connections from untrusted clients could be remotely made to allocate an unlimited amount of memory, until the program crashes. The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both.\n\n### Specific Go Packages Affected\ngolang.org/x/net/http2\n\n|                |                                                               |\n|----------------|---------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3 |\n| Affected range | <0.0.0-20190813141303-74dc4d7220e7                            |\n| Fixed version  | 0.0.0-20190813141303-74dc4d7220e7                             |\n| CVSS Score     |                                                           7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                  |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20190813141303-74dc4d7220e7",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.0.0-20190813141303-74dc4d7220e7",
+                "purls": [
+                  "pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-29652",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-29652: NULL Pointer Dereference"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-29652",
+              "help": {
+                "text": "A nil pointer dereference in the golang.org/x/crypto/ssh component through v0.0.0-20201203163018-be400aefbc4c for Go allows remote attackers to cause a denial of service against SSH servers. An attacker can craft an authentication request message for the `gssapi-with-mic` method which will cause NewServerConn to panic via a nil pointer dereference if ServerConfig.GSSAPIWithMICConfig is nil.\n",
+                "markdown": "> A nil pointer dereference in the golang.org/x/crypto/ssh component through v0.0.0-20201203163018-be400aefbc4c for Go allows remote attackers to cause a denial of service against SSH servers. An attacker can craft an authentication request message for the `gssapi-with-mic` method which will cause NewServerConn to panic via a nil pointer dereference if ServerConfig.GSSAPIWithMICConfig is nil.\n\n|                |                                                                  |\n|----------------|------------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/crypto@0.0.0-20201117144127-c1f2f97bffc9 |\n| Affected range | <0.0.0-20201216223049-8b5274cf687f                               |\n| Fixed version  | 0.0.0-20201216223049-8b5274cf687f                                |\n| CVSS Score     |                                                              7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                     |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20201216223049-8b5274cf687f",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.0.0-20201216223049-8b5274cf687f",
+                "purls": [
+                  "pkg:golang/golang.org/x/crypto@0.0.0-20201117144127-c1f2f97bffc9"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-33194",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-33194: Loop with Unreachable Exit Condition ('Infinite Loop')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-33194",
+              "help": {
+                "text": "Go through 1.15.12 and 1.16.x through 1.16.4 has a golang.org/x/net/html infinite loop via crafted ParseFragment input.\n",
+                "markdown": "> Go through 1.15.12 and 1.16.x through 1.16.4 has a golang.org/x/net/html infinite loop via crafted ParseFragment input.\n\n|                |                                                               |\n|----------------|---------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3 |\n| Affected range | <0.0.0-20210520170846-37e1c6afe023                            |\n| Fixed version  | 0.0.0-20210520170846-37e1c6afe023                             |\n| CVSS Score     |                                                           7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                  |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20210520170846-37e1c6afe023",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.0.0-20210520170846-37e1c6afe023",
+                "purls": [
+                  "pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-38561",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-38561: Out-of-bounds Read"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-38561",
+              "help": {
+                "text": "golang.org/x/text/language in golang.org/x/text before 0.3.7 can panic with an out-of-bounds read during BCP 47 language tag parsing. Index calculation is mishandled. If parsing untrusted user input, this can be used as a vector for a denial-of-service attack.\n",
+                "markdown": "> golang.org/x/text/language in golang.org/x/text before 0.3.7 can panic with an out-of-bounds read during BCP 47 language tag parsing. Index calculation is mishandled. If parsing untrusted user input, this can be used as a vector for a denial-of-service attack.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:golang/golang.org/x/text@0.3.0           |\n| Affected range | <0.3.7                                       |\n| Fixed version  | 0.3.7                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<0.3.7",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.3.7",
+                "purls": [
+                  "pkg:golang/golang.org/x/text@0.3.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-43565",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-43565"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-43565",
+              "help": {
+                "text": "The x/crypto/ssh package before 0.0.0-20211202192323-5770296d904e of golang.org/x/crypto allows an unauthenticated attacker to panic an SSH server. When using AES-GCM or ChaCha20Poly1305, consuming a malformed packet which contains an empty plaintext causes a panic.\n",
+                "markdown": "> The x/crypto/ssh package before 0.0.0-20211202192323-5770296d904e of golang.org/x/crypto allows an unauthenticated attacker to panic an SSH server. When using AES-GCM or ChaCha20Poly1305, consuming a malformed packet which contains an empty plaintext causes a panic.\n\n|                |                                                                  |\n|----------------|------------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/crypto@0.0.0-20201117144127-c1f2f97bffc9 |\n| Affected range | <0.0.0-20211202192323-5770296d904e                               |\n| Fixed version  | 0.0.0-20211202192323-5770296d904e                                |\n| CVSS Score     |                                                              7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                     |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20211202192323-5770296d904e",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.0.0-20211202192323-5770296d904e",
+                "purls": [
+                  "pkg:golang/golang.org/x/crypto@0.0.0-20201117144127-c1f2f97bffc9"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-44716",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-44716"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-44716",
+              "help": {
+                "text": "An attacker can cause unbounded memory growth in servers accepting HTTP/2 requests.\n",
+                "markdown": "> An attacker can cause unbounded memory growth in servers accepting HTTP/2 requests.\n\n|                |                                                               |\n|----------------|---------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3 |\n| Affected range | <0.0.0-20211209124913-491a49abca63                            |\n| Fixed version  | 0.0.0-20211209124913-491a49abca63                             |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20211209124913-491a49abca63",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "0.0.0-20211209124913-491a49abca63",
+                "purls": [
+                  "pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-21698",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-21698: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-21698",
+              "help": {
+                "text": "This is the Go client library for Prometheus. It has two separate parts, one for instrumenting application code, and one for creating clients that talk to the Prometheus HTTP API. client_golang is the instrumentation library for Go applications in Prometheus, and the promhttp package in client_golang provides tooling around HTTP servers and clients.\n\n### Impact\n\nHTTP server susceptible to a Denial of Service through unbounded cardinality, and potential memory exhaustion, when handling requests with non-standard HTTP methods.\n\n###  Affected Configuration\n\nIn order to be affected, an instrumented software must\n\n* Use any of `promhttp.InstrumentHandler*` middleware except `RequestsInFlight`.\n* Do not filter any specific methods (e.g GET) before middleware.\n* Pass metric with `method` label name to our middleware.\n* Not have any firewall/LB/proxy that filters away requests with unknown `method`.\n\n### Patches\n\n* https://github.com/prometheus/client_golang/pull/962\n* https://github.com/prometheus/client_golang/pull/987\n\n### Workarounds\n\nIf you cannot upgrade to [v1.11.1 or above](https://github.com/prometheus/client_golang/releases/tag/v1.11.1), in order to stop being affected you can:\n\n* Remove `method` label name from counter/gauge you use in the InstrumentHandler.\n* Turn off affected promhttp handlers.\n* Add custom middleware before promhttp handler that will sanitize the request method given by Go http.Request.\n* Use a reverse proxy or web application firewall, configured to only allow a limited set of methods.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n\n* Open an issue in https://github.com/prometheus/client_golang\n* Email us at `prometheus-team@googlegroups.com`\n\n",
+                "markdown": "> This is the Go client library for Prometheus. It has two separate parts, one for instrumenting application code, and one for creating clients that talk to the Prometheus HTTP API. client_golang is the instrumentation library for Go applications in Prometheus, and the promhttp package in client_golang provides tooling around HTTP servers and clients.\n\n### Impact\n\nHTTP server susceptible to a Denial of Service through unbounded cardinality, and potential memory exhaustion, when handling requests with non-standard HTTP methods.\n\n###  Affected Configuration\n\nIn order to be affected, an instrumented software must\n\n* Use any of `promhttp.InstrumentHandler*` middleware except `RequestsInFlight`.\n* Do not filter any specific methods (e.g GET) before middleware.\n* Pass metric with `method` label name to our middleware.\n* Not have any firewall/LB/proxy that filters away requests with unknown `method`.\n\n### Patches\n\n* https://github.com/prometheus/client_golang/pull/962\n* https://github.com/prometheus/client_golang/pull/987\n\n### Workarounds\n\nIf you cannot upgrade to [v1.11.1 or above](https://github.com/prometheus/client_golang/releases/tag/v1.11.1), in order to stop being affected you can:\n\n* Remove `method` label name from counter/gauge you use in the InstrumentHandler.\n* Turn off affected promhttp handlers.\n* Add custom middleware before promhttp handler that will sanitize the request method given by Go http.Request.\n* Use a reverse proxy or web application firewall, configured to only allow a limited set of methods.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n\n* Open an issue in https://github.com/prometheus/client_golang\n* Email us at `prometheus-team@googlegroups.com`\n\n\n|                |                                                                                         |\n|----------------|-----------------------------------------------------------------------------------------|\n| Package        | pkg:golang/github.com/prometheus/client_golang@0.9.0-pre1.0.20180209125602-c332b6f63c06 |\n| Affected range | <1.11.1                                                                                 |\n| Fixed version  | 1.11.1                                                                                  |\n| CVSS Score     |                                                                                     7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                                            |\n"
+              },
+              "properties": {
+                "affected_version": "<1.11.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "1.11.1",
+                "purls": [
+                  "pkg:golang/github.com/prometheus/client_golang@0.9.0-pre1.0.20180209125602-c332b6f63c06"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-27191",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-27191: Use of a Broken or Risky Cryptographic Algorithm"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-27191",
+              "help": {
+                "text": "The golang.org/x/crypto/ssh package before 0.0.0-20220314234659-1baeb1ce4c0b for Go allows an attacker to crash a server in certain circumstances involving AddHostKey.\n",
+                "markdown": "> The golang.org/x/crypto/ssh package before 0.0.0-20220314234659-1baeb1ce4c0b for Go allows an attacker to crash a server in certain circumstances involving AddHostKey.\n\n|                |                                                                  |\n|----------------|------------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/crypto@0.0.0-20201117144127-c1f2f97bffc9 |\n| Affected range | <0.0.0-20220314234659-1baeb1ce4c0b                               |\n| Fixed version  | 0.0.0-20220314234659-1baeb1ce4c0b                                |\n| CVSS Score     |                                                              7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                     |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20220314234659-1baeb1ce4c0b",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.0.0-20220314234659-1baeb1ce4c0b",
+                "purls": [
+                  "pkg:golang/golang.org/x/crypto@0.0.0-20201117144127-c1f2f97bffc9"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-27664",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-27664"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-27664",
+              "help": {
+                "text": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.\n",
+                "markdown": "> In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.\n\n|                |                                                               |\n|----------------|---------------------------------------------------------------|\n| Package        | pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3 |\n| Affected range | <0.0.0-20220906165146-f3363e06e74c                            |\n| Fixed version  | 0.0.0-20220906165146-f3363e06e74c                             |\n| CVSS Score     |                                                           7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                  |\n"
+              },
+              "properties": {
+                "affected_version": "<0.0.0-20220906165146-f3363e06e74c",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.0.0-20220906165146-f3363e06e74c",
+                "purls": [
+                  "pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-32149",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-32149: Missing Release of Resource after Effective Lifetime"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-32149",
+              "help": {
+                "text": "The BCP 47 tag parser has quadratic time complexity due to inherent aspects of its design. Since the parser is, by design, exposed to untrusted user input, this can be leveraged to force a program to consume significant time parsing Accept-Language headers. The parser cannot be easily rewritten to fix this behavior for various reasons. Instead the solution implemented in this CL is to limit the total complexity of tags passed into ParseAcceptLanguage by limiting the number of dashes in the string to 1000. This should be more than enough for the majority of real world use cases, where the number of tags being sent is likely to be in the single digits.\n\n### Specific Go Packages Affected\ngolang.org/x/text/language\n",
+                "markdown": "> The BCP 47 tag parser has quadratic time complexity due to inherent aspects of its design. Since the parser is, by design, exposed to untrusted user input, this can be leveraged to force a program to consume significant time parsing Accept-Language headers. The parser cannot be easily rewritten to fix this behavior for various reasons. Instead the solution implemented in this CL is to limit the total complexity of tags passed into ParseAcceptLanguage by limiting the number of dashes in the string to 1000. This should be more than enough for the majority of real world use cases, where the number of tags being sent is likely to be in the single digits.\n\n### Specific Go Packages Affected\ngolang.org/x/text/language\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:golang/golang.org/x/text@0.3.0           |\n| Affected range | <0.3.8                                       |\n| Fixed version  | 0.3.8                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<0.3.8",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.3.8",
+                "purls": [
+                  "pkg:golang/golang.org/x/text@0.3.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-2253",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-2253: Undefined Behavior for Input to API"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-2253",
+              "help": {
+                "text": "### Impact\n\nSystems that run `distribution` built after a specific commit running on memory-restricted environments can suffer from denial of service by a crafted malicious `/v2/_catalog` API endpoint request. \n\n### Patches\n\nUpgrade to at least 2.8.2-beta.1 if you are running `v2.8.x` release. If you use the code from the main branch, update at least to the commit after [f55a6552b006a381d9167e328808565dd2bf77dc](https://github.com/distribution/distribution/commit/f55a6552b006a381d9167e328808565dd2bf77dc).\n\n### Workarounds\n\nThere is no way to work around this issue without patching. Restrict access to the affected API endpoint: see the recommendations section.\n\n### References\n\n`/v2/_catalog` endpoint accepts a parameter to control the maximum amount of records returned (query string: `n`).\n\nWhen not given the default `n=100` is used.  The server trusts that `n` has an acceptable value, however when using a \nmaliciously large value, it allocates an array/slice of `n` of strings before filling the slice with data.\n\nThis behaviour was introduced ~7yrs ago [1].\n\n### Recommendation\n\nThe `/v2/_catalog` endpoint was designed specifically to do registry syncs with search or other API systems. Such an endpoint would create a lot of load on the backend system, due to overfetch required to serve a request in certain implementations.\n\nBecause of this, we strongly recommend keeping this API endpoint behind heightened privilege and avoiding leaving it exposed to the internet.\n\n###  For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [distribution repository](https://github.com/distribution/distribution)\n* Email us at [cncf-distribution-security@lists.cncf.io](mailto:cncf-distribution-security@lists.cncf.io)\n\n[1] [faulty commit](https://github.com/distribution/distribution/blob/b7e26bac741c76cb792f8e14c41a2163b5dae8df/registry/handlers/catalog.go#L45)\n",
+                "markdown": "> ### Impact\n\nSystems that run `distribution` built after a specific commit running on memory-restricted environments can suffer from denial of service by a crafted malicious `/v2/_catalog` API endpoint request. \n\n### Patches\n\nUpgrade to at least 2.8.2-beta.1 if you are running `v2.8.x` release. If you use the code from the main branch, update at least to the commit after [f55a6552b006a381d9167e328808565dd2bf77dc](https://github.com/distribution/distribution/commit/f55a6552b006a381d9167e328808565dd2bf77dc).\n\n### Workarounds\n\nThere is no way to work around this issue without patching. Restrict access to the affected API endpoint: see the recommendations section.\n\n### References\n\n`/v2/_catalog` endpoint accepts a parameter to control the maximum amount of records returned (query string: `n`).\n\nWhen not given the default `n=100` is used.  The server trusts that `n` has an acceptable value, however when using a \nmaliciously large value, it allocates an array/slice of `n` of strings before filling the slice with data.\n\nThis behaviour was introduced ~7yrs ago [1].\n\n### Recommendation\n\nThe `/v2/_catalog` endpoint was designed specifically to do registry syncs with search or other API systems. Such an endpoint would create a lot of load on the backend system, due to overfetch required to serve a request in certain implementations.\n\nBecause of this, we strongly recommend keeping this API endpoint behind heightened privilege and avoiding leaving it exposed to the internet.\n\n###  For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [distribution repository](https://github.com/distribution/distribution)\n* Email us at [cncf-distribution-security@lists.cncf.io](mailto:cncf-distribution-security@lists.cncf.io)\n\n[1] [faulty commit](https://github.com/distribution/distribution/blob/b7e26bac741c76cb792f8e14c41a2163b5dae8df/registry/handlers/catalog.go#L45)\n\n|                |                                                              |\n|----------------|--------------------------------------------------------------|\n| Package        | pkg:golang/github.com/docker/distribution@2.7.1+incompatible |\n| Affected range | <2.8.2-beta.1                                                |\n| Fixed version  | 2.8.2-beta.1                                                 |\n| CVSS Score     |                                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                 |\n"
+              },
+              "properties": {
+                "affected_version": "<2.8.2-beta.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "2.8.2-beta.1",
+                "purls": [
+                  "pkg:golang/github.com/docker/distribution@2.7.1+incompatible"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39325",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39325"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39325",
+              "help": {
+                "text": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n",
+                "markdown": "> A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.19.9 |\n| Affected range | <1.20.10                 |\n| Fixed version  | 1.20.10                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.10",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "1.20.10",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.9"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-m425-mq94-257g",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-m425-mq94-257g"
+              },
+              "helpUri": "https://scout.docker.com/v/GHSA-m425-mq94-257g",
+              "help": {
+                "text": "### Impact\nIn affected releases of gRPC-Go, it is possible for an attacker to send HTTP/2 requests, cancel them, and send subsequent requests, which is valid by the HTTP/2 protocol, but would cause the gRPC-Go server to launch more concurrent method handlers than the configured maximum stream limit.\n\n### Patches\nThis vulnerability was addressed by #6703 and has been included in patch releases: 1.56.3, 1.57.1, 1.58.3.  It is also included in the latest release, 1.59.0.\n\nAlong with applying the patch, users should also ensure they are using the `grpc.MaxConcurrentStreams` server option to apply a limit to the server's resources used for any single connection.\n\n### Workarounds\nNone.\n\n### References\n#6703\n\n",
+                "markdown": "> ### Impact\nIn affected releases of gRPC-Go, it is possible for an attacker to send HTTP/2 requests, cancel them, and send subsequent requests, which is valid by the HTTP/2 protocol, but would cause the gRPC-Go server to launch more concurrent method handlers than the configured maximum stream limit.\n\n### Patches\nThis vulnerability was addressed by #6703 and has been included in patch releases: 1.56.3, 1.57.1, 1.58.3.  It is also included in the latest release, 1.59.0.\n\nAlong with applying the patch, users should also ensure they are using the `grpc.MaxConcurrentStreams` server option to apply a limit to the server's resources used for any single connection.\n\n### Workarounds\nNone.\n\n### References\n#6703\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:golang/google.golang.org/grpc@1.0.5      |\n| Affected range | <1.56.3                                      |\n| Fixed version  | 1.56.3                                       |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.56.3",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "1.56.3",
+                "purls": [
+                  "pkg:golang/google.golang.org/grpc@1.0.5"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29403",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29403"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29403",
+              "help": {
+                "text": "On Unix platforms, the Go runtime does not behave differently when a binary is run with the setuid/setgid bits. This can be dangerous in certain cases, such as when dumping memory state, or assuming the status of standard i/o file descriptors.\n\nIf a setuid/setgid binary is executed with standard I/O file descriptors closed, opening any files can result in unexpected content being read or written with elevated privileges. Similarly, if a setuid/setgid program is terminated, either via panic or signal, it may leak the contents of its registers.\n",
+                "markdown": "> On Unix platforms, the Go runtime does not behave differently when a binary is run with the setuid/setgid bits. This can be dangerous in certain cases, such as when dumping memory state, or assuming the status of standard i/o file descriptors.\n\nIf a setuid/setgid binary is executed with standard I/O file descriptors closed, opening any files can result in unexpected content being read or written with elevated privileges. Similarly, if a setuid/setgid program is terminated, either via panic or signal, it may leak the contents of its registers.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.19.9 |\n| Affected range | <1.19.10                 |\n| Fixed version  | 1.19.10                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.19.10",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "1.19.10",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.9"
+                ],
+                "security-severity": "7.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.9"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-45283",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-45283            \n  Severity       : UNSPECIFIED               \n  Package        : pkg:golang/stdlib@1.19.9  \n  Affected range : <1.20.11                  \n  Fixed version  : 1.20.11                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-45284",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-45284            \n  Severity       : UNSPECIFIED               \n  Package        : pkg:golang/stdlib@1.19.9  \n  Affected range : <1.20.11                  \n  Fixed version  : 1.20.11                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GMS-2022-20",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : GMS-2022-20                                                   \n  Severity       : UNSPECIFIED                                                   \n  Package        : pkg:golang/github.com/docker/distribution@2.7.1+incompatible  \n  Affected range : <v2.8.0                                                       \n  Fixed version  : v2.8.0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-qq97-vm5h-rrhg",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "  Vulnerability  : GHSA-qq97-vm5h-rrhg                                           \n  Severity       : LOW                                                           \n  Package        : pkg:golang/github.com/docker/distribution@2.7.1+incompatible  \n  Affected range : <2.8.0                                                        \n  Fixed version  : 2.8.0                                                         \n  CVSS Score     : 3.0                                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:L/A:N                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29526",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-29526                                                 \n  Severity       : MEDIUM                                                         \n  Package        : pkg:golang/golang.org/x/sys@0.0.0-20191120155948-bd437916bb0e  \n  Affected range : <0.0.0-20220412211240-33da011f77ad                             \n  Fixed version  : 0.0.0-20220412211240-33da011f77ad                              \n  CVSS Score     : 5.3                                                            \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29409",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29409            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.19.9  \n  Affected range : <1.19.12                  \n  Fixed version  : 1.19.12                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:golang/google.golang.org/grpc@1.0.5       \n  Affected range : <1.56.3                                       \n  Fixed version  : 1.56.3                                        \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-31525",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-31525                                                 \n  Severity       : MEDIUM                                                         \n  Package        : pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3  \n  Affected range : <0.0.0-20210428140749-89ef3d95e781                             \n  Fixed version  : 0.0.0-20210428140749-89ef3d95e781                              \n  CVSS Score     : 5.9                                                            \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39318",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39318            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.19.9  \n  Affected range : <1.20.8                   \n  Fixed version  : 1.20.8                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39319",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39319            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.19.9  \n  Affected range : <1.20.8                   \n  Fixed version  : 1.20.8                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29406",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29406            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.19.9  \n  Affected range : <1.19.11                  \n  Fixed version  : 1.19.11                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-14040",
+          "ruleIndex": 11,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-14040                                              \n  Severity       : MEDIUM                                                      \n  Package        : pkg:golang/golang.org/x/text@0.3.0                          \n  Affected range : <0.3.3                                                      \n  Fixed version  : 0.3.3                                                       \n  CVSS Score     : 7.5                                                         \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9512",
+          "ruleIndex": 12,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9512                                                  \n  Severity       : HIGH                                                           \n  Package        : pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3  \n  Affected range : <0.0.0-20190813141303-74dc4d7220e7                             \n  Fixed version  : 0.0.0-20190813141303-74dc4d7220e7                              \n  CVSS Score     : 7.5                                                            \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9514",
+          "ruleIndex": 13,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9514                                                  \n  Severity       : HIGH                                                           \n  Package        : pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3  \n  Affected range : <0.0.0-20190813141303-74dc4d7220e7                             \n  Fixed version  : 0.0.0-20190813141303-74dc4d7220e7                              \n  CVSS Score     : 7.5                                                            \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-29652",
+          "ruleIndex": 14,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-29652                                                    \n  Severity       : HIGH                                                              \n  Package        : pkg:golang/golang.org/x/crypto@0.0.0-20201117144127-c1f2f97bffc9  \n  Affected range : <0.0.0-20201216223049-8b5274cf687f                                \n  Fixed version  : 0.0.0-20201216223049-8b5274cf687f                                 \n  CVSS Score     : 7.5                                                               \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-33194",
+          "ruleIndex": 15,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-33194                                                 \n  Severity       : HIGH                                                           \n  Package        : pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3  \n  Affected range : <0.0.0-20210520170846-37e1c6afe023                             \n  Fixed version  : 0.0.0-20210520170846-37e1c6afe023                              \n  CVSS Score     : 7.5                                                            \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-38561",
+          "ruleIndex": 16,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-38561                                \n  Severity       : HIGH                                          \n  Package        : pkg:golang/golang.org/x/text@0.3.0            \n  Affected range : <0.3.7                                        \n  Fixed version  : 0.3.7                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-43565",
+          "ruleIndex": 17,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-43565                                                    \n  Severity       : HIGH                                                              \n  Package        : pkg:golang/golang.org/x/crypto@0.0.0-20201117144127-c1f2f97bffc9  \n  Affected range : <0.0.0-20211202192323-5770296d904e                                \n  Fixed version  : 0.0.0-20211202192323-5770296d904e                                 \n  CVSS Score     : 7.5                                                               \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-44716",
+          "ruleIndex": 18,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-44716                                                 \n  Severity       : HIGH                                                           \n  Package        : pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3  \n  Affected range : <0.0.0-20211209124913-491a49abca63                             \n  Fixed version  : 0.0.0-20211209124913-491a49abca63                              \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-21698",
+          "ruleIndex": 19,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-21698                                                                           \n  Severity       : HIGH                                                                                     \n  Package        : pkg:golang/github.com/prometheus/client_golang@0.9.0-pre1.0.20180209125602-c332b6f63c06  \n  Affected range : <1.11.1                                                                                  \n  Fixed version  : 1.11.1                                                                                   \n  CVSS Score     : 7.5                                                                                      \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                                             \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-27191",
+          "ruleIndex": 20,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-27191                                                    \n  Severity       : HIGH                                                              \n  Package        : pkg:golang/golang.org/x/crypto@0.0.0-20201117144127-c1f2f97bffc9  \n  Affected range : <0.0.0-20220314234659-1baeb1ce4c0b                                \n  Fixed version  : 0.0.0-20220314234659-1baeb1ce4c0b                                 \n  CVSS Score     : 7.5                                                               \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-27664",
+          "ruleIndex": 21,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-27664                                                 \n  Severity       : HIGH                                                           \n  Package        : pkg:golang/golang.org/x/net@0.0.0-20190404232315-eb5bcb51f2a3  \n  Affected range : <0.0.0-20220906165146-f3363e06e74c                             \n  Fixed version  : 0.0.0-20220906165146-f3363e06e74c                              \n  CVSS Score     : 7.5                                                            \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-32149",
+          "ruleIndex": 22,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-32149                                \n  Severity       : HIGH                                          \n  Package        : pkg:golang/golang.org/x/text@0.3.0            \n  Affected range : <0.3.8                                        \n  Fixed version  : 0.3.8                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-2253",
+          "ruleIndex": 23,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-2253                                                 \n  Severity       : HIGH                                                          \n  Package        : pkg:golang/github.com/docker/distribution@2.7.1+incompatible  \n  Affected range : <2.8.2-beta.1                                                 \n  Fixed version  : 2.8.2-beta.1                                                  \n  CVSS Score     : 7.5                                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39325",
+          "ruleIndex": 24,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39325            \n  Severity       : HIGH                      \n  Package        : pkg:golang/stdlib@1.19.9  \n  Affected range : <1.20.10                  \n  Fixed version  : 1.20.10                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487            \n  Severity       : HIGH                      \n  Package        : pkg:golang/stdlib@1.19.9  \n  Affected range : <1.20.10                  \n  Fixed version  : 1.20.10                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-m425-mq94-257g",
+          "ruleIndex": 25,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-m425-mq94-257g                           \n  Severity       : HIGH                                          \n  Package        : pkg:golang/google.golang.org/grpc@1.0.5       \n  Affected range : <1.56.3                                       \n  Fixed version  : 1.56.3                                        \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29403",
+          "ruleIndex": 26,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29403            \n  Severity       : HIGH                      \n  Package        : pkg:golang/stdlib@1.19.9  \n  Affected range : <1.19.10                  \n  Fixed version  : 1.19.10                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/notary/server/notary-server"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+111223 09:36:41 :  starting batch --platform linux/amd64 archlinux,--platform linux/amd64 clearlinux,--platform linux/amd64 clefos
+111223 09:36:42 :  Download complete for clefos
+111223 09:36:42 :  Command failed: docker pull --platform linux/amd64 clefos
+no matching manifest for linux/amd64 in the manifest list entries
+
+111223 09:37:22 :  Download complete for clearlinux
+111223 09:37:25 :  Scout complete for clearlinux
+111223 09:37:25 :  Delete complete for clearlinux
+111223 09:37:48 :  Download complete for archlinux
+111223 09:37:51 :  Scout complete for archlinux
+111223 09:37:51 :  Delete complete for archlinux
+111223 09:37:51 :  batch 1 completed!
+111223 09:37:51 :  starting batch --platform linux/amd64 gazebo,--platform linux/amd64 ibmjava,--platform linux/amd64 jobber
+111223 09:38:05 :  Download complete for jobber
+111223 09:38:09 :  Scout complete for jobber
+111223 09:38:09 :  Delete complete for jobber
+111223 09:39:48 :  Download complete for ibmjava
+111223 09:39:52 :  Scout complete for ibmjava
+111223 09:39:52 :  Delete complete for ibmjava
+111223 09:41:37 :  Download complete for gazebo
+111223 09:41:41 :  Scout complete for gazebo
+111223 09:41:42 :  Delete complete for gazebo
+111223 09:41:42 :  batch 2 completed!
+111223 09:41:42 :  starting batch --platform linux/amd64 nuxeo,--platform linux/amd64 odoo,--platform linux/amd64 percona
+111223 09:45:30 :  Download complete for percona
+111223 09:45:35 :  Scout complete for percona
+111223 09:45:36 :  Delete complete for percona
+111223 09:46:26 :  Download complete for odoo
+111223 09:46:31 :  Scout complete for odoo
+111223 09:46:31 :  Delete complete for odoo
+111223 09:49:47 :  Download complete for nuxeo
+111223 09:49:52 :  Scout complete for nuxeo
+111223 09:49:52 :  Delete complete for nuxeo
+111223 09:49:52 :  batch 3 completed!
+111223 09:49:52 :  starting batch --platform linux/amd64 php-zendserver,--platform linux/amd64 rocket.chat,--platform linux/amd64 sentry
+111223 09:54:24 :  Download complete for php-zendserver
+111223 09:54:28 :  Scout complete for php-zendserver
+111223 09:54:29 :  Delete complete for php-zendserver
+111223 09:54:30 :  Download complete for sentry
+111223 09:54:33 :  Scout complete for sentry
+111223 09:54:33 :  Delete complete for sentry
+111223 09:54:57 :  Download complete for rocket.chat
+111223 09:55:01 :  Scout complete for rocket.chat
+111223 09:55:01 :  Delete complete for rocket.chat
+111223 09:55:01 :  batch 4 completed!
+111223 09:55:01 :  starting batch --platform linux/amd64 silverpeas,--platform linux/amd64 sl,--platform linux/amd64 sourcemage
+111223 09:55:59 :  Download complete for sl
+111223 09:56:03 :  Scout complete for sl
+111223 09:56:03 :  Delete complete for sl
+111223 09:59:27 :  Download complete for sourcemage
+111223 09:59:32 :  Scout complete for sourcemage
+111223 09:59:32 :  Delete complete for sourcemage
+111223 10:04:44 :  Download complete for silverpeas
+111223 10:04:49 :  Scout complete for silverpeas
+111223 10:04:50 :  Delete complete for silverpeas
+111223 10:04:50 :  batch 5 completed!
+111223 10:04:50 :  starting batch --platform linux/amd64 swarm,--platform linux/amd64 teamspeak,--platform linux/amd64 thrift
+111223 10:04:59 :  Download complete for teamspeak
+111223 10:05:02 :  Scout complete for teamspeak
+111223 10:05:03 :  Delete complete for teamspeak
+111223 10:05:03 :  Download complete for swarm
+111223 10:05:06 :  Scout complete for swarm
+111223 10:05:06 :  Delete complete for swarm
+111223 10:05:11 :  Download complete for thrift
+111223 10:05:13 :  Scout complete for thrift
+111223 10:05:13 :  Delete complete for thrift
+111223 10:05:13 :  batch 6 completed!
+111223 10:05:13 :  starting batch --platform linux/amd64 websphere-liberty
+111223 10:07:45 :  Download complete for websphere-liberty
+111223 10:07:48 :  Scout complete for websphere-liberty
+111223 10:07:48 :  Delete complete for websphere-liberty
+111223 10:07:48 :  batch 7 completed!
+111223 10:07:48 :  thank you for analyzing today... goodbye!

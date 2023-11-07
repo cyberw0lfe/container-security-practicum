@@ -1,0 +1,478 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-28858",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-28858"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-28858",
+              "help": {
+                "text": "redis-py before 4.5.3, as used in ChatGPT and other products, leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a pipeline operation), and can send response data to the client of an unrelated request in an off-by-one manner. The fixed versions for this CVE Record are 4.3.6, 4.4.3, and 4.5.3; however, CVE-2023-28859 is a separate vulnerability.\n",
+                "markdown": "> redis-py before 4.5.3, as used in ChatGPT and other products, leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a pipeline operation), and can send response data to the client of an unrelated request in an off-by-one manner. The fixed versions for this CVE Record are 4.3.6, 4.4.3, and 4.5.3; however, CVE-2023-28859 is a separate vulnerability.\n\n|                |                       |\n|----------------|-----------------------|\n| Package        | pkg:pypi/redis@2.10.5 |\n| Affected range | <4.5.3                |\n| Fixed version  | 4.5.3                 |\n"
+              },
+              "properties": {
+                "affected_version": "<4.5.3",
+                "cvssV3_severity": "LOW",
+                "fixed_version": "4.5.3",
+                "purls": [
+                  "pkg:pypi/redis@2.10.5"
+                ],
+                "security-severity": "3.7",
+                "tags": [
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-3572",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-3572: Improper Input Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-3572",
+              "help": {
+                "text": "A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.\n",
+                "markdown": "> A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/pip@9.0.1                           |\n| Affected range | <21.1                                        |\n| Fixed version  |                                         21.1 |\n| CVSS Score     |                                          5.7 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<21.1",
+                "cvssV3": 5.7,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N",
+                "fixed_version": "21.1",
+                "purls": [
+                  "pkg:pypi/pip@9.0.1"
+                ],
+                "security-severity": "5.7",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-28859",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-28859"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-28859",
+              "help": {
+                "text": "redis-py through 4.5.3 leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a non-pipeline operation), and can send response data to the client of an unrelated request. NOTE: this issue exists because of an incomplete fix for CVE-2023-28858.\n",
+                "markdown": "> redis-py through 4.5.3 leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a non-pipeline operation), and can send response data to the client of an unrelated request. NOTE: this issue exists because of an incomplete fix for CVE-2023-28858.\n\n|                |                       |\n|----------------|-----------------------|\n| Package        | pkg:pypi/redis@2.10.5 |\n| Affected range | <5.0.0b1              |\n| Fixed version  | 5.0.0b1               |\n"
+              },
+              "properties": {
+                "affected_version": "<5.0.0b1",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "5.0.0b1",
+                "purls": [
+                  "pkg:pypi/redis@2.10.5"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-20916",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-20916: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-20916",
+              "help": {
+                "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, because a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs in _download_http_url in _internal/download.py. A fix was committed 6704f2ace.\n",
+                "markdown": "> The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, because a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs in _download_http_url in _internal/download.py. A fix was committed 6704f2ace.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/pip@9.0.1                           |\n| Affected range | <19.2                                        |\n| Fixed version  |                                         19.2 |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<19.2",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                "fixed_version": "19.2",
+                "purls": [
+                  "pkg:pypi/pip@9.0.1"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-23727",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-23727: Improper Neutralization of Special Elements used in a Command ('Command Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-23727",
+              "help": {
+                "text": "This affects the package celery before 5.2.2. It by default trusts the messages and metadata stored in backends (result stores). When reading task metadata from the backend, the data is deserialized. Given that an attacker can gain access to, or somehow manipulate the metadata within a celery backend, they could trigger a stored command injection vulnerability and potentially gain further access to the system.\n",
+                "markdown": "> This affects the package celery before 5.2.2. It by default trusts the messages and metadata stored in backends (result stores). When reading task metadata from the backend, the data is deserialized. Given that an attacker can gain access to, or somehow manipulate the metadata within a celery backend, they could trigger a stored command injection vulnerability and potentially gain further access to the system.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/celery@3.1.25                       |\n| Affected range | <5.2.2                                       |\n| Fixed version  | 5.2.2                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<5.2.2",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "5.2.2",
+                "purls": [
+                  "pkg:pypi/celery@3.1.25"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-40897",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-40897: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-40897",
+              "help": {
+                "text": "Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects. Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`. This has been patched in version 65.5.1.\n",
+                "markdown": "> Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects. Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`. This has been patched in version 65.5.1.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/setuptools@36.0.1                   |\n| Affected range | <65.5.1                                      |\n| Fixed version  | 65.5.1                                       |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<65.5.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "65.5.1",
+                "purls": [
+                  "pkg:pypi/setuptools@36.0.1"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-40898",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-40898: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-40898",
+              "help": {
+                "text": "Python Packaging Authority (PyPA) Wheel is a reference implementation of the Python wheel packaging standard. Wheel 0.37.1 and earlier are vulnerable to a Regular Expression denial of service via attacker controlled input to the wheel cli. The vulnerable regex is used to verify the validity of Wheel file names. This has been patched in version 0.38.1.\n",
+                "markdown": "> Python Packaging Authority (PyPA) Wheel is a reference implementation of the Python wheel packaging standard. Wheel 0.37.1 and earlier are vulnerable to a Regular Expression denial of service via attacker controlled input to the wheel cli. The vulnerable regex is used to verify the validity of Wheel file names. This has been patched in version 0.38.1.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/wheel@0.29.0                        |\n| Affected range | <=0.37.1                                     |\n| Fixed version  | 0.38.1                                       |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<=0.37.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.38.1",
+                "purls": [
+                  "pkg:pypi/wheel@0.29.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-31655",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-31655"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-31655",
+              "help": {
+                "text": "redis-7.0.10 was discovered to contain a segmentation violation.\n",
+                "markdown": "> redis-7.0.10 was discovered to contain a segmentation violation.\n\n|                |                       |\n|----------------|-----------------------|\n| Package        | pkg:pypi/redis@2.10.5 |\n| Affected range | =2.10.5               |\n| Fixed version  | not fixed             |\n"
+              },
+              "properties": {
+                "affected_version": "=2.10.5",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "not fixed",
+                "purls": [
+                  "pkg:pypi/redis@2.10.5"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-28858",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-28858         \n  Severity       : LOW                    \n  Package        : pkg:pypi/redis@2.10.5  \n  Affected range : <4.5.3                 \n  Fixed version  : 4.5.3                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/redis-2.10.5.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/redis-2.10.5.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/redis-2.10.5.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-3572",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-3572                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:pypi/pip@9.0.1                            \n  Affected range : <21.1                                         \n  Fixed version  : 21.1                                          \n  CVSS Score     : 5.7                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/pip-9.0.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/pip-9.0.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/pip-9.0.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-28859",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-28859         \n  Severity       : MEDIUM                 \n  Package        : pkg:pypi/redis@2.10.5  \n  Affected range : <5.0.0b1               \n  Fixed version  : 5.0.0b1                \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/redis-2.10.5.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/redis-2.10.5.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/redis-2.10.5.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-20916",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-20916                                \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/pip@9.0.1                            \n  Affected range : <19.2                                         \n  Fixed version  : 19.2                                          \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/pip-9.0.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/pip-9.0.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/pip-9.0.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-23727",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-23727                                \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/celery@3.1.25                        \n  Affected range : <5.2.2                                        \n  Fixed version  : 5.2.2                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/celery-3.1.25.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/celery-3.1.25.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/celery-3.1.25.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-40897",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-40897                                \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/setuptools@36.0.1                    \n  Affected range : <65.5.1                                       \n  Fixed version  : 65.5.1                                        \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/setuptools-36.0.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/setuptools-36.0.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/setuptools-36.0.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-40898",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-40898                                \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/wheel@0.29.0                         \n  Affected range : <=0.37.1                                      \n  Fixed version  : 0.38.1                                        \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/wheel-0.29.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/wheel-0.29.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/wheel-0.29.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-31655",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-31655         \n  Severity       : HIGH                   \n  Package        : pkg:pypi/redis@2.10.5  \n  Affected range : =2.10.5                \n  Fixed version  : not fixed              \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/redis-2.10.5.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/redis-2.10.5.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.5/site-packages/redis-2.10.5.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

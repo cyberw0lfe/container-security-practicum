@@ -1,0 +1,106 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-5363",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-5363"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-5363",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@3.0.10-r0?os_name=alpine&os_version=3.17 |\n| Affected range | <3.0.12-r0                                                      |\n| Fixed version  | 3.0.12-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<3.0.12-r0",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "3.0.12-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@3.0.10-r0?os_name=alpine&os_version=3.17"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-36617",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-36617: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-36617",
+              "help": {
+                "text": "A ReDoS issue was discovered in the URI component before 0.12.2 for Ruby. The URI parser mishandles invalid URLs that have specific characters. There is an increase in execution time for parsing strings to URI objects with `rfc2396_parser.rb` and `rfc3986_parser.rb`.\n\nNOTE: this issue exists becuse of an incomplete fix for CVE-2023-28755. Version 0.10.3 is also a fixed version.\n\n[The Ruby advisory recommends](https://www.ruby-lang.org/en/news/2023/06/29/redos-in-uri-CVE-2023-36617/) updating the uri gem to 0.12.2. In order to ensure compatibility with the bundled version in older Ruby series, you may update as follows instead:\n- For Ruby 3.0: Update to uri 0.10.3\n- For Ruby 3.1 and 3.2: Update to uri 0.12.2.\n\nYou can use gem update uri to update it. If you are using bundler, please add gem `uri`, `>= 0.12.2` (or other version mentioned above) to your Gemfile.\n",
+                "markdown": "> A ReDoS issue was discovered in the URI component before 0.12.2 for Ruby. The URI parser mishandles invalid URLs that have specific characters. There is an increase in execution time for parsing strings to URI objects with `rfc2396_parser.rb` and `rfc3986_parser.rb`.\n\nNOTE: this issue exists becuse of an incomplete fix for CVE-2023-28755. Version 0.10.3 is also a fixed version.\n\n[The Ruby advisory recommends](https://www.ruby-lang.org/en/news/2023/06/29/redos-in-uri-CVE-2023-36617/) updating the uri gem to 0.12.2. In order to ensure compatibility with the bundled version in older Ruby series, you may update as follows instead:\n- For Ruby 3.0: Update to uri 0.10.3\n- For Ruby 3.1 and 3.2: Update to uri 0.12.2.\n\nYou can use gem update uri to update it. If you are using bundler, please add gem `uri`, `>= 0.12.2` (or other version mentioned above) to your Gemfile.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:gem/uri@0.12.1                           |\n| Affected range | >=0.11.0,<0.12.2                             |\n| Fixed version  | 0.12.2                                       |\n| CVSS Score     |                                          5.3 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L |\n"
+              },
+              "properties": {
+                "affected_version": ">=0.11.0,<0.12.2",
+                "cvssV3": 5.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "fixed_version": "0.12.2",
+                "purls": [
+                  "pkg:gem/uri@0.12.1"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-5363",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-5363                                                    \n  Severity       : UNSPECIFIED                                                      \n  Package        : pkg:apk/alpine/openssl@3.0.10-r0?os_name=alpine&os_version=3.17  \n  Affected range : <3.0.12-r0                                                       \n  Fixed version  : 3.0.12-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-36617",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-36617                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:gem/uri@0.12.1                            \n  Affected range : >=0.11.0,<0.12.2                              \n  Fixed version  : 0.12.2                                        \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/ruby/gems/3.1.0/specifications/default/uri-0.12.1.gemspec"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

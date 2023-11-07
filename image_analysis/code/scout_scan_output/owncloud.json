@@ -1,0 +1,2869 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "2016-03-16",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "2016-03-16: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/2016-03-16",
+              "help": {
+                "text": "random_compat u ses insecure CSPRNG (`openssl_random_pseudo_bytes()`).\n",
+                "markdown": "> random_compat u ses insecure CSPRNG (`openssl_random_pseudo_bytes()`).\n\n|                |                                            |\n|----------------|--------------------------------------------|\n| Package        | pkg:composer/paragonie/random_compat@1.4.1 |\n| Affected range | <2.0                                       |\n| Fixed version  | 2.0.0                                      |\n"
+              },
+              "properties": {
+                "affected_version": "<2.0",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "2.0.0",
+                "purls": [
+                  "pkg:composer/paragonie/random_compat@1.4.1"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "GMS-2015-15",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GMS-2015-15: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/GMS-2015-15",
+              "help": {
+                "text": "`random_compat` uses `openssl_random_pseudo_bytes()` but this Cryptographically Secure Pseudorandom Number Generator (CSPRNG) is insecure.\n",
+                "markdown": "> `random_compat` uses `openssl_random_pseudo_bytes()` but this Cryptographically Secure Pseudorandom Number Generator (CSPRNG) is insecure.\n\n|                |                                            |\n|----------------|--------------------------------------------|\n| Package        | pkg:composer/paragonie/random_compat@1.4.1 |\n| Affected range | <2.0.0                                     |\n| Fixed version  | v2.0.0                                     |\n"
+              },
+              "properties": {
+                "affected_version": "<2.0.0",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "v2.0.0",
+                "purls": [
+                  "pkg:composer/paragonie/random_compat@1.4.1"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7068",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7068"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7068",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.33        |\n| Fixed version  | 7.2.33                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.33",
+                "cvssV3_severity": "LOW",
+                "fixed_version": "7.2.33",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "3.6",
+                "tags": [
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7066",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7066"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7066",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.31        |\n| Fixed version  | 7.2.31                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.31",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.2.31",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "4.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11048",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11048"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11048",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.31        |\n| Fixed version  | 7.2.31                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.31",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.2.31",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7063",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7063"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7063",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.31        |\n| Fixed version  | 7.2.31                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.31",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.2.31",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7070",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7070"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7070",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.23        |\n| Fixed version  | 7.3.23                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.23",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.3.23",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7071",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7071"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7071",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.26        |\n| Fixed version  | 7.3.26                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.26",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.3.26",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-21705",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-21705"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-21705",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.29        |\n| Fixed version  | 7.3.29                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.29",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.3.29",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-21707",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-21707"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-21707",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.33        |\n| Fixed version  | 7.3.33                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.33",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.3.33",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7064",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7064"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7064",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.31        |\n| Fixed version  | 7.2.31                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.31",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.2.31",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "5.4",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-31628",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-31628"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-31628",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.32        |\n| Fixed version  | 7.4.32                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.32",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.4.32",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "5.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11045",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11045"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11045",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.26        |\n| Fixed version  | 7.2.26                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.26",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.2.26",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "5.9",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0567",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-0567"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-0567",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.33        |\n| Fixed version  | 7.4.33                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.33",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.4.33",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "6.2",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11047",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11047"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11047",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.26        |\n| Fixed version  | 7.2.26                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.26",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.2.26",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11050",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11050"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11050",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.26        |\n| Fixed version  | 7.2.26                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.26",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.2.26",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7069",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7069"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7069",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.23        |\n| Fixed version  | 7.3.23                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.23",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.3.23",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-21706",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-21706"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-21706",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.31        |\n| Fixed version  | 7.3.31                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.31",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.3.31",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-31629",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-31629"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-31629",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.32        |\n| Fixed version  | 7.4.32                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.32",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.4.32",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-21703",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-21703"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-21703",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.32        |\n| Fixed version  | 7.3.32                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.32",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.3.32",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.0",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11041",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11041"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11041",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.21        |\n| Fixed version  | 7.2.21                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.21",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.2.21",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11042",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11042"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11042",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.21        |\n| Fixed version  | 7.2.21                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.21",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.2.21",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-32610",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-32610: Improper Link Resolution Before File Access ('Link Following')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-32610",
+              "help": {
+                "text": "In Archive_Tar before 1.4.14, symlinks can refer to targets outside of the extracted archive, a different vulnerability than CVE-2020-36193.\n",
+                "markdown": "> In Archive_Tar before 1.4.14, symlinks can refer to targets outside of the extracted archive, a different vulnerability than CVE-2020-36193.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/pear/archive_tar@1.4.3          |\n| Affected range | <1.4.14                                      |\n| Fixed version  | 1.4.14                                       |\n| CVSS Score     |                                          7.1 |\n| CVSS Vector    | CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<1.4.14",
+                "cvssV3": 7.1,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+                "fixed_version": "1.4.14",
+                "purls": [
+                  "pkg:composer/pear/archive_tar@1.4.3"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-31630",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-31630"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-31630",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.33        |\n| Fixed version  | 7.4.33                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.33",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.4.33",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9022",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9022"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9022",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.14        |\n| Fixed version  | 7.2.14                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.14",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.2.14",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9024",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9024"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9024",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.14        |\n| Fixed version  | 7.2.14                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.14",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.2.14",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9637",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9637"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9637",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.16        |\n| Fixed version  | 7.2.16                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.16",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.2.16",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9638",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9638"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9638",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.16        |\n| Fixed version  | 7.2.16                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.16",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.2.16",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9639",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9639"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9639",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.16        |\n| Fixed version  | 7.2.16                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.16",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.2.16",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9640",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9640"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9640",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.16        |\n| Fixed version  | 7.2.16                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.16",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.2.16",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-36193",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-36193: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-36193",
+              "help": {
+                "text": "Tar.php in Archive_Tar through 1.4.11 allows write operations with Directory Traversal due to inadequate checking of symbolic links, a related issue to CVE-2020-28948.\n\n### :exclamation: Note: \nThere was an [initial fix](https://github.com/pear/Archive_Tar/commit/cde460582ff389404b5b3ccb59374e9b389de916) for this vulnerability made in version `1.4.12`. That fix introduced a bug which was [fixed in 1.4.13](https://github.com/pear/Archive_Tar/pull/36). Therefore we have set the first-patched-version to `1.4.13` which the earliest working version that avoids this vulnerability.\n",
+                "markdown": "> Tar.php in Archive_Tar through 1.4.11 allows write operations with Directory Traversal due to inadequate checking of symbolic links, a related issue to CVE-2020-28948.\n\n### :exclamation: Note: \nThere was an [initial fix](https://github.com/pear/Archive_Tar/commit/cde460582ff389404b5b3ccb59374e9b389de916) for this vulnerability made in version `1.4.12`. That fix introduced a bug which was [fixed in 1.4.13](https://github.com/pear/Archive_Tar/pull/36). Therefore we have set the first-patched-version to `1.4.13` which the earliest working version that avoids this vulnerability.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/pear/archive_tar@1.4.3          |\n| Affected range | <=1.4.11                                     |\n| Fixed version  | 1.4.13                                       |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<=1.4.11",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                "fixed_version": "1.4.13",
+                "purls": [
+                  "pkg:composer/pear/archive_tar@1.4.3"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7062",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7062"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7062",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.31        |\n| Fixed version  | 7.2.31                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.31",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.2.31",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7067",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7067"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7067",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.17        |\n| Fixed version  | 7.3.17                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.17",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.3.17",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-21702",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-21702"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-21702",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.27        |\n| Fixed version  | 7.3.27                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.27",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.3.27",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-30130",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-30130: Improper Certificate Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-30130",
+              "help": {
+                "text": "phpseclib before 2.0.31 and 3.x before 3.0.7 mishandles RSA PKCS#1 v1.5 signature verification.\n",
+                "markdown": "> phpseclib before 2.0.31 and 3.x before 3.0.7 mishandles RSA PKCS#1 v1.5 signature verification.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/phpseclib/phpseclib@2.0.11      |\n| Affected range | <2.0.31                                      |\n| Fixed version  | 2.0.31                                       |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<2.0.31",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                "fixed_version": "2.0.31",
+                "purls": [
+                  "pkg:composer/phpseclib/phpseclib@2.0.11"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-31042",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-31042: Exposure of Sensitive Information to an Unauthorized Actor"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-31042",
+              "help": {
+                "text": "### Impact\n\n`Cookie` headers on requests are sensitive information. On making a request using the `https` scheme to a server which responds with a redirect to a URI with the `http` scheme, or on making a request to a server which responds with a redirect to a a URI to a different host, we should not forward the `Cookie` header on. Prior to this fix, only cookies that were managed by our cookie middleware would be safely removed, and any `Cookie` header manually added to the initial request would not be stripped. We now always strip it, and allow the cookie middleware to re-add any cookies that it deems should be there.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.4 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.7 or 7.4.4.\n\n### Workarounds\n\nAn alternative approach would be to use your own redirect middleware, rather than ours, if you are unable to upgrade. If you do not require or expect redirects to be followed, one should simply disable redirects all together.\n\n### References\n\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however - please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n",
+                "markdown": "> ### Impact\n\n`Cookie` headers on requests are sensitive information. On making a request using the `https` scheme to a server which responds with a redirect to a URI with the `http` scheme, or on making a request to a server which responds with a redirect to a a URI to a different host, we should not forward the `Cookie` header on. Prior to this fix, only cookies that were managed by our cookie middleware would be safely removed, and any `Cookie` header manually added to the initial request would not be stripped. We now always strip it, and allow the cookie middleware to re-add any cookies that it deems should be there.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.4 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.7 or 7.4.4.\n\n### Workarounds\n\nAn alternative approach would be to use your own redirect middleware, rather than ours, if you are unable to upgrade. If you do not require or expect redirects to be followed, one should simply disable redirects all together.\n\n### References\n\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however - please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/guzzlehttp/guzzle@5.3.3         |\n| Affected range | >=4.0.0,<6.5.7                               |\n| Fixed version  | 6.5.7                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.0.0,<6.5.7",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                "fixed_version": "6.5.7",
+                "purls": [
+                  "pkg:composer/guzzlehttp/guzzle@5.3.1",
+                  "pkg:composer/guzzlehttp/guzzle@5.3.3"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-31043",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-31043: Exposure of Sensitive Information to an Unauthorized Actor"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-31043",
+              "help": {
+                "text": "### Impact\n\n`Authorization` headers on requests are sensitive information. On making a request using the `https` scheme to a server which responds with a redirect to a URI with the `http` scheme, we should not forward the `Authorization` header on. This is much the same as to how we don't forward on the header if the host changes. Prior to this fix, `https` to `http` downgrades did not result in the `Authorization` header being removed, only changes to the host.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.4 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.7 or 7.4.4.\n\n### Workarounds\n\nAn alternative approach would be to use your own redirect middleware, rather than ours, if you are unable to upgrade. If you do not require or expect redirects to be followed, one should simply disable redirects all together.\n\n### References\n\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however - please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n",
+                "markdown": "> ### Impact\n\n`Authorization` headers on requests are sensitive information. On making a request using the `https` scheme to a server which responds with a redirect to a URI with the `http` scheme, we should not forward the `Authorization` header on. This is much the same as to how we don't forward on the header if the host changes. Prior to this fix, `https` to `http` downgrades did not result in the `Authorization` header being removed, only changes to the host.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.4 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.7 or 7.4.4.\n\n### Workarounds\n\nAn alternative approach would be to use your own redirect middleware, rather than ours, if you are unable to upgrade. If you do not require or expect redirects to be followed, one should simply disable redirects all together.\n\n### References\n\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however - please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/guzzlehttp/guzzle@5.3.1         |\n| Affected range | >=4.0.0,<6.5.7                               |\n| Fixed version  | 6.5.7                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.0.0,<6.5.7",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                "fixed_version": "6.5.7",
+                "purls": [
+                  "pkg:composer/guzzlehttp/guzzle@5.3.1",
+                  "pkg:composer/guzzlehttp/guzzle@5.3.3"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0662",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-0662"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-0662",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.33        |\n| Fixed version  | 7.4.33                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.33",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.4.33",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-31090",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-31090: Exposure of Sensitive Information to an Unauthorized Actor"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-31090",
+              "help": {
+                "text": "### Impact\n\n`Authorization` headers on requests are sensitive information. When using our Curl handler, it is possible to use the `CURLOPT_HTTPAUTH` option to specify an `Authorization` header. On making a request which responds with a redirect to a URI with a different origin, if we choose to follow it, we should remove the `CURLOPT_HTTPAUTH` and `CURLOPT_USERPWD` options before continuing, stopping curl from appending the `Authorization` header to the new request. Previously, we would only consider a change in host. Now, we consider any change in host, port or scheme to be a change in origin.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.5 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.8 or 7.4.5. Note that a partial fix was implemented in Guzzle 7.4.2, where a change in host would trigger removal of the curl-added Authorization header, however this earlier fix did not cover change in scheme or change in port.\n\n### Workarounds\n\nIf you do not require or expect redirects to be followed, one should simply disable redirects all together. Alternatively, one can specify to use the Guzzle stream handler backend, rather than curl.\n\n### References\n\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n* [CVE-2022-27776](https://curl.se/docs/CVE-2022-27776.html)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however - please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n",
+                "markdown": "> ### Impact\n\n`Authorization` headers on requests are sensitive information. When using our Curl handler, it is possible to use the `CURLOPT_HTTPAUTH` option to specify an `Authorization` header. On making a request which responds with a redirect to a URI with a different origin, if we choose to follow it, we should remove the `CURLOPT_HTTPAUTH` and `CURLOPT_USERPWD` options before continuing, stopping curl from appending the `Authorization` header to the new request. Previously, we would only consider a change in host. Now, we consider any change in host, port or scheme to be a change in origin.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.5 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.8 or 7.4.5. Note that a partial fix was implemented in Guzzle 7.4.2, where a change in host would trigger removal of the curl-added Authorization header, however this earlier fix did not cover change in scheme or change in port.\n\n### Workarounds\n\nIf you do not require or expect redirects to be followed, one should simply disable redirects all together. Alternatively, one can specify to use the Guzzle stream handler backend, rather than curl.\n\n### References\n\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n* [CVE-2022-27776](https://curl.se/docs/CVE-2022-27776.html)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however - please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/guzzlehttp/guzzle@5.3.1         |\n| Affected range | <6.5.8                                       |\n| Fixed version  | 6.5.8                                        |\n| CVSS Score     |                                          7.7 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<6.5.8",
+                "cvssV3": 7.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+                "fixed_version": "6.5.8",
+                "purls": [
+                  "pkg:composer/guzzlehttp/guzzle@5.3.1",
+                  "pkg:composer/guzzlehttp/guzzle@5.3.3"
+                ],
+                "security-severity": "7.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-31091",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-31091: Exposure of Sensitive Information to an Unauthorized Actor"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-31091",
+              "help": {
+                "text": "### Impact\n\n`Authorization` and `Cookie` headers on requests are sensitive information. On making a request which responds with a redirect to a URI with a different port, if we choose to follow it, we should remove the `Authorization` and `Cookie` headers from the request, before containing. Previously, we would only consider a change in host or scheme downgrade. Now, we consider any change in host, port or scheme to be a change in origin.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.5 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.8 or 7.4.5.\n\n### Workarounds\n\nAn alternative approach would be to use your own redirect middleware, rather than ours, if you are unable to upgrade. If you do not require or expect redirects to be followed, one should simply disable redirects all together.\n\n### References\n\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n* [CVE-2022-27776](https://curl.se/docs/CVE-2022-27776.html)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n",
+                "markdown": "> ### Impact\n\n`Authorization` and `Cookie` headers on requests are sensitive information. On making a request which responds with a redirect to a URI with a different port, if we choose to follow it, we should remove the `Authorization` and `Cookie` headers from the request, before containing. Previously, we would only consider a change in host or scheme downgrade. Now, we consider any change in host, port or scheme to be a change in origin.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.5 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.8 or 7.4.5.\n\n### Workarounds\n\nAn alternative approach would be to use your own redirect middleware, rather than ours, if you are unable to upgrade. If you do not require or expect redirects to be followed, one should simply disable redirects all together.\n\n### References\n\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n* [CVE-2022-27776](https://curl.se/docs/CVE-2022-27776.html)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/guzzlehttp/guzzle@5.3.1         |\n| Affected range | <6.5.8                                       |\n| Fixed version  | 6.5.8                                        |\n| CVSS Score     |                                          7.7 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<6.5.8",
+                "cvssV3": 7.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+                "fixed_version": "6.5.8",
+                "purls": [
+                  "pkg:composer/guzzlehttp/guzzle@5.3.1",
+                  "pkg:composer/guzzlehttp/guzzle@5.3.3"
+                ],
+                "security-severity": "7.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-28948",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-28948: Deserialization of Untrusted Data"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-28948",
+              "help": {
+                "text": "Archive_Tar through 1.4.10 allows an unserialization attack because `phar:` is blocked but `PHAR:` is not blocked. See: https://github.com/pear/Archive_Tar/issues/33\n",
+                "markdown": "> Archive_Tar through 1.4.10 allows an unserialization attack because `phar:` is blocked but `PHAR:` is not blocked. See: https://github.com/pear/Archive_Tar/issues/33\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/pear/archive_tar@1.4.3          |\n| Affected range | <1.4.11                                      |\n| Fixed version  | 1.4.11                                       |\n| CVSS Score     |                                          7.8 |\n| CVSS Vector    | CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.4.11",
+                "cvssV3": 7.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "fixed_version": "1.4.11",
+                "purls": [
+                  "pkg:composer/pear/archive_tar@1.4.3"
+                ],
+                "security-severity": "7.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-28949",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-28949: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-28949",
+              "help": {
+                "text": "Archive_Tar through 1.4.10 has `://` filename sanitization only to address phar attacks, and thus any other stream-wrapper attack (such as `file://` to overwrite files) can still succeed. See: https://github.com/pear/Archive_Tar/issues/33\n",
+                "markdown": "> Archive_Tar through 1.4.10 has `://` filename sanitization only to address phar attacks, and thus any other stream-wrapper attack (such as `file://` to overwrite files) can still succeed. See: https://github.com/pear/Archive_Tar/issues/33\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/pear/archive_tar@1.4.3          |\n| Affected range | <1.4.11                                      |\n| Fixed version  | 1.4.11                                       |\n| CVSS Score     |                                          7.8 |\n| CVSS Vector    | CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.4.11",
+                "cvssV3": 7.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "fixed_version": "1.4.11",
+                "purls": [
+                  "pkg:composer/pear/archive_tar@1.4.3"
+                ],
+                "security-severity": "7.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-29248",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-29248: Exposure of Sensitive Information to an Unauthorized Actor"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-29248",
+              "help": {
+                "text": "### Impact\n\nPrevious version of Guzzle contain a vulnerability with the cookie middleware. The vulnerability is that it is not checked if the cookie domain equals the domain of the server which sets the cookie via the `Set-Cookie` header, allowing a malicious server to set cookies for unrelated domains. For example an attacker at `www.example.com` might set a session cookie for `api.example.net`, logging the Guzzle client into their account and retrieving private API requests from the security log of their account.\n\nNote that our cookie middleware is disabled by default, so most library consumers will not be affected by this issue. Only those who manually add the cookie middleware to the handler stack or construct the client with `['cookies' => true]` are affected. Moreover, those who do not use the same Guzzle client to call multiple domains and have disabled redirect forwarding are not affected by this vulnerability.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.3 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.6 or 7.4.3.\n\n### Workarounds\n\nIf you do not need support for cookies, turn off the cookie middleware. It is already off by default, but if you have turned it on and no longer need it, turn it off.\n\n### References\n\n* [RFC6265 Section 5.3](https://datatracker.ietf.org/doc/html/rfc6265#section-5.3)\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however - please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n",
+                "markdown": "> ### Impact\n\nPrevious version of Guzzle contain a vulnerability with the cookie middleware. The vulnerability is that it is not checked if the cookie domain equals the domain of the server which sets the cookie via the `Set-Cookie` header, allowing a malicious server to set cookies for unrelated domains. For example an attacker at `www.example.com` might set a session cookie for `api.example.net`, logging the Guzzle client into their account and retrieving private API requests from the security log of their account.\n\nNote that our cookie middleware is disabled by default, so most library consumers will not be affected by this issue. Only those who manually add the cookie middleware to the handler stack or construct the client with `['cookies' => true]` are affected. Moreover, those who do not use the same Guzzle client to call multiple domains and have disabled redirect forwarding are not affected by this vulnerability.\n\n### Patches\n\nAffected Guzzle 7 users should upgrade to Guzzle 7.4.3 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.6 or 7.4.3.\n\n### Workarounds\n\nIf you do not need support for cookies, turn off the cookie middleware. It is already off by default, but if you have turned it on and no longer need it, turn it off.\n\n### References\n\n* [RFC6265 Section 5.3](https://datatracker.ietf.org/doc/html/rfc6265#section-5.3)\n* [RFC9110 Section 15.4](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)\n\n### For more information\n\nIf you have any questions or comments about this advisory, please get in touch with us in `#guzzle` on the [PHP HTTP Slack](https://php-http.slack.com/). Do not report additional security advisories in that public channel, however - please follow our [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/guzzlehttp/guzzle@5.3.3         |\n| Affected range | <6.5.6                                       |\n| Fixed version  | 6.5.6                                        |\n| CVSS Score     |                                          8.0 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<6.5.6",
+                "cvssV3": 8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N",
+                "fixed_version": "6.5.6",
+                "purls": [
+                  "pkg:composer/guzzlehttp/guzzle@5.3.1",
+                  "pkg:composer/guzzlehttp/guzzle@5.3.3"
+                ],
+                "security-severity": "8.0",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-31625",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-31625"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-31625",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.32        |\n| Fixed version  | 7.4.32                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.32",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.4.32",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "8.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0568",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-0568"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-0568",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.33        |\n| Fixed version  | 7.4.33                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.33",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.4.33",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "8.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2018-1000888",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2018-1000888"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2018-1000888",
+              "help": {
+                "text": "PEAR Archive_Tar version 1.4.3 and earlier contains a CWE-502, CWE-915 vulnerability in the Archive_Tar class. There are several file operations with `$v_header['filename']` as parameter (such as file_exists, is_file, is_dir, etc). When extract is called without a specific prefix path, we can trigger unserialization by crafting a tar file with `phar://[path_to_malicious_phar_file]` as path. Object injection can be used to trigger destruct in the loaded PHP classes, e.g. the Archive_Tar class itself. With Archive_Tar object injection, arbitrary file deletion can occur because `@unlink($this->_temp_tarname)` is called. If another class with useful gadget is loaded, it may possible to cause remote code execution that can result in files being deleted or possibly modified. This vulnerability appears to have been fixed in 1.4.4.\n",
+                "markdown": "> PEAR Archive_Tar version 1.4.3 and earlier contains a CWE-502, CWE-915 vulnerability in the Archive_Tar class. There are several file operations with `$v_header['filename']` as parameter (such as file_exists, is_file, is_dir, etc). When extract is called without a specific prefix path, we can trigger unserialization by crafting a tar file with `phar://[path_to_malicious_phar_file]` as path. Object injection can be used to trigger destruct in the loaded PHP classes, e.g. the Archive_Tar class itself. With Archive_Tar object injection, arbitrary file deletion can occur because `@unlink($this->_temp_tarname)` is called. If another class with useful gadget is loaded, it may possible to cause remote code execution that can result in files being deleted or possibly modified. This vulnerability appears to have been fixed in 1.4.4.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/pear/archive_tar@1.4.3          |\n| Affected range | <1.4.4                                       |\n| Fixed version  | 1.4.4                                        |\n| CVSS Score     |                                          8.8 |\n| CVSS Vector    | CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.4.4",
+                "cvssV3": 8.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "fixed_version": "1.4.4",
+                "purls": [
+                  "pkg:composer/pear/archive_tar@1.4.3"
+                ],
+                "security-severity": "8.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7065",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7065"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7065",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.16        |\n| Fixed version  | 7.3.16                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.16",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.3.16",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "8.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-31626",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-31626"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-31626",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.32        |\n| Fixed version  | 7.4.32                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.32",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.4.32",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "8.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11034",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11034"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11034",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.17        |\n| Fixed version  | 7.2.17                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.17",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.17",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.1",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11035",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11035"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11035",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.17        |\n| Fixed version  | 7.2.17                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.17",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.17",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.1",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11036",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11036"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11036",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.18        |\n| Fixed version  | 7.2.18                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.18",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.18",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.1",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11039",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11039"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11039",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.19        |\n| Fixed version  | 7.2.19                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.19",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.19",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.1",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11040",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11040"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11040",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.19        |\n| Fixed version  | 7.2.19                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.19",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.19",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.1",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7059",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7059"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7059",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.27        |\n| Fixed version  | 7.2.27                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.27",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.27",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.1",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7060",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7060"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7060",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.27        |\n| Fixed version  | 7.2.27                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.27",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.27",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.1",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7061",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7061"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7061",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.15        |\n| Fixed version  | 7.3.15                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.15",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.3.15",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.1",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11043",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-11043"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-11043",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.24        |\n| Fixed version  | 7.2.24                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.24",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.24",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-13224",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-13224"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-13224",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.3.9         |\n| Fixed version  | 7.3.9                  |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.3.9",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.3.9",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9020",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9020"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9020",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.14        |\n| Fixed version  | 7.2.14                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.14",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.14",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9021",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9021"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9021",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.14        |\n| Fixed version  | 7.2.14                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.14",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.14",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9023",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9023"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9023",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.14        |\n| Fixed version  | 7.2.14                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.14",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.14",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-9641",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-9641"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-9641",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.2.16        |\n| Fixed version  | 7.2.16                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.2.16",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.2.16",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-21708",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-21708"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-21708",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.28        |\n| Fixed version  | 7.4.28                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.28",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.4.28",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-32708",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-32708: Time-of-check Time-of-use (TOCTOU) Race Condition"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-32708",
+              "help": {
+                "text": "### Impact\n\nThe whitespace normalisation using in 1.x and 2.x removes any unicode whitespace. Under certain specific conditions this could potentially allow a malicious user to execute code remotely.\n\nThe conditions: \n\n- A user is allowed to supply the path or filename of an uploaded file.\n- The supplied path or filename is not checked against unicode chars.\n- The supplied pathname checked against an extension deny-list, not an allow-list.\n- The supplied path or filename contains a unicode whitespace char in the extension.\n- The uploaded file is stored in a directory that allows PHP code to be executed.\n\nGiven these conditions are met a user can upload and execute arbitrary code on the system under attack.\n\n### Patches\n\nThe unicode whitespace removal has been replaced with a rejection (exception).\n\nThe library has been patched in:\n- 1.x: https://github.com/thephpleague/flysystem/commit/f3ad69181b8afed2c9edf7be5a2918144ff4ea32\n- 2.x: https://github.com/thephpleague/flysystem/commit/a3c694de9f7e844b76f9d1b61296ebf6e8d89d74\n\n### Workarounds\n\nFor 1.x users, upgrade to 1.1.4. For 2.x users, upgrade to 2.1.1.\n\n",
+                "markdown": "> ### Impact\n\nThe whitespace normalisation using in 1.x and 2.x removes any unicode whitespace. Under certain specific conditions this could potentially allow a malicious user to execute code remotely.\n\nThe conditions: \n\n- A user is allowed to supply the path or filename of an uploaded file.\n- The supplied path or filename is not checked against unicode chars.\n- The supplied pathname checked against an extension deny-list, not an allow-list.\n- The supplied path or filename contains a unicode whitespace char in the extension.\n- The uploaded file is stored in a directory that allows PHP code to be executed.\n\nGiven these conditions are met a user can upload and execute arbitrary code on the system under attack.\n\n### Patches\n\nThe unicode whitespace removal has been replaced with a rejection (exception).\n\nThe library has been patched in:\n- 1.x: https://github.com/thephpleague/flysystem/commit/f3ad69181b8afed2c9edf7be5a2918144ff4ea32\n- 2.x: https://github.com/thephpleague/flysystem/commit/a3c694de9f7e844b76f9d1b61296ebf6e8d89d74\n\n### Workarounds\n\nFor 1.x users, upgrade to 1.1.4. For 2.x users, upgrade to 2.1.1.\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:composer/league/flysystem@1.0.46         |\n| Affected range | <1.1.4                                       |\n| Fixed version  | 1.1.4                                        |\n| CVSS Score     |                                          9.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.4",
+                "cvssV3": 9.8,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "1.1.4",
+                "purls": [
+                  "pkg:composer/league/flysystem@1.0.46"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-37454",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-37454"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-37454",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                        |\n|----------------|------------------------|\n| Package        | pkg:generic/php@7.2.13 |\n| Affected range | >=7.0.0,<7.4.33        |\n| Fixed version  | 7.4.33                 |\n"
+              },
+              "properties": {
+                "affected_version": ">=7.0.0,<7.4.33",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "7.4.33",
+                "purls": [
+                  "pkg:generic/php@7.2.13"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "2016-03-16",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : 2016-03-16                                  \n  Severity       : UNSPECIFIED                                 \n  Package        : pkg:composer/paragonie/random_compat@1.4.1  \n  Affected range : <2.0                                        \n  Fixed version  : 2.0.0                                       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/updater/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GMS-2015-15",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : GMS-2015-15                                 \n  Severity       : UNSPECIFIED                                 \n  Package        : pkg:composer/paragonie/random_compat@1.4.1  \n  Affected range : <2.0.0                                      \n  Fixed version  : v2.0.0                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/updater/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7068",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7068           \n  Severity       : LOW                     \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.33         \n  Fixed version  : 7.2.33                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7066",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7066           \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.31         \n  Fixed version  : 7.2.31                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11048",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11048          \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.31         \n  Fixed version  : 7.2.31                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7063",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7063           \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.31         \n  Fixed version  : 7.2.31                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7070",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7070           \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.23         \n  Fixed version  : 7.3.23                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7071",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7071           \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.26         \n  Fixed version  : 7.3.26                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-21705",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-21705          \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.29         \n  Fixed version  : 7.3.29                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-21707",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-21707          \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.33         \n  Fixed version  : 7.3.33                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7064",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7064           \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.31         \n  Fixed version  : 7.2.31                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31628",
+          "ruleIndex": 11,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31628          \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.32         \n  Fixed version  : 7.4.32                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11045",
+          "ruleIndex": 12,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11045          \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.26         \n  Fixed version  : 7.2.26                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0567",
+          "ruleIndex": 13,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-0567           \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.33         \n  Fixed version  : 7.4.33                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11047",
+          "ruleIndex": 14,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11047          \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.26         \n  Fixed version  : 7.2.26                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11050",
+          "ruleIndex": 15,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11050          \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.26         \n  Fixed version  : 7.2.26                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7069",
+          "ruleIndex": 16,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7069           \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.23         \n  Fixed version  : 7.3.23                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-21706",
+          "ruleIndex": 17,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-21706          \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.31         \n  Fixed version  : 7.3.31                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31629",
+          "ruleIndex": 18,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31629          \n  Severity       : MEDIUM                  \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.32         \n  Fixed version  : 7.4.32                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-21703",
+          "ruleIndex": 19,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-21703          \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.32         \n  Fixed version  : 7.3.32                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11041",
+          "ruleIndex": 20,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11041          \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.21         \n  Fixed version  : 7.2.21                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11042",
+          "ruleIndex": 21,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11042          \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.21         \n  Fixed version  : 7.2.21                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-32610",
+          "ruleIndex": 22,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-32610                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/pear/archive_tar@1.4.3           \n  Affected range : <1.4.14                                       \n  Fixed version  : 1.4.14                                        \n  CVSS Score     : 7.1                                           \n  CVSS Vector    : CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31630",
+          "ruleIndex": 23,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31630          \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.33         \n  Fixed version  : 7.4.33                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9022",
+          "ruleIndex": 24,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9022           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.14         \n  Fixed version  : 7.2.14                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9024",
+          "ruleIndex": 25,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9024           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.14         \n  Fixed version  : 7.2.14                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9637",
+          "ruleIndex": 26,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9637           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.16         \n  Fixed version  : 7.2.16                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9638",
+          "ruleIndex": 27,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9638           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.16         \n  Fixed version  : 7.2.16                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9639",
+          "ruleIndex": 28,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9639           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.16         \n  Fixed version  : 7.2.16                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9640",
+          "ruleIndex": 29,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9640           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.16         \n  Fixed version  : 7.2.16                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-36193",
+          "ruleIndex": 30,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-36193                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/pear/archive_tar@1.4.3           \n  Affected range : <=1.4.11                                      \n  Fixed version  : 1.4.13                                        \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7062",
+          "ruleIndex": 31,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7062           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.31         \n  Fixed version  : 7.2.31                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7067",
+          "ruleIndex": 32,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7067           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.17         \n  Fixed version  : 7.3.17                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-21702",
+          "ruleIndex": 33,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-21702          \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.27         \n  Fixed version  : 7.3.27                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-30130",
+          "ruleIndex": 34,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-30130                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/phpseclib/phpseclib@2.0.11       \n  Affected range : <2.0.31                                       \n  Fixed version  : 2.0.31                                        \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31042",
+          "ruleIndex": 35,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31042                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.1          \n  Affected range : >=4.0.0,<6.5.7                                \n  Fixed version  : 6.5.7                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/updater/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31042",
+          "ruleIndex": 35,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31042                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.3          \n  Affected range : >=4.0.0,<6.5.7                                \n  Fixed version  : 6.5.7                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31043",
+          "ruleIndex": 36,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31043                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.3          \n  Affected range : >=4.0.0,<6.5.7                                \n  Fixed version  : 6.5.7                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31043",
+          "ruleIndex": 36,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31043                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.1          \n  Affected range : >=4.0.0,<6.5.7                                \n  Fixed version  : 6.5.7                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/updater/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0662",
+          "ruleIndex": 37,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-0662           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.33         \n  Fixed version  : 7.4.33                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31090",
+          "ruleIndex": 38,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31090                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.3          \n  Affected range : <6.5.8                                        \n  Fixed version  : 6.5.8                                         \n  CVSS Score     : 7.7                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31090",
+          "ruleIndex": 38,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31090                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.1          \n  Affected range : <6.5.8                                        \n  Fixed version  : 6.5.8                                         \n  CVSS Score     : 7.7                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/updater/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31091",
+          "ruleIndex": 39,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31091                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.3          \n  Affected range : <6.5.8                                        \n  Fixed version  : 6.5.8                                         \n  CVSS Score     : 7.7                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31091",
+          "ruleIndex": 39,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31091                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.1          \n  Affected range : <6.5.8                                        \n  Fixed version  : 6.5.8                                         \n  CVSS Score     : 7.7                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/updater/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-28948",
+          "ruleIndex": 40,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-28948                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/pear/archive_tar@1.4.3           \n  Affected range : <1.4.11                                       \n  Fixed version  : 1.4.11                                        \n  CVSS Score     : 7.8                                           \n  CVSS Vector    : CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-28949",
+          "ruleIndex": 41,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-28949                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/pear/archive_tar@1.4.3           \n  Affected range : <1.4.11                                       \n  Fixed version  : 1.4.11                                        \n  CVSS Score     : 7.8                                           \n  CVSS Vector    : CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29248",
+          "ruleIndex": 42,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-29248                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.1          \n  Affected range : <6.5.6                                        \n  Fixed version  : 6.5.6                                         \n  CVSS Score     : 8.0                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/updater/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29248",
+          "ruleIndex": 42,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-29248                                \n  Severity       : HIGH                                          \n  Package        : pkg:composer/guzzlehttp/guzzle@5.3.3          \n  Affected range : <6.5.6                                        \n  Fixed version  : 6.5.6                                         \n  CVSS Score     : 8.0                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31625",
+          "ruleIndex": 43,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31625          \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.32         \n  Fixed version  : 7.4.32                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0568",
+          "ruleIndex": 44,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-0568           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.33         \n  Fixed version  : 7.4.33                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2018-1000888",
+          "ruleIndex": 45,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2018-1000888                              \n  Severity       : HIGH                                          \n  Package        : pkg:composer/pear/archive_tar@1.4.3           \n  Affected range : <1.4.4                                        \n  Fixed version  : 1.4.4                                         \n  CVSS Score     : 8.8                                           \n  CVSS Vector    : CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7065",
+          "ruleIndex": 46,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7065           \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.16         \n  Fixed version  : 7.3.16                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-31626",
+          "ruleIndex": 47,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-31626          \n  Severity       : HIGH                    \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.32         \n  Fixed version  : 7.4.32                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11034",
+          "ruleIndex": 48,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11034          \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.17         \n  Fixed version  : 7.2.17                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11035",
+          "ruleIndex": 49,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11035          \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.17         \n  Fixed version  : 7.2.17                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11036",
+          "ruleIndex": 50,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11036          \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.18         \n  Fixed version  : 7.2.18                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11039",
+          "ruleIndex": 51,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11039          \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.19         \n  Fixed version  : 7.2.19                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11040",
+          "ruleIndex": 52,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11040          \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.19         \n  Fixed version  : 7.2.19                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7059",
+          "ruleIndex": 53,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7059           \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.27         \n  Fixed version  : 7.2.27                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7060",
+          "ruleIndex": 54,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7060           \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.27         \n  Fixed version  : 7.2.27                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7061",
+          "ruleIndex": 55,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7061           \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.15         \n  Fixed version  : 7.3.15                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11043",
+          "ruleIndex": 56,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-11043          \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.24         \n  Fixed version  : 7.2.24                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-13224",
+          "ruleIndex": 57,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-13224          \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.3.9          \n  Fixed version  : 7.3.9                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9020",
+          "ruleIndex": 58,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9020           \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.14         \n  Fixed version  : 7.2.14                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9021",
+          "ruleIndex": 59,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9021           \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.14         \n  Fixed version  : 7.2.14                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9023",
+          "ruleIndex": 60,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9023           \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.14         \n  Fixed version  : 7.2.14                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-9641",
+          "ruleIndex": 61,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-9641           \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.2.16         \n  Fixed version  : 7.2.16                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-21708",
+          "ruleIndex": 62,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-21708          \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.28         \n  Fixed version  : 7.4.28                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-32708",
+          "ruleIndex": 63,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-32708                                \n  Severity       : CRITICAL                                      \n  Package        : pkg:composer/league/flysystem@1.0.46          \n  Affected range : <1.1.4                                        \n  Fixed version  : 1.1.4                                         \n  CVSS Score     : 9.8                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/owncloud/lib/composer/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-37454",
+          "ruleIndex": 64,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-37454          \n  Severity       : CRITICAL                \n  Package        : pkg:generic/php@7.2.13  \n  Affected range : >=7.0.0,<7.4.33         \n  Fixed version  : 7.4.33                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/apache2/modules/libphp7.so"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

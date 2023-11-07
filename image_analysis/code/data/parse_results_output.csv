@@ -1,0 +1,176 @@
+Name,Description,Status,Star Count,Pull Count,Last Updated,Low - Fixable,Low - No Fix,Medium - Fixable,Medium - No Fix,High - Fixable,High - No Fix,Critical - Fixable,Critical - No Fix,Unspecified - Fixable,Unspecified - No Fix
+centos,DEPRECATED; The official build of CentOS.,active,7659,1132519505,2022-12-09T19:13:54.287062Z,20,10,136,23,21,4,0,0,0,0
+busybox,Busybox base image.,active,3118,8276724970,2023-07-19T00:02:43.49452Z,0,0,0,0,0,0,0,0,0,0
+ubuntu,Ubuntu is a Debian-based Linux operating system based on free software.,active,16519,8136854258,2023-10-13T09:41:55.011281Z,3,9,1,3,0,0,0,0,0,0
+scratch,an explicitly empty image especially for building images "FROM scratch",active,948,268577,2013-06-25T00:07:08Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+fedora,Official Docker builds of Fedora,active,1174,114530317,2023-10-09T23:21:03.463741Z,0,0,0,0,0,0,0,0,0,0
+registry,Distribution implementation for storing and distributing of container images and artifacts,active,3903,1616002589,2023-10-21T03:31:29.873686Z,0,0,0,0,1,0,0,0,2,0
+hipache,DEPRECATED (upstream); use "traefik" "nginx" "haproxy" "httpd" instead,active,85,433214,2016-06-01T23:19:03.96624Z,254,206,432,34,73,17,2,0,4,0
+docker-dev,DEPRECATED; use https://github.com/moby/moby/blob/master/Dockerfile,active,103,2573604,2016-03-29T23:38:26.378586Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+debian,Debian is a Linux distribution that's composed entirely of free and open-source software.,active,4822,1130823288,2023-10-11T19:01:46.824242Z,0,16,0,0,0,0,0,1,0,0
+cirros,CirrOS is a Tiny OS that specializes in running on a cloud.,active,78,6503552,2023-06-01T18:29:53.568686Z,0,0,0,0,0,0,0,0,0,0
+crux,DEPRECATED; lacking active maintainer,active,40,867447,2020-09-16T19:22:24.585172Z,0,0,0,0,0,0,0,0,0,0
+ubuntu-upstart,DEPRECATED as is Upstart (find other process supervisor!),active,115,1754812,2016-04-04T21:21:19.946273Z,204,60,226,18,17,0,0,0,0,0
+buildpack-deps,A collection of common build dependencies used for installing various modules e.g. gems.,active,660,223169767,2023-10-13T11:43:46.085276Z,1,82,0,7,0,0,0,1,0,0
+nginx,Official build of Nginx.,active,19159,8573723816,2023-10-25T01:48:31.382698Z,0,34,0,3,0,0,0,1,0,0
+node,Node.js is a JavaScript-based platform for server-side and networking applications.,active,13004,4665428867,2023-10-25T22:32:31.527977Z,1,82,0,7,0,0,0,1,0,0
+mysql,MySQL is a widely used open-source relational database management system (RDBMS).,active,14552,3864873871,2023-10-27T18:04:13.112147Z,5,0,28,0,50,0,2,0,4,0
+wordpress,The WordPress rich content management system can utilize plugins widgets and themes.,active,5382,1230555325,2023-10-26T01:55:48.65868Z,0,123,0,5,0,0,0,1,0,3
+postgres,The PostgreSQL object-relational database system provides reliability and data integrity.,active,12734,5925679194,2023-10-17T20:28:01.983774Z,3,32,11,0,28,0,2,1,1,0
+redis,Redis is an open source key-value store that functions as a data structure server.,active,12437,5994034865,2023-10-19T10:10:43.411154Z,3,19,11,0,28,0,2,1,1,0
+java,DEPRECATED; use "openjdk" (or other JDK implementations) instead,active,1997,142205304,2017-03-23T17:58:27.550146Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+mongo,MongoDB document databases provide high availability and easy scalability.,active,9906,3928672726,2023-10-26T23:59:33.453908Z,5,11,12,3,28,0,2,0,1,0
+rails,DEPRECATED; use "ruby" instead,active,908,8901139,2017-01-06T19:07:44.686101Z,7,1,40,0,69,0,16,0,13,0
+ruby,Ruby is a dynamic reflective object-oriented general-purpose open-source programming language.,active,2283,865448039,2023-10-21T03:49:55.630076Z,1,82,1,7,0,0,0,1,0,0
+python,Python is an interpreted interactive object-oriented open-source programming language.,active,9131,7040684374,2023-10-19T07:49:06.813963Z,1,92,0,7,0,0,0,1,0,0
+ubuntu-debootstrap,DEPRECATED; use "ubuntu" instead,active,52,8877716,2016-04-04T21:20:04.94269Z,80,43,66,7,5,0,0,0,0,0
+perl,Perl is a high-level general-purpose interpreted dynamic programming language.,active,450,232737118,2023-10-13T04:05:02.626291Z,1,82,0,7,0,0,0,1,0,0
+hello-world,Hello World! (an example of minimal Dockerization),active,2122,2284422182,2023-10-11T03:09:52.814685Z,0,0,0,0,0,0,0,0,0,0
+hylang,Hy is a Lisp dialect that translates expressions into Python's abstract syntax tree.,active,58,24262599,2023-10-26T02:18:25.023533Z,1,20,0,0,0,0,0,1,0,0
+gcc,The GNU Compiler Collection is a compiling system that supports several languages.,active,820,22592601,2023-10-21T03:57:01.499073Z,1,82,0,7,0,0,0,1,0,0
+jenkins,DEPRECATED; use "jenkins/jenkins:lts" instead,active,5668,148589268,2018-07-17T16:47:45.266614Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+opensuse,DEPRECATED; for current images by the openSUSE Project see opensuse/leap and opensuse/tumbleweed.,active,336,9409707,2019-05-30T20:47:55.862703Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+golang,Go (golang) is a general purpose higher-level imperative programming language.,active,4671,1975444587,2023-10-13T15:04:42.039029Z,1,41,0,1,0,0,0,1,0,0
+neurodebian,NeuroDebian provides neuroscience research software for Debian Ubuntu and other derivatives.,active,105,9809288,2023-10-13T08:46:07.297195Z,0,31,0,0,0,0,0,1,0,0
+clojure,Clojure is a dialect of Lisp that runs on the JVM.,active,353,35296303,2023-10-19T07:35:38.768629Z,2,38,6,1,0,0,0,1,0,0
+php,While designed for web development the PHP scripting language also provides general-purpose use.,active,7290,1088627465,2023-10-21T07:21:26.455554Z,1,39,0,0,0,0,0,1,0,0
+jruby,JRuby (http://www.jruby.org) is an implementation of Ruby (http://www.ruby-lang.org) on the JVM.,active,116,49764946,2023-10-19T02:46:29.347829Z,2,44,2,45,8,3,0,0,0,0
+mageia,Official Mageia base image,active,44,1606033,2021-04-08T19:40:26.279911Z,0,0,0,0,0,0,0,0,0,0
+crate,CrateDB is an open-source distributed SQL database empowering you to turn data into business value.,active,224,17217744,2023-10-17T01:39:03.383855Z,0,0,7,1,8,0,0,0,0,0
+php-zendserver,Zend Server - the integrated PHP application platform for mobile and web apps.,active,212,4207570,2023-06-02T01:58:11.064373Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+tomcat,Apache Tomcat is an open source implementation of the Java Servlet and JavaServer Pages technologies,active,3596,706297294,2023-10-25T03:40:05.76204Z,3,16,1,15,0,0,0,0,0,0
+mono,Mono is an open source implementation of Microsoft's .NET Framework,active,512,42192798,2023-10-12T08:55:45.336664Z,1,159,6,0,6,0,0,1,0,0
+haskell,Haskell is an advanced purely-functional programming language.,active,467,7766179,2023-10-17T22:44:45.264357Z,3,216,4,4,1,1,1,1,0,0
+glassfish,DEPRECATED; abandoned by the maintainer,active,159,1255501,2016-09-24T03:45:58.969886Z,2,1,13,0,43,1,26,0,1,0
+maven,Apache Maven is a software project management and comprehension tool.,active,1527,620129893,2023-10-25T03:19:54.724492Z,3,17,1,15,0,0,0,0,0,0
+httpd,The Apache HTTP Server Project,active,4579,4357117408,2023-10-19T20:02:53.953983Z,1,28,0,0,0,0,0,1,0,0
+sentry,DEPRECATED; https://develop.sentry.dev/self-hosted/,active,651,120454835,2019-10-19T09:22:56.635131Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+r-base,R is a system for statistical computation and graphics.,active,520,9233866,2023-10-12T12:45:19.885763Z,5,31,0,3,1,3,0,1,1,0
+mariadb,MariaDB Server is a high performing open source relational database forked from MySQL.,active,5558,2628305413,2023-10-13T12:25:44.057935Z,5,10,15,3,36,0,3,0,1,0
+thrift,DEPRECATED; lacking active maintainer,active,123,2978015,2021-10-01T07:17:20.409086Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+pypy,PyPy is a fast compliant alternative implementation of the Python language.,active,379,39255566,2023-10-26T01:55:41.5695Z,0,131,0,7,1,0,0,1,0,0
+django,DEPRECATED; use "python" instead,active,1203,22663834,2017-01-06T17:59:53.097137Z,0,0,6,0,5,0,2,0,0,0
+haproxy,HAProxy - The Reliable High Performance TCP/HTTP Load Balancer,active,1878,860210756,2023-10-24T01:35:34.376607Z,0,25,0,0,0,0,0,1,0,0
+memcached,Free & open source high-performance distributed memory object caching system.,active,2098,4402857683,2023-10-18T03:38:49.961214Z,1,19,0,0,0,0,0,1,0,0
+rabbitmq,RabbitMQ is an open source multi-protocol messaging broker.,active,4912,2644473077,2023-10-27T19:20:54.202109Z,3,9,1,3,0,0,0,0,0,0
+oraclelinux,Official Docker builds of Oracle Linux.,active,1026,33006734,2023-10-20T18:56:49.99251Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+odoo,Odoo (formerly known as OpenERP) is a suite of open-source business apps.,active,1267,36911883,2023-10-12T01:40:16.387711Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+rethinkdb,RethinkDB is an open-source document database that makes it easy to build and scale realtime apps.,active,616,74787021,2023-10-12T12:46:29.856516Z,0,36,0,0,0,0,0,1,0,0
+iojs,DEPRECATED; use "node" instead,active,143,17327760,2017-03-23T21:40:20.37399Z,2,1,18,1,37,0,8,0,10,0
+websphere-liberty,WebSphere Liberty multi-architecture images based on Ubuntu 18.04,active,297,23350967,2023-10-19T03:33:26.992628Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+irssi,irssi - The IRC client of the future,active,169,8046497,2023-10-21T02:39:04.429975Z,1,21,0,1,0,0,0,1,0,0
+swarm,DEPRECATED; use "docker swarm init" instead,active,1126,82687845,2020-09-16T20:31:01.272132Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+elasticsearch,Elasticsearch is a powerful open source search and analytics engine that makes data easy to explore.,active,6201,800679612,2023-09-22T01:40:59.572692Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+jetty,Jetty provides a Web server and javax.servlet container.,active,404,38682878,2023-10-25T03:14:05.22937Z,2,14,0,16,0,0,0,0,0,0
+ghost,Ghost is a free and open source blogging platform written in JavaScript,active,1665,353990789,2023-10-26T01:32:43.414604Z,4,25,24,3,39,3,4,1,4,1
+celery,DEPRECATED; use "python" instead,active,315,3422846,2017-06-20T03:17:04.117669Z,1,0,2,0,4,1,0,0,0,0
+percona,Percona Server is a fork of the MySQL relational database management system created by Percona.,active,620,165021189,2023-10-20T19:17:00.997968Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+aerospike,Aerospike – the reliable high performance distributed database optimized for flash and RAM.,active,142,17357510,2023-10-18T00:56:18.055549Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+logstash,Logstash is a tool for managing events and logs.,active,2157,187260109,2023-09-22T02:01:01.597788Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+julia,Julia is a high-level high-performance dynamic programming language for technical computing.,active,329,14362404,2023-10-20T23:08:15.990218Z,1,24,0,0,0,0,0,1,0,0
+alpine,A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size!,active,10379,10047153788,2023-09-28T22:14:11.264864Z,0,0,0,0,0,0,0,0,1,0
+rakudo-star,Rakudo is a compiler for the Raku programming language.,active,60,2461881,2023-10-21T03:30:50.961634Z,1,34,0,1,0,0,0,1,0,0
+drupal,Drupal is an open source content management platform powering millions of websites and applications.,active,1006,152991286,2023-10-21T08:49:05.271294Z,1,40,0,0,0,0,0,1,0,3
+cassandra,Apache Cassandra is an open-source distributed storage system.,active,1500,192702338,2023-10-13T14:20:49.692138Z,5,10,19,4,34,0,2,0,1,0
+sonarqube,SonarQube is an open source platform for continuous inspection of code quality.,active,2330,890226334,2023-10-13T11:45:15.704002Z,5,17,7,16,7,0,0,0,0,0
+couchbase,Couchbase Server is a NoSQL document database with a distributed architecture.,active,910,84731087,2023-10-13T08:28:06.208626Z,9,9,24,5,13,0,0,0,8,0
+ros,The Robot Operating System (ROS) is an open source project for building robot applications.,active,610,25408593,2023-10-13T11:09:31.687033Z,6,59,6,65,11,2,0,0,3,0
+kibana,Kibana gives shape to any kind of data — structured and unstructured — indexed in Elasticsearch.,active,2661,151982456,2023-09-22T01:59:42.630575Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+kaazing-gateway,DEPRECATED; lacking active maintainer,active,65,2019728,2021-09-29T09:16:31.878431Z,13,16,32,5,34,5,26,4,1,0
+arangodb,ArangoDB - a scalable graph database system to drive value from connected data faster.,active,283,35850710,2023-10-24T19:36:13.571554Z,0,0,3,0,1,0,0,0,2,0
+owncloud,DEPRECATED; use "owncloud/server" instead,active,1386,56652293,2018-12-31T20:49:57.8066Z,1,0,16,0,29,0,17,0,2,0
+gazebo,Gazebo is an open source project for simulating robots offering robust physics and rendering.,active,138,4419453,2023-10-13T09:23:34.672724Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+joomla,Joomla! is an open source content management system.,active,424,81826557,2023-10-21T09:05:26.046879Z,1,63,1,3,1,0,0,1,0,3
+redmine,Redmine is a flexible project management web application written using Ruby on Rails framework,active,1165,65909861,2023-10-21T10:50:59.421842Z,1,68,7,5,3,0,1,1,1,0
+nats,NATS is an open-source high-performance cloud native messaging system.,active,462,185507204,2023-10-27T20:36:57.175994Z,0,0,0,0,0,0,0,0,0,0
+rocket.chat,The Complete Open Source Chat Solution,active,786,73103813,2023-10-19T21:55:35.65939Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+docker,Docker in Docker!,active,2450,2616536732,2023-10-27T20:13:27.901728Z,0,0,7,0,2,0,0,0,3,0
+tomee,Apache TomEE is an all-Apache Java EE certified stack where Apache Tomcat is top dog.,active,113,22540718,2023-10-23T23:41:23.824102Z,2,14,1,16,0,0,0,0,0,0
+sourcemage,DEPRECATED; lacking active maintainer,active,47,647268,2021-05-22T09:34:30.675427Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+bonita,Bonita is an open-source business process management and workflow suite,active,177,12184895,2023-10-21T00:34:52.6905Z,1,0,4,0,2,0,3,0,1,0
+solr,Apache Solr is the popular blazing-fast open source search platform built on Apache Lucene™.,active,967,144318402,2023-10-17T01:59:19.718563Z,5,16,9,16,7,0,1,0,1,0
+neo4j,Neo4j is a highly scalable robust native graph database.,active,1170,239584364,2023-10-23T23:46:00.520319Z,0,25,0,0,0,0,0,1,0,0
+erlang,Erlang is a programming language used to build massively scalable systems with high availability.,active,358,52871224,2023-10-21T01:08:50.618855Z,1,138,0,7,2,0,1,1,0,0
+nuxeo,DEPRECATED; contact Nuxeo for support/updates,active,95,4998408,2021-08-18T15:43:00.931063Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+photon,Photon OS is an open source minimal Linux container host.,active,188,16589823,2023-10-23T20:56:44.854641Z,0,0,0,0,0,0,0,0,0,0
+couchdb,CouchDB is a database that uses JSON for documents an HTTP API & JavaScript/declarative indexing.,active,542,183749073,2023-10-11T22:51:09.664193Z,0,35,0,0,0,0,0,1,0,0
+notary,Notary server and signer cooperatively handle signing and distribution of notary repositories.,active,68,6456441,2023-10-17T21:56:11.205105Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+piwik,DEPRECATED; use "matomo" instead,active,195,20236587,2018-09-29T17:44:58.494866Z,2,0,29,4,37,0,19,0,5,0
+elixir,Elixir is a dynamic functional language for building scalable and maintainable applications.,active,550,51720543,2023-10-21T07:36:53.462794Z,1,138,0,7,2,0,1,1,0,0
+lightstreamer,Lightstreamer is a real-time messaging server optimized for the Internet.,active,86,5540722,2023-10-13T12:49:18.013785Z,3,17,2,16,0,0,0,0,0,0
+orientdb,OrientDB a Multi-Model Open Source NoSQL DBMS that combines graphs and documents.,active,180,15011989,2023-10-25T23:03:30.716928Z,3,11,2,4,1,0,0,0,0,0
+mongo-express,Web-based MongoDB admin interface written with Node.js and express,active,1371,221653592,2023-10-25T21:30:15.0866Z,0,0,1,1,2,1,2,0,1,0
+traefik,Traefik The Cloud Native Edge Router,active,3052,3216392360,2023-10-13T10:23:08.102246Z,0,1,5,1,2,0,0,0,1,0
+backdrop,The comprehensive CMS for small to medium sized businesses and non-profits.,active,112,6897385,2023-10-17T00:56:28.563594Z,1,40,0,0,0,0,0,1,0,3
+consul,Consul is a datacenter runtime that provides service discovery configuration and orchestration.,active,1428,1021144456,2023-08-07T23:01:36.716527Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+chronograf,Chronograf is a visualization tool for time series data in InfluxDB.,active,352,153000017,2023-10-24T01:14:01.875158Z,1,25,0,0,1,0,1,1,0,0
+influxdb,InfluxDB is an open source time series database for recording metrics events and analytics.,active,1808,1017648772,2023-10-19T02:36:35.802532Z,1,26,4,1,9,0,2,1,1,0
+kapacitor,Kapacitor is an open source framework for processing monitoring and alerting on time series data.,active,257,57192159,2023-10-23T23:55:48.554686Z,3,12,2,5,2,0,0,0,0,0
+telegraf,Telegraf is an agent for collecting metrics and writing them to InfluxDB or other outputs.,active,637,577118697,2023-10-24T00:10:54.402098Z,1,25,1,0,1,0,0,1,0,0
+hello-seattle,Hello from DockerCon 2016 (Seattle)!,active,14,4226609,2019-01-03T22:42:58.502186Z,0,0,0,0,0,0,0,0,0,0
+hola-mundo,¡Hola de DockerCon EU 2015 (Barcelona)!,active,11,1453884,2019-01-04T16:43:25.400938Z,0,0,0,0,0,0,0,0,0,0
+fsharp,DEPRECATED; use https://hub.docker.com/_/microsoft-dotnet-sdk/,active,85,2888315,2021-07-22T09:22:27.838134Z,7,129,78,0,42,0,21,0,0,0
+spiped,Spiped is a utility for creating symmetrically encrypted and authenticated pipes between sockets.,active,61,3088276,2023-10-21T03:57:06.286766Z,1,19,0,0,0,0,0,1,0,0
+vault,Vault is a tool for securely accessing secrets via a unified interface and tight access control.,active,1077,528634191,2023-09-29T06:30:33.614434Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+clearlinux,Official docker build of Clear Linux OS for Intel Architecture,active,167,6802296,2023-10-17T01:38:59.858185Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+eggdrop,The official Docker image of Eggdrop- IRC's oldest actively-developed bot!,active,77,2778233,2023-10-21T00:36:37.369156Z,0,0,0,0,0,0,0,0,0,0
+ibmjava,Official IBM® SDK Java™ Technology Edition Docker Image.,active,123,12876157,2023-10-13T12:00:44.487949Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+openjdk,Pre-release / non-production builds of OpenJDK,active,3761,2108317531,2023-10-21T07:15:28.415611Z,5,0,32,0,20,0,0,0,0,0
+kong,The Cloud-Native API Gateway for APIs and Microservices,active,755,316767707,2023-10-21T03:14:03.08293Z,3,37,3,51,9,1,0,0,0,0
+zookeeper,Apache ZooKeeper is an open-source server which enables highly reliable distributed coordination.,active,1390,253211556,2023-10-17T01:07:25.993938Z,3,17,1,16,0,0,0,0,0,0
+nats-streaming,DEPRECATED; An open-source high-performance cloud native messaging streaming system.,active,164,94923100,2023-10-21T03:16:44.172702Z,0,0,4,0,2,0,0,0,1,0
+storm,Apache Storm is a free and open source distributed realtime computation system.,active,195,8717360,2023-10-13T12:02:34.467537Z,9,12,37,9,60,3,32,1,2,0
+plone,Plone is a free and open source content management system built on top of Zope.,active,93,6506724,2023-10-19T09:56:49.616824Z,15,41,119,4,71,0,39,0,10,0
+bash,Bash is the GNU Project's Bourne Again SHell,active,597,382041761,2023-10-26T01:36:39.232054Z,0,0,0,0,0,0,0,0,1,0
+amazonlinux,Amazon Linux provides a stable secure and high-performance execution environment for applications.,active,1347,821791277,2023-10-25T01:36:59.413816Z,0,0,0,0,0,0,0,0,0,0
+composer,Composer is a dependency manager written in and for PHP.,active,1014,128914007,2023-10-21T09:41:57.250154Z,0,0,0,0,0,0,0,0,1,0
+known,DEPRECATED; lacking active maintainer,active,47,1292421,2019-06-13T05:46:14.801719Z,0,0,1,0,4,0,0,0,0,0
+eclipse-mosquitto,Eclipse Mosquitto is an open source message broker which implements MQTT version 5 3.1.1 and 3.1,active,1175,600200966,2023-10-21T00:32:11.704501Z,0,0,0,0,0,0,0,0,1,0
+nextcloud,Nextcloud manual docker image,active,3906,916243366,2023-10-27T18:26:13.739992Z,1,75,0,7,0,0,0,1,0,3
+silverpeas,Silverpeas is a turnkey and open-source Collaborative and Social-Networking Portal.,active,41,1843656,2023-10-13T10:35:20.756537Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+swift,Swift is a high-performance system programming language to learn more about Swift visit swift.org.,active,667,24760756,2023-10-25T02:55:14.181065Z,3,53,3,63,9,1,0,0,0,0
+haxe,Haxe is a modern high level static typed programming language with multiple compilation targets.,active,61,24428513,2023-10-21T03:14:16.525788Z,0,53,0,1,0,0,0,1,0,0
+rapidoid,DEPRECATED; lacking active maintainer,active,27,2693662,2021-09-29T10:51:38.518892Z,12,15,37,0,61,1,38,0,5,0
+adminer,Database management in a single PHP file.,active,875,364233352,2023-10-12T01:42:03.960128Z,0,32,0,0,0,0,0,1,0,0
+geonetwork,GeoNetwork is a FOSS catalog for spatially referenced resources.,active,81,5130724,2023-10-25T21:45:46.873998Z,8,10,30,5,30,0,2,0,4,0
+xwiki,XWiki: The Advanced Open Source Enterprise Wiki.,active,288,31712744,2023-10-14T04:30:51.694472Z,3,27,5,13,26,3,20,0,2,0
+groovy,Apache Groovy is a multi-faceted language for the Java platform.,active,144,75980321,2023-10-19T07:35:38.968434Z,3,17,1,15,0,0,0,0,0,0
+znc,ZNC - An advanced IRC bouncer,active,112,28109226,2023-10-21T04:08:39.439216Z,0,0,0,0,0,0,0,0,1,0
+gradle,Gradle is a build tool with a focus on build automation and support for multi-language development.,active,553,218588385,2023-10-25T00:53:57.343616Z,4,20,14,16,29,0,2,0,1,0
+convertigo,Enterprise grade full-stack Open source Low Code & No Code Platform for web & mobile application,active,51,4173371,2023-10-14T04:19:26.578561Z,3,13,1,15,0,0,0,0,0,0
+flink,Apache Flink® is a powerful open-source distributed stream and batch processing framework.,active,404,86368409,2023-10-13T13:34:27.192491Z,3,12,1,4,0,0,0,0,0,0
+swipl,SWI-Prolog offers a comprehensive free Prolog environment.,active,64,3032030,2023-10-17T22:51:53.087138Z,0,80,0,1,0,0,0,1,0,0
+rust,Rust is a systems programming language focused on safety speed and concurrency.,active,875,72986675,2023-10-21T04:01:55.709796Z,1,82,0,7,0,0,0,1,0,0
+mediawiki,MediaWiki is a free software open source wiki package written in PHP.,active,515,44305974,2023-10-21T09:37:12.808731Z,1,72,0,5,0,0,0,1,0,3
+euleros,DEPRECATED; lacking active maintainer,active,33,705379,2020-09-16T19:44:28.581242Z,0,0,0,0,0,0,0,0,0,0
+sl,Official containers for Scientific Linux(SL),active,51,591025,2023-10-06T02:03:00.355628Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+open-liberty,Open Liberty multi-architecture images based on Ubuntu 18.04,active,62,12612114,2023-10-19T03:04:20.586243Z,3,11,1,4,0,0,0,0,0,0
+clefos,The official build of ClefOS.,active,23,696463,2022-01-21T19:00:21.64162Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+teamspeak,TeamSpeak is software for quality voice communication via the Internet.,active,500,133720928,2023-10-21T04:28:41.809781Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+matomo,Matomo is the leading open-source analytics platform that gives you more than powerful analytics.,active,314,117763937,2023-10-21T08:57:07.600775Z,1,40,0,0,0,0,0,1,0,3
+yourls,YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener.,active,259,20669029,2023-10-21T09:28:01.002006Z,1,39,0,0,0,0,0,1,0,3
+alt,The official build of ALT Linux.,active,58,664281,2023-09-26T01:07:57.799657Z,0,0,0,0,0,0,0,0,0,0
+amazoncorretto,Corretto is a no-cost production-ready distribution of the Open Java Development Kit (OpenJDK).,active,345,64432051,2023-10-25T02:22:35.836887Z,0,0,0,0,0,0,0,0,0,0
+express-gateway,DEPRECATED; The Official Docker Image of Express Gateway an API Gateway for APIs and Microservices,active,74,2371296,2022-11-30T02:59:10.814396Z,0,0,18,1,11,0,4,0,0,0
+postfixadmin,Postfix Admin - web based administration interface for Postfix mail servers.,active,181,4956147,2023-10-21T09:28:48.915141Z,1,39,4,0,3,0,1,1,1,3
+fluentd,Fluentd is an open source data collector for unified logging layer,active,183,10690505,2023-10-21T01:12:24.583088Z,0,0,1,0,0,0,0,0,1,0
+adoptopenjdk,DEPRECATED; use https://hub.docker.com/_/eclipse-temurin/,active,369,96249585,2021-10-06T18:00:36.296631Z,45,10,67,2,5,0,0,0,0,0
+sapmachine,Official SapMachine Docker Image SAP's build of OpenJDK.,active,48,21765289,2023-10-19T22:09:51.61703Z,3,11,1,3,0,0,0,0,0,0
+varnish,Varnish is an HTTP accelerator designed for content-heavy dynamic web sites as well as APIs.,active,162,15247904,2023-10-21T03:57:00.2507Z,1,28,0,1,0,0,0,1,0,0
+jobber,DEPRECATED; Jobber is an alternative to cron with sophisticated status-reporting and error-handling,active,48,672998,2021-11-13T06:22:46.728704Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+archlinux,Arch Linux is a simple lightweight Linux distribution aimed for flexibility.,active,516,23942670,2023-10-17T00:41:01.319811Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+friendica,Welcome to the free social web.,active,56,4420232,2023-10-21T08:29:44.495041Z,2,116,21,4,37,0,5,1,4,3
+caddy,Caddy 2 is a powerful enterprise-ready open source web server with automatic HTTPS written in Go.,active,638,540742282,2023-10-21T00:27:09.883466Z,0,0,0,0,2,0,0,0,1,0
+monica,Monica – the Personal Relationship Manager.,active,177,10828432,2023-10-21T09:09:39.460697Z,6,84,14,0,5,0,2,1,2,3
+phpmyadmin,phpMyAdmin - A web interface for MySQL and MariaDB.,active,883,57796784,2023-10-21T09:25:50.168047Z,1,40,1,0,0,0,0,1,0,3
+hitch,Hitch is a libev-based high performance SSL/TLS proxy by Varnish Software.,active,19,391051,2023-10-12T01:15:59.849038Z,0,25,0,0,0,0,0,1,0,0
+almalinux,The official build of AlmaLinux OS.,active,130,4583250,2023-07-18T19:58:07.326704Z,0,0,7,0,8,0,0,0,0,0
+dart,Dart is a client-optimized language for fast apps on any platform.,active,124,1664359,2023-10-25T23:02:09.391419Z,1,33,0,0,0,0,0,1,0,0
+eclipse-temurin,Official Images for OpenJDK binaries built by Eclipse Temurin.,active,448,78640247,2023-10-20T02:59:53.386053Z,3,16,1,15,0,0,0,0,0,0
+ibm-semeru-runtimes,IBM Semeru Runtimes Official Images for OpenJDK and Eclipse OpenJ9 binaries.,active,37,3194183,2023-10-13T12:12:57.967838Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+rockylinux,The official build of Rocky Linux.,active,188,28953263,2023-05-26T23:31:30.014073Z,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+api-firewall,A light-weighted API Firewall to protect your API endpoints with API Schema validation.,active,37,22626,2023-10-21T00:22:10.98762Z,0,0,1,0,0,0,0,0,2,0
+emqx,The most scalable open-source MQTT broker for IoT IIoT connected vehicles and more.,active,64,772835,2023-10-11T22:55:10.677723Z,0,25,0,0,0,0,0,1,0,0
+satosa,SATOSA translates between authentication protocols such as SAML2 OpenID Connect and OAuth2.,active,8,216960,2023-10-19T09:16:04.413217Z,0,29,1,0,0,0,0,1,0,1
+unit,Official build of NGINX Unit: Universal Web App Server,active,15,108231,2023-10-25T21:35:45.354084Z,0,33,0,0,0,0,0,1,0,0
+spark,Apache Spark - A unified analytics engine for large-scale data processing,active,16,30981,2023-10-13T14:49:28.235741Z,5,50,15,62,28,3,1,0,1,0

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gke-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: node-container
+          image: gcr.io/benchsec/basic-node:latest
+          resources:
+            requests:
+              memory: '280Mi'
+              cpu: '150m'
+          ports:
+            - containerPort: 80
+        - name: daemon-container
+          image: gcr.io/benchsec/trivy-summary:latest
+          resources:
+            requests:
+              memory: '280Mi'
+              cpu: '150m'

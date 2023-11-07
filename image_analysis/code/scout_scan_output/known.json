@@ -1,0 +1,240 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2022-3171",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-3171: Improper Input Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-3171",
+              "help": {
+                "text": "## Summary\nA potential Denial of Service issue in `protobuf-java` core and lite was discovered in the parsing procedure for binary and text format data. Input streams containing multiple instances of non-repeated [embedded messages](http://developers.google.com/protocol-buffers/docs/encoding#embedded) with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. \n\nReporter: [OSS Fuzz](https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48771)\n\nAffected versions: This issue affects both the Java full and lite Protobuf runtimes, as well as Protobuf for Kotlin and JRuby, which themselves use the Java Protobuf runtime.\n\n## Severity\n\n[CVE-2022-3171](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3171) Medium - CVSS Score: 5.7 (NOTE: there may be a delay in publication)\n\n## Remediation and Mitigation\n\nPlease update to the latest available versions of the following packages:\n\nprotobuf-java (3.21.7, 3.20.3, 3.19.6, 3.16.3)\nprotobuf-javalite (3.21.7, 3.20.3, 3.19.6, 3.16.3)\nprotobuf-kotlin (3.21.7, 3.20.3, 3.19.6, 3.16.3)\nprotobuf-kotlin-lite (3.21.7, 3.20.3, 3.19.6, 3.16.3)\ngoogle-protobuf [JRuby gem only] (3.21.7, 3.20.3, 3.19.6)\n\n",
+                "markdown": "> ## Summary\nA potential Denial of Service issue in `protobuf-java` core and lite was discovered in the parsing procedure for binary and text format data. Input streams containing multiple instances of non-repeated [embedded messages](http://developers.google.com/protocol-buffers/docs/encoding#embedded) with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. \n\nReporter: [OSS Fuzz](https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48771)\n\nAffected versions: This issue affects both the Java full and lite Protobuf runtimes, as well as Protobuf for Kotlin and JRuby, which themselves use the Java Protobuf runtime.\n\n## Severity\n\n[CVE-2022-3171](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3171) Medium - CVSS Score: 5.7 (NOTE: there may be a delay in publication)\n\n## Remediation and Mitigation\n\nPlease update to the latest available versions of the following packages:\n\nprotobuf-java (3.21.7, 3.20.3, 3.19.6, 3.16.3)\nprotobuf-javalite (3.21.7, 3.20.3, 3.19.6, 3.16.3)\nprotobuf-kotlin (3.21.7, 3.20.3, 3.19.6, 3.16.3)\nprotobuf-kotlin-lite (3.21.7, 3.20.3, 3.19.6, 3.16.3)\ngoogle-protobuf [JRuby gem only] (3.21.7, 3.20.3, 3.19.6)\n\n\n|                |                                                   |\n|----------------|---------------------------------------------------|\n| Package        | pkg:maven/com.google.protobuf/protobuf-java@2.3.0 |\n| Affected range | <3.16.3                                           |\n| Fixed version  | 3.16.3                                            |\n| CVSS Score     |                                               5.7 |\n| CVSS Vector    | CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H      |\n"
+              },
+              "properties": {
+                "affected_version": "<3.16.3",
+                "cvssV3": 5.7,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "3.16.3",
+                "purls": [
+                  "pkg:maven/com.google.protobuf/protobuf-java@2.3.0"
+                ],
+                "security-severity": "5.7",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-22569",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-22569: Incorrect Behavior Order"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-22569",
+              "help": {
+                "text": "## Summary\n\nA potential Denial of Service issue in protobuf-java was discovered in the parsing procedure for binary data.\n\nReporter: [OSS-Fuzz](https://github.com/google/oss-fuzz)\n\nAffected versions: All versions of Java Protobufs (including Kotlin and JRuby) prior to the versions listed below. Protobuf \"javalite\" users (typically Android) are not affected.\n\n## Severity\n\n[CVE-2021-22569](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22569) **High** - CVSS Score: 7.5,  An implementation weakness in how unknown fields are parsed in Java. A small (~800 KB) malicious payload can occupy the parser for several minutes by creating large numbers of short-lived objects that cause frequent, repeated GC pauses.\n\n## Proof of Concept\n\nFor reproduction details, please refer to the oss-fuzz issue that identifies the specific inputs that exercise this parsing weakness.\n\n## Remediation and Mitigation\n\nPlease update to the latest available versions of the following packages:\n\n- protobuf-java (3.16.1, 3.18.2, 3.19.2) \n- protobuf-kotlin (3.18.2, 3.19.2)\n- google-protobuf [JRuby  gem only] (3.19.2) \n\n",
+                "markdown": "> ## Summary\n\nA potential Denial of Service issue in protobuf-java was discovered in the parsing procedure for binary data.\n\nReporter: [OSS-Fuzz](https://github.com/google/oss-fuzz)\n\nAffected versions: All versions of Java Protobufs (including Kotlin and JRuby) prior to the versions listed below. Protobuf \"javalite\" users (typically Android) are not affected.\n\n## Severity\n\n[CVE-2021-22569](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22569) **High** - CVSS Score: 7.5,  An implementation weakness in how unknown fields are parsed in Java. A small (~800 KB) malicious payload can occupy the parser for several minutes by creating large numbers of short-lived objects that cause frequent, repeated GC pauses.\n\n## Proof of Concept\n\nFor reproduction details, please refer to the oss-fuzz issue that identifies the specific inputs that exercise this parsing weakness.\n\n## Remediation and Mitigation\n\nPlease update to the latest available versions of the following packages:\n\n- protobuf-java (3.16.1, 3.18.2, 3.19.2) \n- protobuf-kotlin (3.18.2, 3.19.2)\n- google-protobuf [JRuby  gem only] (3.19.2) \n\n\n|                |                                                   |\n|----------------|---------------------------------------------------|\n| Package        | pkg:maven/com.google.protobuf/protobuf-java@2.3.0 |\n| Affected range | <3.16.1                                           |\n| Fixed version  | 3.16.1                                            |\n| CVSS Score     |                                               7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H      |\n"
+              },
+              "properties": {
+                "affected_version": "<3.16.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "3.16.1",
+                "purls": [
+                  "pkg:maven/com.google.protobuf/protobuf-java@2.3.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-22570",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-22570: NULL Pointer Dereference"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-22570",
+              "help": {
+                "text": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.\n",
+                "markdown": "> Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.\n\n|                |                                                   |\n|----------------|---------------------------------------------------|\n| Package        | pkg:maven/com.google.protobuf/protobuf-java@2.3.0 |\n| Affected range | <3.15.0                                           |\n| Fixed version  | 3.15.0                                            |\n| CVSS Score     |                                               7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H      |\n"
+              },
+              "properties": {
+                "affected_version": "<3.15.0",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "3.15.0",
+                "purls": [
+                  "pkg:maven/com.google.protobuf/protobuf-java@2.3.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-3509",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-3509: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-3509",
+              "help": {
+                "text": "A parsing issue similar to CVE-2022-3171, but with textformat in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above.\n",
+                "markdown": "> A parsing issue similar to CVE-2022-3171, but with textformat in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above.\n\n|                |                                                   |\n|----------------|---------------------------------------------------|\n| Package        | pkg:maven/com.google.protobuf/protobuf-java@2.3.0 |\n| Affected range | <3.16.3                                           |\n| Fixed version  | 3.16.3                                            |\n| CVSS Score     |                                               7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H      |\n"
+              },
+              "properties": {
+                "affected_version": "<3.16.3",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "3.16.3",
+                "purls": [
+                  "pkg:maven/com.google.protobuf/protobuf-java@2.3.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-3510",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-3510: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-3510",
+              "help": {
+                "text": "A parsing issue similar to CVE-2022-3171, but with Message-Type Extensions in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above.\n",
+                "markdown": "> A parsing issue similar to CVE-2022-3171, but with Message-Type Extensions in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above.\n\n|                |                                                   |\n|----------------|---------------------------------------------------|\n| Package        | pkg:maven/com.google.protobuf/protobuf-java@2.3.0 |\n| Affected range | <3.16.3                                           |\n| Fixed version  | 3.16.3                                            |\n| CVSS Score     |                                               7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H      |\n"
+              },
+              "properties": {
+                "affected_version": "<3.16.3",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "3.16.3",
+                "purls": [
+                  "pkg:maven/com.google.protobuf/protobuf-java@2.3.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2022-3171",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-3171                                      \n  Severity       : MEDIUM                                             \n  Package        : pkg:maven/com.google.protobuf/protobuf-java@2.3.0  \n  Affected range : <3.16.3                                            \n  Fixed version  : 3.16.3                                             \n  CVSS Score     : 5.7                                                \n  CVSS Vector    : CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/known/external/mediaelement/src/compiler.jar:com.google.protobuf:protobuf-java"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-22569",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-22569                                     \n  Severity       : HIGH                                               \n  Package        : pkg:maven/com.google.protobuf/protobuf-java@2.3.0  \n  Affected range : <3.16.1                                            \n  Fixed version  : 3.16.1                                             \n  CVSS Score     : 7.5                                                \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/known/external/mediaelement/src/compiler.jar:com.google.protobuf:protobuf-java"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-22570",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-22570                                     \n  Severity       : HIGH                                               \n  Package        : pkg:maven/com.google.protobuf/protobuf-java@2.3.0  \n  Affected range : <3.15.0                                            \n  Fixed version  : 3.15.0                                             \n  CVSS Score     : 7.5                                                \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/known/external/mediaelement/src/compiler.jar:com.google.protobuf:protobuf-java"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-3509",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-3509                                      \n  Severity       : HIGH                                               \n  Package        : pkg:maven/com.google.protobuf/protobuf-java@2.3.0  \n  Affected range : <3.16.3                                            \n  Fixed version  : 3.16.3                                             \n  CVSS Score     : 7.5                                                \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/known/external/mediaelement/src/compiler.jar:com.google.protobuf:protobuf-java"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-3510",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-3510                                      \n  Severity       : HIGH                                               \n  Package        : pkg:maven/com.google.protobuf/protobuf-java@2.3.0  \n  Affected range : <3.16.3                                            \n  Fixed version  : 3.16.3                                             \n  CVSS Score     : 7.5                                                \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/src/known/external/mediaelement/src/compiler.jar:com.google.protobuf:protobuf-java"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

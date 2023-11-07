@@ -1,0 +1,1996 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-22652",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-22652"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-22652",
+              "help": {
+                "text": "Libeconf is a highly flexible and configurable library to parse and manage key=value configuration files. It reads configuration file snippets from different directories and builds the final configuration file from it.\n\nSecurity Fix(es):\n\n* libeconf: stack-based buffer overflow in read_file() in lib/getfilecontents.c (CVE-2023-22652)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> Libeconf is a highly flexible and configurable library to parse and manage key=value configuration files. It reads configuration file snippets from different directories and builds the final configuration file from it.\n\nSecurity Fix(es):\n\n* libeconf: stack-based buffer overflow in read_file() in lib/getfilecontents.c (CVE-2023-22652)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                       |\n|----------------|-----------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/libeconf@0.4.1-2.el9?os_name=almalinux&os_version=9 |\n| Affected range | <0.4.1-3.el9_2                                                        |\n| Fixed version  | 0.4.1-3.el9_2                                                         |\n"
+              },
+              "properties": {
+                "affected_version": "<0.4.1-3.el9_2",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "0.4.1-3.el9_2",
+                "purls": [
+                  "pkg:rpm/almalinux/libeconf@0.4.1-2.el9?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-2602",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-2602"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-2602",
+              "help": {
+                "text": "Libcap is a library for getting and setting POSIX.1e (formerly POSIX 6) draft 15 capabilities.\n\nSecurity Fix(es):\n\n* libcap: Integer Overflow in _libcap_strdup() (CVE-2023-2603)\n* libcap: Memory Leak on pthread_create() Error (CVE-2023-2602)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> Libcap is a library for getting and setting POSIX.1e (formerly POSIX 6) draft 15 capabilities.\n\nSecurity Fix(es):\n\n* libcap: Integer Overflow in _libcap_strdup() (CVE-2023-2603)\n* libcap: Memory Leak on pthread_create() Error (CVE-2023-2602)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                    |\n|----------------|--------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/libcap@2.48-8.el9?os_name=almalinux&os_version=9 |\n| Affected range | <2.48-9.el9_2                                                      |\n| Fixed version  | 2.48-9.el9_2                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<2.48-9.el9_2",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "2.48-9.el9_2",
+                "purls": [
+                  "pkg:rpm/almalinux/libcap@2.48-8.el9?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-2603",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-2603"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-2603",
+              "help": {
+                "text": "Libcap is a library for getting and setting POSIX.1e (formerly POSIX 6) draft 15 capabilities.\n\nSecurity Fix(es):\n\n* libcap: Integer Overflow in _libcap_strdup() (CVE-2023-2603)\n* libcap: Memory Leak on pthread_create() Error (CVE-2023-2602)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> Libcap is a library for getting and setting POSIX.1e (formerly POSIX 6) draft 15 capabilities.\n\nSecurity Fix(es):\n\n* libcap: Integer Overflow in _libcap_strdup() (CVE-2023-2603)\n* libcap: Memory Leak on pthread_create() Error (CVE-2023-2602)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                    |\n|----------------|--------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/libcap@2.48-8.el9?os_name=almalinux&os_version=9 |\n| Affected range | <2.48-9.el9_2                                                      |\n| Fixed version  | 2.48-9.el9_2                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<2.48-9.el9_2",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "2.48-9.el9_2",
+                "purls": [
+                  "pkg:rpm/almalinux/libcap@2.48-8.el9?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-28321",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-28321"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-28321",
+              "help": {
+                "text": "The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\n\nSecurity Fix(es):\n\n* curl: IDN wildcard match may lead to Improper Cerificate Validation (CVE-2023-28321)\n* curl: more POST-after-PUT confusion (CVE-2023-28322)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\n\nSecurity Fix(es):\n\n* curl: IDN wildcard match may lead to Improper Cerificate Validation (CVE-2023-28321)\n* curl: more POST-after-PUT confusion (CVE-2023-28322)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                         |\n|----------------|-------------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9 |\n| Affected range | <7.76.1-23.el9_2.2                                                      |\n| Fixed version  | 7.76.1-23.el9_2.2                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<7.76.1-23.el9_2.2",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.76.1-23.el9_2.2",
+                "purls": [
+                  "pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-28322",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-28322"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-28322",
+              "help": {
+                "text": "The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\n\nSecurity Fix(es):\n\n* curl: IDN wildcard match may lead to Improper Cerificate Validation (CVE-2023-28321)\n* curl: more POST-after-PUT confusion (CVE-2023-28322)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\n\nSecurity Fix(es):\n\n* curl: IDN wildcard match may lead to Improper Cerificate Validation (CVE-2023-28321)\n* curl: more POST-after-PUT confusion (CVE-2023-28322)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                         |\n|----------------|-------------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9 |\n| Affected range | <7.76.1-23.el9_2.2                                                      |\n| Fixed version  | 7.76.1-23.el9_2.2                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<7.76.1-23.el9_2.2",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "7.76.1-23.el9_2.2",
+                "purls": [
+                  "pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-28484",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-28484"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-28484",
+              "help": {
+                "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\n\nSecurity Fix(es):\n\n* libxml2: NULL dereference in xmlSchemaFixupComplexType (CVE-2023-28484)\n* libxml2: Hashing of empty dict strings isn't deterministic (CVE-2023-29469)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The libxml2 library is a development toolbox providing the implementation of various XML standards.\n\nSecurity Fix(es):\n\n* libxml2: NULL dereference in xmlSchemaFixupComplexType (CVE-2023-28484)\n* libxml2: Hashing of empty dict strings isn't deterministic (CVE-2023-29469)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                         |\n|----------------|-------------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/libxml2@2.9.13-3.el9_1?os_name=almalinux&os_version=9 |\n| Affected range | <2.9.13-3.el9_2.1                                                       |\n| Fixed version  | 2.9.13-3.el9_2.1                                                        |\n"
+              },
+              "properties": {
+                "affected_version": "<2.9.13-3.el9_2.1",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "2.9.13-3.el9_2.1",
+                "purls": [
+                  "pkg:rpm/almalinux/libxml2@2.9.13-3.el9_1?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29469",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29469"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29469",
+              "help": {
+                "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\n\nSecurity Fix(es):\n\n* libxml2: NULL dereference in xmlSchemaFixupComplexType (CVE-2023-28484)\n* libxml2: Hashing of empty dict strings isn't deterministic (CVE-2023-29469)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The libxml2 library is a development toolbox providing the implementation of various XML standards.\n\nSecurity Fix(es):\n\n* libxml2: NULL dereference in xmlSchemaFixupComplexType (CVE-2023-28484)\n* libxml2: Hashing of empty dict strings isn't deterministic (CVE-2023-29469)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                         |\n|----------------|-------------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/libxml2@2.9.13-3.el9_1?os_name=almalinux&os_version=9 |\n| Affected range | <2.9.13-3.el9_2.1                                                       |\n| Fixed version  | 2.9.13-3.el9_2.1                                                        |\n"
+              },
+              "properties": {
+                "affected_version": "<2.9.13-3.el9_2.1",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "2.9.13-3.el9_2.1",
+                "purls": [
+                  "pkg:rpm/almalinux/libxml2@2.9.13-3.el9_1?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-4586",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-4586: Improper Certificate Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-4586",
+              "help": {
+                "text": "Netty-handler has been found to no validate hostnames when using TLS in its default configuration. As a result netty-handler is vulnerable to man-in-the-middle attacks. Users would need to set the protocol to \"HTTPS\" in the SSLParameters of the SSLEngine to opt in to host name validation. A change in default behavior is expected in the `5.x` release branch with no backport planned.\n\nIn the interim users are advised to enable host name validation in their configurations.\nSee https://github.com/netty/netty/issues/8537 for details on the forthcoming change in default behavior.\n",
+                "markdown": "> Netty-handler has been found to no validate hostnames when using TLS in its default configuration. As a result netty-handler is vulnerable to man-in-the-middle attacks. Users would need to set the protocol to \"HTTPS\" in the SSLParameters of the SSLEngine to opt in to host name validation. A change in default behavior is expected in the `5.x` release branch with no backport planned.\n\nIn the interim users are advised to enable host name validation in their configurations.\nSee https://github.com/netty/netty/issues/8537 for details on the forthcoming change in default behavior.\n\n|                |                                               |\n|----------------|-----------------------------------------------|\n| Package        | pkg:maven/io.netty/netty-handler@4.1.94.Final |\n| Affected range | >=4.1.0.Final,<=4.1.99.Final                  |\n| Fixed version  | not fixed                                     |\n| CVSS Score     |                                           5.3 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N  |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.1.0.Final,<=4.1.99.Final",
+                "cvssV3": 5.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+                "fixed_version": "not fixed",
+                "purls": [
+                  "pkg:maven/io.netty/netty-handler@4.1.94.Final"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-38545",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-38545"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-38545",
+              "help": {
+                "text": "The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\n\nSecurity Fix(es):\n\n* curl: a heap-based buffer overflow in the SOCKS5 proxy handshake (CVE-2023-38545)\n* curl: cookie injection with none file (CVE-2023-38546)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\n\nSecurity Fix(es):\n\n* curl: a heap-based buffer overflow in the SOCKS5 proxy handshake (CVE-2023-38545)\n* curl: cookie injection with none file (CVE-2023-38546)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                         |\n|----------------|-------------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9 |\n| Affected range | <7.76.1-23.el9_2.4                                                      |\n| Fixed version  | 7.76.1-23.el9_2.4                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<7.76.1-23.el9_2.4",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.76.1-23.el9_2.4",
+                "purls": [
+                  "pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-38546",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-38546"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-38546",
+              "help": {
+                "text": "The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\n\nSecurity Fix(es):\n\n* curl: a heap-based buffer overflow in the SOCKS5 proxy handshake (CVE-2023-38545)\n* curl: cookie injection with none file (CVE-2023-38546)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\n\nSecurity Fix(es):\n\n* curl: a heap-based buffer overflow in the SOCKS5 proxy handshake (CVE-2023-38545)\n* curl: cookie injection with none file (CVE-2023-38546)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                         |\n|----------------|-------------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9 |\n| Affected range | <7.76.1-23.el9_2.4                                                      |\n| Fixed version  | 7.76.1-23.el9_2.4                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<7.76.1-23.el9_2.4",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "7.76.1-23.el9_2.4",
+                "purls": [
+                  "pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-40217",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-40217"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-40217",
+              "help": {
+                "text": "Python is an interpreted, interactive, object-oriented programming language, which includes modules, classes, exceptions, very high level dynamic data types and dynamic typing. Python supports interfaces to many system calls and libraries, as well as to various windowing systems.\n\nSecurity Fix(es):\n\n* python: TLS handshake bypass (CVE-2023-40217)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> Python is an interpreted, interactive, object-oriented programming language, which includes modules, classes, exceptions, very high level dynamic data types and dynamic typing. Python supports interfaces to many system calls and libraries, as well as to various windowing systems.\n\nSecurity Fix(es):\n\n* python: TLS handshake bypass (CVE-2023-40217)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                             |\n|----------------|-----------------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/python3.9@3.9.16-1.el9_2.1?os_name=almalinux&os_version=9 |\n| Affected range | <3.9.16-1.el9_2.2                                                           |\n| Fixed version  | 3.9.16-1.el9_2.2                                                            |\n"
+              },
+              "properties": {
+                "affected_version": "<3.9.16-1.el9_2.2",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "3.9.16-1.el9_2.2",
+                "purls": [
+                  "pkg:rpm/almalinux/python3.9@3.9.16-1.el9_2.1?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-44487",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-44487"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-44487",
+              "help": {
+                "text": "libnghttp2 is a library implementing the Hypertext Transfer Protocol version 2 (HTTP/2) protocol in C.\n\nSecurity Fix(es):\n\n* HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) (CVE-2023-44487)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> libnghttp2 is a library implementing the Hypertext Transfer Protocol version 2 (HTTP/2) protocol in C.\n\nSecurity Fix(es):\n\n* HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) (CVE-2023-44487)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                       |\n|----------------|-----------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/nghttp2@1.43.0-5.el9?os_name=almalinux&os_version=9 |\n| Affected range | <1.43.0-5.el9_2.1                                                     |\n| Fixed version  | 1.43.0-5.el9_2.1                                                      |\n"
+              },
+              "properties": {
+                "affected_version": "<1.43.0-5.el9_2.1",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "1.43.0-5.el9_2.1",
+                "purls": [
+                  "pkg:rpm/almalinux/nghttp2@1.43.0-5.el9?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-4527",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-4527"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-4527",
+              "help": {
+                "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\n\nSecurity Fix(es):\n\n* glibc: buffer overflow in ld.so leading to privilege escalation (CVE-2023-4911)\n* glibc: Stack read overflow in getaddrinfo in no-aaaa mode (CVE-2023-4527)\n* glibc: potential use-after-free in getaddrinfo() (CVE-2023-4806)\n* glibc: potential use-after-free in gaih_inet() (CVE-2023-4813)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\n\nSecurity Fix(es):\n\n* glibc: buffer overflow in ld.so leading to privilege escalation (CVE-2023-4911)\n* glibc: Stack read overflow in getaddrinfo in no-aaaa mode (CVE-2023-4527)\n* glibc: potential use-after-free in getaddrinfo() (CVE-2023-4806)\n* glibc: potential use-after-free in gaih_inet() (CVE-2023-4813)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                    |\n|----------------|--------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9 |\n| Affected range | <2.34-60.el9_2.7                                                   |\n| Fixed version  | 2.34-60.el9_2.7                                                    |\n"
+              },
+              "properties": {
+                "affected_version": "<2.34-60.el9_2.7",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "2.34-60.el9_2.7",
+                "purls": [
+                  "pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-4806",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-4806"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-4806",
+              "help": {
+                "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\n\nSecurity Fix(es):\n\n* glibc: buffer overflow in ld.so leading to privilege escalation (CVE-2023-4911)\n* glibc: Stack read overflow in getaddrinfo in no-aaaa mode (CVE-2023-4527)\n* glibc: potential use-after-free in getaddrinfo() (CVE-2023-4806)\n* glibc: potential use-after-free in gaih_inet() (CVE-2023-4813)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\n\nSecurity Fix(es):\n\n* glibc: buffer overflow in ld.so leading to privilege escalation (CVE-2023-4911)\n* glibc: Stack read overflow in getaddrinfo in no-aaaa mode (CVE-2023-4527)\n* glibc: potential use-after-free in getaddrinfo() (CVE-2023-4806)\n* glibc: potential use-after-free in gaih_inet() (CVE-2023-4813)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                    |\n|----------------|--------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9 |\n| Affected range | <2.34-60.el9_2.7                                                   |\n| Fixed version  | 2.34-60.el9_2.7                                                    |\n"
+              },
+              "properties": {
+                "affected_version": "<2.34-60.el9_2.7",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "2.34-60.el9_2.7",
+                "purls": [
+                  "pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-4813",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-4813"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-4813",
+              "help": {
+                "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\n\nSecurity Fix(es):\n\n* glibc: buffer overflow in ld.so leading to privilege escalation (CVE-2023-4911)\n* glibc: Stack read overflow in getaddrinfo in no-aaaa mode (CVE-2023-4527)\n* glibc: potential use-after-free in getaddrinfo() (CVE-2023-4806)\n* glibc: potential use-after-free in gaih_inet() (CVE-2023-4813)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\n\nSecurity Fix(es):\n\n* glibc: buffer overflow in ld.so leading to privilege escalation (CVE-2023-4911)\n* glibc: Stack read overflow in getaddrinfo in no-aaaa mode (CVE-2023-4527)\n* glibc: potential use-after-free in getaddrinfo() (CVE-2023-4806)\n* glibc: potential use-after-free in gaih_inet() (CVE-2023-4813)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                    |\n|----------------|--------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9 |\n| Affected range | <2.34-60.el9_2.7                                                   |\n| Fixed version  | 2.34-60.el9_2.7                                                    |\n"
+              },
+              "properties": {
+                "affected_version": "<2.34-60.el9_2.7",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "2.34-60.el9_2.7",
+                "purls": [
+                  "pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-4911",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-4911"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-4911",
+              "help": {
+                "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\n\nSecurity Fix(es):\n\n* glibc: buffer overflow in ld.so leading to privilege escalation (CVE-2023-4911)\n* glibc: Stack read overflow in getaddrinfo in no-aaaa mode (CVE-2023-4527)\n* glibc: potential use-after-free in getaddrinfo() (CVE-2023-4806)\n* glibc: potential use-after-free in gaih_inet() (CVE-2023-4813)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n",
+                "markdown": "> The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\n\nSecurity Fix(es):\n\n* glibc: buffer overflow in ld.so leading to privilege escalation (CVE-2023-4911)\n* glibc: Stack read overflow in getaddrinfo in no-aaaa mode (CVE-2023-4527)\n* glibc: potential use-after-free in getaddrinfo() (CVE-2023-4806)\n* glibc: potential use-after-free in gaih_inet() (CVE-2023-4813)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\n|                |                                                                    |\n|----------------|--------------------------------------------------------------------|\n| Package        | pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9 |\n| Affected range | <2.34-60.el9_2.7                                                   |\n| Fixed version  | 2.34-60.el9_2.7                                                    |\n"
+              },
+              "properties": {
+                "affected_version": "<2.34-60.el9_2.7",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "2.34-60.el9_2.7",
+                "purls": [
+                  "pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-22652",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-22652                                                         \n  Severity       : MEDIUM                                                                 \n  Package        : pkg:rpm/almalinux/libeconf@0.4.1-2.el9?os_name=almalinux&os_version=9  \n  Affected range : <0.4.1-3.el9_2                                                         \n  Fixed version  : 0.4.1-3.el9_2                                                          \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libeconf.so.0.4.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/libeconf/LICENSE"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-2602",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-2602                                                       \n  Severity       : MEDIUM                                                              \n  Package        : pkg:rpm/almalinux/libcap@2.48-8.el9?os_name=almalinux&os_version=9  \n  Affected range : <2.48-9.el9_2                                                       \n  Fixed version  : 2.48-9.el9_2                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/capsh"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/security/pam_cap.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/getcap"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/getpcaps"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libcap.so.2.48"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/libcap/License"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpsx.so.2.48"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/setcap"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-2603",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-2603                                                       \n  Severity       : MEDIUM                                                              \n  Package        : pkg:rpm/almalinux/libcap@2.48-8.el9?os_name=almalinux&os_version=9  \n  Affected range : <2.48-9.el9_2                                                       \n  Fixed version  : 2.48-9.el9_2                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/capsh"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/security/pam_cap.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/getcap"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/getpcaps"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libcap.so.2.48"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/libcap/License"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpsx.so.2.48"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/setcap"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-28321",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-28321                                                           \n  Severity       : MEDIUM                                                                   \n  Package        : pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9  \n  Affected range : <7.76.1-23.el9_2.2                                                       \n  Fixed version  : 7.76.1-23.el9_2.2                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-28322",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-28322                                                           \n  Severity       : MEDIUM                                                                   \n  Package        : pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9  \n  Affected range : <7.76.1-23.el9_2.2                                                       \n  Fixed version  : 7.76.1-23.el9_2.2                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-28484",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-28484                                                           \n  Severity       : MEDIUM                                                                   \n  Package        : pkg:rpm/almalinux/libxml2@2.9.13-3.el9_1?os_name=almalinux&os_version=9  \n  Affected range : <2.9.13-3.el9_2.1                                                        \n  Fixed version  : 2.9.13-3.el9_2.1                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/xmlcatalog"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/xmllint"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libxml2.so.2.9.13"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/libxml2/Copyright"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29469",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29469                                                           \n  Severity       : MEDIUM                                                                   \n  Package        : pkg:rpm/almalinux/libxml2@2.9.13-3.el9_1?os_name=almalinux&os_version=9  \n  Affected range : <2.9.13-3.el9_2.1                                                        \n  Fixed version  : 2.9.13-3.el9_2.1                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/xmlcatalog"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/xmllint"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libxml2.so.2.9.13"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/libxml2/Copyright"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-4586",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-4586                                  \n  Severity       : MEDIUM                                         \n  Package        : pkg:maven/io.netty/netty-handler@4.1.94.Final  \n  Affected range : >=4.1.0.Final,<=4.1.99.Final                   \n  Fixed version  : not fixed                                      \n  CVSS Score     : 5.3                                            \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/crate/lib/netty-handler-4.1.94.Final.jar"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-38545",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-38545                                                           \n  Severity       : HIGH                                                                     \n  Package        : pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9  \n  Affected range : <7.76.1-23.el9_2.4                                                       \n  Fixed version  : 7.76.1-23.el9_2.4                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-38546",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-38546                                                           \n  Severity       : HIGH                                                                     \n  Package        : pkg:rpm/almalinux/curl@7.76.1-23.el9_2.1?os_name=almalinux&os_version=9  \n  Affected range : <7.76.1-23.el9_2.4                                                       \n  Fixed version  : 7.76.1-23.el9_2.4                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-40217",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-40217                                                               \n  Severity       : HIGH                                                                         \n  Package        : pkg:rpm/almalinux/python3.9@3.9.16-1.el9_2.1?os_name=almalinux&os_version=9  \n  Affected range : <3.9.16-1.el9_2.2                                                            \n  Fixed version  : 3.9.16-1.el9_2.2                                                             \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 11,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487                                                         \n  Severity       : HIGH                                                                   \n  Package        : pkg:rpm/almalinux/nghttp2@1.43.0-5.el9?os_name=almalinux&os_version=9  \n  Affected range : <1.43.0-5.el9_2.1                                                      \n  Fixed version  : 1.43.0-5.el9_2.1                                                       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-4527",
+          "ruleIndex": 12,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-4527                                                       \n  Severity       : HIGH                                                                \n  Package        : pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9  \n  Affected range : <2.34-60.el9_2.7                                                    \n  Fixed version  : 2.34-60.el9_2.7                                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/rpc"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/ld-linux-aarch64.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libanl.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/ldconfig"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/iconvconfig"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/libexec/getconf/POSIX_V6_LP64_OFF64"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ANSI_X3.110.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpcprofile.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ld.so.conf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libBrokenLocale.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_files.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpthread.so.0"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ISO8859-1.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/COPYING"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libSegFault.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libc_malloc_debug.so.0"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_dns.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ld.so.cache"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-32.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/gconv-modules"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-7.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libresolv.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libutil.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ISO8859-15.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-16.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libmemusage.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/COPYING.LIB"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libc.so.6"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libm.so.6"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/librt.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libthread_db.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/audit/sotruss-lib.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libdl.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UNICODE.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/CP1252.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/nsswitch.conf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_compat.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/gconv-modules.cache"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/LICENSES"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/cache/ldconfig/aux-cache"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-4806",
+          "ruleIndex": 13,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-4806                                                       \n  Severity       : HIGH                                                                \n  Package        : pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9  \n  Affected range : <2.34-60.el9_2.7                                                    \n  Fixed version  : 2.34-60.el9_2.7                                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/rpc"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/ld-linux-aarch64.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libanl.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/ldconfig"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/iconvconfig"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/libexec/getconf/POSIX_V6_LP64_OFF64"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ANSI_X3.110.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpcprofile.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ld.so.conf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libBrokenLocale.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_files.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpthread.so.0"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ISO8859-1.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/COPYING"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libSegFault.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libc_malloc_debug.so.0"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_dns.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ld.so.cache"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-32.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/gconv-modules"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-7.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libresolv.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libutil.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ISO8859-15.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-16.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libmemusage.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/COPYING.LIB"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libc.so.6"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libm.so.6"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/librt.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libthread_db.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/audit/sotruss-lib.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libdl.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UNICODE.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/CP1252.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/nsswitch.conf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_compat.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/gconv-modules.cache"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/LICENSES"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/cache/ldconfig/aux-cache"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-4813",
+          "ruleIndex": 14,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-4813                                                       \n  Severity       : HIGH                                                                \n  Package        : pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9  \n  Affected range : <2.34-60.el9_2.7                                                    \n  Fixed version  : 2.34-60.el9_2.7                                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/rpc"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/ld-linux-aarch64.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libanl.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/ldconfig"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/iconvconfig"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/libexec/getconf/POSIX_V6_LP64_OFF64"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ANSI_X3.110.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpcprofile.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ld.so.conf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libBrokenLocale.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_files.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpthread.so.0"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ISO8859-1.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/COPYING"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libSegFault.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libc_malloc_debug.so.0"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_dns.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ld.so.cache"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-32.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/gconv-modules"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-7.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libresolv.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libutil.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ISO8859-15.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-16.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libmemusage.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/COPYING.LIB"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libc.so.6"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libm.so.6"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/librt.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libthread_db.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/audit/sotruss-lib.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libdl.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UNICODE.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/CP1252.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/nsswitch.conf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_compat.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/gconv-modules.cache"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/LICENSES"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/cache/ldconfig/aux-cache"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-4911",
+          "ruleIndex": 15,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-4911                                                       \n  Severity       : HIGH                                                                \n  Package        : pkg:rpm/almalinux/glibc@2.34-60.el9?os_name=almalinux&os_version=9  \n  Affected range : <2.34-60.el9_2.7                                                    \n  Fixed version  : 2.34-60.el9_2.7                                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/rpm/rpmdb.sqlite"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/rpc"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/ld-linux-aarch64.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libanl.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/ldconfig"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/sbin/iconvconfig"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/libexec/getconf/POSIX_V6_LP64_OFF64"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ANSI_X3.110.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpcprofile.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ld.so.conf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libBrokenLocale.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_files.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libpthread.so.0"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ISO8859-1.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/COPYING"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libSegFault.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libc_malloc_debug.so.0"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_dns.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ld.so.cache"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-32.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/gconv-modules"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-7.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libresolv.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libutil.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/ISO8859-15.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UTF-16.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libmemusage.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/COPYING.LIB"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libc.so.6"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libm.so.6"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/librt.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libthread_db.so.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/audit/sotruss-lib.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libdl.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/UNICODE.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/CP1252.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/nsswitch.conf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/libnss_compat.so.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib64/gconv/gconv-modules.cache"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/licenses/glibc/LICENSES"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/cache/ldconfig/aux-cache"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

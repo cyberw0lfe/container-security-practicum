@@ -1,0 +1,21 @@
+[
+    "--platform linux/amd64 archlinux",
+    "--platform linux/amd64 clearlinux",
+    "--platform linux/amd64 clefos",
+    "--platform linux/amd64 gazebo",
+    "--platform linux/amd64 ibmjava",
+    "--platform linux/amd64 jobber",
+    "--platform linux/amd64 nuxeo",
+    "--platform linux/amd64 odoo",
+    "--platform linux/amd64 percona",
+    "--platform linux/amd64 php-zendserver",
+    "--platform linux/amd64 rocket.chat",
+    "--platform linux/amd64 sentry",
+    "--platform linux/amd64 silverpeas",
+    "--platform linux/amd64 sl",
+    "--platform linux/amd64 sourcemage",
+    "--platform linux/amd64 swarm",
+    "--platform linux/amd64 teamspeak",
+    "--platform linux/amd64 thrift",
+    "--platform linux/amd64 websphere-liberty"
+]

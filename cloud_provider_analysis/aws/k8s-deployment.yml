@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: benchsec-deployment
+  labels:
+    app: benchsec-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: benchsec-app
+  template:
+    metadata:
+      labels:
+        app: benchsec-app
+    spec:
+      containers:
+        - name: basic-node-container
+          image: <redacted>.dkr.ecr.us-east-1.amazonaws.com/basic-node:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: '512Mi'
+              cpu: '250m'
+            limits:
+              memory: '1Gi'
+              cpu: '500m'
+        - name: trivy-container
+          image: <redacted>.dkr.ecr.us-east-1.amazonaws.com/trivy-summary:latest
+          resources:
+            requests:
+              memory: '512Mi'
+              cpu: '250m'
+            limits:
+              memory: '1Gi'
+              cpu: '500m'

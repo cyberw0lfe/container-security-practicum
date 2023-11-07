@@ -1,0 +1,774 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2021-33203",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-33203: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-33203",
+              "help": {
+                "text": "Django before 2.2.24, 3.x before 3.1.12, and 3.2.x before 3.2.4 has a potential directory traversal via django.contrib.admindocs. Staff members could use the TemplateDetailView view to check the existence of arbitrary files. Additionally, if (and only if) the default admindocs templates have been customized by application developers to also show file contents, then not only the existence but also the file contents would have been exposed. In other words, there is directory traversal outside of the template root directories.\n",
+                "markdown": "> Django before 2.2.24, 3.x before 3.1.12, and 3.2.x before 3.2.4 has a potential directory traversal via django.contrib.admindocs. Staff members could use the TemplateDetailView view to check the existence of arbitrary files. Additionally, if (and only if) the default admindocs templates have been customized by application developers to also show file contents, then not only the existence but also the file contents would have been exposed. In other words, there is directory traversal outside of the template root directories.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | <2.2.24                                      |\n| Fixed version  | 2.2.24                                       |\n| CVSS Score     |                                          4.9 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<2.2.24",
+                "cvssV3": 4.9,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+                "fixed_version": "2.2.24",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "4.9",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-3572",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-3572: Improper Input Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-3572",
+              "help": {
+                "text": "A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.\n",
+                "markdown": "> A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/pip@9.0.1                           |\n| Affected range | <21.1                                        |\n| Fixed version  |                                         21.1 |\n| CVSS Score     |                                          5.7 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<21.1",
+                "cvssV3": 5.7,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N",
+                "fixed_version": "21.1",
+                "purls": [
+                  "pkg:pypi/pip@9.0.1"
+                ],
+                "security-severity": "5.7",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2017-12794",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2017-12794: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2017-12794",
+              "help": {
+                "text": "In Django 1.10.x before 1.10.8 and 1.11.x before 1.11.5, HTML autoescaping was disabled in a portion of the template for the technical 500 debug page. Given the right circumstances, this allowed a cross-site scripting attack. This vulnerability shouldn't affect most production sites since you shouldn't run with `DEBUG = True` (which makes this page accessible) in your production settings.\n",
+                "markdown": "> In Django 1.10.x before 1.10.8 and 1.11.x before 1.11.5, HTML autoescaping was disabled in a portion of the template for the technical 500 debug page. Given the right circumstances, this allowed a cross-site scripting attack. This vulnerability shouldn't affect most production sites since you shouldn't run with `DEBUG = True` (which makes this page accessible) in your production settings.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | >=1.10.0,<1.10.8                             |\n| Fixed version  | 1.10.8                                       |\n| CVSS Score     |                                          6.1 |\n| CVSS Vector    | CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.10.0,<1.10.8",
+                "cvssV3": 6.1,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                "fixed_version": "1.10.8",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2017-7233",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2017-7233: URL Redirection to Untrusted Site ('Open Redirect')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2017-7233",
+              "help": {
+                "text": "Django 1.10 before 1.10.7, 1.9 before 1.9.13, and 1.8 before 1.8.18 relies on user input in some cases to redirect the user to an \"on success\" URL. The security check for these redirects (namely ``django.utils.http.is_safe_url()``) considered some numeric URLs \"safe\" when they shouldn't be, aka an open redirect vulnerability. Also, if a developer relies on ``is_safe_url()`` to provide safe redirect targets and puts such a URL into a link, they could suffer from an XSS attack.\n",
+                "markdown": "> Django 1.10 before 1.10.7, 1.9 before 1.9.13, and 1.8 before 1.8.18 relies on user input in some cases to redirect the user to an \"on success\" URL. The security check for these redirects (namely ``django.utils.http.is_safe_url()``) considered some numeric URLs \"safe\" when they shouldn't be, aka an open redirect vulnerability. Also, if a developer relies on ``is_safe_url()`` to provide safe redirect targets and puts such a URL into a link, they could suffer from an XSS attack.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | >=1.10,<1.10.7                               |\n| Fixed version  | 1.10.7                                       |\n| CVSS Score     |                                          6.1 |\n| CVSS Vector    | CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.10,<1.10.7",
+                "cvssV3": 6.1,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                "fixed_version": "1.10.7",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2017-7234",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2017-7234: URL Redirection to Untrusted Site ('Open Redirect')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2017-7234",
+              "help": {
+                "text": "A maliciously crafted URL to a Django (1.10 before 1.10.7, 1.9 before 1.9.13, and 1.8 before 1.8.18) site using the `django.views.static.serve()` view could redirect to any other domain, aka an open redirect vulnerability.\n",
+                "markdown": "> A maliciously crafted URL to a Django (1.10 before 1.10.7, 1.9 before 1.9.13, and 1.8 before 1.8.18) site using the `django.views.static.serve()` view could redirect to any other domain, aka an open redirect vulnerability.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | >=1.10,<1.10.7                               |\n| Fixed version  | 1.10.7                                       |\n| CVSS Score     |                                          6.1 |\n| CVSS Vector    | CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.10,<1.10.7",
+                "cvssV3": 6.1,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                "fixed_version": "1.10.7",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-3498",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-3498: Improper Input Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-3498",
+              "help": {
+                "text": "In Django 1.11.x before 1.11.18, 2.0.x before 2.0.10, and 2.1.x before 2.1.5, an Improper Neutralization of Special Elements in Output Used by a Downstream Component issue exists in `django.views.defaults.page_not_found()`, leading to content spoofing (in a 404 error page) if a user fails to recognize that a crafted URL has malicious content.\n",
+                "markdown": "> In Django 1.11.x before 1.11.18, 2.0.x before 2.0.10, and 2.1.x before 2.1.5, an Improper Neutralization of Special Elements in Output Used by a Downstream Component issue exists in `django.views.defaults.page_not_found()`, leading to content spoofing (in a 404 error page) if a user fails to recognize that a crafted URL has malicious content.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | <1.11.18                                     |\n| Fixed version  | 1.11.18                                      |\n| CVSS Score     |                                          6.5 |\n| CVSS Vector    | CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<1.11.18",
+                "cvssV3": 6.5,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                "fixed_version": "1.11.18",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-44420",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-44420: Improper Authentication"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-44420",
+              "help": {
+                "text": "In Django 2.2 before 2.2.25, 3.1 before 3.1.14, and 3.2 before 3.2.10, HTTP requests for URLs with trailing newlines could bypass upstream access control based on URL paths. This issue has low severity, according to the Django security policy.\n",
+                "markdown": "> In Django 2.2 before 2.2.25, 3.1 before 3.1.14, and 3.2 before 3.2.10, HTTP requests for URLs with trailing newlines could bypass upstream access control based on URL paths. This issue has low severity, according to the Django security policy.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | <2.2.25                                      |\n| Fixed version  | 2.2.25                                       |\n| CVSS Score     |                                          7.3 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L |\n"
+              },
+              "properties": {
+                "affected_version": "<2.2.25",
+                "cvssV3": 7.3,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                "fixed_version": "2.2.25",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "7.3",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-20916",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-20916: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-20916",
+              "help": {
+                "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, because a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs in _download_http_url in _internal/download.py. A fix was committed 6704f2ace.\n",
+                "markdown": "> The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, because a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs in _download_http_url in _internal/download.py. A fix was committed 6704f2ace.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/pip@9.0.1                           |\n| Affected range | <19.2                                        |\n| Fixed version  |                                         19.2 |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<19.2",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                "fixed_version": "19.2",
+                "purls": [
+                  "pkg:pypi/pip@9.0.1"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-6975",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-6975: Allocation of Resources Without Limits or Throttling"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-6975",
+              "help": {
+                "text": "Django 1.11.x before 1.11.19, 2.0.x before 2.0.11, and 2.1.x before 2.1.6 allows Uncontrolled Memory Consumption via a malicious attacker-supplied value to the `django.utils.numberformat.format()` function.\n",
+                "markdown": "> Django 1.11.x before 1.11.19, 2.0.x before 2.0.11, and 2.1.x before 2.1.6 allows Uncontrolled Memory Consumption via a malicious attacker-supplied value to the `django.utils.numberformat.format()` function.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | <1.11.19                                     |\n| Fixed version  | 1.11.19                                      |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.11.19",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "1.11.19",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-40897",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-40897: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-40897",
+              "help": {
+                "text": "Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects. Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`. This has been patched in version 65.5.1.\n",
+                "markdown": "> Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects. Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`. This has been patched in version 65.5.1.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/setuptools@20.10.1                  |\n| Affected range | <65.5.1                                      |\n| Fixed version  | 65.5.1                                       |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<65.5.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "65.5.1",
+                "purls": [
+                  "pkg:pypi/setuptools@20.10.1"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-9402",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-9402: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-9402",
+              "help": {
+                "text": "Django 1.11 before 1.11.29, 2.2 before 2.2.11, and 3.0 before 3.0.4 allows SQL Injection if untrusted data is used as a tolerance parameter in GIS functions and aggregates on Oracle. By passing a suitably crafted tolerance to GIS functions and aggregates on Oracle, it was possible to break escaping and inject malicious SQL.\n",
+                "markdown": "> Django 1.11 before 1.11.29, 2.2 before 2.2.11, and 3.0 before 3.0.4 allows SQL Injection if untrusted data is used as a tolerance parameter in GIS functions and aggregates on Oracle. By passing a suitably crafted tolerance to GIS functions and aggregates on Oracle, it was possible to break escaping and inject malicious SQL.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | <1.11.29                                     |\n| Fixed version  | 1.11.29                                      |\n| CVSS Score     |                                          8.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.11.29",
+                "cvssV3": 8.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "1.11.29",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "8.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-19844",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-19844: Weak Password Recovery Mechanism for Forgotten Password"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-19844",
+              "help": {
+                "text": "Django before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user's email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.)\n",
+                "markdown": "> Django before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user's email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.)\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | <1.11.27                                     |\n| Fixed version  | 1.11.27                                      |\n| CVSS Score     |                                          9.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.11.27",
+                "cvssV3": 9.8,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "1.11.27",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7471",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7471: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7471",
+              "help": {
+                "text": "Django 1.11 before 1.11.28, 2.2 before 2.2.10, and 3.0 before 3.0.3 allows SQL Injection if untrusted data is used as a StringAgg delimiter (e.g., in Django applications that offer downloads of data as a series of rows with a user-specified column delimiter). By passing a suitably crafted delimiter to a contrib.postgres.aggregates.StringAgg instance, it was possible to break escaping and inject malicious SQL.\n",
+                "markdown": "> Django 1.11 before 1.11.28, 2.2 before 2.2.10, and 3.0 before 3.0.3 allows SQL Injection if untrusted data is used as a StringAgg delimiter (e.g., in Django applications that offer downloads of data as a series of rows with a user-specified column delimiter). By passing a suitably crafted delimiter to a contrib.postgres.aggregates.StringAgg instance, it was possible to break escaping and inject malicious SQL.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@1.10.4                       |\n| Affected range | <1.11.28                                     |\n| Fixed version  | 1.11.28                                      |\n| CVSS Score     |                                          9.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.11.28",
+                "cvssV3": 9.8,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "1.11.28",
+                "purls": [
+                  "pkg:pypi/django@1.10.4"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2021-33203",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-33203                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : <2.2.24                                       \n  Fixed version  : 2.2.24                                        \n  CVSS Score     : 4.9                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-3572",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-3572                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:pypi/pip@9.0.1                            \n  Affected range : <21.1                                         \n  Fixed version  : 21.1                                          \n  CVSS Score     : 5.7                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/pip-9.0.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/pip-9.0.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/pip-9.0.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2017-12794",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2017-12794                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : >=1.10.0,<1.10.8                              \n  Fixed version  : 1.10.8                                        \n  CVSS Score     : 6.1                                           \n  CVSS Vector    : CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2017-7233",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2017-7233                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : >=1.10,<1.10.7                                \n  Fixed version  : 1.10.7                                        \n  CVSS Score     : 6.1                                           \n  CVSS Vector    : CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2017-7234",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2017-7234                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : >=1.10,<1.10.7                                \n  Fixed version  : 1.10.7                                        \n  CVSS Score     : 6.1                                           \n  CVSS Vector    : CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-3498",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-3498                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : <1.11.18                                      \n  Fixed version  : 1.11.18                                       \n  CVSS Score     : 6.5                                           \n  CVSS Vector    : CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-44420",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-44420                                \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : <2.2.25                                       \n  Fixed version  : 2.2.25                                        \n  CVSS Score     : 7.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-20916",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-20916                                \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/pip@9.0.1                            \n  Affected range : <19.2                                         \n  Fixed version  : 19.2                                          \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/pip-9.0.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/pip-9.0.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/pip-9.0.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-6975",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-6975                                 \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : <1.11.19                                      \n  Fixed version  : 1.11.19                                       \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-40897",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-40897                                \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/setuptools@20.10.1                   \n  Affected range : <65.5.1                                       \n  Fixed version  : 65.5.1                                        \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/setuptools-20.10.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/setuptools-20.10.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/setuptools-20.10.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-9402",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-9402                                 \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : <1.11.29                                      \n  Fixed version  : 1.11.29                                       \n  CVSS Score     : 8.8                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-19844",
+          "ruleIndex": 11,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-19844                                \n  Severity       : CRITICAL                                      \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : <1.11.27                                      \n  Fixed version  : 1.11.27                                       \n  CVSS Score     : 9.8                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7471",
+          "ruleIndex": 12,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7471                                 \n  Severity       : CRITICAL                                      \n  Package        : pkg:pypi/django@1.10.4                        \n  Affected range : <1.11.28                                      \n  Fixed version  : 1.11.28                                       \n  CVSS Score     : 9.8                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.4/site-packages/Django-1.10.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

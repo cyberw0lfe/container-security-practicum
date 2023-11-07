@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: benchsec-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: benchsec-app
+  template:
+    metadata:
+      labels:
+        app: benchsec-app
+    spec:
+      containers:
+        - name: basic-node
+          image: registry.digitalocean.com/benchsec-reg/csresearcher/basic-node:latest
+          resources:
+            requests:
+              memory: '280Mi'
+              cpu: '200m'
+          ports:
+            - containerPort: 80
+        - name: trivy-container
+          image: registry.digitalocean.com/benchsec-reg/csresearcher/trivy-summary:latest
+          resources:
+            requests:
+              memory: '280Mi'
+              cpu: '300m'

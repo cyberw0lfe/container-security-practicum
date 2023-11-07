@@ -1,0 +1,314 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-39325",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39325"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39325",
+              "help": {
+                "text": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n",
+                "markdown": "> A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n\n|                |                           |\n|----------------|---------------------------|\n| Package        | pkg:golang/stdlib@1.19.10 |\n| Affected range | <1.20.10                  |\n| Fixed version  | 1.20.10                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.10",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "1.20.10",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.10"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29409",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29409"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29409",
+              "help": {
+                "text": "Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits.\n\nBased on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n",
+                "markdown": "> Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits.\n\nBased on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n\n|                |                           |\n|----------------|---------------------------|\n| Package        | pkg:golang/stdlib@1.19.10 |\n| Affected range | <1.19.12                  |\n| Fixed version  | 1.19.12                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.19.12",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.19.12",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.10"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39318",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39318"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39318",
+              "help": {
+                "text": "The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in <script> contexts. This may cause the template parser to improperly interpret the contents of <script> contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n",
+                "markdown": "> The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in <script> contexts. This may cause the template parser to improperly interpret the contents of <script> contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n\n|                |                           |\n|----------------|---------------------------|\n| Package        | pkg:golang/stdlib@1.19.10 |\n| Affected range | <1.20.8                   |\n| Fixed version  | 1.20.8                    |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.8",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.8",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.10"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39319",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39319"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39319",
+              "help": {
+                "text": "The html/template package does not apply the proper rules for handling occurrences of \"<script\", \"<!--\", and \"</script\" within JS literals in <script> contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.\n",
+                "markdown": "> The html/template package does not apply the proper rules for handling occurrences of \"<script\", \"<!--\", and \"</script\" within JS literals in <script> contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.\n\n|                |                           |\n|----------------|---------------------------|\n| Package        | pkg:golang/stdlib@1.19.10 |\n| Affected range | <1.20.8                   |\n| Fixed version  | 1.20.8                    |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.8",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.8",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.10"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29406",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29406"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29406",
+              "help": {
+                "text": "The HTTP/1 client does not fully validate the contents of the Host header. A maliciously crafted Host header can inject additional headers or entire requests.\n\nWith fix, the HTTP/1 client now refuses to send requests containing an invalid Request.Host or Request.URL.Host value.\n",
+                "markdown": "> The HTTP/1 client does not fully validate the contents of the Host header. A maliciously crafted Host header can inject additional headers or entire requests.\n\nWith fix, the HTTP/1 client now refuses to send requests containing an invalid Request.Host or Request.URL.Host value.\n\n|                |                           |\n|----------------|---------------------------|\n| Package        | pkg:golang/stdlib@1.19.10 |\n| Affected range | <1.19.11                  |\n| Fixed version  | 1.19.11                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.19.11",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.19.11",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.10"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-fr2g-9hjm-wr23",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-fr2g-9hjm-wr23: Authentication Bypass by Primary Weakness"
+              },
+              "helpUri": "https://scout.docker.com/v/GHSA-fr2g-9hjm-wr23",
+              "help": {
+                "text": "## Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT, and edge computing.\n\nNATS users exist within accounts, and once using accounts, the old authorization block is not applicable.\n\n\n## Problem Description\n\nWithout any authorization rules in the nats-server, users can connect without authentication.\n\nBefore nats-server 2.2.0, all authentication and authorization rules for a nats-server lived in an \"authorization\" block, defining users.  With nats-server 2.2.0 all users live inside accounts.  When using the authorization block, whose syntax predates this, those users will be placed into the implicit global account, \"$G\".  Users inside accounts go into the newer \"accounts\" block.\n\nIf an \"accounts\" block is defined, in simple deployment scenarios this is often used only to enable client access to the system account.  When the only account added is the system account \"$SYS\", the nats-server would create an implicit user in \"$G\" and set it as the `no_auth_user` account, enabling the same \"without authentication\" logic as without any rules.\n\nThis preserved the ability to connect simply, and then add one authenticated login for system access.\n\nBut with an \"authorization\" block, this is wrong.  Users exist in the global account, with login rules.  And in simple testing, they might still connect fine without administrators seeing that authentication has been disabled.\n\nThe blind-spot on our part came from encouraging and documenting a switch to using only \"accounts\", instead of \"authorization\".\n\nIn the fixed versions, using an \"authorization\" block will inhibit the implicit creation of a \"$G\" user and setting it as the `no_auth_user` target.  In unfixed versions, just creating a second account, with no users, will also inhibit this behavior.\n\n\n## Affected versions\n\nNATS Server:\n * 2.2.0 up to and including 2.9.22 and 2.10.1\n * Fixed with nats-io/nats-server: 2.10.2 and backported to 2.9.23\n\n\n## Workarounds\n\nIn the \"accounts\" block, define a second non-system account, leave it empty.\n\n    accounts {\n        SYS: {\n            users: [\n                { user: sysuser, password: makemeasandwich }\n            ]\n        }\n        DUMMY: {}  # for security, before 2.10.2\n    }\n    system_account: SYS\n\n\n## Solution\n\nAny one of these:\n\n 1. Upgrade the NATS server to at least 2.10.2 (or 2.9.23)\n 2. Or define a dummy account\n 3. Or complete the migration of authorization entries to be inside a named account in the \"accounts\" block\n\n\n## Credits\n\nProblem reported by Alex Herrington.  \nAddressed publicly in a GitHub Discussion prior to this advisory.\n",
+                "markdown": "> ## Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT, and edge computing.\n\nNATS users exist within accounts, and once using accounts, the old authorization block is not applicable.\n\n\n## Problem Description\n\nWithout any authorization rules in the nats-server, users can connect without authentication.\n\nBefore nats-server 2.2.0, all authentication and authorization rules for a nats-server lived in an \"authorization\" block, defining users.  With nats-server 2.2.0 all users live inside accounts.  When using the authorization block, whose syntax predates this, those users will be placed into the implicit global account, \"$G\".  Users inside accounts go into the newer \"accounts\" block.\n\nIf an \"accounts\" block is defined, in simple deployment scenarios this is often used only to enable client access to the system account.  When the only account added is the system account \"$SYS\", the nats-server would create an implicit user in \"$G\" and set it as the `no_auth_user` account, enabling the same \"without authentication\" logic as without any rules.\n\nThis preserved the ability to connect simply, and then add one authenticated login for system access.\n\nBut with an \"authorization\" block, this is wrong.  Users exist in the global account, with login rules.  And in simple testing, they might still connect fine without administrators seeing that authentication has been disabled.\n\nThe blind-spot on our part came from encouraging and documenting a switch to using only \"accounts\", instead of \"authorization\".\n\nIn the fixed versions, using an \"authorization\" block will inhibit the implicit creation of a \"$G\" user and setting it as the `no_auth_user` target.  In unfixed versions, just creating a second account, with no users, will also inhibit this behavior.\n\n\n## Affected versions\n\nNATS Server:\n * 2.2.0 up to and including 2.9.22 and 2.10.1\n * Fixed with nats-io/nats-server: 2.10.2 and backported to 2.9.23\n\n\n## Workarounds\n\nIn the \"accounts\" block, define a second non-system account, leave it empty.\n\n    accounts {\n        SYS: {\n            users: [\n                { user: sysuser, password: makemeasandwich }\n            ]\n        }\n        DUMMY: {}  # for security, before 2.10.2\n    }\n    system_account: SYS\n\n\n## Solution\n\nAny one of these:\n\n 1. Upgrade the NATS server to at least 2.10.2 (or 2.9.23)\n 2. Or define a dummy account\n 3. Or complete the migration of authorization entries to be inside a named account in the \"accounts\" block\n\n\n## Credits\n\nProblem reported by Alex Herrington.  \nAddressed publicly in a GitHub Discussion prior to this advisory.\n\n|                |                                                     |\n|----------------|-----------------------------------------------------|\n| Package        | pkg:golang/github.com/nats-io/nats-server/v2@2.9.19 |\n| Affected range | >=2.2.0,<2.9.23                                     |\n| Fixed version  | 2.9.23                                              |\n"
+              },
+              "properties": {
+                "affected_version": ">=2.2.0,<2.9.23",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "2.9.23",
+                "purls": [
+                  "pkg:golang/github.com/nats-io/nats-server/v2@2.9.19"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-44487",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-44487"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-44487",
+              "help": {
+                "text": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n",
+                "markdown": "> A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n\n|                |                           |\n|----------------|---------------------------|\n| Package        | pkg:golang/stdlib@1.19.10 |\n| Affected range | <1.20.10                  |\n| Fixed version  | 1.20.10                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.10",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "1.20.10",
+                "purls": [
+                  "pkg:golang/stdlib@1.19.10"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-39325",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39325             \n  Severity       : UNSPECIFIED                \n  Package        : pkg:golang/stdlib@1.19.10  \n  Affected range : <1.20.10                   \n  Fixed version  : 1.20.10                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/nats-streaming-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29409",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29409             \n  Severity       : MEDIUM                     \n  Package        : pkg:golang/stdlib@1.19.10  \n  Affected range : <1.19.12                   \n  Fixed version  : 1.19.12                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/nats-streaming-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39318",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39318             \n  Severity       : MEDIUM                     \n  Package        : pkg:golang/stdlib@1.19.10  \n  Affected range : <1.20.8                    \n  Fixed version  : 1.20.8                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/nats-streaming-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39319",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39319             \n  Severity       : MEDIUM                     \n  Package        : pkg:golang/stdlib@1.19.10  \n  Affected range : <1.20.8                    \n  Fixed version  : 1.20.8                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/nats-streaming-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29406",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29406             \n  Severity       : MEDIUM                     \n  Package        : pkg:golang/stdlib@1.19.10  \n  Affected range : <1.19.11                   \n  Fixed version  : 1.19.11                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/nats-streaming-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-fr2g-9hjm-wr23",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-fr2g-9hjm-wr23                                  \n  Severity       : HIGH                                                 \n  Package        : pkg:golang/github.com/nats-io/nats-server/v2@2.9.19  \n  Affected range : >=2.2.0,<2.9.23                                      \n  Fixed version  : 2.9.23                                               \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/nats-streaming-server"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487             \n  Severity       : HIGH                       \n  Package        : pkg:golang/stdlib@1.19.10  \n  Affected range : <1.20.10                   \n  Fixed version  : 1.20.10                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/nats-streaming-server"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

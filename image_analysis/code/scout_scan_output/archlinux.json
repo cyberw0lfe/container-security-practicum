@@ -1,0 +1,398 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-45283",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-45283"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-45283",
+              "help": {
+                "text": "The filepath package does not recognize paths with a \\??\\ prefix as special.\n\nOn Windows, a path beginning with \\??\\ is a Root Local Device path equivalent to a path beginning with \\\\?\\. Paths with a \\??\\ prefix may be used to access arbitrary locations on the system. For example, the path \\??\\c:\\x is equivalent to the more common path c:\\x.\n\nBefore fix, Clean could convert a rooted path such as \\a\\..\\??\\b into the root local device path \\??\\b. Clean will now convert this to .\\??\\b.\n\nSimilarly, Join(\\, ??, b) could convert a seemingly innocent sequence of path elements into the root local device path \\??\\b. Join will now convert this to \\.\\??\\b.\n\nIn addition, with fix, IsAbs now correctly reports paths beginning with \\??\\ as absolute, and VolumeName correctly reports the \\??\\ prefix as a volume name.\n",
+                "markdown": "> The filepath package does not recognize paths with a \\??\\ prefix as special.\n\nOn Windows, a path beginning with \\??\\ is a Root Local Device path equivalent to a path beginning with \\\\?\\. Paths with a \\??\\ prefix may be used to access arbitrary locations on the system. For example, the path \\??\\c:\\x is equivalent to the more common path c:\\x.\n\nBefore fix, Clean could convert a rooted path such as \\a\\..\\??\\b into the root local device path \\??\\b. Clean will now convert this to .\\??\\b.\n\nSimilarly, Join(\\, ??, b) could convert a seemingly innocent sequence of path elements into the root local device path \\??\\b. Join will now convert this to \\.\\??\\b.\n\nIn addition, with fix, IsAbs now correctly reports paths beginning with \\??\\ as absolute, and VolumeName correctly reports the \\??\\ prefix as a volume name.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.4 |\n| Affected range | <1.20.11                 |\n| Fixed version  | 1.20.11                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.11",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "1.20.11",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.4"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-45284",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-45284"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-45284",
+              "help": {
+                "text": "On Windows, The IsLocal function does not correctly detect reserved device names in some cases.\n\nReserved names followed by spaces, such as \"COM1 \", and reserved names \"COM\" and \"LPT\" followed by superscript 1, 2, or 3, are incorrectly reported as local.\n\nWith fix, IsLocal now correctly reports these names as non-local.\n",
+                "markdown": "> On Windows, The IsLocal function does not correctly detect reserved device names in some cases.\n\nReserved names followed by spaces, such as \"COM1 \", and reserved names \"COM\" and \"LPT\" followed by superscript 1, 2, or 3, are incorrectly reported as local.\n\nWith fix, IsLocal now correctly reports these names as non-local.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.4 |\n| Affected range | <1.20.11                 |\n| Fixed version  | 1.20.11                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.11",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "1.20.11",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.4"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29409",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29409"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29409",
+              "help": {
+                "text": "Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits.\n\nBased on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n",
+                "markdown": "> Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits.\n\nBased on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.4 |\n| Affected range | >=1.20.0-0,<1.20.7       |\n| Fixed version  | 1.20.7                   |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.20.0-0,<1.20.7",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.7",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.4"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39318",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39318"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39318",
+              "help": {
+                "text": "The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in <script> contexts. This may cause the template parser to improperly interpret the contents of <script> contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n",
+                "markdown": "> The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in <script> contexts. This may cause the template parser to improperly interpret the contents of <script> contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.4 |\n| Affected range | <1.20.8                  |\n| Fixed version  | 1.20.8                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.8",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.8",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.4"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39319",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39319"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39319",
+              "help": {
+                "text": "The html/template package does not apply the proper rules for handling occurrences of \"<script\", \"<!--\", and \"</script\" within JS literals in <script> contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.\n",
+                "markdown": "> The html/template package does not apply the proper rules for handling occurrences of \"<script\", \"<!--\", and \"</script\" within JS literals in <script> contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.4 |\n| Affected range | <1.20.8                  |\n| Fixed version  | 1.20.8                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.8",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.8",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.4"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29406",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29406"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29406",
+              "help": {
+                "text": "The HTTP/1 client does not fully validate the contents of the Host header. A maliciously crafted Host header can inject additional headers or entire requests.\n\nWith fix, the HTTP/1 client now refuses to send requests containing an invalid Request.Host or Request.URL.Host value.\n",
+                "markdown": "> The HTTP/1 client does not fully validate the contents of the Host header. A maliciously crafted Host header can inject additional headers or entire requests.\n\nWith fix, the HTTP/1 client now refuses to send requests containing an invalid Request.Host or Request.URL.Host value.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.4 |\n| Affected range | >=1.20.0-0,<1.20.6       |\n| Fixed version  | 1.20.6                   |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.20.0-0,<1.20.6",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.6",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.4"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39325",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39325"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39325",
+              "help": {
+                "text": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n",
+                "markdown": "> A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.4 |\n| Affected range | <1.20.10                 |\n| Fixed version  | 1.20.10                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.10",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "1.20.10",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.4"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-44487",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-44487"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-44487",
+              "help": {
+                "text": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n",
+                "markdown": "> A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.4 |\n| Affected range | <1.20.10                 |\n| Fixed version  | 1.20.10                  |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.10",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "1.20.10",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.4"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29403",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29403"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29403",
+              "help": {
+                "text": "On Unix platforms, the Go runtime does not behave differently when a binary is run with the setuid/setgid bits. This can be dangerous in certain cases, such as when dumping memory state, or assuming the status of standard i/o file descriptors.\n\nIf a setuid/setgid binary is executed with standard I/O file descriptors closed, opening any files can result in unexpected content being read or written with elevated privileges. Similarly, if a setuid/setgid program is terminated, either via panic or signal, it may leak the contents of its registers.\n",
+                "markdown": "> On Unix platforms, the Go runtime does not behave differently when a binary is run with the setuid/setgid bits. This can be dangerous in certain cases, such as when dumping memory state, or assuming the status of standard i/o file descriptors.\n\nIf a setuid/setgid binary is executed with standard I/O file descriptors closed, opening any files can result in unexpected content being read or written with elevated privileges. Similarly, if a setuid/setgid program is terminated, either via panic or signal, it may leak the contents of its registers.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.4 |\n| Affected range | >=1.20.0-0,<1.20.5       |\n| Fixed version  | 1.20.5                   |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.20.0-0,<1.20.5",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "1.20.5",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.4"
+                ],
+                "security-severity": "7.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.9"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-45283",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-45283            \n  Severity       : UNSPECIFIED               \n  Package        : pkg:golang/stdlib@1.20.4  \n  Affected range : <1.20.11                  \n  Fixed version  : 1.20.11                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/captree"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-45284",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-45284            \n  Severity       : UNSPECIFIED               \n  Package        : pkg:golang/stdlib@1.20.4  \n  Affected range : <1.20.11                  \n  Fixed version  : 1.20.11                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/captree"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29409",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29409            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.20.4  \n  Affected range : >=1.20.0-0,<1.20.7        \n  Fixed version  : 1.20.7                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/captree"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39318",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39318            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.20.4  \n  Affected range : <1.20.8                   \n  Fixed version  : 1.20.8                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/captree"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39319",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39319            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.20.4  \n  Affected range : <1.20.8                   \n  Fixed version  : 1.20.8                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/captree"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29406",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29406            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.20.4  \n  Affected range : >=1.20.0-0,<1.20.6        \n  Fixed version  : 1.20.6                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/captree"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39325",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39325            \n  Severity       : HIGH                      \n  Package        : pkg:golang/stdlib@1.20.4  \n  Affected range : <1.20.10                  \n  Fixed version  : 1.20.10                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/captree"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487            \n  Severity       : HIGH                      \n  Package        : pkg:golang/stdlib@1.20.4  \n  Affected range : <1.20.10                  \n  Fixed version  : 1.20.10                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/captree"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29403",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29403            \n  Severity       : HIGH                      \n  Package        : pkg:golang/stdlib@1.20.4  \n  Affected range : >=1.20.0-0,<1.20.5        \n  Fixed version  : 1.20.5                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/captree"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

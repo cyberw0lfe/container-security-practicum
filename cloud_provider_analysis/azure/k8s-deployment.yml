@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kube-app
+  template:
+    metadata:
+      labels:
+        app: kube-app
+    spec:
+      serviceAccountName: trivy-sa
+      containers:
+        - name: basic-node
+          image: <acr-name>.azurecr.io/basic-node:latest
+          resources:
+            requests:
+              memory: '384Mi'
+              cpu: '100m'
+          ports:
+            - containerPort: 80
+        - name: trivy-summary
+          image: <acr-name>.azurecr.io/trivy-summary:latest
+          resources:
+            requests:
+              memory: '768Mi'
+              cpu: '500m'

@@ -1,0 +1,286 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-5678",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-5678"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-5678",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                |\n|----------------|----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18 |\n| Affected range | <3.1.4-r1                                                      |\n| Fixed version  | 3.1.4-r1                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<3.1.4-r1",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "3.1.4-r1",
+                "purls": [
+                  "pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-5363",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-5363"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-5363",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                |\n|----------------|----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18 |\n| Affected range | <3.1.4-r0                                                      |\n| Fixed version  | 3.1.4-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<3.1.4-r0",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "3.1.4-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.9"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-5678",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-5678                                                   \n  Severity       : UNSPECIFIED                                                     \n  Package        : pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18  \n  Affected range : <3.1.4-r1                                                       \n  Fixed version  : 3.1.4-r1                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/engines-3/capi.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/engines-3/padlock.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/misc/CA.pl"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/libcrypto.so.3"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/engines-3/afalg.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/openssl.cnf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/openssl.cnf.dist"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/engines-3/loader_attic.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/ossl-modules/legacy.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/ct_log_list.cnf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/ct_log_list.cnf.dist"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/misc/tsget.pl"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/libssl.so.3"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-5363",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-5363                                                   \n  Severity       : HIGH                                                            \n  Package        : pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18  \n  Affected range : <3.1.4-r0                                                       \n  Fixed version  : 3.1.4-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/engines-3/capi.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/engines-3/padlock.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/misc/CA.pl"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/libcrypto.so.3"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/engines-3/afalg.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/openssl.cnf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/openssl.cnf.dist"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/engines-3/loader_attic.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/ossl-modules/legacy.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/ct_log_list.cnf"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/ct_log_list.cnf.dist"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/etc/ssl/misc/tsget.pl"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/libssl.so.3"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

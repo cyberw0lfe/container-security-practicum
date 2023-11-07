@@ -1,0 +1,454 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-5363",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-5363"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-5363",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                |\n|----------------|----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18 |\n| Affected range | <3.1.4-r0                                                      |\n| Fixed version  | 3.1.4-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<3.1.4-r0",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "3.1.4-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-8912",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-8912"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-8912",
+              "help": {
+                "text": "The Go AWS S3 Crypto SDK contains vulnerabilities that can permit an attacker with write access to a bucket to decrypt files in that bucket.\n\nFiles encrypted by the V1 EncryptionClient using either the AES-CBC content cipher or the KMS key wrap algorithm are vulnerable. Users should migrate to the V1 EncryptionClientV2 API, which will not create vulnerable files. Old files will remain vulnerable until re-encrypted with the new client.\n",
+                "markdown": "> The Go AWS S3 Crypto SDK contains vulnerabilities that can permit an attacker with write access to a bucket to decrypt files in that bucket.\n\nFiles encrypted by the V1 EncryptionClient using either the AES-CBC content cipher or the KMS key wrap algorithm are vulnerable. Users should migrate to the V1 EncryptionClientV2 API, which will not create vulnerable files. Old files will remain vulnerable until re-encrypted with the new client.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:golang/github.com/aws/aws-sdk-go@1.44.47 |\n| Affected range | >=0                                          |\n| Fixed version  | not fixed                                    |\n"
+              },
+              "properties": {
+                "affected_version": ">=0",
+                "cvssV3_severity": "LOW",
+                "fixed_version": "not fixed",
+                "purls": [
+                  "pkg:golang/github.com/aws/aws-sdk-go@1.44.47"
+                ],
+                "security-severity": "2.5",
+                "tags": [
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-1297",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-1297: Premature Release of Resource During Expected Lifetime"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-1297",
+              "help": {
+                "text": "Consul and Consul Enterprise's cluster peering implementation contained a flaw whereby a peer cluster with service of the same name as a local service could corrupt Consul state, resulting in denial of service. This vulnerability was resolved in Consul 1.14.5, and 1.15.3\n",
+                "markdown": "> Consul and Consul Enterprise's cluster peering implementation contained a flaw whereby a peer cluster with service of the same name as a local service could corrupt Consul state, resulting in denial of service. This vulnerability was resolved in Consul 1.14.5, and 1.15.3\n\n|                |                                                |\n|----------------|------------------------------------------------|\n| Package        | pkg:golang/github.com/hashicorp/consul@1.10.12 |\n| Affected range | <1.14.5                                        |\n| Fixed version  | 1.14.5                                         |\n| CVSS Score     |                                            4.9 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.14.5",
+                "cvssV3": 4.9,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "1.14.5",
+                "purls": [
+                  "pkg:golang/github.com/hashicorp/consul@1.10.12"
+                ],
+                "security-severity": "4.9",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-8911",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-8911"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-8911",
+              "help": {
+                "text": "The Go AWS S3 Crypto SDK contains vulnerabilities that can permit an attacker with write access to a bucket to decrypt files in that bucket.\n\nFiles encrypted by the V1 EncryptionClient using either the AES-CBC content cipher or the KMS key wrap algorithm are vulnerable. Users should migrate to the V1 EncryptionClientV2 API, which will not create vulnerable files. Old files will remain vulnerable until re-encrypted with the new client.\n",
+                "markdown": "> The Go AWS S3 Crypto SDK contains vulnerabilities that can permit an attacker with write access to a bucket to decrypt files in that bucket.\n\nFiles encrypted by the V1 EncryptionClient using either the AES-CBC content cipher or the KMS key wrap algorithm are vulnerable. Users should migrate to the V1 EncryptionClientV2 API, which will not create vulnerable files. Old files will remain vulnerable until re-encrypted with the new client.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:golang/github.com/aws/aws-sdk-go@1.44.47 |\n| Affected range | >=0                                          |\n| Fixed version  | not fixed                                    |\n"
+              },
+              "properties": {
+                "affected_version": ">=0",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "not fixed",
+                "purls": [
+                  "pkg:golang/github.com/aws/aws-sdk-go@1.44.47"
+                ],
+                "security-severity": "5.6",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-40716",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-40716: Unchecked Return Value"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-40716",
+              "help": {
+                "text": "HashiCorp Consul and Consul Enterprise versions prior to 1.11.9, 1.12.5, and 1.13.2 do not check for multiple SAN URI values in a CSR on the internal RPC endpoint, enabling leverage of privileged access to bypass service mesh intentions. A specially crafted CSR sent directly to Consul’s internal server agent RPC endpoint can include multiple SAN URI values with additional service names. This issue has been fixed in versions 1.11.9, 1.12.5, and 1.13.2. There are no known workarounds.\n",
+                "markdown": "> HashiCorp Consul and Consul Enterprise versions prior to 1.11.9, 1.12.5, and 1.13.2 do not check for multiple SAN URI values in a CSR on the internal RPC endpoint, enabling leverage of privileged access to bypass service mesh intentions. A specially crafted CSR sent directly to Consul’s internal server agent RPC endpoint can include multiple SAN URI values with additional service names. This issue has been fixed in versions 1.11.9, 1.12.5, and 1.13.2. There are no known workarounds.\n\n|                |                                                |\n|----------------|------------------------------------------------|\n| Package        | pkg:golang/github.com/hashicorp/consul@1.10.12 |\n| Affected range | <1.11.9                                        |\n| Fixed version  | 1.11.9                                         |\n| CVSS Score     |                                            6.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.11.9",
+                "cvssV3": 6.5,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+                "fixed_version": "1.11.9",
+                "purls": [
+                  "pkg:golang/github.com/hashicorp/consul@1.10.12"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0845",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-0845: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-0845",
+              "help": {
+                "text": "Consul and Consul Enterprise allowed an authenticated user with service:write permissions to trigger a workflow that causes Consul server and client agents to crash under certain circumstances. This vulnerability was fixed in Consul 1.14.5.\n",
+                "markdown": "> Consul and Consul Enterprise allowed an authenticated user with service:write permissions to trigger a workflow that causes Consul server and client agents to crash under certain circumstances. This vulnerability was fixed in Consul 1.14.5.\n\n|                |                                                |\n|----------------|------------------------------------------------|\n| Package        | pkg:golang/github.com/hashicorp/consul@1.10.12 |\n| Affected range | <1.14.5                                        |\n| Fixed version  | 1.14.5                                         |\n| CVSS Score     |                                            6.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.14.5",
+                "cvssV3": 6.5,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "1.14.5",
+                "purls": [
+                  "pkg:golang/github.com/hashicorp/consul@1.10.12"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-28841",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-28841: Missing Encryption of Sensitive Data"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-28841",
+              "help": {
+                "text": "[Moby](https://mobyproject.org/) is an open source container framework developed by Docker Inc. that is distributed as Docker, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (`dockerd`), which is developed as [moby/moby](https://github.com/moby/moby) is commonly referred to as *Docker*.\n\nSwarm Mode, which is compiled in and delivered by default in `dockerd` and is thus present in most major Moby downstreams, is a simple, built-in container orchestrator that is implemented through a combination of [SwarmKit](https://github.com/moby/swarmkit) and supporting network code.\n\nThe `overlay` network driver is a core feature of Swarm Mode, providing isolated virtual LANs that allow communication between containers and services across the cluster. This driver is an implementation/user of [VXLAN](https://en.wikipedia.org/wiki/Virtual_Extensible_LAN), which encapsulates link-layer (Ethernet) frames in UDP datagrams that tag the frame with a VXLAN Network ID (VNI) that identifies the originating overlay network. In addition, the overlay network driver supports an optional, off-by-default encrypted mode, which is especially useful when VXLAN packets traverses an untrusted network between nodes.\n\nEncrypted overlay networks function by encapsulating the VXLAN datagrams through the use of the [IPsec Encapsulating Security Payload](https://en.wikipedia.org/wiki/IPsec#Encapsulating_Security_Payload) protocol in [Transport mode](https://en.wikipedia.org/wiki/IPsec#Transport_mode). By deploying IPSec encapsulation, encrypted overlay networks gain the additional properties of source authentication through cryptographic proof, data integrity through check-summing, and confidentiality through encryption.\n\nWhen setting an endpoint up on an encrypted overlay network, Moby installs three [iptables](https://www.netfilter.org/projects/iptables/index.html) (Linux kernel firewall) rules that enforce both incoming and outgoing IPSec. These rules rely on the `u32` iptables extension provided by the `xt_u32` kernel module to directly filter on a VXLAN packet's VNI field, so that IPSec guarantees can be enforced on encrypted overlay networks without interfering with other overlay networks or other users of VXLAN.\n\nAn [iptables rule](https://github.com/moby/libnetwork/blob/d9fae4c73daf76c3b0f77e14b45b8bf612ba764d/drivers/overlay/encryption.go#L205-L207) designates outgoing VXLAN datagrams with a VNI that corresponds to an encrypted overlay network for IPsec encapsulation.\n\nOn Red Hat Enterprise Linux and derivatives such as CentOS and Rocky, the `xt_u32` module has been:\n* [moved to the kernel-modules-extra package and no longer installed by default in RHEL 8.3](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.3_release_notes/rhel-8-3-0-release#technology-preview_networking)\n* [officially deprecated in RHEL 8.6](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.6_release_notes/deprecated_functionality#deprecated-functionality_networking)\n* [removed completely in RHEL 9](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/considerations_in_adopting_rhel_9/assembly_networking_considerations-in-adopting-rhel-9#ref_firewall-networking_assembly_networking)\n\nThis rule is not created when `xt_u32` is unavailable, even though the container is still attached to the network.\n\n## Impact\nEncrypted overlay networks on affected platforms silently transmit unencrypted data. As a result, `overlay` networks may appear to be functional, passing traffic as expected, but without any of the expected confidentiality or data integrity guarantees.\n\nIt is possible for an attacker sitting in a trusted position on the network to read all of the application traffic that is moving across the overlay network, resulting in unexpected secrets or user data disclosure. Thus, because many database protocols, internal APIs, etc. are not protected by a second layer of encryption, a user may rely on Swarm encrypted overlay networks to provide confidentiality, which due to this vulnerability is no longer guaranteed.\n\n## Patches\nPatches are available in Moby releases 23.0.3, and 20.10.24. As Mirantis Container Runtime's 20.10 releases are numbered differently, users of that platform should update to 20.10.16.\n\n## Workarounds\n* Close the VXLAN port (by default, UDP port 4789) to outgoing traffic at the Internet boundary (see [GHSA-vwm3-crmr-xfxw](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)) in order to prevent unintentionally leaking unencrypted traffic over the Internet.\n* Ensure that the `xt_u32` kernel module is available on all nodes of the Swarm cluster.\n\n## Background\n* [#43382 ](https://github.com/moby/moby/issues/43382)partially discussed this concern, but did not consider the security implications.\n* Mirantis FIELD-5788 essentially duplicates [#43382](https://github.com/moby/moby/issues/43382), and was created six months earlier; it similarly overlooked the security implications.\n* [#45118](https://github.com/moby/moby/pull/45118) is the ancestor of the final patches, and was where the security implications were discovered.\n\n## Related\n* [CVE-2023-28840: Encrypted overlay network may be unauthenticated](https://github.com/moby/moby/security/advisories/GHSA-232p-vwff-86mp)\n* [CVE-2023-28842: Encrypted overlay network with a single endpoint is unauthenticated](https://github.com/moby/moby/security/advisories/GHSA-6wrf-mxfj-pf5p)\n* [GHSA-vwm3-crmr-xfxw: The Swarm VXLAN port may be exposed to attack due to ambiguous documentation](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)\n* [GHSA-gvm4-2qqg-m333: Security issues in encrypted overlay networks](https://github.com/moby/libnetwork/security/advisories/GHSA-gvm4-2qqg-m333) (libnetwork)\n",
+                "markdown": "> [Moby](https://mobyproject.org/) is an open source container framework developed by Docker Inc. that is distributed as Docker, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (`dockerd`), which is developed as [moby/moby](https://github.com/moby/moby) is commonly referred to as *Docker*.\n\nSwarm Mode, which is compiled in and delivered by default in `dockerd` and is thus present in most major Moby downstreams, is a simple, built-in container orchestrator that is implemented through a combination of [SwarmKit](https://github.com/moby/swarmkit) and supporting network code.\n\nThe `overlay` network driver is a core feature of Swarm Mode, providing isolated virtual LANs that allow communication between containers and services across the cluster. This driver is an implementation/user of [VXLAN](https://en.wikipedia.org/wiki/Virtual_Extensible_LAN), which encapsulates link-layer (Ethernet) frames in UDP datagrams that tag the frame with a VXLAN Network ID (VNI) that identifies the originating overlay network. In addition, the overlay network driver supports an optional, off-by-default encrypted mode, which is especially useful when VXLAN packets traverses an untrusted network between nodes.\n\nEncrypted overlay networks function by encapsulating the VXLAN datagrams through the use of the [IPsec Encapsulating Security Payload](https://en.wikipedia.org/wiki/IPsec#Encapsulating_Security_Payload) protocol in [Transport mode](https://en.wikipedia.org/wiki/IPsec#Transport_mode). By deploying IPSec encapsulation, encrypted overlay networks gain the additional properties of source authentication through cryptographic proof, data integrity through check-summing, and confidentiality through encryption.\n\nWhen setting an endpoint up on an encrypted overlay network, Moby installs three [iptables](https://www.netfilter.org/projects/iptables/index.html) (Linux kernel firewall) rules that enforce both incoming and outgoing IPSec. These rules rely on the `u32` iptables extension provided by the `xt_u32` kernel module to directly filter on a VXLAN packet's VNI field, so that IPSec guarantees can be enforced on encrypted overlay networks without interfering with other overlay networks or other users of VXLAN.\n\nAn [iptables rule](https://github.com/moby/libnetwork/blob/d9fae4c73daf76c3b0f77e14b45b8bf612ba764d/drivers/overlay/encryption.go#L205-L207) designates outgoing VXLAN datagrams with a VNI that corresponds to an encrypted overlay network for IPsec encapsulation.\n\nOn Red Hat Enterprise Linux and derivatives such as CentOS and Rocky, the `xt_u32` module has been:\n* [moved to the kernel-modules-extra package and no longer installed by default in RHEL 8.3](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.3_release_notes/rhel-8-3-0-release#technology-preview_networking)\n* [officially deprecated in RHEL 8.6](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.6_release_notes/deprecated_functionality#deprecated-functionality_networking)\n* [removed completely in RHEL 9](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/considerations_in_adopting_rhel_9/assembly_networking_considerations-in-adopting-rhel-9#ref_firewall-networking_assembly_networking)\n\nThis rule is not created when `xt_u32` is unavailable, even though the container is still attached to the network.\n\n## Impact\nEncrypted overlay networks on affected platforms silently transmit unencrypted data. As a result, `overlay` networks may appear to be functional, passing traffic as expected, but without any of the expected confidentiality or data integrity guarantees.\n\nIt is possible for an attacker sitting in a trusted position on the network to read all of the application traffic that is moving across the overlay network, resulting in unexpected secrets or user data disclosure. Thus, because many database protocols, internal APIs, etc. are not protected by a second layer of encryption, a user may rely on Swarm encrypted overlay networks to provide confidentiality, which due to this vulnerability is no longer guaranteed.\n\n## Patches\nPatches are available in Moby releases 23.0.3, and 20.10.24. As Mirantis Container Runtime's 20.10 releases are numbered differently, users of that platform should update to 20.10.16.\n\n## Workarounds\n* Close the VXLAN port (by default, UDP port 4789) to outgoing traffic at the Internet boundary (see [GHSA-vwm3-crmr-xfxw](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)) in order to prevent unintentionally leaking unencrypted traffic over the Internet.\n* Ensure that the `xt_u32` kernel module is available on all nodes of the Swarm cluster.\n\n## Background\n* [#43382 ](https://github.com/moby/moby/issues/43382)partially discussed this concern, but did not consider the security implications.\n* Mirantis FIELD-5788 essentially duplicates [#43382](https://github.com/moby/moby/issues/43382), and was created six months earlier; it similarly overlooked the security implications.\n* [#45118](https://github.com/moby/moby/pull/45118) is the ancestor of the final patches, and was where the security implications were discovered.\n\n## Related\n* [CVE-2023-28840: Encrypted overlay network may be unauthenticated](https://github.com/moby/moby/security/advisories/GHSA-232p-vwff-86mp)\n* [CVE-2023-28842: Encrypted overlay network with a single endpoint is unauthenticated](https://github.com/moby/moby/security/advisories/GHSA-6wrf-mxfj-pf5p)\n* [GHSA-vwm3-crmr-xfxw: The Swarm VXLAN port may be exposed to attack due to ambiguous documentation](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)\n* [GHSA-gvm4-2qqg-m333: Security issues in encrypted overlay networks](https://github.com/moby/libnetwork/security/advisories/GHSA-gvm4-2qqg-m333) (libnetwork)\n\n|                |                                                           |\n|----------------|-----------------------------------------------------------|\n| Package        | pkg:golang/github.com/docker/docker@20.10.21+incompatible |\n| Affected range | >=1.12.0,<20.10.24                                        |\n| Fixed version  | 20.10.24                                                  |\n| CVSS Score     |                                                       6.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N              |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.12.0,<20.10.24",
+                "cvssV3": 6.8,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+                "fixed_version": "20.10.24",
+                "purls": [
+                  "pkg:golang/github.com/docker/docker@20.10.21+incompatible"
+                ],
+                "security-severity": "6.8",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-28842",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-28842: Unprotected Alternate Channel"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-28842",
+              "help": {
+                "text": "[Moby](https://mobyproject.org/) is an open source container framework developed by Docker Inc. that is distributed as Docker, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (`dockerd`), which is developed as [moby/moby](https://github.com/moby/moby) is commonly referred to as *Docker*.\n\nSwarm Mode, which is compiled in and delivered by default in `dockerd` and is thus present in most major Moby downstreams, is a simple, built-in container orchestrator that is implemented through a combination of [SwarmKit](https://github.com/moby/swarmkit) and supporting network code.\n\nThe `overlay` network driver is a core feature of Swarm Mode, providing isolated virtual LANs that allow communication between containers and services across the cluster. This driver is an implementation/user of [VXLAN](https://en.wikipedia.org/wiki/Virtual_Extensible_LAN), which encapsulates link-layer (Ethernet) frames in UDP datagrams that tag the frame with a VXLAN Network ID (VNI) that identifies the originating overlay network. In addition, the overlay network driver supports an optional, off-by-default encrypted mode, which is especially useful when VXLAN packets traverses an untrusted network between nodes.\n\nEncrypted overlay networks function by encapsulating the VXLAN datagrams through the use of the [IPsec Encapsulating Security Payload](https://en.wikipedia.org/wiki/IPsec#Encapsulating_Security_Payload) protocol in [Transport mode](https://en.wikipedia.org/wiki/IPsec#Transport_mode). By deploying IPSec encapsulation, encrypted overlay networks gain the additional properties of source authentication through cryptographic proof, data integrity through check-summing, and confidentiality through encryption.\n\nWhen setting an endpoint up on an encrypted overlay network, Moby installs three [iptables](https://www.netfilter.org/projects/iptables/index.html) (Linux kernel firewall) rules that enforce both incoming and outgoing IPSec. These rules rely on the `u32` iptables extension provided by the `xt_u32` kernel module to directly filter on a VXLAN packet's VNI field, so that IPSec guarantees can be enforced on encrypted overlay networks without interfering with other overlay networks or other users of VXLAN.\n\nThe `overlay` driver dynamically and lazily defines the kernel configuration for the VXLAN network on each node as containers are attached and detached. Routes and encryption parameters are only defined for destination nodes that participate in the network. The iptables rules that prevent encrypted overlay networks from accepting unencrypted packets are not created until a peer is available with which to communicate.\n\n## Impact\nEncrypted overlay networks silently accept cleartext VXLAN datagrams that are tagged with the VNI of an encrypted overlay network. As a result, it is possible to inject arbitrary Ethernet frames into the encrypted overlay network by encapsulating them in VXLAN datagrams. The implications of this can be quite dire, and [GHSA-vwm3-crmr-xfxw](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw) should be referenced for a deeper exploration.\n\n## Patches\nPatches are available in Moby releases 23.0.3, and 20.10.24. As Mirantis Container Runtime's 20.10 releases are numbered differently, users of that platform should update to 20.10.16.\n\n## Workarounds\n* In multi-node clusters, deploy a global ‘pause’ container for each encrypted overlay network, on every node. For example, use the `registry.k8s.io/pause` image and a `--mode global` service.\n* For a single-node cluster, do not use overlay networks of any sort. Bridge networks provide the same connectivity on a single node and have no multi-node features.\nThe Swarm ingress feature is implemented using an overlay network, but can be disabled by publishing ports in `host` mode instead of `ingress` mode (allowing the use of an external load balancer), and removing the `ingress` network.\n* If encrypted overlay networks are in exclusive use, block UDP port 4789 from traffic that has not been validated by IPSec. For example, `iptables -A INPUT -m udp —-dport 4789 -m policy --dir in --pol none -j DROP`.\n\n## Background\n* This issue was discovered while characterizing and mitigating [CVE-2023-28840](https://github.com/moby/moby/security/advisories/GHSA-232p-vwff-86mp) and [CVE-2023-28841](https://github.com/moby/moby/security/advisories/GHSA-33pg-m6jh-5237).\n\n## Related\n* [CVE-2023-28841: Encrypted overlay network traffic may be unencrypted](https://github.com/moby/moby/security/advisories/GHSA-33pg-m6jh-5237)\n* [CVE-2023-28840: Encrypted overlay network may be unauthenticated](https://github.com/moby/moby/security/advisories/GHSA-232p-vwff-86mp)\n* [GHSA-vwm3-crmr-xfxw: The Swarm VXLAN port may be exposed to attack due to ambiguous documentation](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)\n* [GHSA-gvm4-2qqg-m333: Security issues in encrypted overlay networks](https://github.com/moby/libnetwork/security/advisories/GHSA-gvm4-2qqg-m333) (libnetwork)\n",
+                "markdown": "> [Moby](https://mobyproject.org/) is an open source container framework developed by Docker Inc. that is distributed as Docker, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (`dockerd`), which is developed as [moby/moby](https://github.com/moby/moby) is commonly referred to as *Docker*.\n\nSwarm Mode, which is compiled in and delivered by default in `dockerd` and is thus present in most major Moby downstreams, is a simple, built-in container orchestrator that is implemented through a combination of [SwarmKit](https://github.com/moby/swarmkit) and supporting network code.\n\nThe `overlay` network driver is a core feature of Swarm Mode, providing isolated virtual LANs that allow communication between containers and services across the cluster. This driver is an implementation/user of [VXLAN](https://en.wikipedia.org/wiki/Virtual_Extensible_LAN), which encapsulates link-layer (Ethernet) frames in UDP datagrams that tag the frame with a VXLAN Network ID (VNI) that identifies the originating overlay network. In addition, the overlay network driver supports an optional, off-by-default encrypted mode, which is especially useful when VXLAN packets traverses an untrusted network between nodes.\n\nEncrypted overlay networks function by encapsulating the VXLAN datagrams through the use of the [IPsec Encapsulating Security Payload](https://en.wikipedia.org/wiki/IPsec#Encapsulating_Security_Payload) protocol in [Transport mode](https://en.wikipedia.org/wiki/IPsec#Transport_mode). By deploying IPSec encapsulation, encrypted overlay networks gain the additional properties of source authentication through cryptographic proof, data integrity through check-summing, and confidentiality through encryption.\n\nWhen setting an endpoint up on an encrypted overlay network, Moby installs three [iptables](https://www.netfilter.org/projects/iptables/index.html) (Linux kernel firewall) rules that enforce both incoming and outgoing IPSec. These rules rely on the `u32` iptables extension provided by the `xt_u32` kernel module to directly filter on a VXLAN packet's VNI field, so that IPSec guarantees can be enforced on encrypted overlay networks without interfering with other overlay networks or other users of VXLAN.\n\nThe `overlay` driver dynamically and lazily defines the kernel configuration for the VXLAN network on each node as containers are attached and detached. Routes and encryption parameters are only defined for destination nodes that participate in the network. The iptables rules that prevent encrypted overlay networks from accepting unencrypted packets are not created until a peer is available with which to communicate.\n\n## Impact\nEncrypted overlay networks silently accept cleartext VXLAN datagrams that are tagged with the VNI of an encrypted overlay network. As a result, it is possible to inject arbitrary Ethernet frames into the encrypted overlay network by encapsulating them in VXLAN datagrams. The implications of this can be quite dire, and [GHSA-vwm3-crmr-xfxw](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw) should be referenced for a deeper exploration.\n\n## Patches\nPatches are available in Moby releases 23.0.3, and 20.10.24. As Mirantis Container Runtime's 20.10 releases are numbered differently, users of that platform should update to 20.10.16.\n\n## Workarounds\n* In multi-node clusters, deploy a global ‘pause’ container for each encrypted overlay network, on every node. For example, use the `registry.k8s.io/pause` image and a `--mode global` service.\n* For a single-node cluster, do not use overlay networks of any sort. Bridge networks provide the same connectivity on a single node and have no multi-node features.\nThe Swarm ingress feature is implemented using an overlay network, but can be disabled by publishing ports in `host` mode instead of `ingress` mode (allowing the use of an external load balancer), and removing the `ingress` network.\n* If encrypted overlay networks are in exclusive use, block UDP port 4789 from traffic that has not been validated by IPSec. For example, `iptables -A INPUT -m udp —-dport 4789 -m policy --dir in --pol none -j DROP`.\n\n## Background\n* This issue was discovered while characterizing and mitigating [CVE-2023-28840](https://github.com/moby/moby/security/advisories/GHSA-232p-vwff-86mp) and [CVE-2023-28841](https://github.com/moby/moby/security/advisories/GHSA-33pg-m6jh-5237).\n\n## Related\n* [CVE-2023-28841: Encrypted overlay network traffic may be unencrypted](https://github.com/moby/moby/security/advisories/GHSA-33pg-m6jh-5237)\n* [CVE-2023-28840: Encrypted overlay network may be unauthenticated](https://github.com/moby/moby/security/advisories/GHSA-232p-vwff-86mp)\n* [GHSA-vwm3-crmr-xfxw: The Swarm VXLAN port may be exposed to attack due to ambiguous documentation](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)\n* [GHSA-gvm4-2qqg-m333: Security issues in encrypted overlay networks](https://github.com/moby/libnetwork/security/advisories/GHSA-gvm4-2qqg-m333) (libnetwork)\n\n|                |                                                           |\n|----------------|-----------------------------------------------------------|\n| Package        | pkg:golang/github.com/docker/docker@20.10.21+incompatible |\n| Affected range | >=1.12.0,<20.10.24                                        |\n| Fixed version  | 20.10.24                                                  |\n| CVSS Score     |                                                       6.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N              |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.12.0,<20.10.24",
+                "cvssV3": 6.8,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N",
+                "fixed_version": "20.10.24",
+                "purls": [
+                  "pkg:golang/github.com/docker/docker@20.10.21+incompatible"
+                ],
+                "security-severity": "6.8",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-41803",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-41803: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-41803",
+              "help": {
+                "text": "HashiCorp Consul 1.8.1 up to 1.11.8, 1.12.4, and 1.13.1 do not properly validate the node or segment names prior to interpolation and usage in JWT claim assertions with the auto config RPC. Fixed in 1.11.9, 1.12.5, and 1.13.2.\n",
+                "markdown": "> HashiCorp Consul 1.8.1 up to 1.11.8, 1.12.4, and 1.13.1 do not properly validate the node or segment names prior to interpolation and usage in JWT claim assertions with the auto config RPC. Fixed in 1.11.9, 1.12.5, and 1.13.2.\n\n|                |                                                |\n|----------------|------------------------------------------------|\n| Package        | pkg:golang/github.com/hashicorp/consul@1.10.12 |\n| Affected range | >=1.8.1,<1.11.9                                |\n| Fixed version  | 1.11.9                                         |\n| CVSS Score     |                                            7.1 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H   |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.8.1,<1.11.9",
+                "cvssV3": 7.1,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H",
+                "fixed_version": "1.11.9",
+                "purls": [
+                  "pkg:golang/github.com/hashicorp/consul@1.10.12"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-28840",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-28840: Unprotected Alternate Channel"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-28840",
+              "help": {
+                "text": "[Moby](https://mobyproject.org/) is an open source container framework developed by Docker Inc. that is distributed as Docker, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (`dockerd`), which is developed as [moby/moby](https://github.com/moby/moby) is commonly referred to as *Docker*.\n\nSwarm Mode, which is compiled in and delivered by default in `dockerd` and is thus present in most major Moby downstreams, is a simple, built-in container orchestrator that is implemented through a combination of [SwarmKit](https://github.com/moby/swarmkit) and supporting network code.\n\nThe `overlay` network driver is a core feature of Swarm Mode, providing isolated virtual LANs that allow communication between containers and services across the cluster. This driver is an implementation/user of [VXLAN](https://en.wikipedia.org/wiki/Virtual_Extensible_LAN), which encapsulates link-layer (Ethernet) frames in UDP datagrams that tag the frame with a VXLAN Network ID (VNI) that identifies the originating overlay network. In addition, the overlay network driver supports an optional, off-by-default encrypted mode, which is especially useful when VXLAN packets traverses an untrusted network between nodes.\n\nEncrypted overlay networks function by encapsulating the VXLAN datagrams through the use of the [IPsec Encapsulating Security Payload](https://en.wikipedia.org/wiki/IPsec#Encapsulating_Security_Payload) protocol in [Transport mode](https://en.wikipedia.org/wiki/IPsec#Transport_mode). By deploying IPSec encapsulation, encrypted overlay networks gain the additional properties of source authentication through cryptographic proof, data integrity through check-summing, and confidentiality through encryption.\n\nWhen setting an endpoint up on an encrypted overlay network, Moby installs three [iptables](https://www.netfilter.org/projects/iptables/index.html) (Linux kernel firewall) rules that enforce both incoming and outgoing IPSec. These rules rely on the `u32` iptables extension provided by the `xt_u32` kernel module to directly filter on a VXLAN packet's VNI field, so that IPSec guarantees can be enforced on encrypted overlay networks without interfering with other overlay networks or other users of VXLAN.\n\n[Two iptables rules](https://github.com/moby/libnetwork/blob/d9fae4c73daf76c3b0f77e14b45b8bf612ba764d/drivers/overlay/encryption.go#L230-L234) serve to filter incoming VXLAN datagrams with a VNI that corresponds to an encrypted network and discards unencrypted datagrams. The rules are appended to the end of the `INPUT` filter chain, following any rules that have been previously set by the system administrator. Administrator-set rules take precedence over the rules Moby sets to discard unencrypted VXLAN datagrams, which can potentially admit unencrypted datagrams that should have been discarded.\n\nOn Red Hat Enterprise Linux and derivatives such as CentOS and Rocky, the `xt_u32` module has been:\n* [moved to the kernel-modules-extra package and no longer installed by default in RHEL 8.3](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.3_release_notes/rhel-8-3-0-release#technology-preview_networking)\n* [officially deprecated in RHEL 8.6](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.6_release_notes/deprecated_functionality#deprecated-functionality_networking)\n* [removed completely in RHEL 9](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/considerations_in_adopting_rhel_9/assembly_networking_considerations-in-adopting-rhel-9#ref_firewall-networking_assembly_networking)\n\nThese rules are not created when `xt_u32` is unavailable, even though the container is still attached to the network.\n\n## Impact\nEncrypted overlay networks on affected configurations silently accept cleartext VXLAN datagrams that are tagged with the VNI of an encrypted overlay network. As a result, it is possible to inject arbitrary Ethernet frames into the encrypted overlay network by encapsulating them in VXLAN datagrams.\n\nThe injection of arbitrary Ethernet frames can enable a Denial of Service attack. A sophisticated attacker may be able to establish a UDP or TCP connection by way of the container’s outbound gateway that would otherwise be blocked by a stateful firewall, or carry out other escalations beyond simple injection by smuggling packets into the overlay network.\n\n## Patches\nPatches are available in Moby releases 23.0.3, and 20.10.24. As Mirantis Container Runtime's 20.10 releases are numbered differently, users of that platform should update to 20.10.16.\n\n## Workarounds\n* Close the VXLAN port (by default, UDP port 4789) to incoming traffic at the Internet boundary (see [GHSA-vwm3-crmr-xfxw](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)) to prevent all VXLAN packet injection.\n* Ensure that the `xt_u32` kernel module is available on all nodes of the Swarm cluster.\n\n## Background\n* [#43382](https://github.com/moby/moby/issues/43382) partially discussed this concern, but did not consider the security implications.\n* Mirantis FIELD-5788 essentially duplicates [#43382](https://github.com/moby/moby/issues/43382), and was created six months earlier; it similarly overlooked the security implications.\n* [#45118](https://github.com/moby/moby/pull/45118) is the ancestor of the final patches, and was where the security implications were discovered.\n\n## Related\n* [CVE-2023-28841: Encrypted overlay network traffic may be unencrypted](https://github.com/moby/moby/security/advisories/GHSA-33pg-m6jh-5237)\n* [CVE-2023-28842: Encrypted overlay network with a single endpoint is unauthenticated](https://github.com/moby/moby/security/advisories/GHSA-6wrf-mxfj-pf5p)\n* [GHSA-vwm3-crmr-xfxw: The Swarm VXLAN port may be exposed to attack due to ambiguous documentation](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)\n* [GHSA-gvm4-2qqg-m333: Security issues in encrypted overlay networks](https://github.com/moby/libnetwork/security/advisories/GHSA-gvm4-2qqg-m333) (libnetwork)\n",
+                "markdown": "> [Moby](https://mobyproject.org/) is an open source container framework developed by Docker Inc. that is distributed as Docker, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (`dockerd`), which is developed as [moby/moby](https://github.com/moby/moby) is commonly referred to as *Docker*.\n\nSwarm Mode, which is compiled in and delivered by default in `dockerd` and is thus present in most major Moby downstreams, is a simple, built-in container orchestrator that is implemented through a combination of [SwarmKit](https://github.com/moby/swarmkit) and supporting network code.\n\nThe `overlay` network driver is a core feature of Swarm Mode, providing isolated virtual LANs that allow communication between containers and services across the cluster. This driver is an implementation/user of [VXLAN](https://en.wikipedia.org/wiki/Virtual_Extensible_LAN), which encapsulates link-layer (Ethernet) frames in UDP datagrams that tag the frame with a VXLAN Network ID (VNI) that identifies the originating overlay network. In addition, the overlay network driver supports an optional, off-by-default encrypted mode, which is especially useful when VXLAN packets traverses an untrusted network between nodes.\n\nEncrypted overlay networks function by encapsulating the VXLAN datagrams through the use of the [IPsec Encapsulating Security Payload](https://en.wikipedia.org/wiki/IPsec#Encapsulating_Security_Payload) protocol in [Transport mode](https://en.wikipedia.org/wiki/IPsec#Transport_mode). By deploying IPSec encapsulation, encrypted overlay networks gain the additional properties of source authentication through cryptographic proof, data integrity through check-summing, and confidentiality through encryption.\n\nWhen setting an endpoint up on an encrypted overlay network, Moby installs three [iptables](https://www.netfilter.org/projects/iptables/index.html) (Linux kernel firewall) rules that enforce both incoming and outgoing IPSec. These rules rely on the `u32` iptables extension provided by the `xt_u32` kernel module to directly filter on a VXLAN packet's VNI field, so that IPSec guarantees can be enforced on encrypted overlay networks without interfering with other overlay networks or other users of VXLAN.\n\n[Two iptables rules](https://github.com/moby/libnetwork/blob/d9fae4c73daf76c3b0f77e14b45b8bf612ba764d/drivers/overlay/encryption.go#L230-L234) serve to filter incoming VXLAN datagrams with a VNI that corresponds to an encrypted network and discards unencrypted datagrams. The rules are appended to the end of the `INPUT` filter chain, following any rules that have been previously set by the system administrator. Administrator-set rules take precedence over the rules Moby sets to discard unencrypted VXLAN datagrams, which can potentially admit unencrypted datagrams that should have been discarded.\n\nOn Red Hat Enterprise Linux and derivatives such as CentOS and Rocky, the `xt_u32` module has been:\n* [moved to the kernel-modules-extra package and no longer installed by default in RHEL 8.3](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.3_release_notes/rhel-8-3-0-release#technology-preview_networking)\n* [officially deprecated in RHEL 8.6](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.6_release_notes/deprecated_functionality#deprecated-functionality_networking)\n* [removed completely in RHEL 9](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/considerations_in_adopting_rhel_9/assembly_networking_considerations-in-adopting-rhel-9#ref_firewall-networking_assembly_networking)\n\nThese rules are not created when `xt_u32` is unavailable, even though the container is still attached to the network.\n\n## Impact\nEncrypted overlay networks on affected configurations silently accept cleartext VXLAN datagrams that are tagged with the VNI of an encrypted overlay network. As a result, it is possible to inject arbitrary Ethernet frames into the encrypted overlay network by encapsulating them in VXLAN datagrams.\n\nThe injection of arbitrary Ethernet frames can enable a Denial of Service attack. A sophisticated attacker may be able to establish a UDP or TCP connection by way of the container’s outbound gateway that would otherwise be blocked by a stateful firewall, or carry out other escalations beyond simple injection by smuggling packets into the overlay network.\n\n## Patches\nPatches are available in Moby releases 23.0.3, and 20.10.24. As Mirantis Container Runtime's 20.10 releases are numbered differently, users of that platform should update to 20.10.16.\n\n## Workarounds\n* Close the VXLAN port (by default, UDP port 4789) to incoming traffic at the Internet boundary (see [GHSA-vwm3-crmr-xfxw](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)) to prevent all VXLAN packet injection.\n* Ensure that the `xt_u32` kernel module is available on all nodes of the Swarm cluster.\n\n## Background\n* [#43382](https://github.com/moby/moby/issues/43382) partially discussed this concern, but did not consider the security implications.\n* Mirantis FIELD-5788 essentially duplicates [#43382](https://github.com/moby/moby/issues/43382), and was created six months earlier; it similarly overlooked the security implications.\n* [#45118](https://github.com/moby/moby/pull/45118) is the ancestor of the final patches, and was where the security implications were discovered.\n\n## Related\n* [CVE-2023-28841: Encrypted overlay network traffic may be unencrypted](https://github.com/moby/moby/security/advisories/GHSA-33pg-m6jh-5237)\n* [CVE-2023-28842: Encrypted overlay network with a single endpoint is unauthenticated](https://github.com/moby/moby/security/advisories/GHSA-6wrf-mxfj-pf5p)\n* [GHSA-vwm3-crmr-xfxw: The Swarm VXLAN port may be exposed to attack due to ambiguous documentation](https://github.com/moby/moby/security/advisories/GHSA-vwm3-crmr-xfxw)\n* [GHSA-gvm4-2qqg-m333: Security issues in encrypted overlay networks](https://github.com/moby/libnetwork/security/advisories/GHSA-gvm4-2qqg-m333) (libnetwork)\n\n|                |                                                           |\n|----------------|-----------------------------------------------------------|\n| Package        | pkg:golang/github.com/docker/docker@20.10.21+incompatible |\n| Affected range | >=1.12.0,<20.10.24                                        |\n| Fixed version  | 20.10.24                                                  |\n| CVSS Score     |                                                       7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:L              |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.12.0,<20.10.24",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:L",
+                "fixed_version": "20.10.24",
+                "purls": [
+                  "pkg:golang/github.com/docker/docker@20.10.21+incompatible"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-5363",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-5363                                                   \n  Severity       : UNSPECIFIED                                                     \n  Package        : pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18  \n  Affected range : <3.1.4-r0                                                       \n  Fixed version  : 3.1.4-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-8912",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-8912                                 \n  Severity       : LOW                                           \n  Package        : pkg:golang/github.com/aws/aws-sdk-go@1.44.47  \n  Affected range : >=0                                           \n  Fixed version  : not fixed                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/traefik"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-1297",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-1297                                   \n  Severity       : MEDIUM                                          \n  Package        : pkg:golang/github.com/hashicorp/consul@1.10.12  \n  Affected range : <1.14.5                                         \n  Fixed version  : 1.14.5                                          \n  CVSS Score     : 4.9                                             \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/traefik"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-8911",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-8911                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:golang/github.com/aws/aws-sdk-go@1.44.47  \n  Affected range : >=0                                           \n  Fixed version  : not fixed                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/traefik"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-40716",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-40716                                  \n  Severity       : MEDIUM                                          \n  Package        : pkg:golang/github.com/hashicorp/consul@1.10.12  \n  Affected range : <1.11.9                                         \n  Fixed version  : 1.11.9                                          \n  CVSS Score     : 6.5                                             \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/traefik"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0845",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-0845                                   \n  Severity       : MEDIUM                                          \n  Package        : pkg:golang/github.com/hashicorp/consul@1.10.12  \n  Affected range : <1.14.5                                         \n  Fixed version  : 1.14.5                                          \n  CVSS Score     : 6.5                                             \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/traefik"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-28841",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-28841                                             \n  Severity       : MEDIUM                                                     \n  Package        : pkg:golang/github.com/docker/docker@20.10.21+incompatible  \n  Affected range : >=1.12.0,<20.10.24                                         \n  Fixed version  : 20.10.24                                                   \n  CVSS Score     : 6.8                                                        \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N               \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/traefik"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-28842",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-28842                                             \n  Severity       : MEDIUM                                                     \n  Package        : pkg:golang/github.com/docker/docker@20.10.21+incompatible  \n  Affected range : >=1.12.0,<20.10.24                                         \n  Fixed version  : 20.10.24                                                   \n  CVSS Score     : 6.8                                                        \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N               \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/traefik"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-41803",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-41803                                  \n  Severity       : HIGH                                            \n  Package        : pkg:golang/github.com/hashicorp/consul@1.10.12  \n  Affected range : >=1.8.1,<1.11.9                                 \n  Fixed version  : 1.11.9                                          \n  CVSS Score     : 7.1                                             \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/traefik"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-28840",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-28840                                             \n  Severity       : HIGH                                                       \n  Package        : pkg:golang/github.com/docker/docker@20.10.21+incompatible  \n  Affected range : >=1.12.0,<20.10.24                                         \n  Fixed version  : 20.10.24                                                   \n  CVSS Score     : 7.5                                                        \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:L               \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/traefik"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

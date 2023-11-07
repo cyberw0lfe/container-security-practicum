@@ -1,0 +1,429 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "GMS-2022-1062",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GMS-2022-1062: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/GMS-2022-1062",
+              "help": {
+                "text": "zend-diactoros (and, by extension, Expressive), zend-http (and, by extension, Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component) each contain a potential URL rewrite exploit. In each case, marshaling a request URI includes logic that introspects HTTP request headers that are specific to a given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems not running the specific URL rewriting mechanism, the logic would still trigger, allowing a malicious client or proxy to emulate the headers to request arbitrary content.\n",
+                "markdown": "> zend-diactoros (and, by extension, Expressive), zend-http (and, by extension, Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component) each contain a potential URL rewrite exploit. In each case, marshaling a request URI includes logic that introspects HTTP request headers that are specific to a given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems not running the specific URL rewriting mechanism, the logic would still trigger, allowing a malicious client or proxy to emulate the headers to request arbitrary content.\n\n|                |                                                 |\n|----------------|-------------------------------------------------|\n| Package        | pkg:composer/zendframework/zend-diactoros@1.8.2 |\n| Affected range | <1.8.4                                          |\n| Fixed version  | 1.8.4                                           |\n"
+              },
+              "properties": {
+                "affected_version": "<1.8.4",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "1.8.4",
+                "purls": [
+                  "pkg:composer/zendframework/zend-diactoros@1.8.2"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "GMS-2022-1063",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GMS-2022-1063: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/GMS-2022-1063",
+              "help": {
+                "text": "zend-diactoros (and, by extension, Expressive), zend-http (and, by extension, Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component) each contain a potential URL rewrite exploit. In each case, marshaling a request URI includes logic that introspects HTTP request headers that are specific to a given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems not running the specific URL rewriting mechanism, the logic would still trigger, allowing a malicious client or proxy to emulate the headers to request arbitrary content.\n",
+                "markdown": "> zend-diactoros (and, by extension, Expressive), zend-http (and, by extension, Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component) each contain a potential URL rewrite exploit. In each case, marshaling a request URI includes logic that introspects HTTP request headers that are specific to a given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems not running the specific URL rewriting mechanism, the logic would still trigger, allowing a malicious client or proxy to emulate the headers to request arbitrary content.\n\n|                |                                             |\n|----------------|---------------------------------------------|\n| Package        | pkg:composer/zendframework/zend-feed@2.10.2 |\n| Affected range | <2.10.3                                     |\n| Fixed version  | 2.10.3                                      |\n"
+              },
+              "properties": {
+                "affected_version": "<2.10.3",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "2.10.3",
+                "purls": [
+                  "pkg:composer/zendframework/zend-feed@2.10.2"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "GMS-2022-1064",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GMS-2022-1064: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/GMS-2022-1064",
+              "help": {
+                "text": "zend-diactoros (and, by extension, Expressive), zend-http (and, by extension, Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component) each contain a potential URL rewrite exploit. In each case, marshaling a request URI includes logic that introspects HTTP request headers that are specific to a given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems not running the specific URL rewriting mechanism, the logic would still trigger, allowing a malicious client or proxy to emulate the headers to request arbitrary content.\n",
+                "markdown": "> zend-diactoros (and, by extension, Expressive), zend-http (and, by extension, Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component) each contain a potential URL rewrite exploit. In each case, marshaling a request URI includes logic that introspects HTTP request headers that are specific to a given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems not running the specific URL rewriting mechanism, the logic would still trigger, allowing a malicious client or proxy to emulate the headers to request arbitrary content.\n\n|                |                                            |\n|----------------|--------------------------------------------|\n| Package        | pkg:composer/zendframework/zend-http@2.8.0 |\n| Affected range | <2.8.1                                     |\n| Fixed version  | 2.8.1                                      |\n"
+              },
+              "properties": {
+                "affected_version": "<2.8.1",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "2.8.1",
+                "purls": [
+                  "pkg:composer/zendframework/zend-http@2.8.0"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "ZF2018-01",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "ZF2018-01"
+              },
+              "helpUri": "https://scout.docker.com/v/ZF2018-01",
+              "help": {
+                "text": "URL Rewrite vulnerability in `zend-diactoros`.\n",
+                "markdown": "> URL Rewrite vulnerability in `zend-diactoros`.\n\n|                |                                            |\n|----------------|--------------------------------------------|\n| Package        | pkg:composer/zendframework/zend-http@2.8.0 |\n| Affected range | >=1.0.0,<2.8.1                             |\n| Fixed version  | 2.8.1                                      |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.0.0,<2.10.3",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "2.10.3",
+                "purls": [
+                  "pkg:composer/zendframework/zend-diactoros@1.8.2",
+                  "pkg:composer/zendframework/zend-feed@2.10.2",
+                  "pkg:composer/zendframework/zend-http@2.8.0"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-32850",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-32850: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-32850",
+              "help": {
+                "text": "jQuery MiniColors is a color picker built on jQuery. Prior to version 2.3.6, jQuery MiniColors is prone to cross-site scripting when handling untrusted color names. This issue is patched in version 2.3.6.\n",
+                "markdown": "> jQuery MiniColors is a color picker built on jQuery. Prior to version 2.3.6, jQuery MiniColors is prone to cross-site scripting when handling untrusted color names. This issue is patched in version 2.3.6.\n\n|                |                                                     |\n|----------------|-----------------------------------------------------|\n| Package        | pkg:npm/%!c(MISSING)laviska/jquery-minicolors@2.2.6 |\n| Affected range | <2.3.6                                              |\n| Fixed version  | 2.3.6                                               |\n| CVSS Score     |                                                 6.1 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N        |\n"
+              },
+              "properties": {
+                "affected_version": "<2.3.6",
+                "cvssV3": 6.1,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                "fixed_version": "2.3.6",
+                "purls": [
+                  "pkg:npm/%40claviska/jquery-minicolors@2.2.6"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-22218",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-22218"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-22218",
+              "help": {
+                "text": "An issue was discovered in function _libssh2_packet_add in libssh2 1.10.0 allows attackers to access out of bounds memory.\n",
+                "markdown": "> An issue was discovered in function _libssh2_packet_add in libssh2 1.10.0 allows attackers to access out of bounds memory.\n\n|                |                                                                                 |\n|----------------|---------------------------------------------------------------------------------|\n| Package        | pkg:deb/ubuntu/libssh2@1.8.0-1?os_distro=bionic&os_name=ubuntu&os_version=18.04 |\n| Affected range | <1.8.0-1ubuntu0.1                                                               |\n| Fixed version  | 1.8.0-1ubuntu0.1                                                                |\n| CVSS Score     |                                                                             7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                                    |\n"
+              },
+              "properties": {
+                "affected_version": "<1.8.0-1ubuntu0.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "1.8.0-1ubuntu0.1",
+                "purls": [
+                  "pkg:deb/ubuntu/libssh2@1.8.0-1?os_distro=bionic&os_name=ubuntu&os_version=18.04"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-f6p5-76fp-m248",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-f6p5-76fp-m248"
+              },
+              "helpUri": "https://scout.docker.com/v/GHSA-f6p5-76fp-m248",
+              "help": {
+                "text": "zend-diactoros (and, by extension, Expressive), zend-http (and, by extension, Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component) each contain a potential URL rewrite exploit. In each case, marshaling a request URI includes logic that introspects HTTP request headers that are specific to a given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems not running the specific URL rewriting mechanism, the logic would still trigger, allowing a malicious client or proxy to emulate the headers to request arbitrary content.\n",
+                "markdown": "> zend-diactoros (and, by extension, Expressive), zend-http (and, by extension, Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component) each contain a potential URL rewrite exploit. In each case, marshaling a request URI includes logic that introspects HTTP request headers that are specific to a given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems not running the specific URL rewriting mechanism, the logic would still trigger, allowing a malicious client or proxy to emulate the headers to request arbitrary content.\n\n|                |                                            |\n|----------------|--------------------------------------------|\n| Package        | pkg:composer/zendframework/zend-http@2.8.0 |\n| Affected range | <2.8.1                                     |\n| Fixed version  | 2.8.1                                      |\n"
+              },
+              "properties": {
+                "affected_version": "<2.10.3",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "2.10.3",
+                "purls": [
+                  "pkg:composer/zendframework/zend-diactoros@1.8.2",
+                  "pkg:composer/zendframework/zend-feed@2.10.2",
+                  "pkg:composer/zendframework/zend-http@2.8.0"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.9"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "GMS-2022-1062",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : GMS-2022-1062                                    \n  Severity       : UNSPECIFIED                                      \n  Package        : pkg:composer/zendframework/zend-diactoros@1.8.2  \n  Affected range : <1.8.4                                           \n  Fixed version  : 1.8.4                                            \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GMS-2022-1063",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : GMS-2022-1063                                \n  Severity       : UNSPECIFIED                                  \n  Package        : pkg:composer/zendframework/zend-feed@2.10.2  \n  Affected range : <2.10.3                                      \n  Fixed version  : 2.10.3                                       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GMS-2022-1064",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : GMS-2022-1064                               \n  Severity       : UNSPECIFIED                                 \n  Package        : pkg:composer/zendframework/zend-http@2.8.0  \n  Affected range : <2.8.1                                      \n  Fixed version  : 2.8.1                                       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ZF2018-01",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : ZF2018-01                                    \n  Severity       : UNSPECIFIED                                  \n  Package        : pkg:composer/zendframework/zend-feed@2.10.2  \n  Affected range : >=1.0.0,<2.10.3                              \n  Fixed version  : 2.10.3                                       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ZF2018-01",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : ZF2018-01                                        \n  Severity       : UNSPECIFIED                                      \n  Package        : pkg:composer/zendframework/zend-diactoros@1.8.2  \n  Affected range : >=1.0.0,<1.8.4                                   \n  Fixed version  : 1.8.4                                            \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ZF2018-01",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : ZF2018-01                                   \n  Severity       : UNSPECIFIED                                 \n  Package        : pkg:composer/zendframework/zend-http@2.8.0  \n  Affected range : >=1.0.0,<2.8.1                              \n  Fixed version  : 2.8.1                                       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-32850",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-32850                                       \n  Severity       : MEDIUM                                               \n  Package        : pkg:npm/%!c(MISSING)laviska/jquery-minicolors@2.2.6  \n  Affected range : <2.3.6                                               \n  Fixed version  : 2.3.6                                                \n  CVSS Score     : 6.1                                                  \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/public/spa-assets/js/vendor/jquery-minicolors-master/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-22218",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-22218                                                                   \n  Severity       : MEDIUM                                                                           \n  Package        : pkg:deb/ubuntu/libssh2@1.8.0-1?os_distro=bionic&os_name=ubuntu&os_version=18.04  \n  Affected range : <1.8.0-1ubuntu0.1                                                                \n  Fixed version  : 1.8.0-1ubuntu0.1                                                                 \n  CVSS Score     : 7.5                                                                              \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libssh2-1/copyright"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/dpkg/info/libssh2-1:amd64.md5sums"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/dpkg/status"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/x86_64-linux-gnu/libssh2.so.1.0.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libssh2-1/changelog.Debian.gz"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libssh2-1/copyright"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-f6p5-76fp-m248",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-f6p5-76fp-m248                          \n  Severity       : HIGH                                         \n  Package        : pkg:composer/zendframework/zend-feed@2.10.2  \n  Affected range : <2.10.3                                      \n  Fixed version  : 2.10.3                                       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-f6p5-76fp-m248",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-f6p5-76fp-m248                              \n  Severity       : HIGH                                             \n  Package        : pkg:composer/zendframework/zend-diactoros@1.8.2  \n  Affected range : <1.8.4                                           \n  Fixed version  : 1.8.4                                            \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-f6p5-76fp-m248",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-f6p5-76fp-m248                         \n  Severity       : HIGH                                        \n  Package        : pkg:composer/zendframework/zend-http@2.8.0  \n  Affected range : <2.8.1                                      \n  Fixed version  : 2.8.1                                       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/zend/gui/vendor/composer/installed.json"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

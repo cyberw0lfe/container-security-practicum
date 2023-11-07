@@ -1,0 +1,480 @@
+test,provider,result,scored,type,description,file
+3.1.1,aws,PASS,false,Manual,Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Manual),aws_output.json
+3.1.2,aws,PASS,false,Manual,Ensure that the kubelet kubeconfig file ownership is set to root:root (Manual),aws_output.json
+3.1.3,aws,PASS,false,Manual,Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Manual),aws_output.json
+3.1.4,aws,PASS,false,Manual,Ensure that the kubelet configuration file ownership is set to root:root (Manual),aws_output.json
+3.2.1,aws,PASS,true,Automated,Ensure that the Anonymous Auth is Not Enabled (Automated),aws_output.json
+3.2.2,aws,PASS,true,Automated,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated),aws_output.json
+3.2.3,aws,PASS,false,Manual,Ensure that a Client CA File is Configured (Manual),aws_output.json
+3.2.4,aws,PASS,false,Manual,Ensure that the --read-only-port is disabled (Manual),aws_output.json
+3.2.5,aws,PASS,true,Automated,Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated),aws_output.json
+3.2.6,aws,PASS,true,Automated,Ensure that the --protect-kernel-defaults argument is set to true (Automated),aws_output.json
+3.2.7,aws,PASS,true,Automated,Ensure that the --make-iptables-util-chains argument is set to true (Automated) ,aws_output.json
+3.2.8,aws,WARN,false,Manual,Ensure that the --hostname-override argument is not set (Manual),aws_output.json
+3.2.9,aws,WARN,false,Automated,Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated),aws_output.json
+3.2.10,aws,PASS,false,Manual,Ensure that the --rotate-certificates argument is not present or is set to true (Manual),aws_output.json
+3.2.11,aws,PASS,false,Manual,Ensure that the RotateKubeletServerCertificate argument is set to true (Manual),aws_output.json
+3.3.1,aws,WARN,false,Manual,Prefer using a container-optimized OS when possible (Manual),aws_output.json
+4.1.1,aws,WARN,false,Manual,Ensure that the cluster-admin role is only used where required (Manual),aws_output.json
+4.1.2,aws,WARN,false,Manual,Minimize access to secrets (Manual),aws_output.json
+4.1.3,aws,WARN,false,Manual,Minimize wildcard use in Roles and ClusterRoles (Manual),aws_output.json
+4.1.4,aws,WARN,false,Manual,Minimize access to create pods (Manual),aws_output.json
+4.1.5,aws,WARN,false,Manual,Ensure that default service accounts are not actively used. (Manual),aws_output.json
+4.1.6,aws,WARN,false,Manual,Ensure that Service Account Tokens are only mounted where necessary (Manual),aws_output.json
+4.1.7,aws,WARN,false,Manual,Avoid use of system:masters group (Manual),aws_output.json
+4.1.8,aws,WARN,false,Manual,Limit use of the Bind- Impersonate and Escalate permissions in the Kubernetes cluster (Manual),aws_output.json
+4.2.1,aws,WARN,false,Automated,Minimize the admission of privileged containers (Automated),aws_output.json
+4.2.2,aws,WARN,false,Automated,Minimize the admission of containers wishing to share the host process ID namespace (Automated),aws_output.json
+4.2.3,aws,WARN,false,Automated,Minimize the admission of containers wishing to share the host IPC namespace (Automated),aws_output.json
+4.2.4,aws,WARN,false,Automated,Minimize the admission of containers wishing to share the host network namespace (Automated),aws_output.json
+4.2.5,aws,WARN,false,Automated,Minimize the admission of containers with allowPrivilegeEscalation (Automated),aws_output.json
+4.2.6,aws,WARN,false,Automated,Minimize the admission of root containers (Automated),aws_output.json
+4.2.7,aws,WARN,false,Manual,Minimize the admission of containers with added capabilities (Manual),aws_output.json
+4.2.8,aws,WARN,false,Manual,Minimize the admission of containers with capabilities assigned (Manual),aws_output.json
+4.3.1,aws,WARN,false,Manual,Ensure CNI plugin supports network policies (Manual),aws_output.json
+4.3.2,aws,WARN,false,Manual,Ensure that all Namespaces have Network Policies defined (Manual),aws_output.json
+4.4.1,aws,WARN,false,Manual,Prefer using secrets as files over secrets as environment variables (Manual),aws_output.json
+4.4.2,aws,WARN,false,Manual,Consider external secret storage (Manual),aws_output.json
+4.6.1,aws,WARN,false,Manual,Create administrative boundaries between resources using namespaces (Manual),aws_output.json
+4.6.2,aws,WARN,false,Manual,Apply Security Context to Your Pods and Containers (Manual),aws_output.json
+4.6.3,aws,WARN,false,Manual,The default namespace should not be used (Manual),aws_output.json
+5.1.1,aws,WARN,false,Manual,Ensure Image Vulnerability Scanning using Amazon ECR image scanning or a third-party provider (Manual),aws_output.json
+5.1.2,aws,WARN,false,Manual,Minimize user access to Amazon ECR (Manual),aws_output.json
+5.1.3,aws,WARN,false,Manual,Minimize cluster access to read-only for Amazon ECR (Manual),aws_output.json
+5.1.4,aws,WARN,false,Manual,Minimize Container Registries to only those approved (Manual),aws_output.json
+5.2.1,aws,WARN,false,Manual,Prefer using dedicated Amazon EKS Service Accounts (Manual),aws_output.json
+5.3.1,aws,WARN,false,Manual,Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs) managed in AWS KMS (Manual),aws_output.json
+5.4.1,aws,WARN,false,Manual,Restrict Access to the Control Plane Endpoint (Manual),aws_output.json
+5.4.2,aws,WARN,false,Manual,Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Manual),aws_output.json
+5.4.3,aws,WARN,false,Manual,Ensure clusters are created with Private Nodes (Manual),aws_output.json
+5.4.4,aws,WARN,false,Manual,Ensure Network Policy is Enabled and set as appropriate (Manual),aws_output.json
+5.4.5,aws,WARN,false,Manual,Encrypt traffic to HTTPS load balancers with TLS certificates (Manual),aws_output.json
+5.5.1,aws,WARN,false,Manual,Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes (Manual),aws_output.json
+5.6.1,aws,WARN,false,Manual,Consider Fargate for running untrusted workloads (Manual),aws_output.json
+3.1.1,azure,PASS,false,Manual,Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Manual),azure_bench_scan.json
+3.1.2,azure,PASS,false,Manual,Ensure that the kubelet kubeconfig file ownership is set to root:root (Manual),azure_bench_scan.json
+3.1.3,azure,PASS,false,Manual,Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Manual),azure_bench_scan.json
+3.1.4,azure,PASS,false,Manual,Ensure that the kubelet configuration file ownership is set to root:root (Manual),azure_bench_scan.json
+3.2.1,azure,PASS,false,Manual,Ensure that the --anonymous-auth argument is set to false (Manual),azure_bench_scan.json
+3.2.2,azure,PASS,false,Manual,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Manual),azure_bench_scan.json
+3.2.3,azure,PASS,false,Manual,Ensure that the --client-ca-file argument is set as appropriate (Manual),azure_bench_scan.json
+3.2.4,azure,PASS,false,Manual,Ensure that the --read-only-port argument is set to 0 (Manual),azure_bench_scan.json
+3.2.5,azure,PASS,false,Manual,Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual),azure_bench_scan.json
+3.2.6,azure,PASS,false,Manual,Ensure that the --protect-kernel-defaults argument is set to true (Manual),azure_bench_scan.json
+3.2.7,azure,PASS,false,Manual,Ensure that the --make-iptables-util-chains argument is set to true (Manual) ,azure_bench_scan.json
+3.2.8,azure,PASS,false,Manual,Ensure that the --hostname-override argument is not set (Manual),azure_bench_scan.json
+3.2.9,azure,PASS,false,Manual,Ensure that the --event-qps argument is set to 0 or a level which ensures appropriate event capture (Manual),azure_bench_scan.json
+3.2.10,azure,PASS,false,Manual,Ensure that the --rotate-certificates argument is not set to false (Manual),azure_bench_scan.json
+3.2.11,azure,WARN,false,Manual,Ensure that the RotateKubeletServerCertificate argument is set to true (Manual),azure_bench_scan.json
+4.1.1,azure,WARN,false,Manual,Ensure that the cluster-admin role is only used where required (Manual),azure_bench_scan.json
+4.1.2,azure,WARN,false,Manual,Minimize access to secrets (Manual),azure_bench_scan.json
+4.1.3,azure,WARN,false,Manual,Minimize wildcard use in Roles and ClusterRoles (Manual),azure_bench_scan.json
+4.1.4,azure,WARN,false,Manual,Minimize access to create pods (Manual),azure_bench_scan.json
+4.1.5,azure,WARN,false,Manual,Ensure that default service accounts are not actively used. (Manual),azure_bench_scan.json
+4.1.6,azure,WARN,false,Manual,Ensure that Service Account Tokens are only mounted where necessary (Manual),azure_bench_scan.json
+4.2.1,azure,WARN,false,Automated,Minimize the admission of privileged containers (Automated),azure_bench_scan.json
+4.2.2,azure,WARN,false,Automated,Minimize the admission of containers wishing to share the host process ID namespace (Automated),azure_bench_scan.json
+4.2.3,azure,WARN,false,Automated,Minimize the admission of containers wishing to share the host IPC namespace (Automated),azure_bench_scan.json
+4.2.4,azure,WARN,false,Automated,Minimize the admission of containers wishing to share the host network namespace (Automated),azure_bench_scan.json
+4.2.5,azure,WARN,false,Automated,Minimize the admission of containers with allowPrivilegeEscalation (Automated),azure_bench_scan.json
+4.2.6,azure,WARN,false,Automated,Minimize the admission of root containers (Automated),azure_bench_scan.json
+4.2.7,azure,WARN,false,Automated,Minimize the admission of containers with the NET_RAW capability (Automated),azure_bench_scan.json
+4.2.8,azure,WARN,false,Automated,Minimize the admission of containers with added capabilities (Automated),azure_bench_scan.json
+4.2.9,azure,WARN,false,Manual,Minimize the admission of containers with capabilities assigned (Manual),azure_bench_scan.json
+4.4.1,azure,WARN,false,Manual,Ensure that the latest CNI version is used (Manual),azure_bench_scan.json
+4.4.2,azure,WARN,false,Manual,Ensure that all Namespaces have Network Policies defined (Manual),azure_bench_scan.json
+4.5.1,azure,WARN,false,Manual,Prefer using secrets as files over secrets as environment variables (Manual),azure_bench_scan.json
+4.5.2,azure,WARN,false,Manual,Consider external secret storage (Manual),azure_bench_scan.json
+4.6.1,azure,WARN,false,Manual,Verify that admission controllers are working as expected (Manual),azure_bench_scan.json
+4.7.1,azure,WARN,false,Manual,Create administrative boundaries between resources using namespaces (Manual),azure_bench_scan.json
+4.7.2,azure,WARN,false,Manual,Apply Security Context to Your Pods and Containers (Manual),azure_bench_scan.json
+4.7.3,azure,WARN,false,Manual,The default namespace should not be used (Manual),azure_bench_scan.json
+5.1.1,azure,WARN,false,Manual,Ensure Image Vulnerability Scanning using Azure Defender image scanning or a third party provider (Manual),azure_bench_scan.json
+5.1.2,azure,WARN,false,Manual,Minimize user access to Azure Container Registry (ACR) (Manual),azure_bench_scan.json
+5.1.3,azure,WARN,false,Manual,Minimize cluster access to read-only for Azure Container Registry (ACR) (Manual),azure_bench_scan.json
+5.1.4,azure,WARN,false,Manual,Minimize Container Registries to only those approved (Manual),azure_bench_scan.json
+5.2.1,azure,WARN,false,Manual,Prefer using dedicated AKS Service Accounts (Manual),azure_bench_scan.json
+5.3.1,azure,WARN,false,Manual,Ensure Kubernetes Secrets are encrypted (Manual),azure_bench_scan.json
+5.4.1,azure,WARN,false,Manual,Restrict Access to the Control Plane Endpoint (Manual),azure_bench_scan.json
+5.4.2,azure,WARN,false,Manual,Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Manual),azure_bench_scan.json
+5.4.3,azure,WARN,false,Manual,Ensure clusters are created with Private Nodes (Manual),azure_bench_scan.json
+5.4.4,azure,WARN,false,Manual,Ensure Network Policy is Enabled and set as appropriate (Manual),azure_bench_scan.json
+5.4.5,azure,WARN,false,Manual,Encrypt traffic to HTTPS load balancers with TLS certificates (Manual),azure_bench_scan.json
+5.5.1,azure,WARN,false,Manual,Manage Kubernetes RBAC users with Azure AD (Manual),azure_bench_scan.json
+5.5.2,azure,WARN,false,Manual,Use Azure RBAC for Kubernetes Authorization (Manual),azure_bench_scan.json
+5.6.1,azure,WARN,false,Manual,Restrict untrusted workloads (Manual),azure_bench_scan.json
+5.6.2,azure,WARN,false,Manual,Hostile multi-tenant workloads (Manual),azure_bench_scan.json
+4.1.1,azure,PASS,true,Automated,Ensure that the kubelet service file permissions are set to 600 or more restrictive (Automated),general_bench_scan.json
+4.1.2,azure,PASS,true,Automated,Ensure that the kubelet service file ownership is set to root:root (Automated),general_bench_scan.json
+4.1.3,azure,PASS,false,Manual,If proxy kubeconfig file exists ensure permissions are set to 600 or more restrictive (Manual),general_bench_scan.json
+4.1.4,azure,PASS,false,Manual,If proxy kubeconfig file exists ensure ownership is set to root:root (Manual),general_bench_scan.json
+4.1.5,azure,PASS,true,Automated,Ensure that the --kubeconfig kubelet.conf file permissions are set to 600 or more restrictive (Automated),general_bench_scan.json
+4.1.6,azure,PASS,true,Automated,Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated),general_bench_scan.json
+4.1.7,azure,PASS,false,Manual,Ensure that the certificate authorities file permissions are set to 600 or more restrictive (Manual),general_bench_scan.json
+4.1.8,azure,PASS,false,Manual,Ensure that the client certificate authorities file ownership is set to root:root (Manual),general_bench_scan.json
+4.1.9,azure,PASS,false,Manual,If the kubelet config.yaml configuration file is being used validate permissions set to 600 or more restrictive (Manual),general_bench_scan.json
+4.1.10,azure,PASS,false,Manual,If the kubelet config.yaml configuration file is being used validate file ownership is set to root:root (Manual),general_bench_scan.json
+4.2.1,azure,PASS,true,Automated,Ensure that the --anonymous-auth argument is set to false (Automated),general_bench_scan.json
+4.2.2,azure,PASS,true,Automated,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated),general_bench_scan.json
+4.2.3,azure,PASS,true,Automated,Ensure that the --client-ca-file argument is set as appropriate (Automated),general_bench_scan.json
+4.2.4,azure,PASS,false,Manual,Verify that the --read-only-port argument is set to 0 (Manual),general_bench_scan.json
+4.2.5,azure,PASS,false,Manual,Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual),general_bench_scan.json
+4.2.6,azure,PASS,true,Automated,Ensure that the --make-iptables-util-chains argument is set to true (Automated),general_bench_scan.json
+4.2.7,azure,PASS,false,Manual,Ensure that the --hostname-override argument is not set (Manual),general_bench_scan.json
+4.2.8,azure,PASS,false,Manual,Ensure that the eventRecordQPS argument is set to a level which ensures appropriate event capture (Manual),general_bench_scan.json
+4.2.9,azure,PASS,false,Manual,Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual),general_bench_scan.json
+4.2.10,azure,PASS,true,Automated,Ensure that the --rotate-certificates argument is not set to false (Automated),general_bench_scan.json
+4.2.11,azure,PASS,false,Manual,Verify that the RotateKubeletServerCertificate argument is set to true (Manual),general_bench_scan.json
+4.2.12,azure,PASS,false,Manual,Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual),general_bench_scan.json
+4.2.13,azure,WARN,false,Manual,Ensure that a limit is set on pod PIDs (Manual),general_bench_scan.json
+5.1.1,azure,WARN,false,Manual,Ensure that the cluster-admin role is only used where required (Manual),general_bench_scan.json
+5.1.2,azure,WARN,false,Manual,Minimize access to secrets (Manual),general_bench_scan.json
+5.1.3,azure,WARN,false,Manual,Minimize wildcard use in Roles and ClusterRoles (Manual),general_bench_scan.json
+5.1.4,azure,WARN,false,Manual,Minimize access to create pods (Manual),general_bench_scan.json
+5.1.5,azure,WARN,false,Manual,Ensure that default service accounts are not actively used. (Manual),general_bench_scan.json
+5.1.6,azure,WARN,false,Manual,Ensure that Service Account Tokens are only mounted where necessary (Manual),general_bench_scan.json
+5.1.7,azure,WARN,false,Manual,Avoid use of system:masters group (Manual),general_bench_scan.json
+5.1.8,azure,WARN,false,Manual,Limit use of the Bind- Impersonate and Escalate permissions in the Kubernetes cluster (Manual),general_bench_scan.json
+5.1.9,azure,WARN,false,Manual,Minimize access to create persistent volumes (Manual),general_bench_scan.json
+5.1.10,azure,WARN,false,Manual,Minimize access to the proxy sub-resource of nodes (Manual),general_bench_scan.json
+5.1.11,azure,WARN,false,Manual,Minimize access to the approval sub-resource of certificatesigningrequests objects (Manual),general_bench_scan.json
+5.1.12,azure,WARN,false,Manual,Minimize access to webhook configuration objects (Manual),general_bench_scan.json
+5.1.13,azure,WARN,false,Manual,Minimize access to the service account token creation (Manual),general_bench_scan.json
+5.2.1,azure,WARN,false,Manual,Ensure that the cluster has at least one active policy control mechanism in place (Manual),general_bench_scan.json
+5.2.2,azure,WARN,false,Manual,Minimize the admission of privileged containers (Manual),general_bench_scan.json
+5.2.3,azure,WARN,false,Automated,Minimize the admission of containers wishing to share the host process ID namespace (Automated),general_bench_scan.json
+5.2.4,azure,WARN,false,Automated,Minimize the admission of containers wishing to share the host IPC namespace (Automated),general_bench_scan.json
+5.2.5,azure,WARN,false,Automated,Minimize the admission of containers wishing to share the host network namespace (Automated),general_bench_scan.json
+5.2.6,azure,WARN,false,Automated,Minimize the admission of containers with allowPrivilegeEscalation (Automated),general_bench_scan.json
+5.2.7,azure,WARN,false,Automated,Minimize the admission of root containers (Automated),general_bench_scan.json
+5.2.8,azure,WARN,false,Automated,Minimize the admission of containers with the NET_RAW capability (Automated),general_bench_scan.json
+5.2.9,azure,WARN,false,Automated,Minimize the admission of containers with added capabilities (Automated),general_bench_scan.json
+5.2.10,azure,WARN,false,Manual,Minimize the admission of containers with capabilities assigned (Manual),general_bench_scan.json
+5.2.11,azure,WARN,false,Manual,Minimize the admission of Windows HostProcess containers (Manual),general_bench_scan.json
+5.2.12,azure,WARN,false,Manual,Minimize the admission of HostPath volumes (Manual),general_bench_scan.json
+5.2.13,azure,WARN,false,Manual,Minimize the admission of containers which use HostPorts (Manual),general_bench_scan.json
+5.3.1,azure,WARN,false,Manual,Ensure that the CNI in use supports NetworkPolicies (Manual),general_bench_scan.json
+5.3.2,azure,WARN,false,Manual,Ensure that all Namespaces have NetworkPolicies defined (Manual),general_bench_scan.json
+5.4.1,azure,WARN,false,Manual,Prefer using Secrets as files over Secrets as environment variables (Manual),general_bench_scan.json
+5.4.2,azure,WARN,false,Manual,Consider external secret storage (Manual),general_bench_scan.json
+5.5.1,azure,WARN,false,Manual,Configure Image Provenance using ImagePolicyWebhook admission controller (Manual),general_bench_scan.json
+5.7.1,azure,WARN,false,Manual,Create administrative boundaries between resources using namespaces (Manual),general_bench_scan.json
+5.7.2,azure,WARN,false,Manual,Ensure that the seccomp profile is set to docker/default in your Pod definitions (Manual),general_bench_scan.json
+5.7.3,azure,WARN,false,Manual,Apply SecurityContext to your Pods and Containers (Manual),general_bench_scan.json
+5.7.4,azure,WARN,false,Manual,The default namespace should not be used (Manual),general_bench_scan.json
+4.1.1,digitalocean,FAIL,true,Automated,Ensure that the kubelet service file permissions are set to 600 or more restrictive (Automated),general_bench.json
+4.1.2,digitalocean,PASS,true,Automated,Ensure that the kubelet service file ownership is set to root:root (Automated),general_bench.json
+4.1.3,digitalocean,PASS,false,Manual,If proxy kubeconfig file exists ensure permissions are set to 600 or more restrictive (Manual),general_bench.json
+4.1.4,digitalocean,PASS,false,Manual,If proxy kubeconfig file exists ensure ownership is set to root:root (Manual),general_bench.json
+4.1.5,digitalocean,FAIL,true,Automated,Ensure that the --kubeconfig kubelet.conf file permissions are set to 600 or more restrictive (Automated),general_bench.json
+4.1.6,digitalocean,PASS,true,Automated,Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated),general_bench.json
+4.1.7,digitalocean,WARN,false,Manual,Ensure that the certificate authorities file permissions are set to 600 or more restrictive (Manual),general_bench.json
+4.1.8,digitalocean,WARN,false,Manual,Ensure that the client certificate authorities file ownership is set to root:root (Manual),general_bench.json
+4.1.9,digitalocean,WARN,false,Manual,If the kubelet config.yaml configuration file is being used validate permissions set to 600 or more restrictive (Manual),general_bench.json
+4.1.10,digitalocean,PASS,false,Manual,If the kubelet config.yaml configuration file is being used validate file ownership is set to root:root (Manual),general_bench.json
+4.2.1,digitalocean,FAIL,true,Automated,Ensure that the --anonymous-auth argument is set to false (Automated),general_bench.json
+4.2.2,digitalocean,FAIL,true,Automated,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated),general_bench.json
+4.2.3,digitalocean,FAIL,true,Automated,Ensure that the --client-ca-file argument is set as appropriate (Automated),general_bench.json
+4.2.4,digitalocean,PASS,false,Manual,Verify that the --read-only-port argument is set to 0 (Manual),general_bench.json
+4.2.5,digitalocean,PASS,false,Manual,Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual),general_bench.json
+4.2.6,digitalocean,PASS,true,Automated,Ensure that the --make-iptables-util-chains argument is set to true (Automated),general_bench.json
+4.2.7,digitalocean,PASS,false,Manual,Ensure that the --hostname-override argument is not set (Manual),general_bench.json
+4.2.8,digitalocean,PASS,false,Manual,Ensure that the eventRecordQPS argument is set to a level which ensures appropriate event capture (Manual),general_bench.json
+4.2.9,digitalocean,WARN,false,Manual,Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual),general_bench.json
+4.2.10,digitalocean,PASS,true,Automated,Ensure that the --rotate-certificates argument is not set to false (Automated),general_bench.json
+4.2.11,digitalocean,PASS,false,Manual,Verify that the RotateKubeletServerCertificate argument is set to true (Manual),general_bench.json
+4.2.12,digitalocean,WARN,false,Manual,Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual),general_bench.json
+4.2.13,digitalocean,WARN,false,Manual,Ensure that a limit is set on pod PIDs (Manual),general_bench.json
+5.1.1,digitalocean,WARN,false,Manual,Ensure that the cluster-admin role is only used where required (Manual),general_bench.json
+5.1.2,digitalocean,WARN,false,Manual,Minimize access to secrets (Manual),general_bench.json
+5.1.3,digitalocean,WARN,false,Manual,Minimize wildcard use in Roles and ClusterRoles (Manual),general_bench.json
+5.1.4,digitalocean,WARN,false,Manual,Minimize access to create pods (Manual),general_bench.json
+5.1.5,digitalocean,WARN,false,Manual,Ensure that default service accounts are not actively used. (Manual),general_bench.json
+5.1.6,digitalocean,WARN,false,Manual,Ensure that Service Account Tokens are only mounted where necessary (Manual),general_bench.json
+5.1.7,digitalocean,WARN,false,Manual,Avoid use of system:masters group (Manual),general_bench.json
+5.1.8,digitalocean,WARN,false,Manual,Limit use of the Bind- Impersonate and Escalate permissions in the Kubernetes cluster (Manual),general_bench.json
+5.1.9,digitalocean,WARN,false,Manual,Minimize access to create persistent volumes (Manual),general_bench.json
+5.1.10,digitalocean,WARN,false,Manual,Minimize access to the proxy sub-resource of nodes (Manual),general_bench.json
+5.1.11,digitalocean,WARN,false,Manual,Minimize access to the approval sub-resource of certificatesigningrequests objects (Manual),general_bench.json
+5.1.12,digitalocean,WARN,false,Manual,Minimize access to webhook configuration objects (Manual),general_bench.json
+5.1.13,digitalocean,WARN,false,Manual,Minimize access to the service account token creation (Manual),general_bench.json
+5.2.1,digitalocean,WARN,false,Manual,Ensure that the cluster has at least one active policy control mechanism in place (Manual),general_bench.json
+5.2.2,digitalocean,WARN,false,Manual,Minimize the admission of privileged containers (Manual),general_bench.json
+5.2.3,digitalocean,WARN,false,Automated,Minimize the admission of containers wishing to share the host process ID namespace (Automated),general_bench.json
+5.2.4,digitalocean,WARN,false,Automated,Minimize the admission of containers wishing to share the host IPC namespace (Automated),general_bench.json
+5.2.5,digitalocean,WARN,false,Automated,Minimize the admission of containers wishing to share the host network namespace (Automated),general_bench.json
+5.2.6,digitalocean,WARN,false,Automated,Minimize the admission of containers with allowPrivilegeEscalation (Automated),general_bench.json
+5.2.7,digitalocean,WARN,false,Automated,Minimize the admission of root containers (Automated),general_bench.json
+5.2.8,digitalocean,WARN,false,Automated,Minimize the admission of containers with the NET_RAW capability (Automated),general_bench.json
+5.2.9,digitalocean,WARN,false,Automated,Minimize the admission of containers with added capabilities (Automated),general_bench.json
+5.2.10,digitalocean,WARN,false,Manual,Minimize the admission of containers with capabilities assigned (Manual),general_bench.json
+5.2.11,digitalocean,WARN,false,Manual,Minimize the admission of Windows HostProcess containers (Manual),general_bench.json
+5.2.12,digitalocean,WARN,false,Manual,Minimize the admission of HostPath volumes (Manual),general_bench.json
+5.2.13,digitalocean,WARN,false,Manual,Minimize the admission of containers which use HostPorts (Manual),general_bench.json
+5.3.1,digitalocean,WARN,false,Manual,Ensure that the CNI in use supports NetworkPolicies (Manual),general_bench.json
+5.3.2,digitalocean,WARN,false,Manual,Ensure that all Namespaces have NetworkPolicies defined (Manual),general_bench.json
+5.4.1,digitalocean,WARN,false,Manual,Prefer using Secrets as files over Secrets as environment variables (Manual),general_bench.json
+5.4.2,digitalocean,WARN,false,Manual,Consider external secret storage (Manual),general_bench.json
+5.5.1,digitalocean,WARN,false,Manual,Configure Image Provenance using ImagePolicyWebhook admission controller (Manual),general_bench.json
+5.7.1,digitalocean,WARN,false,Manual,Create administrative boundaries between resources using namespaces (Manual),general_bench.json
+5.7.2,digitalocean,WARN,false,Manual,Ensure that the seccomp profile is set to docker/default in your Pod definitions (Manual),general_bench.json
+5.7.3,digitalocean,WARN,false,Manual,Apply SecurityContext to your Pods and Containers (Manual),general_bench.json
+5.7.4,digitalocean,WARN,false,Manual,The default namespace should not be used (Manual),general_bench.json
+3.1.1,gcp,PASS,false,Manual,Ensure that the proxy kubeconfig file permissions are set to 644 or more restrictive (Manual),gcp_bench.json
+3.1.2,gcp,PASS,false,Manual,Ensure that the proxy kubeconfig file ownership is set to root:root (Manual),gcp_bench.json
+3.1.3,gcp,PASS,false,Manual,Ensure that the kubelet configuration file permissions are set to 644 or more restrictive (Manual),gcp_bench.json
+3.1.4,gcp,PASS,false,Manual,Ensure that the kubelet configuration file ownership is set to root:root (Manual),gcp_bench.json
+3.2.1,gcp,FAIL,true,Automated,Ensure that the --anonymous-auth argument is set to false (Automated),gcp_bench.json
+3.2.2,gcp,FAIL,true,Automated,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated),gcp_bench.json
+3.2.3,gcp,FAIL,true,Automated,Ensure that the --client-ca-file argument is set as appropriate (Automated),gcp_bench.json
+3.2.4,gcp,WARN,false,Manual,Ensure that the --read-only-port argument is set to 0 (Manual),gcp_bench.json
+3.2.5,gcp,PASS,true,Automated,Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated),gcp_bench.json
+3.2.6,gcp,FAIL,true,Manual,Ensure that the --protect-kernel-defaults argument is set to true (Manual),gcp_bench.json
+3.2.7,gcp,PASS,true,Automated,Ensure that the --make-iptables-util-chains argument is set to true (Automated) ,gcp_bench.json
+3.2.8,gcp,PASS,false,Manual,Ensure that the --hostname-override argument is not set (Manual),gcp_bench.json
+3.2.9,gcp,FAIL,true,Automated,Ensure that the --event-qps argument is set to 0 or a level which ensures appropriate event capture (Automated),gcp_bench.json
+3.2.10,gcp,WARN,false,Manual,Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual),gcp_bench.json
+3.2.11,gcp,PASS,false,Manual,Ensure that the --rotate-certificates argument is not set to false (Manual),gcp_bench.json
+3.2.12,gcp,FAIL,true,Automated,Ensure that the RotateKubeletServerCertificate argument is set to true (Automated),gcp_bench.json
+4.1.1,gcp,WARN,false,Manual,Ensure that the cluster-admin role is only used where required (Manual),gcp_bench.json
+4.1.2,gcp,WARN,false,Manual,Minimize access to secrets (Manual),gcp_bench.json
+4.1.3,gcp,WARN,false,Manual,Minimize wildcard use in Roles and ClusterRoles (Manual),gcp_bench.json
+4.1.4,gcp,WARN,false,Manual,Minimize access to create pods (Manual),gcp_bench.json
+4.1.5,gcp,WARN,true,Manual,Ensure that default service accounts are not actively used. (Manual),gcp_bench.json
+4.1.6,gcp,WARN,false,Manual,Ensure that Service Account Tokens are only mounted where necessary (Manual),gcp_bench.json
+4.2.1,gcp,WARN,false,Automated,Minimize the admission of privileged containers (Automated),gcp_bench.json
+4.2.2,gcp,WARN,false,Automated,Minimize the admission of containers wishing to share the host process ID namespace (Automated),gcp_bench.json
+4.2.3,gcp,WARN,false,Automated,Minimize the admission of containers wishing to share the host IPC namespace (Automated),gcp_bench.json
+4.2.4,gcp,WARN,false,Automated,Minimize the admission of containers wishing to share the host network namespace (Automated),gcp_bench.json
+4.2.5,gcp,WARN,false,Automated,Minimize the admission of containers with allowPrivilegeEscalation (Automated),gcp_bench.json
+4.2.6,gcp,WARN,false,Automated,Minimize the admission of root containers (Automated),gcp_bench.json
+4.2.7,gcp,WARN,false,Automated,Minimize the admission of containers with the NET_RAW capability (Automated),gcp_bench.json
+4.2.8,gcp,WARN,false,Automated,Minimize the admission of containers with added capabilities (Automated),gcp_bench.json
+4.2.9,gcp,WARN,false,Manual,Minimize the admission of containers with capabilities assigned (Manual) ,gcp_bench.json
+4.3.1,gcp,WARN,false,Manual,Ensure that the CNI in use supports Network Policies (Manual),gcp_bench.json
+4.3.2,gcp,WARN,false,Manual,Ensure that all Namespaces have Network Policies defined (Manual),gcp_bench.json
+4.4.1,gcp,WARN,false,Manual,Prefer using secrets as files over secrets as environment variables (Manual),gcp_bench.json
+4.4.2,gcp,WARN,false,Manual,Consider external secret storage (Manual),gcp_bench.json
+4.5.1,gcp,WARN,false,Manual,Configure Image Provenance using ImagePolicyWebhook admission controller (Manual),gcp_bench.json
+4.6.1,gcp,WARN,false,Manual,Create administrative boundaries between resources using namespaces (Manual),gcp_bench.json
+4.6.2,gcp,WARN,false,Manual,Ensure that the seccomp profile is set to docker/default in your pod definitions (Manual),gcp_bench.json
+4.6.3,gcp,WARN,false,Manual,Apply Security Context to Your Pods and Containers (Manual),gcp_bench.json
+4.6.4,gcp,WARN,false,Manual,The default namespace should not be used (Manual),gcp_bench.json
+5.1.1,gcp,WARN,false,Manual,Ensure Image Vulnerability Scanning using GCR Container Analysis or a third-party provider (Manual),gcp_bench.json
+5.1.2,gcp,WARN,false,Manual,Minimize user access to GCR (Manual),gcp_bench.json
+5.1.3,gcp,WARN,false,Manual,Minimize cluster access to read-only for GCR (Manual),gcp_bench.json
+5.1.4,gcp,WARN,false,Manual,Minimize Container Registries to only those approved (Manual),gcp_bench.json
+5.2.1,gcp,WARN,false,Manual,Ensure GKE clusters are not running using the Compute Engine default service account (Manual),gcp_bench.json
+5.2.2,gcp,WARN,false,Manual,Prefer using dedicated GCP Service Accounts and Workload Identity (Manual),gcp_bench.json
+5.3.1,gcp,WARN,false,Manual,Ensure Kubernetes Secrets are encrypted using keys managed in Cloud KMS (Manual),gcp_bench.json
+5.4.1,gcp,WARN,false,Automated,Ensure legacy Compute Engine instance metadata APIs are Disabled (Automated),gcp_bench.json
+5.4.2,gcp,WARN,false,Automated,Ensure the GKE Metadata Server is Enabled (Automated),gcp_bench.json
+5.5.1,gcp,WARN,false,Automated,Ensure Container-Optimized OS (COS) is used for GKE node images (Automated),gcp_bench.json
+5.5.2,gcp,WARN,false,Automated,Ensure Node Auto-Repair is enabled for GKE nodes (Automated),gcp_bench.json
+5.5.3,gcp,WARN,false,Automated,Ensure Node Auto-Upgrade is enabled for GKE nodes (Automated),gcp_bench.json
+5.5.4,gcp,WARN,false,Manual,Automate GKE version management using Release Channels (Manual),gcp_bench.json
+5.5.5,gcp,WARN,false,Manual,Ensure Shielded GKE Nodes are Enabled (Manual),gcp_bench.json
+5.5.6,gcp,WARN,false,Automated,Ensure Integrity Monitoring for Shielded GKE Nodes is Enabled (Automated),gcp_bench.json
+5.5.7,gcp,WARN,false,Automated,Ensure Secure Boot for Shielded GKE Nodes is Enabled (Automated),gcp_bench.json
+5.6.1,gcp,WARN,false,Automated,Enable VPC Flow Logs and Intranode Visibility (Automated),gcp_bench.json
+5.6.2,gcp,WARN,false,Automated,Ensure use of VPC-native clusters (Automated),gcp_bench.json
+5.6.3,gcp,WARN,false,Manual,Ensure Master Authorized Networks is Enabled (Manual),gcp_bench.json
+5.6.4,gcp,WARN,false,Manual,Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled (Manual),gcp_bench.json
+5.6.5,gcp,WARN,false,Manual,Ensure clusters are created with Private Nodes (Manual),gcp_bench.json
+5.6.6,gcp,WARN,false,Manual,Consider firewalling GKE worker nodes (Manual),gcp_bench.json
+5.6.7,gcp,WARN,false,Manual,Ensure Network Policy is Enabled and set as appropriate (Manual),gcp_bench.json
+5.6.8,gcp,WARN,false,Manual,Ensure use of Google-managed SSL Certificates (Manual),gcp_bench.json
+5.7.1,gcp,WARN,false,Automated,Ensure Stackdriver Kubernetes Logging and Monitoring is Enabled (Automated),gcp_bench.json
+5.7.2,gcp,WARN,false,Manual,Enable Linux auditd logging (Manual),gcp_bench.json
+5.8.1,gcp,WARN,false,Automated,Ensure Basic Authentication using static passwords is Disabled (Automated),gcp_bench.json
+5.8.2,gcp,WARN,false,Automated,Ensure authentication using Client Certificates is Disabled (Automated),gcp_bench.json
+5.8.3,gcp,WARN,false,Manual,Manage Kubernetes RBAC users with Google Groups for GKE (Manual),gcp_bench.json
+5.8.4,gcp,WARN,false,Automated,Ensure Legacy Authorization (ABAC) is Disabled (Automated),gcp_bench.json
+5.9.1,gcp,WARN,false,Manual,Enable Customer-Managed Encryption Keys (CMEK) for GKE Persistent Disks (PD) (Manual),gcp_bench.json
+5.10.1,gcp,WARN,false,Automated,Ensure Kubernetes Web UI is Disabled (Automated),gcp_bench.json
+5.10.2,gcp,WARN,false,Automated,Ensure that Alpha clusters are not used for production workloads (Automated),gcp_bench.json
+5.10.3,gcp,WARN,false,Manual,Ensure Pod Security Policy is Enabled and set as appropriate (Manual),gcp_bench.json
+5.10.4,gcp,WARN,false,Manual,Consider GKE Sandbox for running untrusted workloads (Manual),gcp_bench.json
+5.10.5,gcp,WARN,false,Automated,Ensure use of Binary Authorization (Automated),gcp_bench.json
+5.10.6,gcp,WARN,false,Manual,Enable Cloud Security Command Center (Cloud SCC) (Manual),gcp_bench.json
+4.1.1,ibm,FAIL,true,Automated,Ensure that the kubelet service file permissions are set to 600 or more restrictive (Automated),general_output.json
+4.1.2,ibm,PASS,true,Automated,Ensure that the kubelet service file ownership is set to root:root (Automated),general_output.json
+4.1.3,ibm,PASS,false,Manual,If proxy kubeconfig file exists ensure permissions are set to 600 or more restrictive (Manual),general_output.json
+4.1.4,ibm,PASS,false,Manual,If proxy kubeconfig file exists ensure ownership is set to root:root (Manual),general_output.json
+4.1.5,ibm,FAIL,true,Automated,Ensure that the --kubeconfig kubelet.conf file permissions are set to 600 or more restrictive (Automated),general_output.json
+4.1.6,ibm,PASS,true,Automated,Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated),general_output.json
+4.1.7,ibm,PASS,false,Manual,Ensure that the certificate authorities file permissions are set to 600 or more restrictive (Manual),general_output.json
+4.1.8,ibm,PASS,false,Manual,Ensure that the client certificate authorities file ownership is set to root:root (Manual),general_output.json
+4.1.9,ibm,WARN,false,Manual,If the kubelet config.yaml configuration file is being used validate permissions set to 600 or more restrictive (Manual),general_output.json
+4.1.10,ibm,PASS,false,Manual,If the kubelet config.yaml configuration file is being used validate file ownership is set to root:root (Manual),general_output.json
+4.2.1,ibm,PASS,true,Automated,Ensure that the --anonymous-auth argument is set to false (Automated),general_output.json
+4.2.2,ibm,PASS,true,Automated,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated),general_output.json
+4.2.3,ibm,PASS,true,Automated,Ensure that the --client-ca-file argument is set as appropriate (Automated),general_output.json
+4.2.4,ibm,PASS,false,Manual,Verify that the --read-only-port argument is set to 0 (Manual),general_output.json
+4.2.5,ibm,PASS,false,Manual,Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual),general_output.json
+4.2.6,ibm,PASS,true,Automated,Ensure that the --make-iptables-util-chains argument is set to true (Automated),general_output.json
+4.2.7,ibm,WARN,false,Manual,Ensure that the --hostname-override argument is not set (Manual),general_output.json
+4.2.8,ibm,PASS,false,Manual,Ensure that the eventRecordQPS argument is set to a level which ensures appropriate event capture (Manual),general_output.json
+4.2.9,ibm,PASS,false,Manual,Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual),general_output.json
+4.2.10,ibm,PASS,true,Automated,Ensure that the --rotate-certificates argument is not set to false (Automated),general_output.json
+4.2.11,ibm,PASS,false,Manual,Verify that the RotateKubeletServerCertificate argument is set to true (Manual),general_output.json
+4.2.12,ibm,WARN,false,Manual,Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual),general_output.json
+4.2.13,ibm,PASS,false,Manual,Ensure that a limit is set on pod PIDs (Manual),general_output.json
+5.1.1,ibm,WARN,false,Manual,Ensure that the cluster-admin role is only used where required (Manual),general_output.json
+5.1.2,ibm,WARN,false,Manual,Minimize access to secrets (Manual),general_output.json
+5.1.3,ibm,WARN,false,Manual,Minimize wildcard use in Roles and ClusterRoles (Manual),general_output.json
+5.1.4,ibm,WARN,false,Manual,Minimize access to create pods (Manual),general_output.json
+5.1.5,ibm,WARN,false,Manual,Ensure that default service accounts are not actively used. (Manual),general_output.json
+5.1.6,ibm,WARN,false,Manual,Ensure that Service Account Tokens are only mounted where necessary (Manual),general_output.json
+5.1.7,ibm,WARN,false,Manual,Avoid use of system:masters group (Manual),general_output.json
+5.1.8,ibm,WARN,false,Manual,Limit use of the Bind- Impersonate and Escalate permissions in the Kubernetes cluster (Manual),general_output.json
+5.1.9,ibm,WARN,false,Manual,Minimize access to create persistent volumes (Manual),general_output.json
+5.1.10,ibm,WARN,false,Manual,Minimize access to the proxy sub-resource of nodes (Manual),general_output.json
+5.1.11,ibm,WARN,false,Manual,Minimize access to the approval sub-resource of certificatesigningrequests objects (Manual),general_output.json
+5.1.12,ibm,WARN,false,Manual,Minimize access to webhook configuration objects (Manual),general_output.json
+5.1.13,ibm,WARN,false,Manual,Minimize access to the service account token creation (Manual),general_output.json
+5.2.1,ibm,WARN,false,Manual,Ensure that the cluster has at least one active policy control mechanism in place (Manual),general_output.json
+5.2.2,ibm,WARN,false,Manual,Minimize the admission of privileged containers (Manual),general_output.json
+5.2.3,ibm,WARN,false,Automated,Minimize the admission of containers wishing to share the host process ID namespace (Automated),general_output.json
+5.2.4,ibm,WARN,false,Automated,Minimize the admission of containers wishing to share the host IPC namespace (Automated),general_output.json
+5.2.5,ibm,WARN,false,Automated,Minimize the admission of containers wishing to share the host network namespace (Automated),general_output.json
+5.2.6,ibm,WARN,false,Automated,Minimize the admission of containers with allowPrivilegeEscalation (Automated),general_output.json
+5.2.7,ibm,WARN,false,Automated,Minimize the admission of root containers (Automated),general_output.json
+5.2.8,ibm,WARN,false,Automated,Minimize the admission of containers with the NET_RAW capability (Automated),general_output.json
+5.2.9,ibm,WARN,false,Automated,Minimize the admission of containers with added capabilities (Automated),general_output.json
+5.2.10,ibm,WARN,false,Manual,Minimize the admission of containers with capabilities assigned (Manual),general_output.json
+5.2.11,ibm,WARN,false,Manual,Minimize the admission of Windows HostProcess containers (Manual),general_output.json
+5.2.12,ibm,WARN,false,Manual,Minimize the admission of HostPath volumes (Manual),general_output.json
+5.2.13,ibm,WARN,false,Manual,Minimize the admission of containers which use HostPorts (Manual),general_output.json
+5.3.1,ibm,WARN,false,Manual,Ensure that the CNI in use supports NetworkPolicies (Manual),general_output.json
+5.3.2,ibm,WARN,false,Manual,Ensure that all Namespaces have NetworkPolicies defined (Manual),general_output.json
+5.4.1,ibm,WARN,false,Manual,Prefer using Secrets as files over Secrets as environment variables (Manual),general_output.json
+5.4.2,ibm,WARN,false,Manual,Consider external secret storage (Manual),general_output.json
+5.5.1,ibm,WARN,false,Manual,Configure Image Provenance using ImagePolicyWebhook admission controller (Manual),general_output.json
+5.7.1,ibm,WARN,false,Manual,Create administrative boundaries between resources using namespaces (Manual),general_output.json
+5.7.2,ibm,WARN,false,Manual,Ensure that the seccomp profile is set to docker/default in your Pod definitions (Manual),general_output.json
+5.7.3,ibm,WARN,false,Manual,Apply SecurityContext to your Pods and Containers (Manual),general_output.json
+5.7.4,ibm,WARN,false,Manual,The default namespace should not be used (Manual),general_output.json
+1.1.1,ibm,FAIL,true,Automated,Ensure that the API server pod specification file permissions are set to 644 or more restrictive (Automated),ibm_output.json
+1.1.2,ibm,FAIL,true,Automated,Ensure that the API server pod specification file ownership is set to root:root (Automated),ibm_output.json
+1.1.3,ibm,FAIL,true,Automated,Ensure that the controller manager pod specification file permissions are set to 644 or more restrictive (Automated),ibm_output.json
+1.1.4,ibm,FAIL,true,Automated,Ensure that the controller manager pod specification file ownership is set to root:root (Automated),ibm_output.json
+1.1.5,ibm,FAIL,true,Automated,Ensure that the scheduler pod specification file permissions are set to 644 or more restrictive (Automated),ibm_output.json
+1.1.6,ibm,FAIL,true,Automated,Ensure that the scheduler pod specification file ownership is set to root:root (Automated),ibm_output.json
+1.1.7,ibm,FAIL,true,Automated,Ensure that the etcd pod specification file permissions are set to 644 or more restrictive (Automated),ibm_output.json
+1.1.8,ibm,FAIL,true,Automated,Ensure that the etcd pod specification file ownership is set to root:root (Automated),ibm_output.json
+1.1.9,ibm,WARN,false,Manual,Ensure that the Container Network Interface file permissions are set to 644 or more restrictive (Manual),ibm_output.json
+1.1.10,ibm,WARN,false,Manual,Ensure that the Container Network Interface file ownership is set to root:root (Manual),ibm_output.json
+1.1.11,ibm,FAIL,true,Automated,Ensure that the etcd data directory permissions are set to 700 or more restrictive (Automated),ibm_output.json
+1.1.12,ibm,FAIL,true,Automated,Ensure that the etcd data directory ownership is set to etcd:etcd (Automated),ibm_output.json
+1.1.13,ibm,FAIL,true,Automated,Ensure that the admin.conf file permissions are set to 644 or more restrictive (Automated),ibm_output.json
+1.1.14,ibm,FAIL,true,Automated,Ensure that the admin.conf file ownership is set to root:root (Automated),ibm_output.json
+1.1.15,ibm,FAIL,true,Automated,Ensure that the scheduler.conf file permissions are set to 644 or more restrictive (Automated),ibm_output.json
+1.1.16,ibm,FAIL,true,Automated,Ensure that the scheduler.conf file ownership is set to root:root (Automated),ibm_output.json
+1.1.17,ibm,FAIL,true,Automated,Ensure that the controller-manager.conf file permissions are set to 644 or more restrictive (Automated),ibm_output.json
+1.1.18,ibm,FAIL,true,Automated,Ensure that the controller-manager.conf file ownership is set to root:root (Automated),ibm_output.json
+1.1.19,ibm,FAIL,true,Automated,Ensure that the Kubernetes PKI directory and file ownership is set to root:root (Automated),ibm_output.json
+1.1.20,ibm,WARN,false,Manual,Ensure that the Kubernetes PKI certificate file permissions are set to 644 or more restrictive (Manual),ibm_output.json
+1.1.21,ibm,WARN,false,Manual,Ensure that the Kubernetes PKI key file permissions are set to 600 (Manual),ibm_output.json
+1.2.1,ibm,WARN,false,Manual,Ensure that the --anonymous-auth argument is set to false (Manual),ibm_output.json
+1.2.2,ibm,FAIL,true,Automated,Ensure that the --token-auth-file parameter is not set (Automated),ibm_output.json
+1.2.3,ibm,FAIL,true,Automated,Ensure that the --kubelet-https argument is set to true (Automated),ibm_output.json
+1.2.4,ibm,FAIL,true,Automated,Ensure that the --kubelet-client-certificate and --kubelet-client-key arguments are set as appropriate (Automated),ibm_output.json
+1.2.5,ibm,FAIL,true,Automated,Ensure that the --kubelet-certificate-authority argument is set as appropriate (Automated),ibm_output.json
+1.2.6,ibm,FAIL,true,Automated,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated),ibm_output.json
+1.2.7,ibm,FAIL,true,Automated,Ensure that the --authorization-mode argument includes Node (Automated),ibm_output.json
+1.2.8,ibm,FAIL,true,Automated,Ensure that the --authorization-mode argument includes RBAC (Automated),ibm_output.json
+1.2.9,ibm,WARN,false,Manual,Ensure that the admission control plugin EventRateLimit is set (Manual),ibm_output.json
+1.2.10,ibm,FAIL,true,Automated,Ensure that the admission control plugin AlwaysAdmit is not set (Automated),ibm_output.json
+1.2.11,ibm,WARN,false,Manual,Ensure that the admission control plugin AlwaysPullImages is set (Manual),ibm_output.json
+1.2.12,ibm,WARN,false,Manual,Ensure that the admission control plugin SecurityContextDeny is set if PodSecurityPolicy is not used (Manual),ibm_output.json
+1.2.13,ibm,FAIL,true,Automated,Ensure that the admission control plugin ServiceAccount is set (Automated),ibm_output.json
+1.2.14,ibm,FAIL,true,Automated,Ensure that the admission control plugin NamespaceLifecycle is set (Automated),ibm_output.json
+1.2.15,ibm,FAIL,true,Automated,Ensure that the admission control plugin PodSecurityPolicy is set (Automated),ibm_output.json
+1.2.16,ibm,FAIL,true,Automated,Ensure that the admission control plugin NodeRestriction is set (Automated),ibm_output.json
+1.2.17,ibm,FAIL,true,Automated,Ensure that the --insecure-bind-address argument is not set (Automated),ibm_output.json
+1.2.18,ibm,FAIL,true,Automated,Ensure that the --insecure-port argument is set to 0 (Automated),ibm_output.json
+1.2.19,ibm,FAIL,true,Automated,Ensure that the --secure-port argument is not set to 0 (Automated),ibm_output.json
+1.2.20,ibm,FAIL,true,Automated,Ensure that the --profiling argument is set to false (Automated),ibm_output.json
+1.2.21,ibm,FAIL,true,Automated,Ensure that the --audit-log-path argument is set (Automated),ibm_output.json
+1.2.22,ibm,FAIL,true,Automated,Ensure that the --audit-log-maxage argument is set to 30 or as appropriate (Automated),ibm_output.json
+1.2.23,ibm,FAIL,true,Automated,Ensure that the --audit-log-maxbackup argument is set to 10 or as appropriate (Automated),ibm_output.json
+1.2.24,ibm,FAIL,true,Automated,Ensure that the --audit-log-maxsize argument is set to 100 or as appropriate (Automated),ibm_output.json
+1.2.25,ibm,WARN,false,Manual,Ensure that the --request-timeout argument is set as appropriate (Manual),ibm_output.json
+1.2.26,ibm,FAIL,true,Automated,Ensure that the --service-account-lookup argument is set to true (Automated),ibm_output.json
+1.2.27,ibm,FAIL,true,Automated,Ensure that the --service-account-key-file argument is set as appropriate (Automated),ibm_output.json
+1.2.28,ibm,FAIL,true,Automated,Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate (Automated),ibm_output.json
+1.2.29,ibm,FAIL,true,Automated,Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Automated),ibm_output.json
+1.2.30,ibm,FAIL,true,Automated,Ensure that the --client-ca-file argument is set as appropriate (Automated),ibm_output.json
+1.2.31,ibm,FAIL,true,Automated,Ensure that the --etcd-cafile argument is set as appropriate (Automated),ibm_output.json
+1.2.32,ibm,WARN,false,Manual,Ensure that the --encryption-provider-config argument is set as appropriate (Manual),ibm_output.json
+1.2.33,ibm,WARN,false,Manual,Ensure that encryption providers are appropriately configured (Manual),ibm_output.json
+1.2.34,ibm,WARN,false,Manual,Ensure that the API Server only makes use of Strong Cryptographic Ciphers (Manual),ibm_output.json
+1.3.1,ibm,WARN,false,Manual,Ensure that the --terminated-pod-gc-threshold argument is set as appropriate (Manual),ibm_output.json
+1.3.2,ibm,FAIL,true,Automated,Ensure that the --profiling argument is set to false (Automated),ibm_output.json
+1.3.3,ibm,FAIL,true,Automated,Ensure that the --use-service-account-credentials argument is set to true (Automated),ibm_output.json
+1.3.4,ibm,FAIL,true,Automated,Ensure that the --service-account-private-key-file argument is set as appropriate (Automated),ibm_output.json
+1.3.5,ibm,FAIL,true,Automated,Ensure that the --root-ca-file argument is set as appropriate (Automated),ibm_output.json
+1.3.6,ibm,FAIL,true,Automated,Ensure that the RotateKubeletServerCertificate argument is set to true (Automated),ibm_output.json
+1.3.7,ibm,FAIL,true,Automated,Ensure that the --bind-address argument is set to 127.0.0.1 (Automated),ibm_output.json
+1.4.1,ibm,FAIL,true,Automated,Ensure that the --profiling argument is set to false (Automated),ibm_output.json
+1.4.2,ibm,FAIL,true,Automated,Ensure that the --bind-address argument is set to 127.0.0.1 (Automated),ibm_output.json
+2.1,ibm,FAIL,true,Automated,Ensure that the --cert-file and --key-file arguments are set as appropriate (Automated),ibm_output.json
+2.2,ibm,FAIL,true,Automated,Ensure that the --client-cert-auth argument is set to true (Automated),ibm_output.json
+2.3,ibm,FAIL,true,Automated,Ensure that the --auto-tls argument is not set to true (Automated),ibm_output.json
+2.4,ibm,FAIL,true,Automated,Ensure that the --peer-cert-file and --peer-key-file arguments are set as appropriate (Automated),ibm_output.json
+2.5,ibm,FAIL,true,Automated,Ensure that the --peer-client-cert-auth argument is set to true (Automated),ibm_output.json
+2.6,ibm,FAIL,true,Automated,Ensure that the --peer-auto-tls argument is not set to true (Automated),ibm_output.json
+2.7,ibm,WARN,false,Manual,Ensure that a unique Certificate Authority is used for etcd (Manual),ibm_output.json
+3.1.1,ibm,WARN,false,Manual,Client certificate authentication should not be used for users (Manual),ibm_output.json
+3.2.1,ibm,WARN,false,Manual,Ensure that a minimal audit policy is created (Manual),ibm_output.json
+3.2.2,ibm,WARN,false,Manual,Ensure that the audit policy covers key security concerns (Manual),ibm_output.json
+4.1.1,ibm,PASS,true,Automated,Ensure that the kubelet service file permissions are set to 644 or more restrictive (Automated),ibm_output.json
+4.1.2,ibm,PASS,true,Automated,Ensure that the kubelet service file ownership is set to root:root (Automated),ibm_output.json
+4.1.3,ibm,PASS,false,Manual,If proxy kubeconfig file exists ensure permissions are set to 644 or more restrictive (Manual),ibm_output.json
+4.1.4,ibm,PASS,false,Manual,If proxy kubeconfig file exists ensure ownership is set to root:root (Manual),ibm_output.json
+4.1.5,ibm,PASS,true,Automated,Ensure that the --kubeconfig kubelet.conf file permissions are set to 644 or more restrictive (Automated),ibm_output.json
+4.1.6,ibm,PASS,true,Automated,Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated),ibm_output.json
+4.1.7,ibm,PASS,false,Manual,Ensure that the certificate authorities file permissions are set to 644 or more restrictive (Manual),ibm_output.json
+4.1.8,ibm,PASS,false,Manual,Ensure that the client certificate authorities file ownership is set to root:root (Manual),ibm_output.json
+4.1.9,ibm,PASS,true,Automated,Ensure that the kubelet --config configuration file has permissions set to 644 or more restrictive (Automated),ibm_output.json
+4.1.10,ibm,PASS,true,Automated,Ensure that the kubelet --config configuration file ownership is set to root:root (Automated),ibm_output.json
+4.2.1,ibm,PASS,true,Automated,Ensure that the anonymous-auth argument is set to false (Automated),ibm_output.json
+4.2.2,ibm,PASS,true,Automated,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated),ibm_output.json
+4.2.3,ibm,PASS,true,Automated,Ensure that the --client-ca-file argument is set as appropriate (Automated),ibm_output.json
+4.2.4,ibm,PASS,false,Manual,Ensure that the --read-only-port argument is set to 0 (Manual),ibm_output.json
+4.2.5,ibm,PASS,false,Manual,Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual),ibm_output.json
+4.2.6,ibm,FAIL,true,Automated,Ensure that the --protect-kernel-defaults argument is set to true (Automated),ibm_output.json
+4.2.7,ibm,PASS,true,Automated,Ensure that the --make-iptables-util-chains argument is set to true (Automated),ibm_output.json
+4.2.8,ibm,WARN,false,Manual,Ensure that the --hostname-override argument is not set (Manual),ibm_output.json
+4.2.9,ibm,WARN,false,Manual,Ensure that the --event-qps argument is set to 0 or a level which ensures appropriate event capture (Manual),ibm_output.json
+4.2.10,ibm,PASS,false,Manual,Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Manual),ibm_output.json
+4.2.11,ibm,PASS,true,Automated,Ensure that the --rotate-certificates argument is not set to false (Automated),ibm_output.json
+4.2.12,ibm,PASS,false,Manual,Verify that the RotateKubeletServerCertificate argument is set to true (Manual),ibm_output.json
+4.2.13,ibm,WARN,false,Manual,Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers (Manual),ibm_output.json
+5.1.1,ibm,WARN,false,Manual,Ensure that the cluster-admin role is only used where required (Manual),ibm_output.json
+5.1.2,ibm,WARN,false,Manual,Minimize access to secrets (Manual),ibm_output.json
+5.1.3,ibm,WARN,false,Manual,Minimize wildcard use in Roles and ClusterRoles (Manual),ibm_output.json
+5.1.4,ibm,WARN,false,Manual,Minimize access to create pods (Manual),ibm_output.json
+5.1.5,ibm,WARN,false,Manual,Ensure that default service accounts are not actively used. (Manual),ibm_output.json
+5.1.6,ibm,WARN,false,Manual,Ensure that Service Account Tokens are only mounted where necessary (Manual),ibm_output.json
+5.1.7,ibm,WARN,false,Manual,Avoid use of system:masters group (Manual),ibm_output.json
+5.1.8,ibm,WARN,false,Manual,Limit use of the Bind- Impersonate and Escalate permissions in the Kubernetes cluster (Manual),ibm_output.json
+5.2.1,ibm,WARN,false,Automated,Minimize the admission of privileged containers (Automated),ibm_output.json
+5.2.2,ibm,WARN,false,Automated,Minimize the admission of containers wishing to share the host process ID namespace (Automated),ibm_output.json
+5.2.3,ibm,WARN,false,Automated,Minimize the admission of containers wishing to share the host IPC namespace (Automated),ibm_output.json
+5.2.4,ibm,WARN,false,Automated,Minimize the admission of containers wishing to share the host network namespace (Automated),ibm_output.json
+5.2.5,ibm,WARN,false,Automated,Minimize the admission of containers with allowPrivilegeEscalation (Automated),ibm_output.json
+5.2.6,ibm,WARN,false,Automated,Minimize the admission of root containers (Automated),ibm_output.json
+5.2.7,ibm,WARN,false,Automated,Minimize the admission of containers with the NET_RAW capability (Automated),ibm_output.json
+5.2.8,ibm,WARN,false,Automated,Minimize the admission of containers with added capabilities (Automated),ibm_output.json
+5.2.9,ibm,WARN,false,Manual,Minimize the admission of containers with capabilities assigned (Manual),ibm_output.json
+5.3.1,ibm,WARN,false,Manual,Ensure that the CNI in use supports Network Policies (Manual),ibm_output.json
+5.3.2,ibm,WARN,false,Manual,Ensure that all Namespaces have Network Policies defined (Manual),ibm_output.json
+5.4.1,ibm,WARN,false,Manual,Prefer using secrets as files over secrets as environment variables (Manual),ibm_output.json
+5.4.2,ibm,WARN,false,Manual,Consider external secret storage (Manual),ibm_output.json
+5.5.1,ibm,WARN,false,Manual,Configure Image Provenance using ImagePolicyWebhook admission controller (Manual),ibm_output.json
+5.7.1,ibm,WARN,false,Manual,Create administrative boundaries between resources using namespaces (Manual),ibm_output.json
+5.7.2,ibm,WARN,false,Manual,Ensure that the seccomp profile is set to docker/default in your pod definitions (Manual),ibm_output.json
+5.7.3,ibm,WARN,false,Manual,Apply Security Context to Your Pods and Containers (Manual),ibm_output.json
+5.7.4,ibm,WARN,false,Manual,The default namespace should not be used (Manual),ibm_output.json

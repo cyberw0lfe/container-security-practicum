@@ -1,0 +1,419 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-5363",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-5363"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-5363",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@3.0.10-r0?os_name=alpine&os_version=3.17 |\n| Affected range | <3.0.12-r0                                                      |\n| Fixed version  | 3.0.12-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<3.0.12-r0",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "3.0.12-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@3.0.10-r0?os_name=alpine&os_version=3.17"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-7598",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-7598: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-7598",
+              "help": {
+                "text": "Affected versions of `minimist` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  \nParsing the argument `--__proto__.y=Polluted` adds a `y` property with value `Polluted` to all objects. The argument `--__proto__=Polluted` raises and uncaught error and crashes the application.  \nThis is exploitable if attackers have control over the arguments being passed to `minimist`.\n\n\n\n## Recommendation\n\nUpgrade to versions 0.2.1, 1.2.3 or later.\n",
+                "markdown": "> Affected versions of `minimist` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  \nParsing the argument `--__proto__.y=Polluted` adds a `y` property with value `Polluted` to all objects. The argument `--__proto__=Polluted` raises and uncaught error and crashes the application.  \nThis is exploitable if attackers have control over the arguments being passed to `minimist`.\n\n\n\n## Recommendation\n\nUpgrade to versions 0.2.1, 1.2.3 or later.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/minimist@0.0.10                      |\n| Affected range | <0.2.1                                       |\n| Fixed version  | 0.2.1                                        |\n| CVSS Score     |                                          5.6 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L |\n"
+              },
+              "properties": {
+                "affected_version": "<0.2.1",
+                "cvssV3": 5.6,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                "fixed_version": "0.2.1",
+                "purls": [
+                  "pkg:npm/minimist@0.0.10"
+                ],
+                "security-severity": "5.6",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-21422",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-21422: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-21422",
+              "help": {
+                "text": "mongo-express is a web-based MongoDB admin interface, written with Node.js and express.\n",
+                "markdown": "> mongo-express is a web-based MongoDB admin interface, written with Node.js and express.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/mongo-express@1.0.0                  |\n| Affected range | =1.0.0                                       |\n| Fixed version  | not fixed                                    |\n| CVSS Score     |                                          6.1 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "=1.0.0",
+                "cvssV3": 6.1,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                "fixed_version": "not fixed",
+                "purls": [
+                  "pkg:npm/mongo-express@1.0.0"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-20149",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-20149: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-20149",
+              "help": {
+                "text": "`ctorName` allows external user input to overwrite certain internal attributes via a conflicting name.\n",
+                "markdown": "> `ctorName` allows external user input to overwrite certain internal attributes via a conflicting name.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/kind-of@3.2.2                        |\n| Affected range | <=6.0.2                                      |\n| Fixed version  | 6.0.3                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<=6.0.2",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                "fixed_version": "6.0.3",
+                "purls": [
+                  "pkg:npm/kind-of@3.2.2"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-25345",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-25345: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-25345",
+              "help": {
+                "text": "Directory traversal vulnerability in swig-templates thru 2.0.4 and swig thru 1.4.2, allows attackers to read arbitrary files via the include or extends tags.\n",
+                "markdown": "> Directory traversal vulnerability in swig-templates thru 2.0.4 and swig thru 1.4.2, allows attackers to read arbitrary files via the include or extends tags.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/swig-templates@2.0.3                 |\n| Affected range | <=2.0.4                                      |\n| Fixed version  | not fixed                                    |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<=2.0.4",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                "fixed_version": "not fixed",
+                "purls": [
+                  "pkg:npm/swig-templates@2.0.3"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-43138",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-43138: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-43138",
+              "help": {
+                "text": "A vulnerability exists in Async through 3.2.1 (fixed in 3.2.2), which could let a malicious user obtain privileges via the mapValues() method.\n",
+                "markdown": "> A vulnerability exists in Async through 3.2.1 (fixed in 3.2.2), which could let a malicious user obtain privileges via the mapValues() method.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/async@0.2.10                         |\n| Affected range | <2.6.4                                       |\n| Fixed version  | 2.6.4, 3.2.2                                 |\n| CVSS Score     |                                          7.8 |\n| CVSS Vector    | CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<2.6.4",
+                "cvssV3": 7.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "fixed_version": "2.6.4, 3.2.2",
+                "purls": [
+                  "pkg:npm/async@0.2.10"
+                ],
+                "security-severity": "7.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-36632",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-36632: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-36632",
+              "help": {
+                "text": "flat helps flatten/unflatten nested Javascript objects. A vulnerability, which was classified as critical, was found in hughsk flat up to 5.0.0. This affects the function unflatten of the file index.js. The manipulation leads to improperly controlled modification of object prototype attributes ('prototype pollution'). It is possible to initiate the attack remotely. Upgrading to version 5.0.1 can address this issue. The name of the patch is 20ef0ef55dfa028caddaedbcb33efbdb04d18e13. It is recommended to upgrade the affected component. The identifier VDB-216777 was assigned to this vulnerability.\n",
+                "markdown": "> flat helps flatten/unflatten nested Javascript objects. A vulnerability, which was classified as critical, was found in hughsk flat up to 5.0.0. This affects the function unflatten of the file index.js. The manipulation leads to improperly controlled modification of object prototype attributes ('prototype pollution'). It is possible to initiate the attack remotely. Upgrading to version 5.0.1 can address this issue. The name of the patch is 20ef0ef55dfa028caddaedbcb33efbdb04d18e13. It is recommended to upgrade the affected component. The identifier VDB-216777 was assigned to this vulnerability.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/flat@4.1.1                           |\n| Affected range | <5.0.1                                       |\n| Fixed version  | 5.0.1                                        |\n| CVSS Score     |                                          9.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<5.0.1",
+                "cvssV3": 9.8,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "5.0.1",
+                "purls": [
+                  "pkg:npm/flat@4.1.1"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-44906",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-44906: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-44906",
+              "help": {
+                "text": "Minimist prior to 1.2.6 and 0.2.4 is vulnerable to Prototype Pollution via file `index.js`, function `setKey()` (lines 69-95).\n",
+                "markdown": "> Minimist prior to 1.2.6 and 0.2.4 is vulnerable to Prototype Pollution via file `index.js`, function `setKey()` (lines 69-95).\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/minimist@0.0.10                      |\n| Affected range | <0.2.4                                       |\n| Fixed version  | 0.2.4                                        |\n| CVSS Score     |                                          9.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<0.2.4",
+                "cvssV3": 9.8,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "0.2.4",
+                "purls": [
+                  "pkg:npm/minimist@0.0.10"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-5363",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-5363                                                    \n  Severity       : UNSPECIFIED                                                      \n  Package        : pkg:apk/alpine/openssl@3.0.10-r0?os_name=alpine&os_version=3.17  \n  Affected range : <3.0.12-r0                                                       \n  Fixed version  : 3.0.12-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-7598",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-7598                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/minimist@0.0.10                       \n  Affected range : <0.2.1                                        \n  Fixed version  : 0.2.1                                         \n  CVSS Score     : 5.6                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/node_modules/minimist/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.cache/yarn/v6/npm-minimist-0.0.10-de3f98543dbf96082be48ad1a0c7cda836301dcf-integrity/node_modules/minimist/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-21422",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-21422                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/mongo-express@1.0.0                   \n  Affected range : =1.0.0                                        \n  Fixed version  : not fixed                                     \n  CVSS Score     : 6.1                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/node_modules/mongo-express/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.cache/yarn/v6/npm-mongo-express-1.0.0-d1cc5ed836b5e2a7332c226fd2785a49d9e46dcf-integrity/node_modules/mongo-express/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-20149",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-20149                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/kind-of@3.2.2                         \n  Affected range : <=6.0.2                                       \n  Fixed version  : 6.0.3                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/node_modules/kind-of/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.cache/yarn/v6/npm-kind-of-3.2.2-31ea21a734bab9bbb0f32466d893aea51e4a3c64-integrity/node_modules/kind-of/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-25345",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-25345                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/swig-templates@2.0.3                  \n  Affected range : <=2.0.4                                       \n  Fixed version  : not fixed                                     \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/node_modules/swig-templates/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.cache/yarn/v6/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0-integrity/node_modules/swig-templates/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-43138",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-43138                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/async@0.2.10                          \n  Affected range : <2.6.4                                        \n  Fixed version  : 2.6.4, 3.2.2                                  \n  CVSS Score     : 7.8                                           \n  CVSS Vector    : CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/node_modules/async/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.cache/yarn/v6/npm-async-0.2.10-b6bbe0b0674b9d719708ca38de8c237cb526c3d1-integrity/node_modules/async/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-36632",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-36632                                \n  Severity       : CRITICAL                                      \n  Package        : pkg:npm/flat@4.1.1                            \n  Affected range : <5.0.1                                        \n  Fixed version  : 5.0.1                                         \n  CVSS Score     : 9.8                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/node_modules/json2csv/node_modules/flat/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.cache/yarn/v6/npm-flat-4.1.1-a392059cc382881ff98642f5da4dde0a959f309b-integrity/node_modules/flat/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-44906",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-44906                                \n  Severity       : CRITICAL                                      \n  Package        : pkg:npm/minimist@0.0.10                       \n  Affected range : <0.2.4                                        \n  Fixed version  : 0.2.4                                         \n  CVSS Score     : 9.8                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/node_modules/minimist/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.cache/yarn/v6/npm-minimist-0.0.10-de3f98543dbf96082be48ad1a0c7cda836301dcf-integrity/node_modules/minimist/package.json"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

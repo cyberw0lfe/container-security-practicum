@@ -1,0 +1,1046 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-39325",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39325: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39325",
+              "help": {
+                "text": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n",
+                "markdown": "> A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n\n|                |                                    |\n|----------------|------------------------------------|\n| Package        | pkg:golang/golang.org/x/net@0.10.0 |\n| Affected range | <0.17.0                            |\n| Fixed version  | 0.17.0                             |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.10",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "1.20.10",
+                "purls": [
+                  "pkg:golang/golang.org/x/net@0.10.0",
+                  "pkg:golang/golang.org/x/net@0.14.0",
+                  "pkg:golang/golang.org/x/net@0.8.0",
+                  "pkg:golang/stdlib@1.20.6",
+                  "pkg:golang/stdlib@1.20.7",
+                  "pkg:golang/stdlib@1.21.1"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-5363",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-5363"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-5363",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                |\n|----------------|----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18 |\n| Affected range | <3.1.4-r0                                                      |\n| Fixed version  | 3.1.4-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<3.1.4-r0",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "3.1.4-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "GMS-2023-2229",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GMS-2023-2229: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/GMS-2023-2229",
+              "help": {
+                "text": "### Impact\nFor Windows users of `github.com/cyphar/filepath-securejoin`, until v0.2.4 it was possible for certain rootfs and path combinations (in particular, where a malicious Unix-style `/`-separated unsafe path was used with a Windows-style rootfs path) to result in generated paths that were outside of the provided rootfs.\n\nIt is unclear to what extent this has a practical impact on real users, but given the possible severity of the issue we have released an emergency patch release that resolves this issue.\n\nThanks to @pjbgf for discovering, debugging, and fixing this issue (as well as writing some tests for it).\n\n### Patches\nc121231e1276e11049547bee5ce68d5a2cfe2d9b is the patch fixing this issue. v0.2.4 contains the fix.\n\n### Workarounds\nUsers could use `filepath.FromSlash()` on all unsafe paths before passing them to `filepath-securejoin`.\n\n### References\nSee #9.\n",
+                "markdown": "> ### Impact\nFor Windows users of `github.com/cyphar/filepath-securejoin`, until v0.2.4 it was possible for certain rootfs and path combinations (in particular, where a malicious Unix-style `/`-separated unsafe path was used with a Windows-style rootfs path) to result in generated paths that were outside of the provided rootfs.\n\nIt is unclear to what extent this has a practical impact on real users, but given the possible severity of the issue we have released an emergency patch release that resolves this issue.\n\nThanks to @pjbgf for discovering, debugging, and fixing this issue (as well as writing some tests for it).\n\n### Patches\nc121231e1276e11049547bee5ce68d5a2cfe2d9b is the patch fixing this issue. v0.2.4 contains the fix.\n\n### Workarounds\nUsers could use `filepath.FromSlash()` on all unsafe paths before passing them to `filepath-securejoin`.\n\n### References\nSee #9.\n\n|                |                                                        |\n|----------------|--------------------------------------------------------|\n| Package        | pkg:golang/github.com/cyphar/filepath-securejoin@0.2.3 |\n| Affected range | <v0.2.4                                                |\n| Fixed version  | v0.2.4                                                 |\n"
+              },
+              "properties": {
+                "affected_version": "<v0.2.4",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "v0.2.4",
+                "purls": [
+                  "pkg:golang/github.com/cyphar/filepath-securejoin@0.2.3"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-6xv5-86q9-7xr8",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-6xv5-86q9-7xr8"
+              },
+              "helpUri": "https://scout.docker.com/v/GHSA-6xv5-86q9-7xr8",
+              "help": {
+                "text": "### Impact\nFor Windows users of `github.com/cyphar/filepath-securejoin`, until v0.2.4 it was possible for certain rootfs and path combinations (in particular, where a malicious Unix-style `/`-separated unsafe path was used with a Windows-style rootfs path) to result in generated paths that were outside of the provided rootfs.\n\nIt is unclear to what extent this has a practical impact on real users, but given the possible severity of the issue we have released an emergency patch release that resolves this issue.\n\nThanks to  @pjbgf for discovering, debugging, and fixing this issue (as well as writing some tests for it).\n\n### Patches\nc121231e1276e11049547bee5ce68d5a2cfe2d9b is the patch fixing this issue. v0.2.4 contains the fix.\n\n### Workarounds\nUsers could use `filepath.FromSlash()` on all unsafe paths before passing them to `filepath-securejoin`.\n\n### References\nSee #9.\n",
+                "markdown": "> ### Impact\nFor Windows users of `github.com/cyphar/filepath-securejoin`, until v0.2.4 it was possible for certain rootfs and path combinations (in particular, where a malicious Unix-style `/`-separated unsafe path was used with a Windows-style rootfs path) to result in generated paths that were outside of the provided rootfs.\n\nIt is unclear to what extent this has a practical impact on real users, but given the possible severity of the issue we have released an emergency patch release that resolves this issue.\n\nThanks to  @pjbgf for discovering, debugging, and fixing this issue (as well as writing some tests for it).\n\n### Patches\nc121231e1276e11049547bee5ce68d5a2cfe2d9b is the patch fixing this issue. v0.2.4 contains the fix.\n\n### Workarounds\nUsers could use `filepath.FromSlash()` on all unsafe paths before passing them to `filepath-securejoin`.\n\n### References\nSee #9.\n\n|                |                                                        |\n|----------------|--------------------------------------------------------|\n| Package        | pkg:golang/github.com/cyphar/filepath-securejoin@0.2.3 |\n| Affected range | <0.2.4                                                 |\n| Fixed version  | 0.2.4                                                  |\n"
+              },
+              "properties": {
+                "affected_version": "<0.2.4",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "0.2.4",
+                "purls": [
+                  "pkg:golang/github.com/cyphar/filepath-securejoin@0.2.3"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-8552",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-8552: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-8552",
+              "help": {
+                "text": "The Kubernetes API server component has been found to be vulnerable to a denial of service attack via successful API requests.\n",
+                "markdown": "> The Kubernetes API server component has been found to be vulnerable to a denial of service attack via successful API requests.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:golang/k8s.io/apiserver@0.26.2           |\n| Affected range | <1.15.10                                     |\n| Fixed version  | 1.15.10, 1.16.7, 1.17.3                      |\n| CVSS Score     |                                          4.3 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L |\n"
+              },
+              "properties": {
+                "affected_version": "<1.15.10",
+                "cvssV3": 4.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+                "fixed_version": "1.15.10, 1.16.7, 1.17.3",
+                "purls": [
+                  "pkg:golang/k8s.io/apiserver@0.26.2"
+                ],
+                "security-severity": "4.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-29409",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-29409"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-29409",
+              "help": {
+                "text": "Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits.\n\nBased on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n",
+                "markdown": "> Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits.\n\nBased on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.6 |\n| Affected range | >=1.20.0-0,<1.20.7       |\n| Fixed version  | 1.20.7                   |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.20.0-0,<1.20.7",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.7",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.6"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-44487",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-44487"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-44487",
+              "help": {
+                "text": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n",
+                "markdown": "> A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.6 |\n| Affected range | <1.20.10                 |\n| Fixed version  | 1.20.10                  |\n"
+              },
+              "properties": {
+                "affected_version": "<0.17.0",
+                "cvssV3": 5.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "fixed_version": "0.17.0",
+                "purls": [
+                  "pkg:golang/golang.org/x/net@0.10.0",
+                  "pkg:golang/golang.org/x/net@0.14.0",
+                  "pkg:golang/golang.org/x/net@0.8.0",
+                  "pkg:golang/stdlib@1.20.6",
+                  "pkg:golang/stdlib@1.20.7",
+                  "pkg:golang/stdlib@1.21.1"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39318",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39318"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39318",
+              "help": {
+                "text": "The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in <script> contexts. This may cause the template parser to improperly interpret the contents of <script> contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n",
+                "markdown": "> The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in <script> contexts. This may cause the template parser to improperly interpret the contents of <script> contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.6 |\n| Affected range | <1.20.8                  |\n| Fixed version  | 1.20.8                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.8",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.8",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.6",
+                  "pkg:golang/stdlib@1.20.7"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-39319",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-39319"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-39319",
+              "help": {
+                "text": "The html/template package does not apply the proper rules for handling occurrences of \"<script\", \"<!--\", and \"</script\" within JS literals in <script> contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.\n",
+                "markdown": "> The html/template package does not apply the proper rules for handling occurrences of \"<script\", \"<!--\", and \"</script\" within JS literals in <script> contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.\n\n|                |                          |\n|----------------|--------------------------|\n| Package        | pkg:golang/stdlib@1.20.6 |\n| Affected range | <1.20.8                  |\n| Fixed version  | 1.20.8                   |\n"
+              },
+              "properties": {
+                "affected_version": "<1.20.8",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.20.8",
+                "purls": [
+                  "pkg:golang/stdlib@1.20.6",
+                  "pkg:golang/stdlib@1.20.7"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-3978",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-3978: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-3978",
+              "help": {
+                "text": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack. \n",
+                "markdown": "> Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack. \n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:golang/golang.org/x/net@0.8.0            |\n| Affected range | <0.13.0                                      |\n| Fixed version  | 0.13.0                                       |\n| CVSS Score     |                                          6.1 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<0.13.0",
+                "cvssV3": 6.1,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                "fixed_version": "0.13.0",
+                "purls": [
+                  "pkg:golang/golang.org/x/net@0.10.0",
+                  "pkg:golang/golang.org/x/net@0.8.0"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-45142",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-45142: Allocation of Resources Without Limits or Throttling"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-45142",
+              "help": {
+                "text": "### Summary\n\nThis handler wrapper https://github.com/open-telemetry/opentelemetry-go-contrib/blob/5f7e6ad5a49b45df45f61a1deb29d7f1158032df/instrumentation/net/http/otelhttp/handler.go#L63-L65\nout of the box adds labels\n\n- `http.user_agent`\n- `http.method`\n\nthat have unbound cardinality. It leads to the server's potential memory exhaustion when many malicious requests are sent to it.\n\n### Details\n\nHTTP header User-Agent or HTTP method for requests can be easily set by an attacker to be random and long. The library internally uses [httpconv.ServerRequest](https://github.com/open-telemetry/opentelemetry-go/blob/v1.12.0/semconv/internal/v2/http.go#L159) that records every value for HTTP [method](https://github.com/open-telemetry/opentelemetry-go/blob/38e1b499c3da3107694ad2660b3888eee9c8b896/semconv/internal/v2/http.go#L204) and [User-Agent](https://github.com/open-telemetry/opentelemetry-go/blob/38e1b499c3da3107694ad2660b3888eee9c8b896/semconv/internal/v2/http.go#L223).\n\n### PoC\n\nSend many requests with long randomly generated HTTP methods or/and User agents (e.g. a million) and observe how memory consumption increases during it.\n\n### Impact\n\nIn order to be affected, the program has to configure a metrics pipeline, use [otelhttp.NewHandler](https://github.com/open-telemetry/opentelemetry-go-contrib/blob/5f7e6ad5a49b45df45f61a1deb29d7f1158032df/instrumentation/net/http/otelhttp/handler.go#L63-L65) wrapper, and does not filter any unknown HTTP methods or User agents on the level of CDN, LB, previous middleware, etc.\n\n### Others\n\nIt is similar to already reported vulnerabilities\n- https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-5r5m-65gx-7vrh ([open-telemetry/opentelemetry-go-contrib](https://github.com/open-telemetry/opentelemetry-go-contrib))\n- https://github.com/advisories/GHSA-cg3q-j54f-5p7p ([prometheus/client_golang](https://github.com/prometheus/client_golang))\n\n### Workaround for affected versions\n\nAs a workaround to stop being affected [otelhttp.WithFilter()](https://pkg.go.dev/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp/filters) can be used, but it requires manual careful configuration to not log certain requests entirely.\n\nFor convenience and safe usage of this library, it should by default mark with the label `unknown` non-standard HTTP methods and User agents to show that such requests were made but do not increase cardinality. In case someone wants to stay with the current behavior, library API should allow to enable it.\n\nThe other possibility is to disable HTTP metrics instrumentation by passing [`otelhttp.WithMeterProvider`](https://pkg.go.dev/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp#WithMeterProvider) option with [`noop.NewMeterProvider`](https://pkg.go.dev/go.opentelemetry.io/otel/metric/noop#NewMeterProvider).\n\n### Solution provided by upgrading\n\nIn PR https://github.com/open-telemetry/opentelemetry-go-contrib/pull/4277, released with package version 0.44.0, the values collected for attribute `http.request.method` were changed to be restricted to a set of well-known values and other high cardinality attributes were removed.\n\n### References\n\n- https://github.com/open-telemetry/opentelemetry-go-contrib/pull/4277\n- https://github.com/open-telemetry/opentelemetry-go-contrib/releases/tag/v1.19.0\n\n",
+                "markdown": "> ### Summary\n\nThis handler wrapper https://github.com/open-telemetry/opentelemetry-go-contrib/blob/5f7e6ad5a49b45df45f61a1deb29d7f1158032df/instrumentation/net/http/otelhttp/handler.go#L63-L65\nout of the box adds labels\n\n- `http.user_agent`\n- `http.method`\n\nthat have unbound cardinality. It leads to the server's potential memory exhaustion when many malicious requests are sent to it.\n\n### Details\n\nHTTP header User-Agent or HTTP method for requests can be easily set by an attacker to be random and long. The library internally uses [httpconv.ServerRequest](https://github.com/open-telemetry/opentelemetry-go/blob/v1.12.0/semconv/internal/v2/http.go#L159) that records every value for HTTP [method](https://github.com/open-telemetry/opentelemetry-go/blob/38e1b499c3da3107694ad2660b3888eee9c8b896/semconv/internal/v2/http.go#L204) and [User-Agent](https://github.com/open-telemetry/opentelemetry-go/blob/38e1b499c3da3107694ad2660b3888eee9c8b896/semconv/internal/v2/http.go#L223).\n\n### PoC\n\nSend many requests with long randomly generated HTTP methods or/and User agents (e.g. a million) and observe how memory consumption increases during it.\n\n### Impact\n\nIn order to be affected, the program has to configure a metrics pipeline, use [otelhttp.NewHandler](https://github.com/open-telemetry/opentelemetry-go-contrib/blob/5f7e6ad5a49b45df45f61a1deb29d7f1158032df/instrumentation/net/http/otelhttp/handler.go#L63-L65) wrapper, and does not filter any unknown HTTP methods or User agents on the level of CDN, LB, previous middleware, etc.\n\n### Others\n\nIt is similar to already reported vulnerabilities\n- https://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-5r5m-65gx-7vrh ([open-telemetry/opentelemetry-go-contrib](https://github.com/open-telemetry/opentelemetry-go-contrib))\n- https://github.com/advisories/GHSA-cg3q-j54f-5p7p ([prometheus/client_golang](https://github.com/prometheus/client_golang))\n\n### Workaround for affected versions\n\nAs a workaround to stop being affected [otelhttp.WithFilter()](https://pkg.go.dev/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp/filters) can be used, but it requires manual careful configuration to not log certain requests entirely.\n\nFor convenience and safe usage of this library, it should by default mark with the label `unknown` non-standard HTTP methods and User agents to show that such requests were made but do not increase cardinality. In case someone wants to stay with the current behavior, library API should allow to enable it.\n\nThe other possibility is to disable HTTP metrics instrumentation by passing [`otelhttp.WithMeterProvider`](https://pkg.go.dev/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp#WithMeterProvider) option with [`noop.NewMeterProvider`](https://pkg.go.dev/go.opentelemetry.io/otel/metric/noop#NewMeterProvider).\n\n### Solution provided by upgrading\n\nIn PR https://github.com/open-telemetry/opentelemetry-go-contrib/pull/4277, released with package version 0.44.0, the values collected for attribute `http.request.method` were changed to be restricted to a set of well-known values and other high cardinality attributes were removed.\n\n### References\n\n- https://github.com/open-telemetry/opentelemetry-go-contrib/pull/4277\n- https://github.com/open-telemetry/opentelemetry-go-contrib/releases/tag/v1.19.0\n\n\n|                |                                                                                                |\n|----------------|------------------------------------------------------------------------------------------------|\n| Package        | pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace@0.29.0 |\n| Affected range | <0.44.0                                                                                        |\n| Fixed version  | 0.44.0                                                                                         |\n| CVSS Score     |                                                                                            7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                                                   |\n"
+              },
+              "properties": {
+                "affected_version": "<0.44.0",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.44.0",
+                "purls": [
+                  "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace@0.29.0",
+                  "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace@0.40.0",
+                  "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@0.29.0",
+                  "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@0.40.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-m425-mq94-257g",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-m425-mq94-257g"
+              },
+              "helpUri": "https://scout.docker.com/v/GHSA-m425-mq94-257g",
+              "help": {
+                "text": "### Impact\nIn affected releases of gRPC-Go, it is possible for an attacker to send HTTP/2 requests, cancel them, and send subsequent requests, which is valid by the HTTP/2 protocol, but would cause the gRPC-Go server to launch more concurrent method handlers than the configured maximum stream limit.\n\n### Patches\nThis vulnerability was addressed by #6703 and has been included in patch releases: 1.56.3, 1.57.1, 1.58.3.  It is also included in the latest release, 1.59.0.\n\nAlong with applying the patch, users should also ensure they are using the `grpc.MaxConcurrentStreams` server option to apply a limit to the server's resources used for any single connection.\n\n### Workarounds\nNone.\n\n### References\n#6703\n\n",
+                "markdown": "> ### Impact\nIn affected releases of gRPC-Go, it is possible for an attacker to send HTTP/2 requests, cancel them, and send subsequent requests, which is valid by the HTTP/2 protocol, but would cause the gRPC-Go server to launch more concurrent method handlers than the configured maximum stream limit.\n\n### Patches\nThis vulnerability was addressed by #6703 and has been included in patch releases: 1.56.3, 1.57.1, 1.58.3.  It is also included in the latest release, 1.59.0.\n\nAlong with applying the patch, users should also ensure they are using the `grpc.MaxConcurrentStreams` server option to apply a limit to the server's resources used for any single connection.\n\n### Workarounds\nNone.\n\n### References\n#6703\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:golang/google.golang.org/grpc@1.53.0     |\n| Affected range | <1.56.3                                      |\n| Fixed version  | 1.56.3                                       |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<1.56.3",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "1.56.3",
+                "purls": [
+                  "pkg:golang/google.golang.org/grpc@1.50.1",
+                  "pkg:golang/google.golang.org/grpc@1.53.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-39325",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39325            \n  Severity       : UNSPECIFIED               \n  Package        : pkg:golang/stdlib@1.20.7  \n  Affected range : <1.20.10                  \n  Fixed version  : 1.20.10                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/containerd"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/containerd-shim-runc-v2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/ctr"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/docker"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/docker-proxy"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/runc"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39325",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39325            \n  Severity       : UNSPECIFIED               \n  Package        : pkg:golang/stdlib@1.20.6  \n  Affected range : <1.20.10                  \n  Fixed version  : 1.20.10                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39325",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39325            \n  Severity       : UNSPECIFIED               \n  Package        : pkg:golang/stdlib@1.21.1  \n  Affected range : >=1.21.0-0,<1.21.3        \n  Fixed version  : 1.21.3                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-compose"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-5363",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-5363                                                   \n  Severity       : UNSPECIFIED                                                     \n  Package        : pkg:apk/alpine/openssl@3.1.3-r0?os_name=alpine&os_version=3.18  \n  Affected range : <3.1.4-r0                                                       \n  Fixed version  : 3.1.4-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/bin/openssl"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GMS-2023-2229",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : GMS-2023-2229                                           \n  Severity       : UNSPECIFIED                                             \n  Package        : pkg:golang/github.com/cyphar/filepath-securejoin@0.2.3  \n  Affected range : <v0.2.4                                                 \n  Fixed version  : v0.2.4                                                  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39325",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39325                      \n  Severity       : MEDIUM                              \n  Package        : pkg:golang/golang.org/x/net@0.14.0  \n  Affected range : <0.17.0                             \n  Fixed version  : 0.17.0                              \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-compose"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39325",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39325                     \n  Severity       : MEDIUM                             \n  Package        : pkg:golang/golang.org/x/net@0.8.0  \n  Affected range : <0.17.0                            \n  Fixed version  : 0.17.0                             \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39325",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39325                      \n  Severity       : MEDIUM                              \n  Package        : pkg:golang/golang.org/x/net@0.10.0  \n  Affected range : <0.17.0                             \n  Fixed version  : 0.17.0                              \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-6xv5-86q9-7xr8",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : GHSA-6xv5-86q9-7xr8                                     \n  Severity       : MEDIUM                                                  \n  Package        : pkg:golang/github.com/cyphar/filepath-securejoin@0.2.3  \n  Affected range : <0.2.4                                                  \n  Fixed version  : 0.2.4                                                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-8552",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-8552                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:golang/k8s.io/apiserver@0.26.2            \n  Affected range : <1.15.10                                      \n  Fixed version  : 1.15.10, 1.16.7, 1.17.3                       \n  CVSS Score     : 4.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-29409",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-29409            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.20.6  \n  Affected range : >=1.20.0-0,<1.20.7        \n  Fixed version  : 1.20.7                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:golang/golang.org/x/net@0.10.0            \n  Affected range : <0.17.0                                       \n  Fixed version  : 0.17.0                                        \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:golang/golang.org/x/net@0.14.0            \n  Affected range : <0.17.0                                       \n  Fixed version  : 0.17.0                                        \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-compose"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:golang/golang.org/x/net@0.8.0             \n  Affected range : <0.17.0                                       \n  Fixed version  : 0.17.0                                        \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39318",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39318            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.20.7  \n  Affected range : <1.20.8                   \n  Fixed version  : 1.20.8                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/containerd"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/containerd-shim-runc-v2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/ctr"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/docker"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/docker-proxy"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/runc"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39318",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39318            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.20.6  \n  Affected range : <1.20.8                   \n  Fixed version  : 1.20.8                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39319",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39319            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.20.7  \n  Affected range : <1.20.8                   \n  Fixed version  : 1.20.8                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/containerd"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/containerd-shim-runc-v2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/ctr"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/docker"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/docker-proxy"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/runc"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-39319",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-39319            \n  Severity       : MEDIUM                    \n  Package        : pkg:golang/stdlib@1.20.6  \n  Affected range : <1.20.8                   \n  Fixed version  : 1.20.8                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-3978",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-3978                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:golang/golang.org/x/net@0.10.0            \n  Affected range : <0.13.0                                       \n  Fixed version  : 0.13.0                                        \n  CVSS Score     : 6.1                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-3978",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-3978                                 \n  Severity       : MEDIUM                                        \n  Package        : pkg:golang/golang.org/x/net@0.8.0             \n  Affected range : <0.13.0                                       \n  Fixed version  : 0.13.0                                        \n  CVSS Score     : 6.1                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487            \n  Severity       : HIGH                      \n  Package        : pkg:golang/stdlib@1.21.1  \n  Affected range : >=1.21.0-0,<1.21.3        \n  Fixed version  : 1.21.3                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-compose"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487            \n  Severity       : HIGH                      \n  Package        : pkg:golang/stdlib@1.20.7  \n  Affected range : <1.20.10                  \n  Fixed version  : 1.20.10                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/containerd"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/containerd-shim-runc-v2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/ctr"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/docker"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/docker-proxy"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/runc"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-44487            \n  Severity       : HIGH                      \n  Package        : pkg:golang/stdlib@1.20.6  \n  Affected range : <1.20.10                  \n  Fixed version  : 1.20.10                   \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-45142",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-45142                                                                   \n  Severity       : HIGH                                                                             \n  Package        : pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@0.40.0  \n  Affected range : <0.44.0                                                                          \n  Fixed version  : 0.44.0                                                                           \n  CVSS Score     : 7.5                                                                              \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-compose"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-45142",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-45142                                                                   \n  Severity       : HIGH                                                                             \n  Package        : pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@0.29.0  \n  Affected range : <0.44.0                                                                          \n  Fixed version  : 0.44.0                                                                           \n  CVSS Score     : 7.5                                                                              \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-45142",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-45142                                                                                  \n  Severity       : HIGH                                                                                            \n  Package        : pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace@0.40.0  \n  Affected range : <0.44.0                                                                                         \n  Fixed version  : 0.44.0                                                                                          \n  CVSS Score     : 7.5                                                                                             \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                                                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-compose"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-45142",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-45142                                                                                  \n  Severity       : HIGH                                                                                            \n  Package        : pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace@0.29.0  \n  Affected range : <0.44.0                                                                                         \n  Fixed version  : 0.44.0                                                                                          \n  CVSS Score     : 7.5                                                                                             \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H                                                    \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-m425-mq94-257g",
+          "ruleIndex": 11,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-m425-mq94-257g                           \n  Severity       : HIGH                                          \n  Package        : pkg:golang/google.golang.org/grpc@1.50.1      \n  Affected range : <1.56.3                                       \n  Fixed version  : 1.56.3                                        \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/bin/dockerd"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-m425-mq94-257g",
+          "ruleIndex": 11,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-m425-mq94-257g                           \n  Severity       : HIGH                                          \n  Package        : pkg:golang/google.golang.org/grpc@1.53.0      \n  Affected range : <1.56.3                                       \n  Fixed version  : 1.56.3                                        \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/libexec/docker/cli-plugins/docker-buildx"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

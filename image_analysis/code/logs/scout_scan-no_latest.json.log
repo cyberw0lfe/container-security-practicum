@@ -1,0 +1,56 @@
+111223 07:37:28 :  starting batch aerospike:ee-6.4.0.6,consul:1.15.4,docker-dev:1.9.1
+111223 07:37:37 :  Download complete for consul:1.15.4
+111223 07:37:40 :  Scout complete for consul:1.15.4
+111223 07:37:40 :  Delete complete for consul:1.15.4
+111223 07:37:43 :  Download complete for aerospike:ee-6.4.0.6
+111223 07:37:46 :  Scout complete for aerospike:ee-6.4.0.6
+111223 07:37:46 :  Delete complete for aerospike:ee-6.4.0.6
+111223 07:38:43 :  Download complete for docker-dev:1.9.1
+111223 07:38:47 :  Scout complete for docker-dev:1.9.1
+111223 07:38:48 :  Delete complete for docker-dev:1.9.1
+111223 07:38:48 :  batch 1 completed!
+111223 07:38:48 :  starting batch elasticsearch:8.11.0,ibm-semeru-runtimes:open-20-jre,ibm-semeru-runtimes:open-20-jdk
+111223 07:39:27 :  Download complete for ibm-semeru-runtimes:open-20-jre
+111223 07:39:29 :  Scout complete for ibm-semeru-runtimes:open-20-jre
+111223 07:39:29 :  Delete complete for ibm-semeru-runtimes:open-20-jre
+111223 07:39:42 :  Download complete for ibm-semeru-runtimes:open-20-jdk
+111223 07:39:45 :  Scout complete for ibm-semeru-runtimes:open-20-jdk
+111223 07:39:45 :  Delete complete for ibm-semeru-runtimes:open-20-jdk
+111223 07:40:09 :  Download complete for elasticsearch:8.11.0
+111223 07:40:11 :  Scout complete for elasticsearch:8.11.0
+111223 07:40:12 :  Delete complete for elasticsearch:8.11.0
+111223 07:40:12 :  batch 2 completed!
+111223 07:40:12 :  starting batch --platform linux/amd64 java:9-b149-jre,--platform linux/amd64 jenkins:2.60.3,kibana:8.11.0
+111223 07:40:53 :  Download complete for jenkins:2.60.3
+111223 07:41:27 :  Download complete for java:9-b149-jre
+111223 07:42:17 :  Scout complete for jenkins:2.60.3
+111223 07:42:29 :  Delete complete for jenkins:2.60.3
+111223 07:42:37 :  Scout complete for java:9-b149-jre
+111223 07:42:40 :  Delete complete for java:9-b149-jre
+111223 07:42:51 :  Download complete for kibana:8.11.0
+111223 07:42:54 :  Scout complete for kibana:8.11.0
+111223 07:42:55 :  Delete complete for kibana:8.11.0
+111223 07:42:55 :  batch 3 completed!
+111223 07:42:55 :  starting batch logstash:8.11.0,notary:server,notary:signer
+111223 07:42:59 :  Download complete for notary:signer
+111223 07:43:01 :  Scout complete for notary:signer
+111223 07:43:01 :  Delete complete for notary:signer
+111223 07:43:13 :  Download complete for notary:server
+111223 07:43:16 :  Scout complete for notary:server
+111223 07:43:16 :  Delete complete for notary:server
+111223 07:44:52 :  Download complete for logstash:8.11.0
+111223 07:44:55 :  Scout complete for logstash:8.11.0
+111223 07:44:55 :  Delete complete for logstash:8.11.0
+111223 07:44:55 :  batch 4 completed!
+111223 07:44:55 :  starting batch oraclelinux:9,rockylinux:9.2,vault:1.13.3
+111223 07:45:11 :  Download complete for rockylinux:9.2
+111223 07:45:14 :  Scout complete for rockylinux:9.2
+111223 07:45:14 :  Delete complete for rockylinux:9.2
+111223 07:45:16 :  Download complete for vault:1.13.3
+111223 07:45:18 :  Scout complete for vault:1.13.3
+111223 07:45:18 :  Delete complete for vault:1.13.3
+111223 07:45:19 :  Download complete for oraclelinux:9
+111223 07:45:21 :  Scout complete for oraclelinux:9
+111223 07:45:21 :  Delete complete for oraclelinux:9
+111223 07:45:21 :  batch 5 completed!
+111223 07:45:21 :  thank you for analyzing today... goodbye!

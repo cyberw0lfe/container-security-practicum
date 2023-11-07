@@ -1,0 +1,1737 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2022-23539",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-23539: Use of a Broken or Risky Cryptographic Algorithm"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-23539",
+              "help": {
+                "text": "# Overview\n\nVersions `<=8.5.1` of `jsonwebtoken` library could be misconfigured so that legacy, insecure key types are used for signature verification. For example, DSA keys could be used with the RS256 algorithm. \n\n# Am I affected?\n\nYou are affected if you are using an algorithm and a key type other than the combinations mentioned below\n\n| Key type |  algorithm                                    |\n|----------|------------------------------------------|\n| ec           | ES256, ES384, ES512                      |\n| rsa          | RS256, RS384, RS512, PS256, PS384, PS512 |\n| rsa-pss  | PS256, PS384, PS512                      |\n\nAnd for Elliptic Curve algorithms:\n\n| `alg` | Curve      |\n|-------|------------|\n| ES256 | prime256v1 |\n| ES384 | secp384r1  |\n| ES512 | secp521r1  |\n\n# How do I fix it?\n\nUpdate to version 9.0.0. This version validates for asymmetric key type and algorithm combinations. Please refer to the above mentioned algorithm / key type combinations for the valid secure configuration. After updating to version 9.0.0, If you still intend to continue with signing or verifying tokens using invalid key type/algorithm value combinations, you’ll need to set the `allowInvalidAsymmetricKeyTypes` option  to `true` in the `sign()` and/or `verify()` functions.\n\n# Will the fix impact my users?\n\nThere will be no impact, if you update to version 9.0.0 and you already use a valid secure combination of key type and algorithm. Otherwise,  use the  `allowInvalidAsymmetricKeyTypes` option  to `true` in the `sign()` and `verify()` functions to continue usage of invalid key type/algorithm combination in 9.0.0 for legacy compatibility. \n\n\n",
+                "markdown": "> # Overview\n\nVersions `<=8.5.1` of `jsonwebtoken` library could be misconfigured so that legacy, insecure key types are used for signature verification. For example, DSA keys could be used with the RS256 algorithm. \n\n# Am I affected?\n\nYou are affected if you are using an algorithm and a key type other than the combinations mentioned below\n\n| Key type |  algorithm                                    |\n|----------|------------------------------------------|\n| ec           | ES256, ES384, ES512                      |\n| rsa          | RS256, RS384, RS512, PS256, PS384, PS512 |\n| rsa-pss  | PS256, PS384, PS512                      |\n\nAnd for Elliptic Curve algorithms:\n\n| `alg` | Curve      |\n|-------|------------|\n| ES256 | prime256v1 |\n| ES384 | secp384r1  |\n| ES512 | secp521r1  |\n\n# How do I fix it?\n\nUpdate to version 9.0.0. This version validates for asymmetric key type and algorithm combinations. Please refer to the above mentioned algorithm / key type combinations for the valid secure configuration. After updating to version 9.0.0, If you still intend to continue with signing or verifying tokens using invalid key type/algorithm value combinations, you’ll need to set the `allowInvalidAsymmetricKeyTypes` option  to `true` in the `sign()` and/or `verify()` functions.\n\n# Will the fix impact my users?\n\nThere will be no impact, if you update to version 9.0.0 and you already use a valid secure combination of key type and algorithm. Otherwise,  use the  `allowInvalidAsymmetricKeyTypes` option  to `true` in the `sign()` and `verify()` functions to continue usage of invalid key type/algorithm combination in 9.0.0 for legacy compatibility. \n\n\n\n|                |                            |\n|----------------|----------------------------|\n| Package        | pkg:npm/jsonwebtoken@8.5.1 |\n| Affected range | <=8.5.1                    |\n| Fixed version  | 9.0.0                      |\n"
+              },
+              "properties": {
+                "affected_version": "<=8.5.1",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "9.0.0",
+                "purls": [
+                  "pkg:npm/jsonwebtoken@8.5.1"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-4304",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-4304"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-4304",
+              "help": {
+                "text": "A timing based side channel exists in the OpenSSL RSA Decryption implementation\r\nwhich could be sufficient to recover a plaintext across a network in a\r\nBleichenbacher style attack. To achieve a successful decryption an attacker\r\nwould have to be able to send a very large number of trial messages for\r\ndecryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5,\r\nRSA-OEAP and RSASVE.\r\n\r\nFor example, in a TLS connection, RSA is commonly used by a client to send an\r\nencrypted pre-master secret to the server. An attacker that had observed a\r\ngenuine connection between a client and a server could use this flaw to send\r\ntrial messages to the server and record the time taken to process them. After a\r\nsufficiently large number of messages the attacker could recover the pre-master\r\nsecret used for the original connection and thus be able to decrypt the\r\napplication data sent over that connection.\r\n\r\nOpenSSL 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.\r\n\r\nOpenSSL 3.0 users should upgrade to OpenSSL 3.0.8.\r\nOpenSSL 1.1.1 users should upgrade to OpenSSL 1.1.1t.\r\nOpenSSL 1.0.2 users should upgrade to OpenSSL 1.0.2zg (premium support customers\r\nonly).\r\n\r\nAn initial report of a possible timing side channel was made on 14th July 2020\r\nby Hubert Kario (Red Hat). A refined report identifying a specific timing side\r\nchannel was made on 15th July 2022 by Hubert Kario.\r\nThe fix was developed by Dmitry Belyavsky (Red Hat) and Hubert Kario.\n",
+                "markdown": "> A timing based side channel exists in the OpenSSL RSA Decryption implementation\r\nwhich could be sufficient to recover a plaintext across a network in a\r\nBleichenbacher style attack. To achieve a successful decryption an attacker\r\nwould have to be able to send a very large number of trial messages for\r\ndecryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5,\r\nRSA-OEAP and RSASVE.\r\n\r\nFor example, in a TLS connection, RSA is commonly used by a client to send an\r\nencrypted pre-master secret to the server. An attacker that had observed a\r\ngenuine connection between a client and a server could use this flaw to send\r\ntrial messages to the server and record the time taken to process them. After a\r\nsufficiently large number of messages the attacker could recover the pre-master\r\nsecret used for the original connection and thus be able to decrypt the\r\napplication data sent over that connection.\r\n\r\nOpenSSL 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.\r\n\r\nOpenSSL 3.0 users should upgrade to OpenSSL 3.0.8.\r\nOpenSSL 1.1.1 users should upgrade to OpenSSL 1.1.1t.\r\nOpenSSL 1.0.2 users should upgrade to OpenSSL 1.0.2zg (premium support customers\r\nonly).\r\n\r\nAn initial report of a possible timing side channel was made on 14th July 2020\r\nby Hubert Kario (Red Hat). A refined report identifying a specific timing side\r\nchannel was made on 15th July 2022 by Hubert Kario.\r\nThe fix was developed by Dmitry Belyavsky (Red Hat) and Hubert Kario.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1t-r0                                                      |\n| Fixed version  | 1.1.1t-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1t-r0",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.1.1t-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-4450",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-4450"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-4450",
+              "help": {
+                "text": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and\r\ndecodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data.\r\nIf the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are\r\npopulated with pointers to buffers containing the relevant decoded data. The\r\ncaller is responsible for freeing those buffers. It is possible to construct a\r\nPEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex()\r\nwill return a failure code but will populate the header argument with a pointer\r\nto a buffer that has already been freed. If the caller also frees this buffer\r\nthen a double free will occur. This will most likely lead to a crash. This\r\ncould be exploited by an attacker who has the ability to supply malicious PEM\r\nfiles for parsing to achieve a denial of service attack.\r\n\r\nThe functions PEM_read_bio() and PEM_read() are simple wrappers around\r\nPEM_read_bio_ex() and therefore these functions are also directly affected.\r\n\r\nThese functions are also called indirectly by a number of other OpenSSL\r\nfunctions including PEM_X509_INFO_read_bio_ex() and\r\nSSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal\r\nuses of these functions are not vulnerable because the caller does not free the\r\nheader argument if PEM_read_bio_ex() returns a failure code. These locations\r\ninclude the PEM_read_bio_TYPE() functions as well as the decoders introduced in\r\nOpenSSL 3.0.\r\n\r\nThe OpenSSL asn1parse command line application is also impacted by this issue.\r\n\r\nOpenSSL 3.0 and 1.1.1 are vulnerable to this issue.\r\n\r\nOpenSSL 3.0 users should upgrade to OpenSSL 3.0.8.\r\nOpenSSL 1.1.1 users should upgrade to OpenSSL 1.1.1t.\r\n\r\nOpenSSL 1.0.2 is not affected by this issue.\r\n\r\nThis issue was discovered by CarpetFuzz and reported on 8th December 2022 by\r\nDawei Wang. The fix was developed by Kurt Roeckx and Matt Caswell.\n",
+                "markdown": "> The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and\r\ndecodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data.\r\nIf the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are\r\npopulated with pointers to buffers containing the relevant decoded data. The\r\ncaller is responsible for freeing those buffers. It is possible to construct a\r\nPEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex()\r\nwill return a failure code but will populate the header argument with a pointer\r\nto a buffer that has already been freed. If the caller also frees this buffer\r\nthen a double free will occur. This will most likely lead to a crash. This\r\ncould be exploited by an attacker who has the ability to supply malicious PEM\r\nfiles for parsing to achieve a denial of service attack.\r\n\r\nThe functions PEM_read_bio() and PEM_read() are simple wrappers around\r\nPEM_read_bio_ex() and therefore these functions are also directly affected.\r\n\r\nThese functions are also called indirectly by a number of other OpenSSL\r\nfunctions including PEM_X509_INFO_read_bio_ex() and\r\nSSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal\r\nuses of these functions are not vulnerable because the caller does not free the\r\nheader argument if PEM_read_bio_ex() returns a failure code. These locations\r\ninclude the PEM_read_bio_TYPE() functions as well as the decoders introduced in\r\nOpenSSL 3.0.\r\n\r\nThe OpenSSL asn1parse command line application is also impacted by this issue.\r\n\r\nOpenSSL 3.0 and 1.1.1 are vulnerable to this issue.\r\n\r\nOpenSSL 3.0 users should upgrade to OpenSSL 3.0.8.\r\nOpenSSL 1.1.1 users should upgrade to OpenSSL 1.1.1t.\r\n\r\nOpenSSL 1.0.2 is not affected by this issue.\r\n\r\nThis issue was discovered by CarpetFuzz and reported on 8th December 2022 by\r\nDawei Wang. The fix was developed by Kurt Roeckx and Matt Caswell.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1t-r0                                                      |\n| Fixed version  | 1.1.1t-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1t-r0",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.1.1t-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0215",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-0215"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-0215",
+              "help": {
+                "text": "The public API function BIO_new_NDEF is a helper function used for streaming\r\nASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the\r\nSMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by\r\nend user applications.\r\n\r\nThe function receives a BIO from the caller, prepends a new BIO_f_asn1 filter\r\nBIO onto the front of it to form a BIO chain, and then returns the new head of\r\nthe BIO chain to the caller. Under certain conditions, for example if a CMS\r\nrecipient public key is invalid, the new filter BIO is freed and the function\r\nreturns a NULL result indicating a failure. However, in this case, the BIO chain\r\nis not properly cleaned up and the BIO passed by the caller still retains\r\ninternal pointers to the previously freed filter BIO. If the caller then goes on\r\nto call BIO_pop() on the BIO then a use-after-free will occur. This will most\r\nlikely result in a crash.\r\n\r\nThis scenario occurs directly in the internal function B64_write_ASN1() which\r\nmay cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on\r\nthe BIO. This internal function is in turn called by the public API functions\r\nPEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream,\r\nSMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7.\r\n\r\nOther public API functions that may be impacted by this include\r\ni2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and\r\ni2d_PKCS7_bio_stream.\r\n\r\nThe OpenSSL cms and smime command line applications are similarly affected.\r\n\r\nOpenSSL 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.\r\n\r\nOpenSSL 3.0 users should upgrade to OpenSSL 3.0.8.\r\nOpenSSL 1.1.1 users should upgrade to OpenSSL 1.1.1t.\r\nOpenSSL 1.0.2 users should upgrade to OpenSSL 1.0.2zg (premium support customers\r\nonly).\r\n\r\nThis issue was reported on 29th November 2022 by Octavio Galland and\r\nMarcel Böhme (Max Planck Institute for Security and Privacy). The fix was\r\ndeveloped by Viktor Dukhovni and Matt Caswell.\n",
+                "markdown": "> The public API function BIO_new_NDEF is a helper function used for streaming\r\nASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the\r\nSMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by\r\nend user applications.\r\n\r\nThe function receives a BIO from the caller, prepends a new BIO_f_asn1 filter\r\nBIO onto the front of it to form a BIO chain, and then returns the new head of\r\nthe BIO chain to the caller. Under certain conditions, for example if a CMS\r\nrecipient public key is invalid, the new filter BIO is freed and the function\r\nreturns a NULL result indicating a failure. However, in this case, the BIO chain\r\nis not properly cleaned up and the BIO passed by the caller still retains\r\ninternal pointers to the previously freed filter BIO. If the caller then goes on\r\nto call BIO_pop() on the BIO then a use-after-free will occur. This will most\r\nlikely result in a crash.\r\n\r\nThis scenario occurs directly in the internal function B64_write_ASN1() which\r\nmay cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on\r\nthe BIO. This internal function is in turn called by the public API functions\r\nPEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream,\r\nSMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7.\r\n\r\nOther public API functions that may be impacted by this include\r\ni2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and\r\ni2d_PKCS7_bio_stream.\r\n\r\nThe OpenSSL cms and smime command line applications are similarly affected.\r\n\r\nOpenSSL 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.\r\n\r\nOpenSSL 3.0 users should upgrade to OpenSSL 3.0.8.\r\nOpenSSL 1.1.1 users should upgrade to OpenSSL 1.1.1t.\r\nOpenSSL 1.0.2 users should upgrade to OpenSSL 1.0.2zg (premium support customers\r\nonly).\r\n\r\nThis issue was reported on 29th November 2022 by Octavio Galland and\r\nMarcel Böhme (Max Planck Institute for Security and Privacy). The fix was\r\ndeveloped by Viktor Dukhovni and Matt Caswell.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1t-r0                                                      |\n| Fixed version  | 1.1.1t-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1t-r0",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.1.1t-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "4.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-25896",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-25896: Session Fixation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-25896",
+              "help": {
+                "text": "This affects the package passport before 0.6.0. When a user logs in or logs out, the session is regenerated instead of being closed.\n",
+                "markdown": "> This affects the package passport before 0.6.0. When a user logs in or logs out, the session is regenerated instead of being closed.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/passport@0.4.1                       |\n| Affected range | <0.6.0                                       |\n| Fixed version  | 0.6.0                                        |\n| CVSS Score     |                                          4.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L |\n"
+              },
+              "properties": {
+                "affected_version": "<0.6.0",
+                "cvssV3": 4.8,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L",
+                "fixed_version": "0.6.0",
+                "purls": [
+                  "pkg:npm/passport@0.4.1"
+                ],
+                "security-severity": "4.8",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-23541",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-23541: Improper Authentication"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-23541",
+              "help": {
+                "text": "# Overview\n\nVersions `<=8.5.1` of `jsonwebtoken` library can be misconfigured so that passing a poorly implemented key retrieval function (referring to the `secretOrPublicKey` argument from the [readme link](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback)) will result in incorrect verification of tokens. There is a possibility of using a different algorithm and key combination in verification  than the one that was used to sign the tokens. Specifically, tokens signed with an asymmetric public key could be verified with a symmetric HS256 algorithm. This can lead to successful validation of forged tokens. \n\n# Am I affected?\n\nYou will be affected if your application is supporting usage of both symmetric key and asymmetric key in jwt.verify() implementation with the same key retrieval function. \n\n# How do I fix it?\n \nUpdate to version 9.0.0.\n\n# Will the fix impact my users?\n\nThere is no impact for end users\n",
+                "markdown": "> # Overview\n\nVersions `<=8.5.1` of `jsonwebtoken` library can be misconfigured so that passing a poorly implemented key retrieval function (referring to the `secretOrPublicKey` argument from the [readme link](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback)) will result in incorrect verification of tokens. There is a possibility of using a different algorithm and key combination in verification  than the one that was used to sign the tokens. Specifically, tokens signed with an asymmetric public key could be verified with a symmetric HS256 algorithm. This can lead to successful validation of forged tokens. \n\n# Am I affected?\n\nYou will be affected if your application is supporting usage of both symmetric key and asymmetric key in jwt.verify() implementation with the same key retrieval function. \n\n# How do I fix it?\n \nUpdate to version 9.0.0.\n\n# Will the fix impact my users?\n\nThere is no impact for end users\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/jsonwebtoken@8.5.1                   |\n| Affected range | <=8.5.1                                      |\n| Fixed version  | 9.0.0                                        |\n| CVSS Score     |                                          5.0 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L |\n"
+              },
+              "properties": {
+                "affected_version": "<=8.5.1",
+                "cvssV3": 5,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+                "fixed_version": "9.0.0",
+                "purls": [
+                  "pkg:npm/jsonwebtoken@8.5.1"
+                ],
+                "security-severity": "5.0",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-2097",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-2097"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-2097",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1q-r0                                                      |\n| Fixed version  | 1.1.1q-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1q-r0",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.1.1q-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-25883",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-25883: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-25883",
+              "help": {
+                "text": "Versions of the package semver before 7.5.2 on the 7.x branch, before 6.3.1 on the 6.x branch, and all other versions before 5.7.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.\n",
+                "markdown": "> Versions of the package semver before 7.5.2 on the 7.x branch, before 6.3.1 on the 6.x branch, and all other versions before 5.7.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/semver@5.7.1                         |\n| Affected range | <5.7.2                                       |\n| Fixed version  | 5.7.2                                        |\n| CVSS Score     |                                          5.3 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L |\n"
+              },
+              "properties": {
+                "affected_version": ">=6.0.0,<6.3.1",
+                "cvssV3": 5.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "fixed_version": "6.3.1",
+                "purls": [
+                  "pkg:npm/semver@5.7.1",
+                  "pkg:npm/semver@6.3.0",
+                  "pkg:npm/semver@7.3.8"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-25901",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-25901: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-25901",
+              "help": {
+                "text": "Versions of the package cookiejar before 2.1.4 are vulnerable to Regular Expression Denial of Service (ReDoS) via the `Cookie.parse` function and other aspects of the API, which use an insecure regular expression for parsing cookie values. Applications could be stalled for extended periods of time if untrusted input is passed to cookie values or attempted to parse from request headers.\n\nProof of concept:\n\n```\nts\\nconst { CookieJar } = require(\"cookiejar\");\n\nconst jar = new CookieJar();\n\nconst start = performance.now();\n\nconst attack = \"a\" + \"t\".repeat(50_000);\njar.setCookie(attack);\n\nconsole.log(`CookieJar.setCookie(): ${performance.now() - start}ms`);\n\n```\n\n```\nCookieJar.setCookie(): 2963.214399999939ms\n```\n",
+                "markdown": "> Versions of the package cookiejar before 2.1.4 are vulnerable to Regular Expression Denial of Service (ReDoS) via the `Cookie.parse` function and other aspects of the API, which use an insecure regular expression for parsing cookie values. Applications could be stalled for extended periods of time if untrusted input is passed to cookie values or attempted to parse from request headers.\n\nProof of concept:\n\n```\nts\\nconst { CookieJar } = require(\"cookiejar\");\n\nconst jar = new CookieJar();\n\nconst start = performance.now();\n\nconst attack = \"a\" + \"t\".repeat(50_000);\njar.setCookie(attack);\n\nconsole.log(`CookieJar.setCookie(): ${performance.now() - start}ms`);\n\n```\n\n```\nCookieJar.setCookie(): 2963.214399999939ms\n```\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/cookiejar@2.1.3                      |\n| Affected range | <2.1.4                                       |\n| Fixed version  | 2.1.4                                        |\n| CVSS Score     |                                          5.3 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L |\n"
+              },
+              "properties": {
+                "affected_version": "<2.1.4",
+                "cvssV3": 5.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "fixed_version": "2.1.4",
+                "purls": [
+                  "pkg:npm/cookiejar@2.1.3"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-33987",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-33987"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-33987",
+              "help": {
+                "text": "The got package before 11.8.5 and 12.1.0 for Node.js allows a redirect to a UNIX socket.\n",
+                "markdown": "> The got package before 11.8.5 and 12.1.0 for Node.js allows a redirect to a UNIX socket.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/got@7.1.0                            |\n| Affected range | <11.8.5                                      |\n| Fixed version  | 11.8.5                                       |\n| CVSS Score     |                                          5.3 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<11.8.5",
+                "cvssV3": 5.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+                "fixed_version": "11.8.5",
+                "purls": [
+                  "pkg:npm/got@6.7.1",
+                  "pkg:npm/got@7.1.0"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0465",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-0465"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-0465",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1t-r2                                                      |\n| Fixed version  | 1.1.1t-r2                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1t-r2",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.1.1t-r2",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-26115",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-26115: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-26115",
+              "help": {
+                "text": "All versions of the package word-wrap are vulnerable to Regular Expression Denial of Service (ReDoS) due to the usage of an insecure regular expression within the result variable.\n\n",
+                "markdown": "> All versions of the package word-wrap are vulnerable to Regular Expression Denial of Service (ReDoS) due to the usage of an insecure regular expression within the result variable.\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/word-wrap@1.2.3                      |\n| Affected range | <1.2.4                                       |\n| Fixed version  | 1.2.4                                        |\n| CVSS Score     |                                          5.3 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L |\n"
+              },
+              "properties": {
+                "affected_version": "<1.2.4",
+                "cvssV3": 5.3,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "fixed_version": "1.2.4",
+                "purls": [
+                  "pkg:npm/word-wrap@1.2.3"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-3446",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-3446"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-3446",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1u-r2                                                      |\n| Fixed version  | 1.1.1u-r2                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1u-r2",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.1.1u-r2",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-3817",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-3817"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-3817",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1v-r0                                                      |\n| Fixed version  | 1.1.1v-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1v-r0",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.1.1v-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "5.3",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-28155",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-28155: Server-Side Request Forgery (SSRF)"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-28155",
+              "help": {
+                "text": "The `request` package through 2.88.2 for Node.js and the `@cypress/request` package prior to 3.0.0 allow a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP).\n\nNOTE: The `request` package is no longer supported by the maintainer.\n",
+                "markdown": "> The `request` package through 2.88.2 for Node.js and the `@cypress/request` package prior to 3.0.0 allow a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP).\n\nNOTE: The `request` package is no longer supported by the maintainer.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/request@2.88.0                       |\n| Affected range | <=2.88.2                                     |\n| Fixed version  | not fixed                                    |\n| CVSS Score     |                                          6.1 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<=2.88.2",
+                "cvssV3": 6.1,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                "fixed_version": "not fixed",
+                "purls": [
+                  "pkg:npm/request@2.88.0"
+                ],
+                "security-severity": "6.1",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-23540",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-23540: Improper Authentication"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-23540",
+              "help": {
+                "text": "# Overview\n\nIn versions <=8.5.1 of jsonwebtoken library, lack of algorithm definition and a falsy secret or key in the `jwt.verify()` function can lead to signature validation bypass due to defaulting to the `none` algorithm for signature verification.\n\n# Am I affected?\nYou will be affected if all the following are true in the `jwt.verify()` function:\n- a token with no signature is received\n- no algorithms are specified \n- a falsy (e.g. null, false, undefined) secret or key is passed \n\n# How do I fix it?\n \nUpdate to version 9.0.0 which removes the default support for the none algorithm in the `jwt.verify()` method. \n\n# Will the fix impact my users?\n\nThere will be no impact, if you update to version 9.0.0 and you don’t need to allow for the `none` algorithm. If you need 'none' algorithm, you have to explicitly specify that in `jwt.verify()` options.\n\n",
+                "markdown": "> # Overview\n\nIn versions <=8.5.1 of jsonwebtoken library, lack of algorithm definition and a falsy secret or key in the `jwt.verify()` function can lead to signature validation bypass due to defaulting to the `none` algorithm for signature verification.\n\n# Am I affected?\nYou will be affected if all the following are true in the `jwt.verify()` function:\n- a token with no signature is received\n- no algorithms are specified \n- a falsy (e.g. null, false, undefined) secret or key is passed \n\n# How do I fix it?\n \nUpdate to version 9.0.0 which removes the default support for the none algorithm in the `jwt.verify()` method. \n\n# Will the fix impact my users?\n\nThere will be no impact, if you update to version 9.0.0 and you don’t need to allow for the `none` algorithm. If you need 'none' algorithm, you have to explicitly specify that in `jwt.verify()` options.\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/jsonwebtoken@8.5.1                   |\n| Affected range | <9.0.0                                       |\n| Fixed version  | 9.0.0                                        |\n| CVSS Score     |                                          6.4 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:L |\n"
+              },
+              "properties": {
+                "affected_version": "<9.0.0",
+                "cvssV3": 6.4,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:L",
+                "fixed_version": "9.0.0",
+                "purls": [
+                  "pkg:npm/jsonwebtoken@8.5.1"
+                ],
+                "security-severity": "6.4",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-38778",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-38778: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-38778",
+              "help": {
+                "text": "A flaw (CVE-2022-38900) was discovered in one of Kibana’s third party dependencies, that could allow an authenticated user to perform a request that crashes the Kibana server process.\n",
+                "markdown": "> A flaw (CVE-2022-38900) was discovered in one of Kibana’s third party dependencies, that could allow an authenticated user to perform a request that crashes the Kibana server process.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/decode-uri-component@0.2.0           |\n| Affected range | <0.2.1                                       |\n| Fixed version  | 0.2.1                                        |\n| CVSS Score     |                                          6.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<0.2.1",
+                "cvssV3": 6.5,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.2.1",
+                "purls": [
+                  "pkg:npm/decode-uri-component@0.2.0"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-26136",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-26136: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-26136",
+              "help": {
+                "text": "Versions of the package tough-cookie before 4.1.3 are vulnerable to Prototype Pollution due to improper handling of Cookies when using CookieJar in `rejectPublicSuffixes=false` mode. This issue arises from the manner in which the objects are initialized.\n",
+                "markdown": "> Versions of the package tough-cookie before 4.1.3 are vulnerable to Prototype Pollution due to improper handling of Cookies when using CookieJar in `rejectPublicSuffixes=false` mode. This issue arises from the manner in which the objects are initialized.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/tough-cookie@2.4.3                   |\n| Affected range | <4.1.3                                       |\n| Fixed version  | 4.1.3                                        |\n| CVSS Score     |                                          6.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<4.1.3",
+                "cvssV3": 6.5,
+                "cvssV3_severity": "MEDIUM",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+                "fixed_version": "4.1.3",
+                "purls": [
+                  "pkg:npm/tough-cookie@2.4.3"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-2650",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-2650"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-2650",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1u-r0                                                      |\n| Fixed version  | 1.1.1u-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1u-r0",
+                "cvssV3_severity": "MEDIUM",
+                "fixed_version": "1.1.1u-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "6.5",
+                "tags": [
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0286",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-0286"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-0286",
+              "help": {
+                "text": "There is a type confusion vulnerability relating to X.400 address processing\r\ninside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but\r\nthe public structure definition for GENERAL_NAME incorrectly specified the type\r\nof the x400Address field as ASN1_TYPE. This field is subsequently interpreted by\r\nthe OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an\r\nASN1_STRING.\r\n\r\nWhen CRL checking is enabled (i.e. the application sets the\r\nX509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass\r\narbitrary pointers to a memcmp call, enabling them to read memory contents or\r\nenact a denial of service. In most cases, the attack requires the attacker to\r\nprovide both the certificate chain and CRL, neither of which need to have a\r\nvalid signature. If the attacker only controls one of these inputs, the other\r\ninput must already contain an X.400 address as a CRL distribution point, which\r\nis uncommon. As such, this vulnerability is most likely to only affect\r\napplications which have implemented their own functionality for retrieving CRLs\r\nover a network.\r\n\r\nOpenSSL versions 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.\r\n\r\nOpenSSL 3.0 users should upgrade to OpenSSL 3.0.8.\r\nOpenSSL 1.1.1 users should upgrade to OpenSSL 1.1.1t.\r\nOpenSSL 1.0.2 users should upgrade to OpenSSL 1.0.2zg (premium support customers\r\nonly).\r\n\r\nThis issue was reported on 11th January 2023 by David Benjamin (Google).\r\nThe fix was developed by Hugo Landau.\n",
+                "markdown": "> There is a type confusion vulnerability relating to X.400 address processing\r\ninside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but\r\nthe public structure definition for GENERAL_NAME incorrectly specified the type\r\nof the x400Address field as ASN1_TYPE. This field is subsequently interpreted by\r\nthe OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an\r\nASN1_STRING.\r\n\r\nWhen CRL checking is enabled (i.e. the application sets the\r\nX509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass\r\narbitrary pointers to a memcmp call, enabling them to read memory contents or\r\nenact a denial of service. In most cases, the attack requires the attacker to\r\nprovide both the certificate chain and CRL, neither of which need to have a\r\nvalid signature. If the attacker only controls one of these inputs, the other\r\ninput must already contain an X.400 address as a CRL distribution point, which\r\nis uncommon. As such, this vulnerability is most likely to only affect\r\napplications which have implemented their own functionality for retrieving CRLs\r\nover a network.\r\n\r\nOpenSSL versions 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.\r\n\r\nOpenSSL 3.0 users should upgrade to OpenSSL 3.0.8.\r\nOpenSSL 1.1.1 users should upgrade to OpenSSL 1.1.1t.\r\nOpenSSL 1.0.2 users should upgrade to OpenSSL 1.0.2zg (premium support customers\r\nonly).\r\n\r\nThis issue was reported on 11th January 2023 by David Benjamin (Google).\r\nThe fix was developed by Hugo Landau.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1t-r0                                                      |\n| Fixed version  | 1.1.1t-r0                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1t-r0",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "1.1.1t-r0",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-20149",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-20149: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-20149",
+              "help": {
+                "text": "`ctorName` allows external user input to overwrite certain internal attributes via a conflicting name.\n",
+                "markdown": "> `ctorName` allows external user input to overwrite certain internal attributes via a conflicting name.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/kind-of@3.2.2                        |\n| Affected range | <=6.0.2                                      |\n| Fixed version  | 6.0.3                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<=6.0.2",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                "fixed_version": "6.0.3",
+                "purls": [
+                  "pkg:npm/kind-of@3.2.2",
+                  "pkg:npm/kind-of@4.0.0",
+                  "pkg:npm/kind-of@5.1.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-28469",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-28469: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-28469",
+              "help": {
+                "text": "This affects the package glob-parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.\n",
+                "markdown": "> This affects the package glob-parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/glob-parent@3.1.0                    |\n| Affected range | <5.1.2                                       |\n| Fixed version  | 5.1.2                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<5.1.2",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "5.1.2",
+                "purls": [
+                  "pkg:npm/glob-parent@3.1.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-29469",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-29469: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-29469",
+              "help": {
+                "text": "### Impact\nWhen a client is in monitoring mode, the regex begin used to detected monitor messages could cause exponential backtracking on some strings. This issue could lead to a denial of service.\n\n### Patches\nThe problem was fixed in commit [`2d11b6d`](https://github.com/NodeRedis/node-redis/commit/2d11b6dc9b9774464a91fb4b448bad8bf699629e) and was released in version `3.1.1`.\n\n### References\n#1569 (GHSL-2021-026)\n",
+                "markdown": "> ### Impact\nWhen a client is in monitoring mode, the regex begin used to detected monitor messages could cause exponential backtracking on some strings. This issue could lead to a denial of service.\n\n### Patches\nThe problem was fixed in commit [`2d11b6d`](https://github.com/NodeRedis/node-redis/commit/2d11b6dc9b9774464a91fb4b448bad8bf699629e) and was released in version `3.1.1`.\n\n### References\n#1569 (GHSL-2021-026)\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/redis@2.8.0                          |\n| Affected range | >=2.6.0,<3.1.1                               |\n| Fixed version  | 3.1.1                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": ">=2.6.0,<3.1.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "3.1.1",
+                "purls": [
+                  "pkg:npm/redis@2.8.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-3807",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-3807: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-3807",
+              "help": {
+                "text": "ansi-regex is vulnerable to Inefficient Regular Expression Complexity which could lead to a denial of service when parsing invalid ANSI escape codes.\n\n**Proof of Concept**\n```js\nimport ansiRegex from 'ansi-regex';\nfor(var i = 1; i <= 50000; i++) {\n    var time = Date.now();\n    var attack_str = \"\\u001B[\"+\";\".repeat(i*10000);\n    ansiRegex().test(attack_str)\n    var time_cost = Date.now() - time;\n    console.log(\"attack_str.length: \" + attack_str.length + \": \" + time_cost+\" ms\")\n}\n```\nThe ReDOS is mainly due to the sub-patterns `[[\\\\]()#;?]*` and `(?:;[-a-zA-Z\\\\d\\\\/#&.:=?%@~_]*)*`\n",
+                "markdown": "> ansi-regex is vulnerable to Inefficient Regular Expression Complexity which could lead to a denial of service when parsing invalid ANSI escape codes.\n\n**Proof of Concept**\n```js\nimport ansiRegex from 'ansi-regex';\nfor(var i = 1; i <= 50000; i++) {\n    var time = Date.now();\n    var attack_str = \"\\u001B[\"+\";\".repeat(i*10000);\n    ansiRegex().test(attack_str)\n    var time_cost = Date.now() - time;\n    console.log(\"attack_str.length: \" + attack_str.length + \": \" + time_cost+\" ms\")\n}\n```\nThe ReDOS is mainly due to the sub-patterns `[[\\\\]()#;?]*` and `(?:;[-a-zA-Z\\\\d\\\\/#&.:=?%@~_]*)*`\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/ansi-regex@4.1.0                     |\n| Affected range | >=4.0.0,<4.1.1                               |\n| Fixed version  | 4.1.1                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": ">=3.0.0,<3.0.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "3.0.1",
+                "purls": [
+                  "pkg:npm/ansi-regex@3.0.0",
+                  "pkg:npm/ansi-regex@4.1.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-24999",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-24999: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-24999",
+              "help": {
+                "text": "qs before 6.10.3 allows attackers to cause a Node process hang because an `__ proto__` key can be used. In many typical web framework use cases, an unauthenticated remote attacker can place the attack payload in the query string of the URL that is used to visit the application, such as `a[__proto__]=b&a[__proto__]&a[length]=100000000`. The fix was backported to qs 6.9.7, 6.8.3, 6.7.3, 6.6.1, 6.5.3, 6.4.1, 6.3.3, and 6.2.4.\n",
+                "markdown": "> qs before 6.10.3 allows attackers to cause a Node process hang because an `__ proto__` key can be used. In many typical web framework use cases, an unauthenticated remote attacker can place the attack payload in the query string of the URL that is used to visit the application, such as `a[__proto__]=b&a[__proto__]&a[length]=100000000`. The fix was backported to qs 6.9.7, 6.8.3, 6.7.3, 6.6.1, 6.5.3, 6.4.1, 6.3.3, and 6.2.4.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/qs@6.5.2                             |\n| Affected range | >=6.5.0,<6.5.3                               |\n| Fixed version  | 6.5.3                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": ">=6.5.0,<6.5.3",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "6.5.3",
+                "purls": [
+                  "pkg:npm/qs@6.5.2"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-25881",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-25881: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-25881",
+              "help": {
+                "text": "http-cache semantics contains an Inefficient Regular Expression Complexity , leading to Denial of Service. This affects versions of the package http-cache-semantics before 4.1.1. The issue can be exploited via malicious request header values sent to a server, when that server reads the cache policy from the request using this library.\n",
+                "markdown": "> http-cache semantics contains an Inefficient Regular Expression Complexity , leading to Denial of Service. This affects versions of the package http-cache-semantics before 4.1.1. The issue can be exploited via malicious request header values sent to a server, when that server reads the cache policy from the request using this library.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/http-cache-semantics@3.8.1           |\n| Affected range | <4.1.1                                       |\n| Fixed version  | 4.1.1                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<4.1.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "4.1.1",
+                "purls": [
+                  "pkg:npm/http-cache-semantics@3.8.1"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-3517",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-3517: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-3517",
+              "help": {
+                "text": "A vulnerability was found in the minimatch package. This flaw allows a Regular Expression Denial of Service (ReDoS) when calling the braceExpand function with specific arguments, resulting in a Denial of Service.\n",
+                "markdown": "> A vulnerability was found in the minimatch package. This flaw allows a Regular Expression Denial of Service (ReDoS) when calling the braceExpand function with specific arguments, resulting in a Denial of Service.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/minimatch@3.0.4                      |\n| Affected range | <3.0.5                                       |\n| Fixed version  | 3.0.5                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<3.0.5",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "3.0.5",
+                "purls": [
+                  "pkg:npm/minimatch@3.0.4"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-38900",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-38900: Improper Input Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-38900",
+              "help": {
+                "text": "decode-uri-component 0.2.0 is vulnerable to Improper Input Validation resulting in DoS.\n",
+                "markdown": "> decode-uri-component 0.2.0 is vulnerable to Improper Input Validation resulting in DoS.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/decode-uri-component@0.2.0           |\n| Affected range | <0.2.1                                       |\n| Fixed version  | 0.2.1                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<0.2.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.2.1",
+                "purls": [
+                  "pkg:npm/decode-uri-component@0.2.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0464",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-0464"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-0464",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.1.1t-r2                                                      |\n| Fixed version  | 1.1.1t-r2                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.1.1t-r2",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "1.1.1t-r2",
+                "purls": [
+                  "pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-23406",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-23406: Improper Control of Generation of Code ('Code Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-23406",
+              "help": {
+                "text": "This affects the package pac-resolver before 5.0.0. This can occur when used with untrusted input, due to unsafe PAC file handling. **NOTE:** The fix for this vulnerability is applied in the node-degenerator library, a dependency written by the same maintainer.\n",
+                "markdown": "> This affects the package pac-resolver before 5.0.0. This can occur when used with untrusted input, due to unsafe PAC file handling. **NOTE:** The fix for this vulnerability is applied in the node-degenerator library, a dependency written by the same maintainer.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/pac-resolver@4.2.0                   |\n| Affected range | <5.0.0                                       |\n| Fixed version  | 5.0.0                                        |\n| CVSS Score     |                                          8.1 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<3.0.1",
+                "cvssV3": 8.1,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "3.0.1",
+                "purls": [
+                  "pkg:npm/degenerator@2.2.0",
+                  "pkg:npm/pac-resolver@4.2.0"
+                ],
+                "security-severity": "8.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-44906",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-44906: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-44906",
+              "help": {
+                "text": "Minimist prior to 1.2.6 and 0.2.4 is vulnerable to Prototype Pollution via file `index.js`, function `setKey()` (lines 69-95).\n",
+                "markdown": "> Minimist prior to 1.2.6 and 0.2.4 is vulnerable to Prototype Pollution via file `index.js`, function `setKey()` (lines 69-95).\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/minimist@1.2.5                       |\n| Affected range | >=1.0.0,<1.2.6                               |\n| Fixed version  | 1.2.6                                        |\n| CVSS Score     |                                          9.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": ">=1.0.0,<1.2.6",
+                "cvssV3": 9.8,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "1.2.6",
+                "purls": [
+                  "pkg:npm/minimist@1.2.5"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-29078",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-29078: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-29078",
+              "help": {
+                "text": "The ejs (aka Embedded JavaScript templates) package 3.1.6 for Node.js allows server-side template injection in settings[view options][outputFunctionName]. This is parsed as an internal option, and overwrites the outputFunctionName option with an arbitrary OS command (which is executed upon template compilation).\n",
+                "markdown": "> The ejs (aka Embedded JavaScript templates) package 3.1.6 for Node.js allows server-side template injection in settings[view options][outputFunctionName]. This is parsed as an internal option, and overwrites the outputFunctionName option with an arbitrary OS command (which is executed upon template compilation).\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/ejs@2.7.4                            |\n| Affected range | <3.1.7                                       |\n| Fixed version  | 3.1.7                                        |\n| CVSS Score     |                                          9.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<3.1.7",
+                "cvssV3": 9.8,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "3.1.7",
+                "purls": [
+                  "pkg:npm/ejs@2.7.4"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-37434",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-37434"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-37434",
+              "help": {
+                "text": "\n",
+                "markdown": "> \n\n|                |                                                              |\n|----------------|--------------------------------------------------------------|\n| Package        | pkg:apk/alpine/zlib@1.2.12-r0?os_name=alpine&os_version=3.15 |\n| Affected range | <1.2.12-r2                                                   |\n| Fixed version  | 1.2.12-r2                                                    |\n"
+              },
+              "properties": {
+                "affected_version": "<1.2.12-r2",
+                "cvssV3_severity": "CRITICAL",
+                "fixed_version": "1.2.12-r2",
+                "purls": [
+                  "pkg:apk/alpine/zlib@1.2.12-r0?os_name=alpine&os_version=3.15"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "GMS-2020-2",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GMS-2020-2: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/GMS-2020-2",
+              "help": {
+                "text": "Attackers could trick execa into executing arbitrary binaries. This behaviour is caused by the setting `preferLocal=true` which makes execa search for locally installed binaries and executes them. This vulnerability is usually only exploitable when using execa on a client-side LOCAL application.\n",
+                "markdown": "> Attackers could trick execa into executing arbitrary binaries. This behaviour is caused by the setting `preferLocal=true` which makes execa search for locally installed binaries and executes them. This vulnerability is usually only exploitable when using execa on a client-side LOCAL application.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:npm/execa@0.7.0                          |\n| Affected range | <2.0.0                                       |\n| Fixed version  | 2.0.0                                        |\n| CVSS Score     |                                          9.8 |\n| CVSS Vector    | CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<2.0.0",
+                "cvssV3": 9.8,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "fixed_version": "2.0.0",
+                "purls": [
+                  "pkg:npm/execa@0.7.0"
+                ],
+                "security-severity": "9.8",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            }
+          ],
+          "version": "1.0.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2022-23539",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-23539              \n  Severity       : MEDIUM                      \n  Package        : pkg:npm/jsonwebtoken@8.5.1  \n  Affected range : <=8.5.1                     \n  Fixed version  : 9.0.0                       \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/jsonwebtoken/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-4304",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-4304                                                    \n  Severity       : MEDIUM                                                           \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1t-r0                                                       \n  Fixed version  : 1.1.1t-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-4450",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-4450                                                    \n  Severity       : MEDIUM                                                           \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1t-r0                                                       \n  Fixed version  : 1.1.1t-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0215",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-0215                                                    \n  Severity       : MEDIUM                                                           \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1t-r0                                                       \n  Fixed version  : 1.1.1t-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-25896",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-25896                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/passport@0.4.1                        \n  Affected range : <0.6.0                                        \n  Fixed version  : 0.6.0                                         \n  CVSS Score     : 4.8                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/passport/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-23541",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-23541                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/jsonwebtoken@8.5.1                    \n  Affected range : <=8.5.1                                       \n  Fixed version  : 9.0.0                                         \n  CVSS Score     : 5.0                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/jsonwebtoken/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-2097",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-2097                                                    \n  Severity       : MEDIUM                                                           \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1q-r0                                                       \n  Fixed version  : 1.1.1q-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-25883",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-25883                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/semver@6.3.0                          \n  Affected range : >=6.0.0,<6.3.1                                \n  Fixed version  : 6.3.1                                         \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/editions/node_modules/semver/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/express-gateway/node_modules/semver/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/yeoman-environment/node_modules/make-dir/node_modules/semver/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-25883",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-25883                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/semver@7.3.8                          \n  Affected range : >=7.0.0,<7.5.2                                \n  Fixed version  : 7.5.2                                         \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/superagent/node_modules/semver/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/yeoman-environment/node_modules/semver/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-25883",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-25883                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/semver@5.7.1                          \n  Affected range : <5.7.2                                        \n  Fixed version  : 5.7.2                                         \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/semver/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/semver/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-25901",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-25901                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/cookiejar@2.1.3                       \n  Affected range : <2.1.4                                        \n  Fixed version  : 2.1.4                                         \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/cookiejar/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-33987",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-33987                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/got@6.7.1                             \n  Affected range : <11.8.5                                       \n  Fixed version  : 11.8.5                                        \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/got/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/yeoman-environment/node_modules/got/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-33987",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-33987                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/got@7.1.0                             \n  Affected range : <11.8.5                                       \n  Fixed version  : 11.8.5                                        \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/got/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0465",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-0465                                                    \n  Severity       : MEDIUM                                                           \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1t-r2                                                       \n  Fixed version  : 1.1.1t-r2                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-26115",
+          "ruleIndex": 11,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-26115                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/word-wrap@1.2.3                       \n  Affected range : <1.2.4                                        \n  Fixed version  : 1.2.4                                         \n  CVSS Score     : 5.3                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/word-wrap/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-3446",
+          "ruleIndex": 12,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-3446                                                    \n  Severity       : MEDIUM                                                           \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1u-r2                                                       \n  Fixed version  : 1.1.1u-r2                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-3817",
+          "ruleIndex": 13,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-3817                                                    \n  Severity       : MEDIUM                                                           \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1v-r0                                                       \n  Fixed version  : 1.1.1v-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-28155",
+          "ruleIndex": 14,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-28155                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/request@2.88.0                        \n  Affected range : <=2.88.2                                      \n  Fixed version  : not fixed                                     \n  CVSS Score     : 6.1                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/request/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-23540",
+          "ruleIndex": 15,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-23540                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/jsonwebtoken@8.5.1                    \n  Affected range : <9.0.0                                        \n  Fixed version  : 9.0.0                                         \n  CVSS Score     : 6.4                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:L  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/jsonwebtoken/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-38778",
+          "ruleIndex": 16,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-38778                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/decode-uri-component@0.2.0            \n  Affected range : <0.2.1                                        \n  Fixed version  : 0.2.1                                         \n  CVSS Score     : 6.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/decode-uri-component/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/decode-uri-component/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-26136",
+          "ruleIndex": 17,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-26136                                \n  Severity       : MEDIUM                                        \n  Package        : pkg:npm/tough-cookie@2.4.3                    \n  Affected range : <4.1.3                                        \n  Fixed version  : 4.1.3                                         \n  CVSS Score     : 6.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/tough-cookie/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-2650",
+          "ruleIndex": 18,
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-2650                                                    \n  Severity       : MEDIUM                                                           \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1u-r0                                                       \n  Fixed version  : 1.1.1u-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0286",
+          "ruleIndex": 19,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-0286                                                    \n  Severity       : HIGH                                                             \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1t-r0                                                       \n  Fixed version  : 1.1.1t-r0                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-20149",
+          "ruleIndex": 20,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-20149                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/kind-of@4.0.0                         \n  Affected range : <=6.0.2                                       \n  Fixed version  : 6.0.3                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/has-values/node_modules/kind-of/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-20149",
+          "ruleIndex": 20,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-20149                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/kind-of@5.1.0                         \n  Affected range : <=6.0.2                                       \n  Fixed version  : 6.0.3                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/define-property/node_modules/kind-of/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-20149",
+          "ruleIndex": 20,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2019-20149                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/kind-of@3.2.2                         \n  Affected range : <=6.0.2                                       \n  Fixed version  : 6.0.3                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/define-property/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/define-property/node_modules/is-data-descriptor/node_modules/kind-of/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/is-number/node_modules/kind-of/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/object-copy/node_modules/kind-of/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/snapdragon-util/node_modules/kind-of/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/to-object-path/node_modules/kind-of/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-28469",
+          "ruleIndex": 21,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2020-28469                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/glob-parent@3.1.0                     \n  Affected range : <5.1.2                                        \n  Fixed version  : 5.1.2                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/glob-parent/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-29469",
+          "ruleIndex": 22,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-29469                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/redis@2.8.0                           \n  Affected range : >=2.6.0,<3.1.1                                \n  Fixed version  : 3.1.1                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/redis/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-3807",
+          "ruleIndex": 23,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-3807                                 \n  Severity       : HIGH                                          \n  Package        : pkg:npm/ansi-regex@3.0.0                      \n  Affected range : >=3.0.0,<3.0.1                                \n  Fixed version  : 3.0.1                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/string-width/node_modules/ansi-regex/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-3807",
+          "ruleIndex": 23,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-3807                                 \n  Severity       : HIGH                                          \n  Package        : pkg:npm/ansi-regex@4.1.0                      \n  Affected range : >=4.0.0,<4.1.1                                \n  Fixed version  : 4.1.1                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/cliui/node_modules/ansi-regex/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/wrap-ansi/node_modules/ansi-regex/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/yargs/node_modules/ansi-regex/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-24999",
+          "ruleIndex": 24,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-24999                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/qs@6.5.2                              \n  Affected range : >=6.5.0,<6.5.3                                \n  Fixed version  : 6.5.3                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/qs/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-25881",
+          "ruleIndex": 25,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-25881                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/http-cache-semantics@3.8.1            \n  Affected range : <4.1.1                                        \n  Fixed version  : 4.1.1                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/http-cache-semantics/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-3517",
+          "ruleIndex": 26,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-3517                                 \n  Severity       : HIGH                                          \n  Package        : pkg:npm/minimatch@3.0.4                       \n  Affected range : <3.0.5                                        \n  Fixed version  : 3.0.5                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/minimatch/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-38900",
+          "ruleIndex": 27,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-38900                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/decode-uri-component@0.2.0            \n  Affected range : <0.2.1                                        \n  Fixed version  : 0.2.1                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/decode-uri-component/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/decode-uri-component/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0464",
+          "ruleIndex": 28,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2023-0464                                                    \n  Severity       : HIGH                                                             \n  Package        : pkg:apk/alpine/openssl@1.1.1n-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.1.1t-r2                                                       \n  Fixed version  : 1.1.1t-r2                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-23406",
+          "ruleIndex": 29,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-23406                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/degenerator@2.2.0                     \n  Affected range : <3.0.1                                        \n  Fixed version  : 3.0.1                                         \n  CVSS Score     : 8.1                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/degenerator/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-23406",
+          "ruleIndex": 29,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-23406                                \n  Severity       : HIGH                                          \n  Package        : pkg:npm/pac-resolver@4.2.0                    \n  Affected range : <5.0.0                                        \n  Fixed version  : 5.0.0                                         \n  CVSS Score     : 8.1                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/pac-resolver/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-44906",
+          "ruleIndex": 30,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2021-44906                                \n  Severity       : CRITICAL                                      \n  Package        : pkg:npm/minimist@1.2.5                        \n  Affected range : >=1.0.0,<1.2.6                                \n  Fixed version  : 1.2.6                                         \n  CVSS Score     : 9.8                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/minimist/package.json"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/mkdirp/node_modules/minimist/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-29078",
+          "ruleIndex": 31,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-29078                                \n  Severity       : CRITICAL                                      \n  Package        : pkg:npm/ejs@2.7.4                             \n  Affected range : <3.1.7                                        \n  Fixed version  : 3.1.7                                         \n  CVSS Score     : 9.8                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/share/.config/yarn/global/node_modules/ejs/package.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-37434",
+          "ruleIndex": 32,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : CVE-2022-37434                                                \n  Severity       : CRITICAL                                                      \n  Package        : pkg:apk/alpine/zlib@1.2.12-r0?os_name=alpine&os_version=3.15  \n  Affected range : <1.2.12-r2                                                    \n  Fixed version  : 1.2.12-r2                                                     \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/apk/db/installed"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/lib/libz.so.1.2.12"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GMS-2020-2",
+          "ruleIndex": 33,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GMS-2020-2                                    \n  Severity       : CRITICAL                                      \n  Package        : pkg:npm/execa@0.7.0                           \n  Affected range : <2.0.0                                        \n  Fixed version  : 2.0.0                                         \n  CVSS Score     : 9.8                                           \n  CVSS Vector    : CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/node_modules/npm/node_modules/execa/package.json"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
