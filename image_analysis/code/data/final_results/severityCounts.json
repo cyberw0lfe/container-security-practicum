@@ -1,0 +1,12 @@
+{
+    "criticalFixable": 438,
+    "criticalUnfixable": 68,
+    "highFixable": 1632,
+    "highUnfixable": 118,
+    "mediumFixable": 2383,
+    "mediumUnfixable": 1067,
+    "lowFixable": 1018,
+    "lowUnfixable": 4711,
+    "unspecifiedFixable": 153,
+    "unspecifiedUnfixable": 43
+}

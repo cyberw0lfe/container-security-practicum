@@ -46,6 +46,9 @@ interface Image {
   downloadOutput?: ExecOutput
   scoutOutput?: ExecOutput
   deleteOutput?: ExecOutput
+  averageCveScore?: number
+  averageFixableCveScore?: number
+  averageUnfixableCveScore?: number
   vulnerabilityMap?: VulnerabilityMap
   severities?: Severities
   platform?: string
@@ -57,6 +60,43 @@ interface ExecOutput {
   stderr: string | null
 }
 
+interface SeveritySums {
+  criticalFixable: number
+  criticalUnfixable: number
+  highFixable: number
+  highUnfixable: number
+  mediumFixable: number
+  mediumUnfixable: number
+  lowFixable: number
+  lowUnfixable: number
+  unspecifiedFixable: number
+  unspecifiedUnfixable: number
+}
+
+interface ImagesBySeverity {
+  criticalFixable: string[]
+  criticalUnfixable: string[]
+  highFixable: string[]
+  highUnfixable: string[]
+  mediumFixable: string[]
+  mediumUnfixable: string[]
+  lowFixable: string[]
+  lowUnfixable: string[]
+  unspecifiedFixable: string[]
+  unspecifiedUnfixable: string[]
+}
+
+interface Cve {
+  name: string
+  score: number
+  count: number
+  fixed: boolean
+}
+
+interface CveStats {
+  [key: string]: Cve
+}
+
 export {
   CliArgs,
   VulnerabilityMap,
@@ -66,4 +106,8 @@ export {
   ExecOutput,
   ImageMap,
   Image,
+  SeveritySums,
+  ImagesBySeverity,
+  CveStats,
+  Cve,
 }

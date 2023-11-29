@@ -1,8 +1,8 @@
-import { appendToFile, deleteFile, loadJson, saveFile } from './utils/fileOps'
+import { appendToFile, deleteFile, loadJson } from './utils/fileOps'
 import { ImageMap } from './types'
 import { log } from './utils/logger'
 
-const LOG_FILE = './logs/generate_csv.log'
+const LOG_FILE = 'generate_csv'
 const INPUT_PATH = './data/parse_results_output.json'
 const OUTPUT_PATH = './data/parse_results_output.csv'
 

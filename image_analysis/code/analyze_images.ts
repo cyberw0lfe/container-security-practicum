@@ -165,3 +165,5 @@ const main = async () => {
 
   log('thank you for analyzing today... goodbye!', LOG_FILE)
 }
+
+main()
