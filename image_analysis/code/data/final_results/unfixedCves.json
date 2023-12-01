@@ -1,56 +1,1760 @@
 [
     {
-        "name": "CVE-2023-2602",
-        "score": 3.3,
-        "count": 5,
+        "name": "CVE-2022-48522",
+        "score": 9.8,
+        "count": 28,
         "fixed": false
     },
     {
-        "name": "CVE-2018-5730",
-        "score": 3.8,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-18700",
-        "score": 4.3,
-        "count": 7,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-5729",
-        "score": 4.7,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38546",
-        "score": 5,
-        "count": 14,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-3817",
-        "score": 5.3,
-        "count": 47,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-36191",
-        "score": 5.5,
-        "count": 48,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-22745",
-        "score": 6.4,
+        "name": "CVE-2014-9474",
+        "score": 9.8,
         "count": 2,
         "fixed": false
     },
     {
-        "name": "CVE-2023-4752",
-        "score": 7,
+        "name": "CVE-2014-9761",
+        "score": 9.8,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2014-9939",
+        "score": 9.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9841",
+        "score": 9.8,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9843",
+        "score": 9.8,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12652",
+        "score": 9.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7614",
+        "score": 9.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12699",
+        "score": 9.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2014-9984",
+        "score": 9.8,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-11236",
+        "score": 9.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-7788",
+        "score": 9.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1664",
+        "score": 9.8,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-45853",
+        "score": 9.8,
+        "count": 63,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-15088",
+        "score": 9.8,
         "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-20060",
+        "score": 9.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-45871",
+        "score": 9.8,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-25775",
+        "score": 9.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-38427",
+        "score": 9.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-17571",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-23305",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-23307",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-1585",
+        "score": 9.8,
+        "count": 7,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-20236",
+        "score": 9.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-3756",
+        "score": 9.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1795",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-36190",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-2840",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-28531",
+        "score": 9.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2014-5044",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-10683",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-37466",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-37903",
+        "score": 9.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-6969",
+        "score": 9.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7226",
+        "score": 9.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-38430",
+        "score": 9.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-38431",
+        "score": 9.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-20444",
+        "score": 9.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-4048",
+        "score": 9.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-2838",
+        "score": 9.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9180",
+        "score": 9.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9840",
+        "score": 8.8,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9842",
+        "score": 8.8,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-32625",
+        "score": 8.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2010-4664",
+        "score": 8.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-23302",
+        "score": 8.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-9543",
+        "score": 8.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-9545",
+        "score": 8.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-9151",
+        "score": 8.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-9152",
+        "score": 8.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-20898",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-24994",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-26682",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36129",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36152",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-33657",
+        "score": 8.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-38090",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-38091",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-38092",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-38093",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-38094",
+        "score": 8.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-4202",
+        "score": 8.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-0841",
+        "score": 8.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-32820",
+        "score": 8.6,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-40153",
+        "score": 8.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-41072",
+        "score": 8.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-6096",
+        "score": 8.1,
+        "count": 10,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-5968",
+        "score": 8.1,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32250",
+        "score": 8.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32254",
+        "score": 8.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32257",
+        "score": 8.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32258",
+        "score": 8.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12886",
+        "score": 8.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-1311",
+        "score": 8.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-20235",
+        "score": 8.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-48434",
+        "score": 8.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-41915",
+        "score": 8.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-29491",
+        "score": 7.8,
+        "count": 13,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4911",
+        "score": 7.8,
+        "count": 11,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-3715",
+        "score": 7.8,
+        "count": 28,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2014-9114",
+        "score": 7.8,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-2226",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12448",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12449",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12450",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12451",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12452",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12453",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12454",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12455",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12456",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12457",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12458",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12459",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12799",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-14333",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-15020",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-15996",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-16826",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-16827",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-16828",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-16831",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-16832",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-17121",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-17124",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-17125",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9042",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9743",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9744",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9745",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9746",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9749",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9751",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9752",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9753",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9754",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9755",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-1000876",
+        "score": 7.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12930",
+        "score": 7.8,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12931",
+        "score": 7.8,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-18483",
+        "score": 7.8,
+        "count": 32,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-19931",
+        "score": 7.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-7208",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-7643",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-9070",
+        "score": 7.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-9075",
+        "score": 7.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-9077",
+        "score": 7.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-35512",
+        "score": 7.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-1712",
+        "score": 7.8,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-4069",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-39810",
+        "score": 7.8,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-29154",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-0492",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1829",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-31436",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32233",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-35001",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-40283",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4921",
+        "score": 7.8,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-13165",
+        "score": 7.8,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-19378",
+        "score": 7.8,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-19814",
+        "score": 7.8,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-26934",
+        "score": 7.8,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-39801",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47518",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47519",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-22995",
+        "score": 7.8,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-12362",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-39189",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-0030",
+        "score": 7.8,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-2007",
+        "score": 7.8,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-26242",
+        "score": 7.8,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-0995",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-3238",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-3575",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-14409",
+        "score": 7.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-25255",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-33064",
+        "score": 7.8,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-32268",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-32271",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-36412",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-36414",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-36417",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-40568",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-40570",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-40571",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-40574",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1441",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-2454",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-24575",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-24577",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-24578",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-26967",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-38530",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-43042",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-45202",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-45283",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-45343",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47091",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47093",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47094",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47095",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47654",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47657",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47659",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47660",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47661",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47663",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-0358",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-0760",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-0770",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-0819",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-0866",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1448",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1449",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1452",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1654",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-23143",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-23145",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-3012",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-5586",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7500",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7501",
+        "score": 7.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-3094",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-2828",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-3341",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-44487",
+        "score": 7.5,
+        "count": 77,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-20013",
+        "score": 7.5,
+        "count": 41,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-11164",
+        "score": 7.5,
+        "count": 74,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-4899",
+        "score": 7.5,
+        "count": 27,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2009-5155",
+        "score": 7.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-2086",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-2216",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-13710",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-15938",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7223",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7225",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7227",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7300",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7301",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7302",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-8393",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-8394",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-8395",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-8396",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-8397",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-8398",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12697",
+        "score": 7.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12698",
+        "score": 7.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12934",
+        "score": 7.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-16881",
+        "score": 7.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-20657",
+        "score": 7.5,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-6952",
+        "score": 7.5,
+        "count": 32,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-7158",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-13050",
+        "score": 7.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-14855",
+        "score": 7.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-20218",
+        "score": 7.5,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-29573",
+        "score": 7.5,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-3326",
+        "score": 7.5,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1473",
+        "score": 7.5,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2014-10064",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-16138",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12115",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12121",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12122",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-0400",
+        "score": 7.5,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-25836",
+        "score": 7.5,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-43945",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-48541",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-42969",
+        "score": 7.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-31655",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-24434",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-37620",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-25193",
+        "score": 7.5,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32247",
+        "score": 7.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32252",
+        "score": 7.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-33813",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-37137",
+        "score": 7.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-4104",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2012-0880",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-4743",
+        "score": 7.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-24607",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-12211",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-12212",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-12214",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-13962",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-15166",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-31598",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-42260",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-3109",
+        "score": 7.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-45266",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-2839",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-25345",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-34610",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1259",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-34624",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36221",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36222",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36223",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36224",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36225",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36226",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36227",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36228",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36229",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36230",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-27212",
+        "score": 7.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-1000632",
+        "score": 7.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-14899",
+        "score": 7.4,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-4055",
+        "score": 7.4,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-46908",
+        "score": 7.3,
+        "count": 15,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-23395",
+        "score": 7.3,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-26938",
+        "score": 7.2,
+        "count": 1,
         "fixed": false
     },
     {
@@ -60,57 +1764,597 @@
         "fixed": false
     },
     {
-        "name": "CVE-2018-25091",
-        "score": 4.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-5156",
-        "score": 3.7,
-        "count": 44,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-2603",
-        "score": 4.4,
-        "count": 9,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-4039",
-        "score": 4.8,
+        "name": "CVE-2021-32078",
+        "score": 7.1,
         "count": 3,
         "fixed": false
     },
     {
-        "name": "CVE-2023-27043",
-        "score": 5.3,
-        "count": 14,
+        "name": "CVE-2023-4563",
+        "score": 7.1,
+        "count": 5,
         "fixed": false
     },
     {
-        "name": "CVE-2023-30571",
-        "score": 5.3,
+        "name": "CVE-2021-4156",
+        "score": 7.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-23267",
+        "score": 7.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-30976",
+        "score": 7.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-3013",
+        "score": 7.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-3523",
+        "score": 7.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-5377",
+        "score": 7.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-5520",
+        "score": 7.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-27752",
+        "score": 7.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4752",
+        "score": 7,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2015-8239",
+        "score": 7,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-1752",
+        "score": 7,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-45885",
+        "score": 7,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1247",
+        "score": 7,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-2961",
+        "score": 7,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-41617",
+        "score": 7,
         "count": 2,
         "fixed": false
     },
     {
-        "name": "CVE-2007-4559",
-        "score": 5.5,
+        "name": "CVE-2022-45884",
+        "score": 7,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1989",
+        "score": 7,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-3864",
+        "score": 7,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4244",
+        "score": 7,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-32817",
+        "score": 6.8,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9525",
+        "score": 6.7,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-21583",
+        "score": 6.7,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-35938",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-35939",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4527",
+        "score": 6.5,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-2781",
+        "score": 6.5,
+        "count": 46,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-36054",
+        "score": 6.5,
+        "count": 50,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12967",
+        "score": 6.5,
         "count": 2,
         "fixed": false
     },
     {
-        "name": "CVE-2022-4285",
-        "score": 5.5,
-        "count": 23,
+        "name": "CVE-2018-10373",
+        "score": 6.5,
+        "count": 2,
         "fixed": false
     },
     {
-        "name": "CVE-2023-29383",
-        "score": 5.5,
-        "count": 47,
+        "name": "CVE-2018-14048",
+        "score": 6.5,
+        "count": 10,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-17794",
+        "score": 6.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-17450",
+        "score": 6.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-17451",
+        "score": 6.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12207",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-0001",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-0002",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-30456",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-26137",
+        "score": 6.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-40745",
+        "score": 6.5,
+        "count": 21,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-41175",
+        "score": 6.5,
+        "count": 21,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2015-8553",
+        "score": 6.5,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-26144",
+        "score": 6.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-29900",
+        "score": 6.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-27748",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-37769",
+        "score": 6.5,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-19185",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-19186",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-19187",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-19188",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-19190",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-6461",
+        "score": 6.5,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-40812",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-43797",
+        "score": 6.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-20199",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-6988",
+        "score": 6.5,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36148",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36149",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-17507",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-17233",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-17234",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-17432",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-17433",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-17434",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-17437",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-17438",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-12213",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-8397",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-22024",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-22038",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-22039",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-22040",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-22043",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-22051",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36150",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-36151",
+        "score": 6.5,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-31348",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-46361",
+        "score": 6.5,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-22745",
+        "score": 6.4,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-44034",
+        "score": 6.4,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-45888",
+        "score": 6.4,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-44033",
+        "score": 6.4,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-35937",
+        "score": 6.3,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1280",
+        "score": 6.3,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-34969",
+        "score": 6.2,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-21290",
+        "score": 6.2,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-13529",
+        "score": 6.1,
+        "count": 29,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-31879",
+        "score": 6.1,
+        "count": 26,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-28155",
+        "score": 6.1,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-25869",
+        "score": 6.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-21422",
+        "score": 6.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-23395",
+        "score": 6.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-13947",
+        "score": 6.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-25664",
+        "score": 6.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-2837",
+        "score": 6.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-39189",
+        "score": 6,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-39192",
+        "score": 6,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-39193",
+        "score": 6,
+        "count": 6,
         "fixed": false
     },
     {
@@ -144,87 +2388,111 @@
         "fixed": false
     },
     {
-        "name": "CVE-2023-34969",
-        "score": 6.2,
+        "name": "CVE-2016-10228",
+        "score": 5.9,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12132",
+        "score": 5.9,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-12133",
+        "score": 5.9,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-15671",
+        "score": 5.9,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-1121",
+        "score": 5.9,
         "count": 8,
         "fixed": false
     },
     {
-        "name": "CVE-2021-35937",
-        "score": 6.3,
+        "name": "CVE-2019-25013",
+        "score": 5.9,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-23336",
+        "score": 5.9,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-10844",
+        "score": 5.9,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-10845",
+        "score": 5.9,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-21295",
+        "score": 5.9,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-10846",
+        "score": 5.6,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-23960",
+        "score": 5.6,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "GHSA-984p-xq9m-4rjw",
+        "score": 5.6,
         "count": 1,
         "fixed": false
     },
     {
-        "name": "CVE-2021-35938",
-        "score": 6.5,
-        "count": 1,
+        "name": "CVE-2020-8911",
+        "score": 5.6,
+        "count": 6,
         "fixed": false
     },
     {
-        "name": "CVE-2021-35939",
-        "score": 6.5,
-        "count": 1,
+        "name": "CVE-2023-36191",
+        "score": 5.5,
+        "count": 48,
         "fixed": false
     },
     {
-        "name": "CVE-2023-4527",
-        "score": 6.5,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-3094",
-        "score": 7.5,
+        "name": "CVE-2007-4559",
+        "score": 5.5,
         "count": 2,
         "fixed": false
     },
     {
-        "name": "CVE-2023-29491",
-        "score": 7.8,
-        "count": 13,
+        "name": "CVE-2022-4285",
+        "score": 5.5,
+        "count": 23,
         "fixed": false
     },
     {
-        "name": "CVE-2021-40153",
-        "score": 8.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-41072",
-        "score": 8.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-2828",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-3341",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-44487",
-        "score": 7.5,
-        "count": 77,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-4911",
-        "score": 7.8,
-        "count": 11,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-3219",
-        "score": 3.3,
-        "count": 106,
+        "name": "CVE-2023-29383",
+        "score": 5.5,
+        "count": 47,
         "fixed": false
     },
     {
@@ -237,150 +2505,6 @@
         "name": "CVE-2023-4016",
         "score": 5.5,
         "count": 46,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-2781",
-        "score": 6.5,
-        "count": 46,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-20013",
-        "score": 7.5,
-        "count": 41,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-11164",
-        "score": 7.5,
-        "count": 74,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-4899",
-        "score": 7.5,
-        "count": 27,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-3715",
-        "score": 7.8,
-        "count": 28,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-36054",
-        "score": 6.5,
-        "count": 50,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-48522",
-        "score": 9.8,
-        "count": 28,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2010-3192",
-        "score": 3.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2013-0157",
-        "score": 3.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-8625",
-        "score": 3.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2015-5276",
-        "score": 3.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-20386",
-        "score": 2.4,
-        "count": 9,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-23239",
-        "score": 2.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-1968",
-        "score": 3.7,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-41848",
-        "score": 4.2,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12123",
-        "score": 4.3,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-5011",
-        "score": 4.6,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2013-4235",
-        "score": 4.7,
-        "count": 47,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-0537",
-        "score": 4.7,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-5209",
-        "score": 5.3,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2015-5186",
-        "score": 5.3,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-10739",
-        "score": 5.3,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-7159",
-        "score": 5.3,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-7170",
-        "score": 5.3,
-        "count": 3,
         "fixed": false
     },
     {
@@ -804,684 +2928,6 @@
         "fixed": false
     },
     {
-        "name": "CVE-2016-10228",
-        "score": 5.9,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12132",
-        "score": 5.9,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12133",
-        "score": 5.9,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-15671",
-        "score": 5.9,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-1121",
-        "score": 5.9,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-25013",
-        "score": 5.9,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-23336",
-        "score": 5.9,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-13529",
-        "score": 6.1,
-        "count": 29,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12967",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-10373",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-14048",
-        "score": 6.5,
-        "count": 10,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-17794",
-        "score": 6.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-17450",
-        "score": 6.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9525",
-        "score": 6.7,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-21583",
-        "score": 6.7,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2015-8239",
-        "score": 7,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-1752",
-        "score": 7,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-45885",
-        "score": 7,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2009-5155",
-        "score": 7.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-2086",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-2216",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-13710",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-15938",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7223",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7225",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7227",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7300",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7301",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7302",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-8393",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-8394",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-8395",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-8396",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-8397",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-8398",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12697",
-        "score": 7.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12698",
-        "score": 7.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12934",
-        "score": 7.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-16881",
-        "score": 7.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-20657",
-        "score": 7.5,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-6952",
-        "score": 7.5,
-        "count": 32,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-7158",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-13050",
-        "score": 7.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-14855",
-        "score": 7.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-20218",
-        "score": 7.5,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-29573",
-        "score": 7.5,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-3326",
-        "score": 7.5,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1473",
-        "score": 7.5,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-9114",
-        "score": 7.8,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-2226",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12448",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12449",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12450",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12451",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12452",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12453",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12454",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12455",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12456",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12457",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12458",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12459",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12799",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-14333",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-15020",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-15996",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-16826",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-16827",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-16828",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-16831",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-16832",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-17121",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-17124",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-17125",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9042",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9743",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9744",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9745",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9746",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9749",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9751",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9752",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9753",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9754",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9755",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-1000876",
-        "score": 7.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12930",
-        "score": 7.8,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12931",
-        "score": 7.8,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-18483",
-        "score": 7.8,
-        "count": 32,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-19931",
-        "score": 7.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-7208",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-7643",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-9070",
-        "score": 7.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-9075",
-        "score": 7.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-9077",
-        "score": 7.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-35512",
-        "score": 7.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-6096",
-        "score": 8.1,
-        "count": 10,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9840",
-        "score": 8.8,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9842",
-        "score": 8.8,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-6969",
-        "score": 9.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7226",
-        "score": 9.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-9474",
-        "score": 9.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-9761",
-        "score": 9.8,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-9939",
-        "score": 9.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9841",
-        "score": 9.8,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9843",
-        "score": 9.8,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-12652",
-        "score": 9.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7614",
-        "score": 9.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12699",
-        "score": 9.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2013-7445",
-        "score": 4.1,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-17977",
-        "score": 4.4,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-28486",
-        "score": 5.3,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-28487",
-        "score": 5.3,
-        "count": 3,
-        "fixed": false
-    },
-    {
         "name": "CVE-2015-20109",
         "score": 5.5,
         "count": 4,
@@ -1524,138 +2970,6 @@
         "fixed": false
     },
     {
-        "name": "CVE-2018-10846",
-        "score": 5.6,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-10844",
-        "score": 5.9,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-10845",
-        "score": 5.9,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-17451",
-        "score": 6.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1247",
-        "score": 7,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-2961",
-        "score": 7,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-10064",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-16138",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12115",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12121",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12122",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-0400",
-        "score": 7.5,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-25836",
-        "score": 7.5,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-1712",
-        "score": 7.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-4069",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-39810",
-        "score": 7.8,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-32625",
-        "score": 8.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-9984",
-        "score": 9.8,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-11236",
-        "score": 9.8,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-7788",
-        "score": 9.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1664",
-        "score": 9.8,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-20569",
-        "score": 4.7,
-        "count": 5,
-        "fixed": false
-    },
-    {
         "name": "CVE-2023-20588",
         "score": 5.5,
         "count": 2,
@@ -1668,588 +2982,6 @@
         "fixed": false
     },
     {
-        "name": "CVE-2022-23960",
-        "score": 5.6,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12207",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-0001",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-0002",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-30456",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-43945",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-29154",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-0492",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1829",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-31436",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32233",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-35001",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-40283",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-4921",
-        "score": 7.8,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2005-2541",
-        "score": 3.1,
-        "count": 66,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2007-5686",
-        "score": 3.1,
-        "count": 65,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2010-4756",
-        "score": 3.1,
-        "count": 61,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2011-3374",
-        "score": 3.1,
-        "count": 65,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2011-3389",
-        "score": 3.1,
-        "count": 61,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2011-4116",
-        "score": 3.1,
-        "count": 64,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2013-4392",
-        "score": 3.1,
-        "count": 62,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-18018",
-        "score": 3.1,
-        "count": 66,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-20796",
-        "score": 3.1,
-        "count": 61,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-6829",
-        "score": 3.1,
-        "count": 65,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-19882",
-        "score": 3.1,
-        "count": 65,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-0563",
-        "score": 3.1,
-        "count": 63,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-31486",
-        "score": 3.1,
-        "count": 65,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-45853",
-        "score": 9.8,
-        "count": 63,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-41617",
-        "score": 7,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2010-4664",
-        "score": 8.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-15088",
-        "score": 9.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-20060",
-        "score": 9.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2015-2296",
-        "score": 4.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-31879",
-        "score": 6.1,
-        "count": 26,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-26137",
-        "score": 6.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2005-0406",
-        "score": 3.1,
-        "count": 17,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2007-2243",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2007-2768",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2007-3476",
-        "score": 3.1,
-        "count": 13,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2007-3477",
-        "score": 3.1,
-        "count": 13,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2007-6755",
-        "score": 3.1,
-        "count": 58,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2008-1687",
-        "score": 3.1,
-        "count": 24,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2008-1688",
-        "score": 3.1,
-        "count": 24,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2008-3134",
-        "score": 3.1,
-        "count": 17,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2008-3234",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2010-0928",
-        "score": 3.1,
-        "count": 58,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2010-4651",
-        "score": 3.1,
-        "count": 27,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2015-3276",
-        "score": 3.1,
-        "count": 47,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2015-9019",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-10505",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-10506",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-8678",
-        "score": 3.1,
-        "count": 17,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9113",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9114",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9115",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9116",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9117",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9580",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9581",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-11754",
-        "score": 3.1,
-        "count": 17,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-11755",
-        "score": 3.1,
-        "count": 17,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-14159",
-        "score": 3.1,
-        "count": 47,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-17479",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-17740",
-        "score": 3.1,
-        "count": 47,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-5563",
-        "score": 3.1,
-        "count": 21,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7275",
-        "score": 3.1,
-        "count": 17,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9117",
-        "score": 3.1,
-        "count": 21,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9937",
-        "score": 3.1,
-        "count": 24,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-1000021",
-        "score": 3.1,
-        "count": 24,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-10126",
-        "score": 3.1,
-        "count": 26,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-15607",
-        "score": 3.1,
-        "count": 17,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-15919",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-16375",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-16376",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-20712",
-        "score": 3.1,
-        "count": 30,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-20846",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-5709",
-        "score": 3.1,
-        "count": 58,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-9996",
-        "score": 3.1,
-        "count": 30,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-6110",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-14145",
-        "score": 3.1,
-        "count": 18,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-15719",
-        "score": 3.1,
-        "count": 47,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-20311",
-        "score": 3.1,
-        "count": 17,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-26945",
-        "score": 3.1,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-32256",
-        "score": 3.1,
-        "count": 31,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-4214",
-        "score": 3.1,
-        "count": 30,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-4217",
-        "score": 3.1,
-        "count": 14,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-45261",
-        "score": 3.1,
-        "count": 30,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1210",
-        "score": 3.1,
-        "count": 13,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-24975",
-        "score": 3.1,
-        "count": 19,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1916",
-        "score": 3.1,
-        "count": 21,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1972",
-        "score": 3.1,
-        "count": 30,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-24535",
-        "score": 3.1,
-        "count": 24,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-3164",
-        "score": 3.1,
-        "count": 26,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-34152",
-        "score": 3.1,
-        "count": 17,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2007-3996",
-        "score": 4.1,
-        "count": 13,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2009-3546",
-        "score": 4.1,
-        "count": 13,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-40217",
-        "score": 5.3,
-        "count": 28,
-        "fixed": false
-    },
-    {
         "name": "CVE-2023-3428",
         "score": 5.5,
         "count": 17,
@@ -2259,366 +2991,6 @@
         "name": "CVE-2023-3576",
         "score": 5.5,
         "count": 23,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-40745",
-        "score": 6.5,
-        "count": 21,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-41175",
-        "score": 6.5,
-        "count": 21,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2009-4487",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-31122",
-        "score": 3.1,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-43622",
-        "score": 3.1,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-45802",
-        "score": 3.1,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2013-0340",
-        "score": 3.1,
-        "count": 14,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-8166",
-        "score": 3.1,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7245",
-        "score": 3.1,
-        "count": 29,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7246",
-        "score": 3.1,
-        "count": 29,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-21232",
-        "score": 3.1,
-        "count": 13,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-33294",
-        "score": 3.1,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-3530",
-        "score": 3.1,
-        "count": 10,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-3549",
-        "score": 3.1,
-        "count": 10,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-3826",
-        "score": 3.1,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-45078",
-        "score": 3.1,
-        "count": 10,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-46195",
-        "score": 3.1,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1056",
-        "score": 3.1,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1350",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-23901",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-31782",
-        "score": 3.1,
-        "count": 12,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-35205",
-        "score": 3.1,
-        "count": 27,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-35206",
-        "score": 3.1,
-        "count": 27,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-37454",
-        "score": 3.1,
-        "count": 10,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-38533",
-        "score": 3.1,
-        "count": 10,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-41409",
-        "score": 3.1,
-        "count": 23,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47673",
-        "score": 3.1,
-        "count": 11,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-48064",
-        "score": 3.1,
-        "count": 27,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-48065",
-        "score": 3.1,
-        "count": 27,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1579",
-        "score": 3.1,
-        "count": 11,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-25584",
-        "score": 3.1,
-        "count": 10,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-25586",
-        "score": 3.1,
-        "count": 10,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-28320",
-        "score": 3.1,
-        "count": 15,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-30775",
-        "score": 3.1,
-        "count": 8,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38560",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-29932",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-29933",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-29934",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-29935",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-29939",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-29941",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-29942",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-46908",
-        "score": 7.3,
-        "count": 15,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-26112",
-        "score": 3.7,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9797",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9798",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9799",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9800",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9801",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9802",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9803",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9804",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9917",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-9918",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-34981",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-4134",
-        "score": 3.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-35501",
-        "score": 3.4,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-14304",
-        "score": 4.4,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-15213",
-        "score": 4.6,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-33288",
-        "score": 4.7,
-        "count": 3,
         "fixed": false
     },
     {
@@ -2654,120 +3026,6 @@
     {
         "name": "CVE-2023-4133",
         "score": 5.5,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-44034",
-        "score": 6.4,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-45884",
-        "score": 7,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1989",
-        "score": 7,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-32078",
-        "score": 7.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-14899",
-        "score": 7.4,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-13165",
-        "score": 7.8,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-19378",
-        "score": 7.8,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-19814",
-        "score": 7.8,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-26934",
-        "score": 7.8,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-39801",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47518",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47519",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-22995",
-        "score": 7.8,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-34324",
-        "score": 4.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-5717",
-        "score": 4.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-27835",
-        "score": 4.4,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-37453",
-        "score": 4.6,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1582",
-        "score": 4.7,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-3523",
-        "score": 5.3,
         "count": 6,
         "fixed": false
     },
@@ -2850,578 +3108,8 @@
         "fixed": false
     },
     {
-        "name": "CVE-2023-39189",
-        "score": 6,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-39192",
-        "score": 6,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-39193",
-        "score": 6,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1280",
-        "score": 6.3,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2015-8553",
-        "score": 6.5,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-26144",
-        "score": 6.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-29900",
-        "score": 6.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-3864",
-        "score": 7,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-12362",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-39189",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-0030",
-        "score": 7.8,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-2007",
-        "score": 7.8,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-26242",
-        "score": 7.8,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-45871",
-        "score": 9.8,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-4563",
-        "score": 7.1,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-4244",
-        "score": 7,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-4586",
-        "score": 5.3,
-        "count": 13,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-15131",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-15232",
-        "score": 3.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-1000654",
-        "score": 3.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-11813",
-        "score": 3.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-14550",
-        "score": 3.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-20651",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-1010180",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-19244",
-        "score": 3.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-9893",
-        "score": 3.1,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-11656",
-        "score": 3.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-16590",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-16591",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-16592",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-16593",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-16599",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-17541",
-        "score": 3.1,
-        "count": 6,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-23922",
-        "score": 3.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-35493",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-35494",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-35495",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-35496",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-35507",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-35521",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-35522",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-20294",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-40633",
-        "score": 3.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-2519",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-2520",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-2521",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-28506",
-        "score": 3.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-2953",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-39742",
-        "score": 3.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2008-4108",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2012-2663",
-        "score": 3.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2013-7040",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-18443",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-20845",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-5727",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-7648",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-11360",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-13310",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-16709",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-16905",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-18934",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-27753",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-27755",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-20304",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
         "name": "CVE-2023-3745",
         "score": 5.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-48541",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-5968",
-        "score": 8.1,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-42969",
-        "score": 7.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-31655",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-7475",
-        "score": 3.1,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-18064",
-        "score": 3.1,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-27748",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-37769",
-        "score": 6.5,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-4055",
-        "score": 7.4,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-30590",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-11023",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-18797",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-30581",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-30588",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-30589",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-31124",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-31147",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32002",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32006",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32559",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-33733",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2015-5237",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-28155",
-        "score": 6.1,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "GMS-2019-24",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "GHSA-984p-xq9m-4rjw",
-        "score": 5.6,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-32817",
-        "score": 6.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-24434",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-37620",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-32820",
-        "score": 8.6,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-46246",
-        "score": 4,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-4641",
-        "score": 4.7,
         "count": 2,
         "fixed": false
     },
@@ -3438,104 +3126,14 @@
         "fixed": false
     },
     {
-        "name": "CVE-2020-19185",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-19186",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-19187",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-19188",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-19190",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-8912",
-        "score": 2.5,
-        "count": 6,
-        "fixed": false
-    },
-    {
         "name": "CVE-2022-31022",
         "score": 5.5,
         "count": 1,
         "fixed": false
     },
     {
-        "name": "CVE-2020-8911",
-        "score": 5.6,
-        "count": 6,
-        "fixed": false
-    },
-    {
         "name": "CVE-2022-3114",
         "score": 5.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-45888",
-        "score": 6.4,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-6461",
-        "score": 6.5,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-40812",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-25193",
-        "score": 7.5,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1193",
-        "score": 4.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1194",
-        "score": 4.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-3867",
-        "score": 4.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-3773",
-        "score": 4.4,
         "count": 3,
         "fixed": false
     },
@@ -3549,162 +3147,6 @@
         "name": "CVE-2023-5158",
         "score": 5.5,
         "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32247",
-        "score": 7.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32252",
-        "score": 7.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-0995",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-3238",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32250",
-        "score": 8.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32254",
-        "score": 8.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32257",
-        "score": 8.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-32258",
-        "score": 8.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38430",
-        "score": 9.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38431",
-        "score": 9.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-25775",
-        "score": 9.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38427",
-        "score": 9.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-20445",
-        "score": 4.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-21295",
-        "score": 5.9,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-21290",
-        "score": 6.2,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-43797",
-        "score": 6.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-33813",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-37137",
-        "score": 7.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-4104",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-23302",
-        "score": 8.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-20444",
-        "score": 9.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-17571",
-        "score": 9.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-23305",
-        "score": 9.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-23307",
-        "score": 9.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-17507",
-        "score": 5.3,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-20296",
-        "score": 5.3,
-        "count": 2,
         "fixed": false
     },
     {
@@ -3738,150 +3180,6 @@
         "fixed": false
     },
     {
-        "name": "CVE-2022-44033",
-        "score": 6.4,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-20199",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-6988",
-        "score": 6.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36148",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36149",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-4156",
-        "score": 7.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2012-0880",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-4743",
-        "score": 7.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-24607",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-3575",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-12886",
-        "score": 8.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-9543",
-        "score": 8.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-9545",
-        "score": 8.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-4048",
-        "score": 9.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38469",
-        "score": 4.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38470",
-        "score": 4.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38471",
-        "score": 4.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38472",
-        "score": 4.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-38473",
-        "score": 4.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-4421",
-        "score": 4.1,
-        "count": 7,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-5178",
-        "score": 4.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-5388",
-        "score": 4.1,
-        "count": 4,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-3341",
-        "score": 5.3,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-14410",
-        "score": 5.4,
-        "count": 3,
-        "fixed": false
-    },
-    {
         "name": "CVE-2021-46141",
         "score": 5.5,
         "count": 1,
@@ -3890,522 +3188,6 @@
     {
         "name": "CVE-2021-46142",
         "score": 5.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-17507",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-17233",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-17234",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-17432",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-17433",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-17434",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-17437",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-17438",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-12213",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-8397",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-22024",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-22038",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-22039",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-22040",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-22043",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-22051",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36150",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36151",
-        "score": 6.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-31348",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-12211",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-12212",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-12214",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-13962",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-15166",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-31598",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-42260",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-3109",
-        "score": 7.5,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-14409",
-        "score": 7.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-25255",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-33064",
-        "score": 7.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-1311",
-        "score": 8.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-20235",
-        "score": 8.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-48434",
-        "score": 8.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-9151",
-        "score": 8.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-9152",
-        "score": 8.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-20898",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-24994",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-26682",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36129",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36152",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-33657",
-        "score": 8.8,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-38090",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-38091",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-38092",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-38093",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-38094",
-        "score": 8.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2016-1585",
-        "score": 9.8,
-        "count": 7,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-20236",
-        "score": 9.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-3756",
-        "score": 9.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-41915",
-        "score": 8.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-0641",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-42523",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-0856",
-        "score": 3.1,
-        "count": 3,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-46001",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-5341",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "GMS-2022-9109",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2012-5639",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2013-4441",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2013-4472",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-2814",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-2818",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-2820",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-6519",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2017-9083",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-10583",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-14338",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-19059",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-19060",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2019-16707",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-18773",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-18774",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-18898",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-22673",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-22679",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-31256",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-31261",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-33365",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-24106",
-        "score": 3.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-3957",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-43254",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-43255",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-0817",
-        "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-3291",
-        "score": 3.3,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-5998",
-        "score": 4,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-33201",
-        "score": 5.3,
-        "count": 5,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-32828",
-        "score": 5.4,
         "count": 1,
         "fixed": false
     },
@@ -5022,345 +3804,135 @@
         "fixed": false
     },
     {
-        "name": "CVE-2020-23267",
-        "score": 7.1,
+        "name": "CVE-2019-19221",
+        "score": 5.5,
         "count": 1,
         "fixed": false
     },
     {
-        "name": "CVE-2022-30976",
-        "score": 7.1,
+        "name": "CVE-2020-14410",
+        "score": 5.4,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-32828",
+        "score": 5.4,
         "count": 1,
         "fixed": false
     },
     {
-        "name": "CVE-2023-3013",
-        "score": 7.1,
+        "name": "CVE-2022-2256",
+        "score": 5.4,
         "count": 1,
         "fixed": false
     },
     {
-        "name": "CVE-2023-3523",
-        "score": 7.1,
+        "name": "CVE-2023-25761",
+        "score": 5.4,
         "count": 1,
         "fixed": false
     },
     {
-        "name": "CVE-2023-5377",
-        "score": 7.1,
+        "name": "CVE-2023-3817",
+        "score": 5.3,
+        "count": 47,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-27043",
+        "score": 5.3,
+        "count": 14,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-30571",
+        "score": 5.3,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2014-5209",
+        "score": 5.3,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2015-5186",
+        "score": 5.3,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-10739",
+        "score": 5.3,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-7159",
+        "score": 5.3,
         "count": 1,
         "fixed": false
     },
     {
-        "name": "CVE-2023-5520",
-        "score": 7.1,
+        "name": "CVE-2018-7170",
+        "score": 5.3,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-28486",
+        "score": 5.3,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-28487",
+        "score": 5.3,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-40217",
+        "score": 5.3,
+        "count": 28,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-3523",
+        "score": 5.3,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4586",
+        "score": 5.3,
+        "count": 13,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-17507",
+        "score": 5.3,
         "count": 1,
         "fixed": false
     },
     {
-        "name": "CVE-2021-45266",
-        "score": 7.5,
-        "count": 1,
+        "name": "CVE-2021-20296",
+        "score": 5.3,
+        "count": 2,
         "fixed": false
     },
     {
-        "name": "CVE-2023-2839",
-        "score": 7.5,
-        "count": 1,
+        "name": "CVE-2022-3341",
+        "score": 5.3,
+        "count": 3,
         "fixed": false
     },
     {
-        "name": "CVE-2021-32268",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-32271",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-36412",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-36414",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-36417",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-40568",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-40570",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-40571",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-40574",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1441",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-2454",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-24575",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-24577",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-24578",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-26967",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-38530",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-43042",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-45202",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-45283",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-45343",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47091",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47093",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47094",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47095",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47654",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47657",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47659",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47660",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47661",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-47663",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-0358",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-0760",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-0770",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-0819",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-0866",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1448",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1449",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1452",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-1654",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-23143",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-23145",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-3012",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-5586",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-4202",
-        "score": 8.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-0841",
-        "score": 8.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-2838",
-        "score": 9.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1795",
-        "score": 9.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-36190",
-        "score": 9.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-2840",
-        "score": 9.8,
-        "count": 1,
+        "name": "CVE-2023-33201",
+        "score": 5.3,
+        "count": 5,
         "fixed": false
     },
     {
@@ -5382,38 +3954,1676 @@
         "fixed": false
     },
     {
-        "name": "CVE-2022-25869",
-        "score": 6.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-21422",
-        "score": 6.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-25345",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
         "name": "CVE-2021-28170",
         "score": 5.3,
         "count": 2,
         "fixed": false
     },
     {
-        "name": "CVE-2023-34610",
-        "score": 7.5,
+        "name": "CVE-2021-3754",
+        "score": 5.3,
         "count": 1,
         "fixed": false
     },
     {
-        "name": "CVE-2022-23395",
-        "score": 6.1,
+        "name": "CVE-2023-38546",
+        "score": 5,
+        "count": 14,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-2764",
+        "score": 4.9,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4039",
+        "score": 4.8,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-5729",
+        "score": 4.7,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2013-4235",
+        "score": 4.7,
+        "count": 47,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-0537",
+        "score": 4.7,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-20569",
+        "score": 4.7,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-33288",
+        "score": 4.7,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1582",
+        "score": 4.7,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4641",
+        "score": 4.7,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-5011",
+        "score": 4.6,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-15213",
+        "score": 4.6,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-37453",
+        "score": 4.6,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-2603",
+        "score": 4.4,
+        "count": 9,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-17977",
+        "score": 4.4,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-14304",
+        "score": 4.4,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-27835",
+        "score": 4.4,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-3773",
+        "score": 4.4,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-2835",
+        "score": 4.4,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-18700",
+        "score": 4.3,
+        "count": 7,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-12123",
+        "score": 4.3,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-2251",
+        "score": 4.3,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-41848",
+        "score": 4.2,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-25091",
+        "score": 4.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2013-7445",
+        "score": 4.1,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2015-2296",
+        "score": 4.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2007-3996",
+        "score": 4.1,
+        "count": 13,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2009-3546",
+        "score": 4.1,
+        "count": 13,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-34324",
+        "score": 4.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-5717",
+        "score": 4.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1193",
+        "score": 4.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1194",
+        "score": 4.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-3867",
+        "score": 4.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-20445",
+        "score": 4.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-38469",
+        "score": 4.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-38470",
+        "score": 4.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-38471",
+        "score": 4.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-38472",
+        "score": 4.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-38473",
+        "score": 4.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4421",
+        "score": 4.1,
+        "count": 7,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-5178",
+        "score": 4.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-5388",
+        "score": 4.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2010-3700",
+        "score": 4.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-46246",
+        "score": 4,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-5998",
+        "score": 4,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-5730",
+        "score": 3.8,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-5156",
+        "score": 3.7,
+        "count": 44,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-1968",
+        "score": 3.7,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-26112",
+        "score": 3.7,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-35501",
+        "score": 3.4,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-2602",
+        "score": 3.3,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-3219",
+        "score": 3.3,
+        "count": 106,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-3291",
+        "score": 3.3,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-39978",
+        "score": 3.3,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2010-3192",
+        "score": 3.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2013-0157",
+        "score": 3.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2014-8625",
+        "score": 3.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2015-5276",
+        "score": 3.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2005-2541",
+        "score": 3.1,
+        "count": 66,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2007-5686",
+        "score": 3.1,
+        "count": 65,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2010-4756",
+        "score": 3.1,
+        "count": 61,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2011-3374",
+        "score": 3.1,
+        "count": 65,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2011-3389",
+        "score": 3.1,
+        "count": 61,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2011-4116",
+        "score": 3.1,
+        "count": 64,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2013-4392",
+        "score": 3.1,
+        "count": 62,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-18018",
+        "score": 3.1,
+        "count": 66,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-20796",
+        "score": 3.1,
+        "count": 61,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-6829",
+        "score": 3.1,
+        "count": 65,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-19882",
+        "score": 3.1,
+        "count": 65,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-0563",
+        "score": 3.1,
+        "count": 63,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-31486",
+        "score": 3.1,
+        "count": 65,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2005-0406",
+        "score": 3.1,
+        "count": 17,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2007-2243",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2007-2768",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2007-3476",
+        "score": 3.1,
+        "count": 13,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2007-3477",
+        "score": 3.1,
+        "count": 13,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2007-6755",
+        "score": 3.1,
+        "count": 58,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2008-1687",
+        "score": 3.1,
+        "count": 24,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2008-1688",
+        "score": 3.1,
+        "count": 24,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2008-3134",
+        "score": 3.1,
+        "count": 17,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2008-3234",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2010-0928",
+        "score": 3.1,
+        "count": 58,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2010-4651",
+        "score": 3.1,
+        "count": 27,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2015-3276",
+        "score": 3.1,
+        "count": 47,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2015-9019",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-10505",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-10506",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-8678",
+        "score": 3.1,
+        "count": 17,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9113",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9114",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9115",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9116",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9117",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9580",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9581",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-11754",
+        "score": 3.1,
+        "count": 17,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-11755",
+        "score": 3.1,
+        "count": 17,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-14159",
+        "score": 3.1,
+        "count": 47,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-17479",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-17740",
+        "score": 3.1,
+        "count": 47,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-5563",
+        "score": 3.1,
+        "count": 21,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7275",
+        "score": 3.1,
+        "count": 17,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9117",
+        "score": 3.1,
+        "count": 21,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9937",
+        "score": 3.1,
+        "count": 24,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-1000021",
+        "score": 3.1,
+        "count": 24,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-10126",
+        "score": 3.1,
+        "count": 26,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-15607",
+        "score": 3.1,
+        "count": 17,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-15919",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-16375",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-16376",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-20712",
+        "score": 3.1,
+        "count": 30,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-20846",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-5709",
+        "score": 3.1,
+        "count": 58,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-9996",
+        "score": 3.1,
+        "count": 30,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-6110",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-14145",
+        "score": 3.1,
+        "count": 18,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-15719",
+        "score": 3.1,
+        "count": 47,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-20311",
+        "score": 3.1,
+        "count": 17,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-26945",
+        "score": 3.1,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-32256",
+        "score": 3.1,
+        "count": 31,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-4214",
+        "score": 3.1,
+        "count": 30,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-4217",
+        "score": 3.1,
+        "count": 14,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-45261",
+        "score": 3.1,
+        "count": 30,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1210",
+        "score": 3.1,
+        "count": 13,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-24975",
+        "score": 3.1,
+        "count": 19,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1916",
+        "score": 3.1,
+        "count": 21,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1972",
+        "score": 3.1,
+        "count": 30,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-24535",
+        "score": 3.1,
+        "count": 24,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-3164",
+        "score": 3.1,
+        "count": 26,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-34152",
+        "score": 3.1,
+        "count": 17,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2009-4487",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-31122",
+        "score": 3.1,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-43622",
+        "score": 3.1,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-45802",
+        "score": 3.1,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2013-0340",
+        "score": 3.1,
+        "count": 14,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2014-8166",
+        "score": 3.1,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7245",
+        "score": 3.1,
+        "count": 29,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7246",
+        "score": 3.1,
+        "count": 29,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-21232",
+        "score": 3.1,
+        "count": 13,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-33294",
+        "score": 3.1,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-3530",
+        "score": 3.1,
+        "count": 10,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-3549",
+        "score": 3.1,
+        "count": 10,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-3826",
+        "score": 3.1,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-45078",
+        "score": 3.1,
+        "count": 10,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-46195",
+        "score": 3.1,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1056",
+        "score": 3.1,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-1350",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-23901",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-31782",
+        "score": 3.1,
+        "count": 12,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-35205",
+        "score": 3.1,
+        "count": 27,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-35206",
+        "score": 3.1,
+        "count": 27,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-37454",
+        "score": 3.1,
+        "count": 10,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-38533",
+        "score": 3.1,
+        "count": 10,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-41409",
+        "score": 3.1,
+        "count": 23,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-47673",
+        "score": 3.1,
+        "count": 11,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-48064",
+        "score": 3.1,
+        "count": 27,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-48065",
+        "score": 3.1,
+        "count": 27,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-1579",
+        "score": 3.1,
+        "count": 11,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-25584",
+        "score": 3.1,
+        "count": 10,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-25586",
+        "score": 3.1,
+        "count": 10,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-28320",
+        "score": 3.1,
+        "count": 15,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-30775",
+        "score": 3.1,
+        "count": 8,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-38560",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-29932",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-29933",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-29934",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-29935",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-29939",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-29941",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-29942",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9797",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9798",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9799",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9800",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9801",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9802",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9803",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9804",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9917",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2016-9918",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-34981",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-4134",
+        "score": 3.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-15131",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-15232",
+        "score": 3.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-1000654",
+        "score": 3.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-11813",
+        "score": 3.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-14550",
+        "score": 3.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-20651",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-1010180",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-19244",
+        "score": 3.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-9893",
+        "score": 3.1,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-11656",
+        "score": 3.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-16590",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-16591",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-16592",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-16593",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-16599",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-17541",
+        "score": 3.1,
+        "count": 6,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-23922",
+        "score": 3.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-35493",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-35494",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-35495",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-35496",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-35507",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-35521",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-35522",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-20294",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-40633",
+        "score": 3.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-2519",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-2520",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-2521",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-28506",
+        "score": 3.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-2953",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-39742",
+        "score": 3.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2008-4108",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2012-2663",
+        "score": 3.1,
+        "count": 4,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2013-7040",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-18443",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-20845",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-5727",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-7648",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-11360",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-13310",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-16709",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-16905",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-18934",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-27753",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-27755",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-20304",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-7475",
+        "score": 3.1,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-18064",
+        "score": 3.1,
+        "count": 5,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-30590",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-11023",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-18797",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-30581",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-30588",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-30589",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-31124",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-31147",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32002",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32006",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-32559",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-33733",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2015-5237",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "GMS-2019-24",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-0641",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-42523",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-0856",
+        "score": 3.1,
+        "count": 3,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-46001",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-5341",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "GMS-2022-9109",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2012-5639",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2013-4441",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2013-4472",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-2814",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-2818",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-2820",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-6519",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2017-9083",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-10583",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-14338",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-19059",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2018-19060",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2019-16707",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-18773",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-18774",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-18898",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-22673",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2020-22679",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-31256",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-31261",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2021-33365",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-24106",
+        "score": 3.1,
+        "count": 2,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-3957",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-43254",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2022-43255",
+        "score": 3.1,
+        "count": 1,
+        "fixed": false
+    },
+    {
+        "name": "CVE-2023-0817",
+        "score": 3.1,
         "count": 1,
         "fixed": false
     },
@@ -5430,60 +5640,6 @@
         "fixed": false
     },
     {
-        "name": "CVE-2016-9180",
-        "score": 9.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-39978",
-        "score": 3.3,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-2764",
-        "score": 4.9,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-13947",
-        "score": 6.1,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-25664",
-        "score": 6.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-46361",
-        "score": 6.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-27752",
-        "score": 7.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-1259",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-28531",
-        "score": 9.8,
-        "count": 2,
-        "fixed": false
-    },
-    {
         "name": "CVE-2018-1000520",
         "score": 3.1,
         "count": 1,
@@ -5492,24 +5648,6 @@
     {
         "name": "CVE-2023-43615",
         "score": 3.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-3754",
-        "score": 5.3,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-2256",
-        "score": 5.4,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-34624",
-        "score": 7.5,
         "count": 1,
         "fixed": false
     },
@@ -5544,18 +5682,6 @@
         "fixed": false
     },
     {
-        "name": "CVE-2022-2835",
-        "score": 4.4,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2022-2837",
-        "score": 6.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
         "name": "CVE-2012-2150",
         "score": 3.1,
         "count": 1,
@@ -5568,147 +5694,21 @@
         "fixed": false
     },
     {
-        "name": "CVE-2019-19221",
-        "score": 5.5,
-        "count": 1,
+        "name": "CVE-2021-23239",
+        "score": 2.5,
+        "count": 3,
         "fixed": false
     },
     {
-        "name": "CVE-2017-7500",
-        "score": 7.8,
-        "count": 1,
+        "name": "CVE-2020-8912",
+        "score": 2.5,
+        "count": 6,
         "fixed": false
     },
     {
-        "name": "CVE-2017-7501",
-        "score": 7.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2014-5044",
-        "score": 9.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36221",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36222",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36223",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36224",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36225",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36226",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36227",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36228",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36229",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-36230",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-27212",
-        "score": 7.5,
-        "count": 2,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2010-3700",
-        "score": 4.1,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-2251",
-        "score": 4.3,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-25761",
-        "score": 5.4,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2018-1000632",
-        "score": 7.5,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-10683",
-        "score": 9.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2020-26938",
-        "score": 7.2,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2021-23395",
-        "score": 7.3,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-37466",
-        "score": 9.8,
-        "count": 1,
-        "fixed": false
-    },
-    {
-        "name": "CVE-2023-37903",
-        "score": 9.8,
-        "count": 1,
+        "name": "CVE-2019-20386",
+        "score": 2.4,
+        "count": 9,
         "fixed": false
     }
 ]

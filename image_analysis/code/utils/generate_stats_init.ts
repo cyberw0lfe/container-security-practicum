@@ -1,31 +1,4 @@
-import {
-  CveStats,
-  Cve,
-  Image,
-  ImageMap,
-  ImagesBySeverity,
-  SeveritySums,
-} from '../types'
-
-interface ImageStats {
-  imageMap: ImageMap
-  byStarCount: Image[]
-  byPullCount: Image[]
-  byPublishDate: Image[]
-  byAverageCve: Image[]
-  byAverageFixable: Image[]
-  byAverageUnfixable: Image[]
-  cveStats: CveStats
-  cvesByCount: Cve[]
-  cvesBySeverity: Cve[]
-  fixedCves: Cve[]
-  unfixedCves: Cve[]
-  imagesBySeverity: ImagesBySeverity
-  severityCounts: SeveritySums
-  severityAverageAllImages: number
-  unfixableSeverityAverageAllImages: number
-  fixableSeverityAverageAllImages: number
-}
+import { ImageStats } from '../types'
 
 export default {
   imageMap: {},

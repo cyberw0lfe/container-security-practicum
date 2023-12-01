@@ -106,8 +106,12 @@ const sortImagesByStats = (imageArray: Image[]) => {
 const sortCvesByStats = (cveArray: Cve[]) => {
   imageScanStats.cvesByCount = sortCves(cveArray, 'count')
   imageScanStats.cvesBySeverity = sortCves(cveArray, 'score')
-  imageScanStats.fixedCves = cveArray.filter(v => v.fixed)
-  imageScanStats.unfixedCves = cveArray.filter(v => !v.fixed)
+  imageScanStats.fixedCves = [...imageScanStats.cvesBySeverity].filter(
+    v => v.fixed,
+  )
+  imageScanStats.unfixedCves = [...imageScanStats.cvesBySeverity].filter(
+    v => !v.fixed,
+  )
 }
 
 const printResultsToFiles = () => {

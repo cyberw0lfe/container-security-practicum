@@ -1,0 +1,32 @@
+
+113023 09:48:37 :  loading scan data
+113023 09:48:39 :  Leftover statistics:
+	Severity Average - 4.53125033263487
+	Unfixable Average - 2.135509923897056
+	Fixable Average - 2.3957404087378142
+113023 09:48:39 :  Chart image saved as Images by Star Count vs Vulnerabilites.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Chart image saved as Images by Pull Count vs Vulnerabilites.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Chart image saved as Images by Last Publish Date vs Vulnerabilites.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Chart image saved as Images by Average CVE Score vs Vulnerabilites.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Chart image saved as Images by Average Fixable CVE Score vs Vulnerabilites.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Chart image saved as Images by Average Unfixable CVE Score vs Vulnerabilites.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Chart image saved as CVEs by Severity vs Count.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Chart image saved as Severity vs Total Count.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Pie chart image saved as Severity Distribution by Total Count.png
+113023 09:48:39 :  Pie chart created successfully.
+113023 09:48:39 :  Chart image saved as Fixed CVEs by Severity vs Count.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Chart image saved as Severity vs Unique Image Count.png
+113023 09:48:39 :  Chart image saved as Unfixed CVEs by Severity vs Count.png
+113023 09:48:39 :  Stacked bar chart created successfully.
+113023 09:48:39 :  Pie chart image saved as Severity Distribution by Unique Images.png
+113023 09:48:39 :  Pie chart created successfully.
