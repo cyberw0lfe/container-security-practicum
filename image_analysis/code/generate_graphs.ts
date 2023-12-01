@@ -169,6 +169,20 @@ const generateImageScanGraphs = (preparedImageData: ImageGraphData[]) => {
     }
 
     generateGraph.barChart(data, title, logger, { showLegend: true })
+
+    const topFiftyData: ChartData<'bar', number[], string> = {
+      labels: imageNameLabels.slice(0, 50),
+      datasets: [],
+    }
+    topFiftyData.datasets = [
+      ...data.datasets.map(i => {
+        i.data = i.data.slice(0, 50)
+        return i
+      }),
+    ]
+    generateGraph.barChart(topFiftyData, `${title} Top 50`, logger, {
+      showLegend: true,
+    })
   })
 }
 
