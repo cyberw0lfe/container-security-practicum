@@ -33,7 +33,7 @@ const dataLabelPlugin = (chartType: string) => {
         if (!meta.hidden) {
           meta.data.forEach((element, index) => {
             ctx.fillStyle = 'rgb(0, 0, 0)'
-            const fontSize = 48
+            const fontSize = isPie ? 96 : 48
             const fontStyle = 'normal'
             const fontFamily = 'Arial'
             ctx.font = `${fontStyle} ${fontSize}px ${fontFamily}`
@@ -120,7 +120,7 @@ const createPieChart = async (
 ): Promise<void> => {
   const canvasConfig = {
     width: 3200,
-    height: 1600,
+    height: 3200,
     backgroundColor: 'white',
   }
 
@@ -133,7 +133,7 @@ const createPieChart = async (
       plugins: {
         legend: {
           display: options.showLegend ? true : false,
-          labels: { font: { size: 36 } },
+          labels: { font: { size: 64 } },
         },
         title: {
           display: true,
